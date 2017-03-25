@@ -1,0 +1,262 @@
+Compiler version: 4.8 (R2008a) 
+mcc -W 'dotnet:IK_PF_NET,IK_PF_NETclass,0.0,private' -d 'C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_PF_NET\src' -T 'link:lib' -v -C 'class{IK_PF_NETclass:C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\weightFunction.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\angulo.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\createChain.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\createParticle.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\chain2CCDquaternions.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\chain2image.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\chain2positions.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\chainCCDQuTemSamplig.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\chainEndEffectorPosition.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\chainQuaternionUniformSampling.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\chainQuTEMSampling.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\dentro.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\euclidianDistance.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\evalua_recta.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\imageDistance.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\mas.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\obstaculo_crecido.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\PF.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\pik.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\point2quaternion.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\pointDistance.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\positions2chain.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\PrtFltr_MkwskSum.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\quaternion.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\quaternion2point.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\quaternionConjugate.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\quaternionDistance.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\quaternionExponentialMap.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\quaternionInnerProduct.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\quaternionLogarithmicMap.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\quaternionNorm.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\quaternionNormalize.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\quaternionProduct.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\quaternionQuTEMSampling.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\quaternionRotation.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\quaternionUniformSampling.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\remostrejar.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\rotation2quaternion.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\S_Touch.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\setGaussianParameters.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\slerp.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\testQuTEM.m,C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET\vectors2quaternion.m}'  
+Processing C:\Archivos de programa\MATLAB\R2008a\toolbox\images\mcc.enc 
+Processing C:\Archivos de programa\MATLAB\R2008a\toolbox\stats\mcc.enc 
+Processing C:\Archivos de programa\MATLAB\R2008a\toolbox\matlab\mcc.enc 
+Processing C:\Archivos de programa\MATLAB\R2008a\toolbox\shared\imageslib\mcc.enc 
+Processing include files... 
+2 item(s) added. 
+Processing directories installed with MCR... 
+The file C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_PF_NET\src\mccExcludedFiles.log contains a list of functions excluded from the CTF archive. 
+1 item(s) added. 
+Generating MATLAB path for the compiled application... 
+Created 44 path items. 
+Begin validation of MEX files: Fri Dec 24 01:57:09 2010 
+Validating 'C:\Archivos de programa\MATLAB\R2008a\toolbox\compiler\deploy\deploywhich.mexw32'. 
+No conflicting M-file found. 
+Validating 'C:\Archivos de programa\MATLAB\R2008a\toolbox\compiler\deploy\readline.mexw32'. 
+No conflicting M-file found. 
+Validating 'C:\Archivos de programa\MATLAB\R2008a\toolbox\images\images\private\grayto16.mexw32'. 
+Found M-file 'C:\Archivos de programa\MATLAB\R2008a\toolbox\images\images\private\grayto16.m'. 
+MEX file  
+    'C:\Archivos de programa\MATLAB\R2008a\toolbox\images\images\private\grayto16.mexw32'  
+ is valid. It contains 'mexFunction.' 
+Validating 'C:\Archivos de programa\MATLAB\R2008a\toolbox\images\images\private\grayto8.mexw32'. 
+Found M-file 'C:\Archivos de programa\MATLAB\R2008a\toolbox\images\images\private\grayto8.m'. 
+MEX file  
+    'C:\Archivos de programa\MATLAB\R2008a\toolbox\images\images\private\grayto8.mexw32'  
+ is valid. It contains 'mexFunction.' 
+Validating 'C:\Archivos de programa\MATLAB\R2008a\toolbox\images\images\private\imlincombc.mexw32'. 
+No conflicting M-file found. 
+Validating 'C:\Archivos de programa\MATLAB\R2008a\toolbox\images\images\private\immultmex.mexw32'. 
+No conflicting M-file found. 
+Validating 'C:\Archivos de programa\MATLAB\R2008a\toolbox\images\images\private\int16touint16.mexw32'. 
+No conflicting M-file found. 
+Validating 'C:\Archivos de programa\MATLAB\R2008a\toolbox\images\images\private\intlutc.mexw32'. 
+No conflicting M-file found. 
+Validating 'C:\Archivos de programa\MATLAB\R2008a\toolbox\images\images\private\uint16toint16.mexw32'. 
+No conflicting M-file found. 
+Validating 'C:\Archivos de programa\MATLAB\R2008a\toolbox\images\iptutils\iptcheckinput.mexw32'. 
+Found M-file 'C:\Archivos de programa\MATLAB\R2008a\toolbox\images\iptutils\iptcheckinput.m'. 
+MEX file  
+    'C:\Archivos de programa\MATLAB\R2008a\toolbox\images\iptutils\iptcheckinput.mexw32'  
+ is valid. It contains 'mexFunction.' 
+Validating 'C:\Archivos de programa\MATLAB\R2008a\toolbox\images\iptutils\private\iptregistry.mexw32'. 
+Found M-file 'C:\Archivos de programa\MATLAB\R2008a\toolbox\images\iptutils\private\iptregistry.m'. 
+MEX file  
+    'C:\Archivos de programa\MATLAB\R2008a\toolbox\images\iptutils\private\iptregistry.mexw32'  
+ is valid. It contains 'mexFunction.' 
+Validating 'C:\Archivos de programa\MATLAB\R2008a\toolbox\images\medformats\private\bitparse.mexw32'. 
+No conflicting M-file found. 
+Validating 'C:\Archivos de programa\MATLAB\R2008a\toolbox\images\medformats\private\dicom_decode_rle_segment.mexw32'. 
+No conflicting M-file found. 
+Validating 'C:\Archivos de programa\MATLAB\R2008a\toolbox\images\medformats\private\dicomlookup_helper.mexw32'. 
+No conflicting M-file found. 
+Validating 'C:\Archivos de programa\MATLAB\R2008a\toolbox\images\medformats\private\dicomparse.mexw32'. 
+No conflicting M-file found. 
+Validating 'C:\Archivos de programa\MATLAB\R2008a\toolbox\images\medformats\private\tobits.mexw32'. 
+No conflicting M-file found. 
+Validating 'C:\Archivos de programa\MATLAB\R2008a\toolbox\stats\private\statsizechk.mexw32'. 
+Found M-file 'C:\Archivos de programa\MATLAB\R2008a\toolbox\stats\private\statsizechk.m'. 
+MEX file  
+    'C:\Archivos de programa\MATLAB\R2008a\toolbox\stats\private\statsizechk.mexw32'  
+ is valid. It contains 'mexFunction.' 
+End validation of MEX files: Fri Dec 24 01:57:09 2010 
+Deleting 17 temporary MEX authorization files. 
+Removing: 'C:\Windows\Temp\mathworks_tmp_224_29899_224.auth'. 
+Removing: 'C:\Windows\Temp\mathworks_tmp_224_19199_224.auth'. 
+Removing: 'C:\Windows\Temp\mathworks_tmp_224_11460_224.auth'. 
+Removing: 'C:\Windows\Temp\mathworks_tmp_224_6407_224.auth'. 
+Removing: 'C:\Windows\Temp\mathworks_tmp_224_9084_224.auth'. 
+Removing: 'C:\Windows\Temp\mathworks_tmp_224_19086_224.auth'. 
+Removing: 'C:\Windows\Temp\mathworks_tmp_224_9586_224.auth'. 
+Removing: 'C:\Windows\Temp\mathworks_tmp_224_31274_224.auth'. 
+Removing: 'C:\Windows\Temp\mathworks_tmp_224_2761_224.auth'. 
+Removing: 'C:\Windows\Temp\mathworks_tmp_224_12231_224.auth'. 
+Removing: 'C:\Windows\Temp\mathworks_tmp_224_29356_224.auth'. 
+Removing: 'C:\Windows\Temp\mathworks_tmp_224_12559_224.auth'. 
+Removing: 'C:\Windows\Temp\mathworks_tmp_224_19104_224.auth'. 
+Removing: 'C:\Windows\Temp\mathworks_tmp_224_494_224.auth'. 
+Removing: 'C:\Windows\Temp\mathworks_tmp_224_2420_224.auth'. 
+Removing: 'C:\Windows\Temp\mathworks_tmp_224_32319_224.auth'. 
+Removing: 'C:\Windows\Temp\mathworks_tmp_224_697_224.auth'. 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\weightFunction.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\angulo.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\createChain.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParWarning: M-file "weightFunction.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "angulo.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "createChain.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "createParticle.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "chain2CCDquaternions.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "chain2image.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "chain2positions.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "chainCCDQuTemSamplig.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "chainEndEffectorPosition.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "chainQuaternionUniformSampling.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "chainQuTEMSampling.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "dentro.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "euclidianDistance.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "evalua_recta.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "imageDistance.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "mas.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "obstaculo_crecido.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "PF.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "pik.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "point2quaternion.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "pointDistance.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "positions2chain.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and ticleFiltering\createParticle.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\chain2CCDquaternions.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\chain2image.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\chain2positions.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\chainCCDQuTemSamplig.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\chainEndEffectorPosition.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\chainQuaternionUniformSampling.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\chainQuTEMSampling.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\dentro.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\euclidianDistance.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\evalua_recta.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\imageDistance.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\mas.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\obstaculo_crecido.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\PF.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\pik.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\point2quaternion.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\pointDistance.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\positions2chain.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\PrtFltr_MkwskSum.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\quaternion.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\quaternion2point.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\quaternionConjugate.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\AdministraSettings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "PrtFltr_MkwskSum.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "quaternion.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "quaternion2point.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "quaternionConjugate.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "quaternionDistance.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "quaternionExponentialMap.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "quaternionInnerProduct.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "quaternionLogarithmicMap.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "quaternionNorm.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "quaternionNormalize.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "quaternionProduct.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFilterdor\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\quaternionDistance.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\quaternionExponentialMap.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\quaternionInnerProduct.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\quaternionLogarithmicMap.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\quaternionNorm.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\quaternionNormalize.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\quaternionProduct.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\quaternionQuTEMSampling.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\quaternionRotation.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\quaternionUniformSampling.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\remostrejar.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\rotation2quaternion.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\S_Touch.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\setGaussianParameters.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\slerp.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\testQuTEM.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\vectors2quaternion.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Archivos de programa\MATLAB\R2008a\toolbox\compiler\deploy\deployprint.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "C:\Archivos de programa\MATLAB\R2008a\toolbox\compiler\deploy\printdlg.m" 
+	(Referenced from: "Compiler Command Line"). 
+Generating file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_PF_NET\src\IK_PF_NETclass.cs". 
+Generating file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_PF_NET\src\readme.txt". 
+Generating file "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_PF_NET\src\IK_PF_NET_mcc_component_data.cs". 
+Executing command: C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\csc.exe /nologo /optimize /doc:"C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_PF_NET\src\IK_PF_NET.xml" /t:library /r:"C:\Archivos de programa\MATLAB\R2008a\toolbox\doing\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "quaternionQuTEMSampling.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "quaternionRotation.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "quaternionUniformSampling.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "remostrejar.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "rotation2quaternion.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "S_Touch.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "setGaussianParameters.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "slerp.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "testQuTEM.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+Warning: M-file "vectors2quaternion.m" was specified on the command line with full path of "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_ParticleFiltering_NET",  
+but was found on the search path in directory "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering" first. 
+tnetbuilder\bin\win32\v2.0\MWArray.dll" /linkres:"C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_PF_NET\src\IK_PF_NET.ctf" /out:"C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_PF_NET\src\IK_PF_NET.dll" "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_PF_NET\src\IK_PF_NETclass.cs" "C:\Documents and Settings\Administrador\Escritorio\My Work\MATH\ParticleFiltering\IK_ParticleFiltering\IK_PF_NET\src\IK_PF_NET_mcc_component_data.cs" 

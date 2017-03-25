@@ -1,0 +1,15 @@
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\TajectoryMap\bin\Debug\TajectoryMap.dll
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\TajectoryMap\bin\Debug\TajectoryMap.pdb
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\TajectoryMap\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\TajectoryMap\obj\Debug\TajectoryMap.dll
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\TajectoryMap\obj\Debug\TajectoryMap.pdb
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TajectoryMap\bin\Debug\TajectoryMap.dll
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TajectoryMap\bin\Debug\TajectoryMap.pdb
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TajectoryMap\obj\Debug\ResolveAssemblyReference.cache
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TajectoryMap\obj\Debug\TajectoryMap.dll
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TajectoryMap\obj\Debug\TajectoryMap.pdb
+D:\Proyecto de Tesis [ultimo]\PathPlaning\TajectoryMap\bin\Debug\TajectoryMap.dll
+D:\Proyecto de Tesis [ultimo]\PathPlaning\TajectoryMap\bin\Debug\TajectoryMap.pdb
+D:\Proyecto de Tesis [ultimo]\PathPlaning\TajectoryMap\obj\Debug\ResolveAssemblyReference.cache
+D:\Proyecto de Tesis [ultimo]\PathPlaning\TajectoryMap\obj\Debug\TajectoryMap.dll
+D:\Proyecto de Tesis [ultimo]\PathPlaning\TajectoryMap\obj\Debug\TajectoryMap.pdb

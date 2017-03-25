@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TrajectoryMap.TRTrajectoryGraph">
+    <Position X="1.5" Y="0.75" Width="1.75" />
+    <Members>
+      <Field Name="current" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="GetCurrent" Hidden="true" />
+      <Method Name="GetEnumerator" Hidden="true" />
+      <Method Name="IEnumerable.GetEnumerator" Hidden="true" />
+      <Property Name="IEnumerator.Current" Hidden="true" />
+      <Method Name="init_recursivo" Hidden="true" />
+      <Method Name="initGraph" Hidden="true" />
+      <Method Name="rango_del_centro" Hidden="true" />
+      <Method Name="rango_derecho" Hidden="true" />
+      <Method Name="Reset" Hidden="true" />
+      <Field Name="separacion" Hidden="true" />
+      <Method Name="setCurrent" Hidden="true" />
+      <Field Name="stack" Hidden="true" />
+      <Method Name="TRTrajectoryGraph" Hidden="true" />
+      <Method Name="verifica_trayectoria" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AACACAAAACAABBAAAACggAgAgIAAAIAEoAABAAAAAII=</HashCode>
+      <FileName>Trajectory\TRTrajectoryGraph.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TrajectoryMap.TRNode">
+    <Position X="1.5" Y="2.75" Width="1.5" />
+    <Members>
+      <Property Name="Doble" Hidden="true" />
+      <Method Name="Equals" Hidden="true" />
+      <Method Name="Free" Hidden="true" />
+      <Method Name="GetIn" Hidden="true" />
+      <Field Name="lower" Hidden="true" />
+      <Property Name="Lower" Hidden="true" />
+      <Field Name="obj" Hidden="true" />
+      <Field Name="point" Hidden="true" />
+      <Method Name="Pop" Hidden="true" />
+      <Field Name="rango" Hidden="true" />
+      <Method Name="ResetMarcs" Hidden="true" />
+      <Field Name="state" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+      <Method Name="TRNode" Hidden="true" />
+      <Field Name="upper" Hidden="true" />
+      <Property Name="Upper" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>EgAAUQKAABEAoAAEgAAAAAABAACAAQAEgAAABACAAAI=</HashCode>
+      <FileName>Trajectory\TRNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrajectoryMap.TRRange">
+    <Position X="3.25" Y="2.75" Width="1.5" />
+    <Members>
+      <Property Name="Range" Hidden="true" />
+      <Method Name="TRRange" Hidden="true" />
+      <Field Name="y_max" Hidden="true" />
+      <Field Name="y_min" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAACAAAACgAAAAgAAAAA=</HashCode>
+      <FileName>Trajectory\TRRange.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrajectoryMap.TREXT_TrajectoryGraph">
+    <Position X="4" Y="0.5" Width="2.25" />
+    <Members>
+      <Method Name="aux_GetThinPartition" Hidden="true" />
+      <Method Name="delta_x" Hidden="true" />
+      <Method Name="delta_y" Hidden="true" />
+      <Method Name="GetThinPartition" Hidden="true" />
+      <Method Name="norma" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="TrajectoryMap.TREXT_TrajectoryGraph.TRPuente" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Trajectory\TREXT_TrajectoryGraph.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <InheritanceLine Type="TrajectoryMap.TRTrajectoryGraph" FixedFromPoint="true">
+      <Path>
+        <Point X="3.25" Y="1" />
+        <Point X="4" Y="1" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAADAAAAAAAAAAAAAAAgCAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Trajectory\TREXT_TrajectoryGraph.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="TrajectoryMap.Node_State" Collapsed="true">
+    <Position X="5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACI=</HashCode>
+      <FileName>Trajectory\TRNode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

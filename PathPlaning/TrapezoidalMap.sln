@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathPlanning", "TrapezoidalMap\PathPlanning.csproj", "{079E564F-8C47-43E8-9360-8B66FD5BE5E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optimization", "Optimization\Optimization.csproj", "{CAF94EE7-3DA9-4BEA-A9F0-A3C523856F2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TajectoryMap", "TajectoryMap\TajectoryMap.csproj", "{C39D2BEA-10BF-41A5-BB78-D4240E59A4A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MATLAB_NormalRandom", "MATLAB_NormalRandom\MATLAB_NormalRandom.csproj", "{519FA4E8-C915-4B25-A827-7F9B74580F4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS_ParticleFilter", "CS_ParticleFilter\CS_ParticleFilter.csproj", "{FA6EE426-B31E-4389-B96E-3041B7A5CA70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{079E564F-8C47-43E8-9360-8B66FD5BE5E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{079E564F-8C47-43E8-9360-8B66FD5BE5E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{079E564F-8C47-43E8-9360-8B66FD5BE5E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{079E564F-8C47-43E8-9360-8B66FD5BE5E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAF94EE7-3DA9-4BEA-A9F0-A3C523856F2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAF94EE7-3DA9-4BEA-A9F0-A3C523856F2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAF94EE7-3DA9-4BEA-A9F0-A3C523856F2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAF94EE7-3DA9-4BEA-A9F0-A3C523856F2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C39D2BEA-10BF-41A5-BB78-D4240E59A4A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C39D2BEA-10BF-41A5-BB78-D4240E59A4A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C39D2BEA-10BF-41A5-BB78-D4240E59A4A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C39D2BEA-10BF-41A5-BB78-D4240E59A4A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{519FA4E8-C915-4B25-A827-7F9B74580F4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{519FA4E8-C915-4B25-A827-7F9B74580F4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{519FA4E8-C915-4B25-A827-7F9B74580F4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{519FA4E8-C915-4B25-A827-7F9B74580F4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA6EE426-B31E-4389-B96E-3041B7A5CA70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA6EE426-B31E-4389-B96E-3041B7A5CA70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA6EE426-B31E-4389-B96E-3041B7A5CA70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA6EE426-B31E-4389-B96E-3041B7A5CA70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

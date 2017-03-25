@@ -1,0 +1,3351 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IK_ParticleFiltering_NET</name>
+    </assembly>
+    <members>
+        <member name="T:IK_ParticleFiltering_NET.Matlab_PF_Class">
+            <summary>
+            The Matlab_PF_Class class provides a CLS compliant, MWArray interface to the
+            M-functions contained in the files:
+            <newpara></newpara>
+            I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\MATH\Built -
+            04102012\IK_ParticleFiltering_NET\angulo.m
+            <newpara></newpara>
+            I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\MATH\Built -
+            04102012\IK_ParticleFiltering_NET\chain2positions.m
+            <newpara></newpara>
+            I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\MATH\Built -
+            04102012\IK_ParticleFiltering_NET\chainEndEffectorPosition.m
+            <newpara></newpara>
+            I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\MATH\Built -
+            04102012\IK_ParticleFiltering_NET\chainQuTEMSampling.m
+            <newpara></newpara>
+            I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\MATH\Built -
+            04102012\IK_ParticleFiltering_NET\createChain.m
+            <newpara></newpara>
+            I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\MATH\Built -
+            04102012\IK_ParticleFiltering_NET\createParticle.m
+            <newpara></newpara>
+            I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\MATH\Built -
+            04102012\IK_ParticleFiltering_NET\dentro.m
+            <newpara></newpara>
+            I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\MATH\Built -
+            04102012\IK_ParticleFiltering_NET\euclidianDistance.m
+            <newpara></newpara>
+            I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\MATH\Built -
+            04102012\IK_ParticleFiltering_NET\evalua_recta.m
+            <newpara></newpara>
+            I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\MATH\Built -
+            04102012\IK_ParticleFiltering_NET\mas.m
+            <newpara></newpara>
+            I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\MATH\Built -
+            04102012\IK_ParticleFiltering_NET\obstaculo_crecido.m
+            <newpara></newpara>
+            I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\MATH\Built -
+            04102012\IK_ParticleFiltering_NET\PF.m
+            <newpara></newpara>
+            I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\MATH\Built -
+            04102012\IK_ParticleFiltering_NET\pik.m
+            <newpara></newpara>
+            I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\MATH\Built -
+            04102012\IK_ParticleFiltering_NET\positions2chain.m
+            <newpara></newpara>
+            I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\MATH\Built -
+            04102012\IK_ParticleFiltering_NET\PrtFltr_MkwskSum.m
+            <newpara></newpara>
+            I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\MATH\Built -
+            04102012\IK_ParticleFiltering_NET\quaternion.m
+            <newpara></newpara>
+            I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\MATH\Built -
+            04102012\IK_ParticleFiltering_NET\quaternionConjugate.m
+            <newpara></newpara>
+            I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\MATH\Built -
+            04102012\IK_ParticleFiltering_NET\quaternionExponentialMap.m
+            <newpara></newpara>
+            I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\MATH\Built -
+            04102012\IK_ParticleFiltering_NET\quaternionProduct.m
+            <newpara></newpara>
+            I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\MATH\Built -
+            04102012\IK_ParticleFiltering_NET\quaternionQuTEMSampling.m
+            <newpara></newpara>
+            I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\MATH\Built -
+            04102012\IK_ParticleFiltering_NET\quaternionRotation.m
+            <newpara></newpara>
+            I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\MATH\Built -
+            04102012\IK_ParticleFiltering_NET\remostrejar.m
+            <newpara></newpara>
+            I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\MATH\Built -
+            04102012\IK_ParticleFiltering_NET\S_Touch.m
+            <newpara></newpara>
+            I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\MATH\Built -
+            04102012\IK_ParticleFiltering_NET\setGaussianParameters.m
+            <newpara></newpara>
+            I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\MATH\Built -
+            04102012\IK_ParticleFiltering_NET\weightFunction.m
+            <newpara></newpara>
+            deployprint.m
+            <newpara></newpara>
+            printdlg.m
+            </summary>
+            <remarks>
+            @Version 0.0
+            </remarks>
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.#cctor">
+            <summary internal= "true">
+            The static constructor instantiates and initializes the MATLAB Compiler Runtime
+            instance.
+            </summary>
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.#ctor">
+            <summary>
+            Constructs a new instance of the Matlab_PF_Class class.
+            </summary>
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.Finalize">
+            <summary internal= "true">
+            Class destructor called by the CLR garbage collector.
+            </summary>
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.Dispose">
+            <summary>
+            Frees the native resources associated with this object
+            </summary>
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.Dispose(System.Boolean)">
+            <summary internal= "true">
+            Internal dispose function
+            </summary>
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.angulo">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the angulo M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.angulo(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the angulo M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="p1">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.angulo(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the angulo M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="p1">Input argument #1</param>
+             <param name="p2">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.angulo(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 3-input MWArrayinterface to the angulo M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="p1">Input argument #1</param>
+             <param name="p2">Input argument #2</param>
+             <param name="antan">Input argument #3</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.angulo(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the angulo M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.angulo(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the angulo M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="p1">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.angulo(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the angulo M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="p1">Input argument #1</param>
+             <param name="p2">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.angulo(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 3-input MWArray interface to the angulo M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="p1">Input argument #1</param>
+             <param name="p2">Input argument #2</param>
+             <param name="antan">Input argument #3</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.angulo(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the angulo function in which the input and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.chain2positions">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the chain2positions
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             TODO: Valid for matrix</remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.chain2positions(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the chain2positions
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             TODO: Valid for matrix</remarks>
+             <param name="chain">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.chain2positions(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the chain2positions
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             TODO: Valid for matrix</remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.chain2positions(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the chain2positions
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             TODO: Valid for matrix</remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="chain">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.chain2positions(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the chain2positions function in which the input and
+             output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             TODO: Valid for matrix</remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.chainEndEffectorPosition">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the
+             chainEndEffectorPosition M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.chainEndEffectorPosition(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the
+             chainEndEffectorPosition M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="chain">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.chainEndEffectorPosition(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the chainEndEffectorPosition
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.chainEndEffectorPosition(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the chainEndEffectorPosition
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="chain">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.chainEndEffectorPosition(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the chainEndEffectorPosition function in which the
+             input and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.chainQuTEMSampling">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the chainQuTEMSampling
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.chainQuTEMSampling(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the chainQuTEMSampling
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="g">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.chainQuTEMSampling(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the chainQuTEMSampling
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="g">Input argument #1</param>
+             <param name="chain">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.chainQuTEMSampling(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the chainQuTEMSampling
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.chainQuTEMSampling(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the chainQuTEMSampling
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="g">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.chainQuTEMSampling(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the chainQuTEMSampling
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="g">Input argument #1</param>
+             <param name="chain">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.chainQuTEMSampling(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the chainQuTEMSampling function in which the input and
+             output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.createChain">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the createChain M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.createChain(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the createChain M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="vectores_canonicos">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.createChain(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the createChain M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.createChain(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the createChain M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="vectores_canonicos">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.createChain(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the createChain function in which the input and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.createParticle">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the createParticle
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.createParticle(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the createParticle
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="chain">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.createParticle(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the createParticle
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="chain">Input argument #1</param>
+             <param name="samples">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.createParticle(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 3-input MWArrayinterface to the createParticle
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="chain">Input argument #1</param>
+             <param name="samples">Input argument #2</param>
+             <param name="pg">Input argument #3</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.createParticle(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 4-input MWArrayinterface to the createParticle
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="chain">Input argument #1</param>
+             <param name="samples">Input argument #2</param>
+             <param name="pg">Input argument #3</param>
+             <param name="equal">Input argument #4</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.createParticle(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the createParticle M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.createParticle(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the createParticle M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="chain">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.createParticle(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the createParticle M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="chain">Input argument #1</param>
+             <param name="samples">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.createParticle(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 3-input MWArray interface to the createParticle M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="chain">Input argument #1</param>
+             <param name="samples">Input argument #2</param>
+             <param name="pg">Input argument #3</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.createParticle(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 4-input MWArray interface to the createParticle M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="chain">Input argument #1</param>
+             <param name="samples">Input argument #2</param>
+             <param name="pg">Input argument #3</param>
+             <param name="equal">Input argument #4</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.createParticle(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the createParticle function in which the input and
+             output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.dentro">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the dentro M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta funcion nos dir'a si un punto est'a dentro de un poligono (convexo)
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.dentro(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the dentro M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta funcion nos dir'a si un punto est'a dentro de un poligono (convexo)
+             </remarks>
+             <param name="P">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.dentro(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the dentro M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta funcion nos dir'a si un punto est'a dentro de un poligono (convexo)
+             </remarks>
+             <param name="P">Input argument #1</param>
+             <param name="p">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.dentro(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the dentro M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta funcion nos dir'a si un punto est'a dentro de un poligono (convexo)
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.dentro(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the dentro M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta funcion nos dir'a si un punto est'a dentro de un poligono (convexo)
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="P">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.dentro(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the dentro M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta funcion nos dir'a si un punto est'a dentro de un poligono (convexo)
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="P">Input argument #1</param>
+             <param name="p">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.dentro(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the dentro function in which the input and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             Esta funcion nos dir'a si un punto est'a dentro de un poligono (convexo)
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.euclidianDistance">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the euclidianDistance
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.euclidianDistance(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the euclidianDistance
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="p1">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.euclidianDistance(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the euclidianDistance
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="p1">Input argument #1</param>
+             <param name="p2">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.euclidianDistance(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the euclidianDistance
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.euclidianDistance(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the euclidianDistance
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="p1">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.euclidianDistance(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the euclidianDistance
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="p1">Input argument #1</param>
+             <param name="p2">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.euclidianDistance(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the euclidianDistance function in which the input and
+             output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.evalua_recta">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the evalua_recta
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Calculo de la ecuación d ela recta
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.evalua_recta(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the evalua_recta
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Calculo de la ecuación d ela recta
+             </remarks>
+             <param name="r">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.evalua_recta(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the evalua_recta
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Calculo de la ecuación d ela recta
+             </remarks>
+             <param name="r">Input argument #1</param>
+             <param name="x">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.evalua_recta(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the evalua_recta M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Calculo de la ecuación d ela recta
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.evalua_recta(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the evalua_recta M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Calculo de la ecuación d ela recta
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="r">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.evalua_recta(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the evalua_recta M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Calculo de la ecuación d ela recta
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="r">Input argument #1</param>
+             <param name="x">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.evalua_recta(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the evalua_recta function in which the input and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             Calculo de la ecuación d ela recta
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.mas">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the mas M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Retorna la suma vectorial de dos puntos
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.mas(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the mas M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Retorna la suma vectorial de dos puntos
+             </remarks>
+             <param name="p1">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.mas(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the mas M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Retorna la suma vectorial de dos puntos
+             </remarks>
+             <param name="p1">Input argument #1</param>
+             <param name="p2">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.mas(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the mas M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Retorna la suma vectorial de dos puntos
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.mas(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the mas M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Retorna la suma vectorial de dos puntos
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="p1">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.mas(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the mas M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Retorna la suma vectorial de dos puntos
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="p1">Input argument #1</param>
+             <param name="p2">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.mas(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the mas function in which the input and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             Retorna la suma vectorial de dos puntos
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.obstaculo_crecido">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the obstaculo_crecido
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta función calcula espacio prohibido de configuraciones de un brazo
+             mecanico representado por el segmento "a". El resultado es una lista de
+             puntos que representan el obstáculo crecido: "RmasP"
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.obstaculo_crecido(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the obstaculo_crecido
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta función calcula espacio prohibido de configuraciones de un brazo
+             mecanico representado por el segmento "a". El resultado es una lista de
+             puntos que representan el obstáculo crecido: "RmasP"
+             </remarks>
+             <param name="a">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.obstaculo_crecido(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the obstaculo_crecido
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta función calcula espacio prohibido de configuraciones de un brazo
+             mecanico representado por el segmento "a". El resultado es una lista de
+             puntos que representan el obstáculo crecido: "RmasP"
+             </remarks>
+             <param name="a">Input argument #1</param>
+             <param name="L_puntos">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.obstaculo_crecido(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the obstaculo_crecido
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta función calcula espacio prohibido de configuraciones de un brazo
+             mecanico representado por el segmento "a". El resultado es una lista de
+             puntos que representan el obstáculo crecido: "RmasP"
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.obstaculo_crecido(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the obstaculo_crecido
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta función calcula espacio prohibido de configuraciones de un brazo
+             mecanico representado por el segmento "a". El resultado es una lista de
+             puntos que representan el obstáculo crecido: "RmasP"
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="a">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.obstaculo_crecido(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the obstaculo_crecido
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta función calcula espacio prohibido de configuraciones de un brazo
+             mecanico representado por el segmento "a". El resultado es una lista de
+             puntos que representan el obstáculo crecido: "RmasP"
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="a">Input argument #1</param>
+             <param name="L_puntos">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.obstaculo_crecido(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the obstaculo_crecido function in which the input and
+             output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             Esta función calcula espacio prohibido de configuraciones de un brazo
+             mecanico representado por el segmento "a". El resultado es una lista de
+             puntos que representan el obstáculo crecido: "RmasP"
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PF">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the PF M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             sampling
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PF(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the PF M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             sampling
+             </remarks>
+             <param name="goal">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PF(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the PF M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             sampling
+             </remarks>
+             <param name="goal">Input argument #1</param>
+             <param name="particles">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PF(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 3-input MWArrayinterface to the PF M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             sampling
+             </remarks>
+             <param name="goal">Input argument #1</param>
+             <param name="particles">Input argument #2</param>
+             <param name="S">Input argument #3</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PF(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the PF M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             sampling
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PF(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the PF M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             sampling
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="goal">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PF(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the PF M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             sampling
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="goal">Input argument #1</param>
+             <param name="particles">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PF(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 3-input MWArray interface to the PF M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             sampling
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="goal">Input argument #1</param>
+             <param name="particles">Input argument #2</param>
+             <param name="S">Input argument #3</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PF(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the PF function in which the input and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             sampling
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.pik">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the pik M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             chainResult = chain;
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.pik(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the pik M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             chainResult = chain;
+             </remarks>
+             <param name="max_iter">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.pik(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the pik M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             chainResult = chain;
+             </remarks>
+             <param name="max_iter">Input argument #1</param>
+             <param name="epsilon">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.pik(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 3-input MWArrayinterface to the pik M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             chainResult = chain;
+             </remarks>
+             <param name="max_iter">Input argument #1</param>
+             <param name="epsilon">Input argument #2</param>
+             <param name="chain">Input argument #3</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.pik(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 4-input MWArrayinterface to the pik M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             chainResult = chain;
+             </remarks>
+             <param name="max_iter">Input argument #1</param>
+             <param name="epsilon">Input argument #2</param>
+             <param name="chain">Input argument #3</param>
+             <param name="goal">Input argument #4</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.pik(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 5-input MWArrayinterface to the pik M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             chainResult = chain;
+             </remarks>
+             <param name="max_iter">Input argument #1</param>
+             <param name="epsilon">Input argument #2</param>
+             <param name="chain">Input argument #3</param>
+             <param name="goal">Input argument #4</param>
+             <param name="particles">Input argument #5</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.pik(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 6-input MWArrayinterface to the pik M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             chainResult = chain;
+             </remarks>
+             <param name="max_iter">Input argument #1</param>
+             <param name="epsilon">Input argument #2</param>
+             <param name="chain">Input argument #3</param>
+             <param name="goal">Input argument #4</param>
+             <param name="particles">Input argument #5</param>
+             <param name="S">Input argument #6</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.pik(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the pik M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             chainResult = chain;
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.pik(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the pik M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             chainResult = chain;
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="max_iter">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.pik(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the pik M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             chainResult = chain;
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="max_iter">Input argument #1</param>
+             <param name="epsilon">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.pik(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 3-input MWArray interface to the pik M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             chainResult = chain;
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="max_iter">Input argument #1</param>
+             <param name="epsilon">Input argument #2</param>
+             <param name="chain">Input argument #3</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.pik(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 4-input MWArray interface to the pik M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             chainResult = chain;
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="max_iter">Input argument #1</param>
+             <param name="epsilon">Input argument #2</param>
+             <param name="chain">Input argument #3</param>
+             <param name="goal">Input argument #4</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.pik(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 5-input MWArray interface to the pik M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             chainResult = chain;
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="max_iter">Input argument #1</param>
+             <param name="epsilon">Input argument #2</param>
+             <param name="chain">Input argument #3</param>
+             <param name="goal">Input argument #4</param>
+             <param name="particles">Input argument #5</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.pik(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 6-input MWArray interface to the pik M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             chainResult = chain;
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="max_iter">Input argument #1</param>
+             <param name="epsilon">Input argument #2</param>
+             <param name="chain">Input argument #3</param>
+             <param name="goal">Input argument #4</param>
+             <param name="particles">Input argument #5</param>
+             <param name="S">Input argument #6</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.pik(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the pik function in which the input and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             chainResult = chain;
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.positions2chain">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the positions2chain
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Se asume que la primera posicion es el (0,0)
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.positions2chain(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the positions2chain
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Se asume que la primera posicion es el (0,0)
+             </remarks>
+             <param name="x">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.positions2chain(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the positions2chain
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Se asume que la primera posicion es el (0,0)
+             </remarks>
+             <param name="x">Input argument #1</param>
+             <param name="y">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.positions2chain(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the positions2chain
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Se asume que la primera posicion es el (0,0)
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.positions2chain(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the positions2chain
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Se asume que la primera posicion es el (0,0)
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="x">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.positions2chain(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the positions2chain
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Se asume que la primera posicion es el (0,0)
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="x">Input argument #1</param>
+             <param name="y">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.positions2chain(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the positions2chain function in which the input and
+             output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             Se asume que la primera posicion es el (0,0)
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PrtFltr_MkwskSum">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the PrtFltr_MkwskSum
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta funcion es la que engloba los algoritmos de Filtro de Particulas
+             y Suma de Minkowski. Como parámetros se le pasa:
+             max_iter: Maximo de iteraciones que realizara el filtraje
+             epsilon:  tolerancia de cercanía con el objetivo
+             S:        el sistema de obstaculos
+             x_axis:   posiciones en el eje x de la cadena en su posición "inicial" 
+             y_axis:   posiciones en el eje y de la cadena en su posición "inicial" 
+             obj:      objetivo intermedio 
+             samples:  cantidad de particulas que se generaran
+             media_gausiana: media para la generación de particulas (0.03)
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos, ordenados tomando como principio el que menos
+             coordenada "y" tenga (menos "x") en caso de empate y siguiendo el orden
+             inverso a a las manesillas del reloj
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PrtFltr_MkwskSum(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the PrtFltr_MkwskSum
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta funcion es la que engloba los algoritmos de Filtro de Particulas
+             y Suma de Minkowski. Como parámetros se le pasa:
+             max_iter: Maximo de iteraciones que realizara el filtraje
+             epsilon:  tolerancia de cercanía con el objetivo
+             S:        el sistema de obstaculos
+             x_axis:   posiciones en el eje x de la cadena en su posición "inicial" 
+             y_axis:   posiciones en el eje y de la cadena en su posición "inicial" 
+             obj:      objetivo intermedio 
+             samples:  cantidad de particulas que se generaran
+             media_gausiana: media para la generación de particulas (0.03)
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos, ordenados tomando como principio el que menos
+             coordenada "y" tenga (menos "x") en caso de empate y siguiendo el orden
+             inverso a a las manesillas del reloj
+             </remarks>
+             <param name="max_iter">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PrtFltr_MkwskSum(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the PrtFltr_MkwskSum
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta funcion es la que engloba los algoritmos de Filtro de Particulas
+             y Suma de Minkowski. Como parámetros se le pasa:
+             max_iter: Maximo de iteraciones que realizara el filtraje
+             epsilon:  tolerancia de cercanía con el objetivo
+             S:        el sistema de obstaculos
+             x_axis:   posiciones en el eje x de la cadena en su posición "inicial" 
+             y_axis:   posiciones en el eje y de la cadena en su posición "inicial" 
+             obj:      objetivo intermedio 
+             samples:  cantidad de particulas que se generaran
+             media_gausiana: media para la generación de particulas (0.03)
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos, ordenados tomando como principio el que menos
+             coordenada "y" tenga (menos "x") en caso de empate y siguiendo el orden
+             inverso a a las manesillas del reloj
+             </remarks>
+             <param name="max_iter">Input argument #1</param>
+             <param name="epsilon">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PrtFltr_MkwskSum(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 3-input MWArrayinterface to the PrtFltr_MkwskSum
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta funcion es la que engloba los algoritmos de Filtro de Particulas
+             y Suma de Minkowski. Como parámetros se le pasa:
+             max_iter: Maximo de iteraciones que realizara el filtraje
+             epsilon:  tolerancia de cercanía con el objetivo
+             S:        el sistema de obstaculos
+             x_axis:   posiciones en el eje x de la cadena en su posición "inicial" 
+             y_axis:   posiciones en el eje y de la cadena en su posición "inicial" 
+             obj:      objetivo intermedio 
+             samples:  cantidad de particulas que se generaran
+             media_gausiana: media para la generación de particulas (0.03)
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos, ordenados tomando como principio el que menos
+             coordenada "y" tenga (menos "x") en caso de empate y siguiendo el orden
+             inverso a a las manesillas del reloj
+             </remarks>
+             <param name="max_iter">Input argument #1</param>
+             <param name="epsilon">Input argument #2</param>
+             <param name="obst_ranks">Input argument #3</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PrtFltr_MkwskSum(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 4-input MWArrayinterface to the PrtFltr_MkwskSum
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta funcion es la que engloba los algoritmos de Filtro de Particulas
+             y Suma de Minkowski. Como parámetros se le pasa:
+             max_iter: Maximo de iteraciones que realizara el filtraje
+             epsilon:  tolerancia de cercanía con el objetivo
+             S:        el sistema de obstaculos
+             x_axis:   posiciones en el eje x de la cadena en su posición "inicial" 
+             y_axis:   posiciones en el eje y de la cadena en su posición "inicial" 
+             obj:      objetivo intermedio 
+             samples:  cantidad de particulas que se generaran
+             media_gausiana: media para la generación de particulas (0.03)
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos, ordenados tomando como principio el que menos
+             coordenada "y" tenga (menos "x") en caso de empate y siguiendo el orden
+             inverso a a las manesillas del reloj
+             </remarks>
+             <param name="max_iter">Input argument #1</param>
+             <param name="epsilon">Input argument #2</param>
+             <param name="obst_ranks">Input argument #3</param>
+             <param name="x_obst">Input argument #4</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PrtFltr_MkwskSum(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 5-input MWArrayinterface to the PrtFltr_MkwskSum
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta funcion es la que engloba los algoritmos de Filtro de Particulas
+             y Suma de Minkowski. Como parámetros se le pasa:
+             max_iter: Maximo de iteraciones que realizara el filtraje
+             epsilon:  tolerancia de cercanía con el objetivo
+             S:        el sistema de obstaculos
+             x_axis:   posiciones en el eje x de la cadena en su posición "inicial" 
+             y_axis:   posiciones en el eje y de la cadena en su posición "inicial" 
+             obj:      objetivo intermedio 
+             samples:  cantidad de particulas que se generaran
+             media_gausiana: media para la generación de particulas (0.03)
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos, ordenados tomando como principio el que menos
+             coordenada "y" tenga (menos "x") en caso de empate y siguiendo el orden
+             inverso a a las manesillas del reloj
+             </remarks>
+             <param name="max_iter">Input argument #1</param>
+             <param name="epsilon">Input argument #2</param>
+             <param name="obst_ranks">Input argument #3</param>
+             <param name="x_obst">Input argument #4</param>
+             <param name="y_obst">Input argument #5</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PrtFltr_MkwskSum(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 6-input MWArrayinterface to the PrtFltr_MkwskSum
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta funcion es la que engloba los algoritmos de Filtro de Particulas
+             y Suma de Minkowski. Como parámetros se le pasa:
+             max_iter: Maximo de iteraciones que realizara el filtraje
+             epsilon:  tolerancia de cercanía con el objetivo
+             S:        el sistema de obstaculos
+             x_axis:   posiciones en el eje x de la cadena en su posición "inicial" 
+             y_axis:   posiciones en el eje y de la cadena en su posición "inicial" 
+             obj:      objetivo intermedio 
+             samples:  cantidad de particulas que se generaran
+             media_gausiana: media para la generación de particulas (0.03)
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos, ordenados tomando como principio el que menos
+             coordenada "y" tenga (menos "x") en caso de empate y siguiendo el orden
+             inverso a a las manesillas del reloj
+             </remarks>
+             <param name="max_iter">Input argument #1</param>
+             <param name="epsilon">Input argument #2</param>
+             <param name="obst_ranks">Input argument #3</param>
+             <param name="x_obst">Input argument #4</param>
+             <param name="y_obst">Input argument #5</param>
+             <param name="x_axis">Input argument #6</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PrtFltr_MkwskSum(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 7-input MWArrayinterface to the PrtFltr_MkwskSum
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta funcion es la que engloba los algoritmos de Filtro de Particulas
+             y Suma de Minkowski. Como parámetros se le pasa:
+             max_iter: Maximo de iteraciones que realizara el filtraje
+             epsilon:  tolerancia de cercanía con el objetivo
+             S:        el sistema de obstaculos
+             x_axis:   posiciones en el eje x de la cadena en su posición "inicial" 
+             y_axis:   posiciones en el eje y de la cadena en su posición "inicial" 
+             obj:      objetivo intermedio 
+             samples:  cantidad de particulas que se generaran
+             media_gausiana: media para la generación de particulas (0.03)
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos, ordenados tomando como principio el que menos
+             coordenada "y" tenga (menos "x") en caso de empate y siguiendo el orden
+             inverso a a las manesillas del reloj
+             </remarks>
+             <param name="max_iter">Input argument #1</param>
+             <param name="epsilon">Input argument #2</param>
+             <param name="obst_ranks">Input argument #3</param>
+             <param name="x_obst">Input argument #4</param>
+             <param name="y_obst">Input argument #5</param>
+             <param name="x_axis">Input argument #6</param>
+             <param name="y_axis">Input argument #7</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PrtFltr_MkwskSum(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 8-input MWArrayinterface to the PrtFltr_MkwskSum
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta funcion es la que engloba los algoritmos de Filtro de Particulas
+             y Suma de Minkowski. Como parámetros se le pasa:
+             max_iter: Maximo de iteraciones que realizara el filtraje
+             epsilon:  tolerancia de cercanía con el objetivo
+             S:        el sistema de obstaculos
+             x_axis:   posiciones en el eje x de la cadena en su posición "inicial" 
+             y_axis:   posiciones en el eje y de la cadena en su posición "inicial" 
+             obj:      objetivo intermedio 
+             samples:  cantidad de particulas que se generaran
+             media_gausiana: media para la generación de particulas (0.03)
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos, ordenados tomando como principio el que menos
+             coordenada "y" tenga (menos "x") en caso de empate y siguiendo el orden
+             inverso a a las manesillas del reloj
+             </remarks>
+             <param name="max_iter">Input argument #1</param>
+             <param name="epsilon">Input argument #2</param>
+             <param name="obst_ranks">Input argument #3</param>
+             <param name="x_obst">Input argument #4</param>
+             <param name="y_obst">Input argument #5</param>
+             <param name="x_axis">Input argument #6</param>
+             <param name="y_axis">Input argument #7</param>
+             <param name="obj">Input argument #8</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PrtFltr_MkwskSum(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 9-input MWArrayinterface to the PrtFltr_MkwskSum
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta funcion es la que engloba los algoritmos de Filtro de Particulas
+             y Suma de Minkowski. Como parámetros se le pasa:
+             max_iter: Maximo de iteraciones que realizara el filtraje
+             epsilon:  tolerancia de cercanía con el objetivo
+             S:        el sistema de obstaculos
+             x_axis:   posiciones en el eje x de la cadena en su posición "inicial" 
+             y_axis:   posiciones en el eje y de la cadena en su posición "inicial" 
+             obj:      objetivo intermedio 
+             samples:  cantidad de particulas que se generaran
+             media_gausiana: media para la generación de particulas (0.03)
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos, ordenados tomando como principio el que menos
+             coordenada "y" tenga (menos "x") en caso de empate y siguiendo el orden
+             inverso a a las manesillas del reloj
+             </remarks>
+             <param name="max_iter">Input argument #1</param>
+             <param name="epsilon">Input argument #2</param>
+             <param name="obst_ranks">Input argument #3</param>
+             <param name="x_obst">Input argument #4</param>
+             <param name="y_obst">Input argument #5</param>
+             <param name="x_axis">Input argument #6</param>
+             <param name="y_axis">Input argument #7</param>
+             <param name="obj">Input argument #8</param>
+             <param name="samples">Input argument #9</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PrtFltr_MkwskSum(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 10-input MWArrayinterface to the PrtFltr_MkwskSum
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta funcion es la que engloba los algoritmos de Filtro de Particulas
+             y Suma de Minkowski. Como parámetros se le pasa:
+             max_iter: Maximo de iteraciones que realizara el filtraje
+             epsilon:  tolerancia de cercanía con el objetivo
+             S:        el sistema de obstaculos
+             x_axis:   posiciones en el eje x de la cadena en su posición "inicial" 
+             y_axis:   posiciones en el eje y de la cadena en su posición "inicial" 
+             obj:      objetivo intermedio 
+             samples:  cantidad de particulas que se generaran
+             media_gausiana: media para la generación de particulas (0.03)
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos, ordenados tomando como principio el que menos
+             coordenada "y" tenga (menos "x") en caso de empate y siguiendo el orden
+             inverso a a las manesillas del reloj
+             </remarks>
+             <param name="max_iter">Input argument #1</param>
+             <param name="epsilon">Input argument #2</param>
+             <param name="obst_ranks">Input argument #3</param>
+             <param name="x_obst">Input argument #4</param>
+             <param name="y_obst">Input argument #5</param>
+             <param name="x_axis">Input argument #6</param>
+             <param name="y_axis">Input argument #7</param>
+             <param name="obj">Input argument #8</param>
+             <param name="samples">Input argument #9</param>
+             <param name="media_gausiana">Input argument #10</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PrtFltr_MkwskSum(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the PrtFltr_MkwskSum
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta funcion es la que engloba los algoritmos de Filtro de Particulas
+             y Suma de Minkowski. Como parámetros se le pasa:
+             max_iter: Maximo de iteraciones que realizara el filtraje
+             epsilon:  tolerancia de cercanía con el objetivo
+             S:        el sistema de obstaculos
+             x_axis:   posiciones en el eje x de la cadena en su posición "inicial" 
+             y_axis:   posiciones en el eje y de la cadena en su posición "inicial" 
+             obj:      objetivo intermedio 
+             samples:  cantidad de particulas que se generaran
+             media_gausiana: media para la generación de particulas (0.03)
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos, ordenados tomando como principio el que menos
+             coordenada "y" tenga (menos "x") en caso de empate y siguiendo el orden
+             inverso a a las manesillas del reloj
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PrtFltr_MkwskSum(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the PrtFltr_MkwskSum
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta funcion es la que engloba los algoritmos de Filtro de Particulas
+             y Suma de Minkowski. Como parámetros se le pasa:
+             max_iter: Maximo de iteraciones que realizara el filtraje
+             epsilon:  tolerancia de cercanía con el objetivo
+             S:        el sistema de obstaculos
+             x_axis:   posiciones en el eje x de la cadena en su posición "inicial" 
+             y_axis:   posiciones en el eje y de la cadena en su posición "inicial" 
+             obj:      objetivo intermedio 
+             samples:  cantidad de particulas que se generaran
+             media_gausiana: media para la generación de particulas (0.03)
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos, ordenados tomando como principio el que menos
+             coordenada "y" tenga (menos "x") en caso de empate y siguiendo el orden
+             inverso a a las manesillas del reloj
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="max_iter">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PrtFltr_MkwskSum(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the PrtFltr_MkwskSum
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta funcion es la que engloba los algoritmos de Filtro de Particulas
+             y Suma de Minkowski. Como parámetros se le pasa:
+             max_iter: Maximo de iteraciones que realizara el filtraje
+             epsilon:  tolerancia de cercanía con el objetivo
+             S:        el sistema de obstaculos
+             x_axis:   posiciones en el eje x de la cadena en su posición "inicial" 
+             y_axis:   posiciones en el eje y de la cadena en su posición "inicial" 
+             obj:      objetivo intermedio 
+             samples:  cantidad de particulas que se generaran
+             media_gausiana: media para la generación de particulas (0.03)
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos, ordenados tomando como principio el que menos
+             coordenada "y" tenga (menos "x") en caso de empate y siguiendo el orden
+             inverso a a las manesillas del reloj
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="max_iter">Input argument #1</param>
+             <param name="epsilon">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PrtFltr_MkwskSum(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 3-input MWArray interface to the PrtFltr_MkwskSum
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta funcion es la que engloba los algoritmos de Filtro de Particulas
+             y Suma de Minkowski. Como parámetros se le pasa:
+             max_iter: Maximo de iteraciones que realizara el filtraje
+             epsilon:  tolerancia de cercanía con el objetivo
+             S:        el sistema de obstaculos
+             x_axis:   posiciones en el eje x de la cadena en su posición "inicial" 
+             y_axis:   posiciones en el eje y de la cadena en su posición "inicial" 
+             obj:      objetivo intermedio 
+             samples:  cantidad de particulas que se generaran
+             media_gausiana: media para la generación de particulas (0.03)
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos, ordenados tomando como principio el que menos
+             coordenada "y" tenga (menos "x") en caso de empate y siguiendo el orden
+             inverso a a las manesillas del reloj
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="max_iter">Input argument #1</param>
+             <param name="epsilon">Input argument #2</param>
+             <param name="obst_ranks">Input argument #3</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PrtFltr_MkwskSum(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 4-input MWArray interface to the PrtFltr_MkwskSum
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta funcion es la que engloba los algoritmos de Filtro de Particulas
+             y Suma de Minkowski. Como parámetros se le pasa:
+             max_iter: Maximo de iteraciones que realizara el filtraje
+             epsilon:  tolerancia de cercanía con el objetivo
+             S:        el sistema de obstaculos
+             x_axis:   posiciones en el eje x de la cadena en su posición "inicial" 
+             y_axis:   posiciones en el eje y de la cadena en su posición "inicial" 
+             obj:      objetivo intermedio 
+             samples:  cantidad de particulas que se generaran
+             media_gausiana: media para la generación de particulas (0.03)
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos, ordenados tomando como principio el que menos
+             coordenada "y" tenga (menos "x") en caso de empate y siguiendo el orden
+             inverso a a las manesillas del reloj
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="max_iter">Input argument #1</param>
+             <param name="epsilon">Input argument #2</param>
+             <param name="obst_ranks">Input argument #3</param>
+             <param name="x_obst">Input argument #4</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PrtFltr_MkwskSum(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 5-input MWArray interface to the PrtFltr_MkwskSum
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta funcion es la que engloba los algoritmos de Filtro de Particulas
+             y Suma de Minkowski. Como parámetros se le pasa:
+             max_iter: Maximo de iteraciones que realizara el filtraje
+             epsilon:  tolerancia de cercanía con el objetivo
+             S:        el sistema de obstaculos
+             x_axis:   posiciones en el eje x de la cadena en su posición "inicial" 
+             y_axis:   posiciones en el eje y de la cadena en su posición "inicial" 
+             obj:      objetivo intermedio 
+             samples:  cantidad de particulas que se generaran
+             media_gausiana: media para la generación de particulas (0.03)
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos, ordenados tomando como principio el que menos
+             coordenada "y" tenga (menos "x") en caso de empate y siguiendo el orden
+             inverso a a las manesillas del reloj
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="max_iter">Input argument #1</param>
+             <param name="epsilon">Input argument #2</param>
+             <param name="obst_ranks">Input argument #3</param>
+             <param name="x_obst">Input argument #4</param>
+             <param name="y_obst">Input argument #5</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PrtFltr_MkwskSum(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 6-input MWArray interface to the PrtFltr_MkwskSum
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta funcion es la que engloba los algoritmos de Filtro de Particulas
+             y Suma de Minkowski. Como parámetros se le pasa:
+             max_iter: Maximo de iteraciones que realizara el filtraje
+             epsilon:  tolerancia de cercanía con el objetivo
+             S:        el sistema de obstaculos
+             x_axis:   posiciones en el eje x de la cadena en su posición "inicial" 
+             y_axis:   posiciones en el eje y de la cadena en su posición "inicial" 
+             obj:      objetivo intermedio 
+             samples:  cantidad de particulas que se generaran
+             media_gausiana: media para la generación de particulas (0.03)
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos, ordenados tomando como principio el que menos
+             coordenada "y" tenga (menos "x") en caso de empate y siguiendo el orden
+             inverso a a las manesillas del reloj
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="max_iter">Input argument #1</param>
+             <param name="epsilon">Input argument #2</param>
+             <param name="obst_ranks">Input argument #3</param>
+             <param name="x_obst">Input argument #4</param>
+             <param name="y_obst">Input argument #5</param>
+             <param name="x_axis">Input argument #6</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PrtFltr_MkwskSum(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 7-input MWArray interface to the PrtFltr_MkwskSum
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta funcion es la que engloba los algoritmos de Filtro de Particulas
+             y Suma de Minkowski. Como parámetros se le pasa:
+             max_iter: Maximo de iteraciones que realizara el filtraje
+             epsilon:  tolerancia de cercanía con el objetivo
+             S:        el sistema de obstaculos
+             x_axis:   posiciones en el eje x de la cadena en su posición "inicial" 
+             y_axis:   posiciones en el eje y de la cadena en su posición "inicial" 
+             obj:      objetivo intermedio 
+             samples:  cantidad de particulas que se generaran
+             media_gausiana: media para la generación de particulas (0.03)
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos, ordenados tomando como principio el que menos
+             coordenada "y" tenga (menos "x") en caso de empate y siguiendo el orden
+             inverso a a las manesillas del reloj
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="max_iter">Input argument #1</param>
+             <param name="epsilon">Input argument #2</param>
+             <param name="obst_ranks">Input argument #3</param>
+             <param name="x_obst">Input argument #4</param>
+             <param name="y_obst">Input argument #5</param>
+             <param name="x_axis">Input argument #6</param>
+             <param name="y_axis">Input argument #7</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PrtFltr_MkwskSum(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 8-input MWArray interface to the PrtFltr_MkwskSum
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta funcion es la que engloba los algoritmos de Filtro de Particulas
+             y Suma de Minkowski. Como parámetros se le pasa:
+             max_iter: Maximo de iteraciones que realizara el filtraje
+             epsilon:  tolerancia de cercanía con el objetivo
+             S:        el sistema de obstaculos
+             x_axis:   posiciones en el eje x de la cadena en su posición "inicial" 
+             y_axis:   posiciones en el eje y de la cadena en su posición "inicial" 
+             obj:      objetivo intermedio 
+             samples:  cantidad de particulas que se generaran
+             media_gausiana: media para la generación de particulas (0.03)
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos, ordenados tomando como principio el que menos
+             coordenada "y" tenga (menos "x") en caso de empate y siguiendo el orden
+             inverso a a las manesillas del reloj
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="max_iter">Input argument #1</param>
+             <param name="epsilon">Input argument #2</param>
+             <param name="obst_ranks">Input argument #3</param>
+             <param name="x_obst">Input argument #4</param>
+             <param name="y_obst">Input argument #5</param>
+             <param name="x_axis">Input argument #6</param>
+             <param name="y_axis">Input argument #7</param>
+             <param name="obj">Input argument #8</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PrtFltr_MkwskSum(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 9-input MWArray interface to the PrtFltr_MkwskSum
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta funcion es la que engloba los algoritmos de Filtro de Particulas
+             y Suma de Minkowski. Como parámetros se le pasa:
+             max_iter: Maximo de iteraciones que realizara el filtraje
+             epsilon:  tolerancia de cercanía con el objetivo
+             S:        el sistema de obstaculos
+             x_axis:   posiciones en el eje x de la cadena en su posición "inicial" 
+             y_axis:   posiciones en el eje y de la cadena en su posición "inicial" 
+             obj:      objetivo intermedio 
+             samples:  cantidad de particulas que se generaran
+             media_gausiana: media para la generación de particulas (0.03)
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos, ordenados tomando como principio el que menos
+             coordenada "y" tenga (menos "x") en caso de empate y siguiendo el orden
+             inverso a a las manesillas del reloj
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="max_iter">Input argument #1</param>
+             <param name="epsilon">Input argument #2</param>
+             <param name="obst_ranks">Input argument #3</param>
+             <param name="x_obst">Input argument #4</param>
+             <param name="y_obst">Input argument #5</param>
+             <param name="x_axis">Input argument #6</param>
+             <param name="y_axis">Input argument #7</param>
+             <param name="obj">Input argument #8</param>
+             <param name="samples">Input argument #9</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PrtFltr_MkwskSum(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 10-input MWArray interface to the PrtFltr_MkwskSum
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Esta funcion es la que engloba los algoritmos de Filtro de Particulas
+             y Suma de Minkowski. Como parámetros se le pasa:
+             max_iter: Maximo de iteraciones que realizara el filtraje
+             epsilon:  tolerancia de cercanía con el objetivo
+             S:        el sistema de obstaculos
+             x_axis:   posiciones en el eje x de la cadena en su posición "inicial" 
+             y_axis:   posiciones en el eje y de la cadena en su posición "inicial" 
+             obj:      objetivo intermedio 
+             samples:  cantidad de particulas que se generaran
+             media_gausiana: media para la generación de particulas (0.03)
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos, ordenados tomando como principio el que menos
+             coordenada "y" tenga (menos "x") en caso de empate y siguiendo el orden
+             inverso a a las manesillas del reloj
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="max_iter">Input argument #1</param>
+             <param name="epsilon">Input argument #2</param>
+             <param name="obst_ranks">Input argument #3</param>
+             <param name="x_obst">Input argument #4</param>
+             <param name="y_obst">Input argument #5</param>
+             <param name="x_axis">Input argument #6</param>
+             <param name="y_axis">Input argument #7</param>
+             <param name="obj">Input argument #8</param>
+             <param name="samples">Input argument #9</param>
+             <param name="media_gausiana">Input argument #10</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.PrtFltr_MkwskSum(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the PrtFltr_MkwskSum function in which the input and
+             output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             Esta funcion es la que engloba los algoritmos de Filtro de Particulas
+             y Suma de Minkowski. Como parámetros se le pasa:
+             max_iter: Maximo de iteraciones que realizara el filtraje
+             epsilon:  tolerancia de cercanía con el objetivo
+             S:        el sistema de obstaculos
+             x_axis:   posiciones en el eje x de la cadena en su posición "inicial" 
+             y_axis:   posiciones en el eje y de la cadena en su posición "inicial" 
+             obj:      objetivo intermedio 
+             samples:  cantidad de particulas que se generaran
+             media_gausiana: media para la generación de particulas (0.03)
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos, ordenados tomando como principio el que menos
+             coordenada "y" tenga (menos "x") en caso de empate y siguiendo el orden
+             inverso a a las manesillas del reloj
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternion">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the quaternion M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             TODO: Tal vegada s'hauria de fer un get i set per quaternion. Per ara ho
+             deixam aixÃ­.
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternion(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the quaternion M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             TODO: Tal vegada s'hauria de fer un get i set per quaternion. Per ara ho
+             deixam aixÃ­.
+             </remarks>
+             <param name="s">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternion(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the quaternion M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             TODO: Tal vegada s'hauria de fer un get i set per quaternion. Per ara ho
+             deixam aixÃ­.
+             </remarks>
+             <param name="s">Input argument #1</param>
+             <param name="p">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternion(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the quaternion M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             TODO: Tal vegada s'hauria de fer un get i set per quaternion. Per ara ho
+             deixam aixÃ­.
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternion(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the quaternion M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             TODO: Tal vegada s'hauria de fer un get i set per quaternion. Per ara ho
+             deixam aixÃ­.
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="s">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternion(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the quaternion M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             TODO: Tal vegada s'hauria de fer un get i set per quaternion. Per ara ho
+             deixam aixÃ­.
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="s">Input argument #1</param>
+             <param name="p">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternion(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the quaternion function in which the input and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             TODO: Tal vegada s'hauria de fer un get i set per quaternion. Per ara ho
+             deixam aixÃ­.
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionConjugate">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the quaternionConjugate
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionConjugate(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the quaternionConjugate
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="q">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionConjugate(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the quaternionConjugate
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionConjugate(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the quaternionConjugate
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="q">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionConjugate(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the quaternionConjugate function in which the input and
+             output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionExponentialMap">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the
+             quaternionExponentialMap M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionExponentialMap(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the
+             quaternionExponentialMap M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="p">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionExponentialMap(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the quaternionExponentialMap
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionExponentialMap(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the quaternionExponentialMap
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="p">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionExponentialMap(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the quaternionExponentialMap function in which the
+             input and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionProduct">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the quaternionProduct
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             x = q1(2) * q2(1)  + q1(3) * q2(4) - q1(4) * q2(3) + q1(1) * q2(2);
+             y = -q1(2) * q2(4) + q1(3) * q2(1) + q1(4) * q2(2) + q1(1) * q2(3);
+             z = q1(2) * q2(3)  - q1(3) * q2(2) + q1(4) * q2(1) + q1(1) * q2(4);
+             s = -q1(2) * q2(2) - q1(3) * q2(3) - q1(4) * q2(4) + q1(1) * q2(1);
+             q=[s,x,y,z];</remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionProduct(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the quaternionProduct
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             x = q1(2) * q2(1)  + q1(3) * q2(4) - q1(4) * q2(3) + q1(1) * q2(2);
+             y = -q1(2) * q2(4) + q1(3) * q2(1) + q1(4) * q2(2) + q1(1) * q2(3);
+             z = q1(2) * q2(3)  - q1(3) * q2(2) + q1(4) * q2(1) + q1(1) * q2(4);
+             s = -q1(2) * q2(2) - q1(3) * q2(3) - q1(4) * q2(4) + q1(1) * q2(1);
+             q=[s,x,y,z];</remarks>
+             <param name="q1">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionProduct(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the quaternionProduct
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             x = q1(2) * q2(1)  + q1(3) * q2(4) - q1(4) * q2(3) + q1(1) * q2(2);
+             y = -q1(2) * q2(4) + q1(3) * q2(1) + q1(4) * q2(2) + q1(1) * q2(3);
+             z = q1(2) * q2(3)  - q1(3) * q2(2) + q1(4) * q2(1) + q1(1) * q2(4);
+             s = -q1(2) * q2(2) - q1(3) * q2(3) - q1(4) * q2(4) + q1(1) * q2(1);
+             q=[s,x,y,z];</remarks>
+             <param name="q1">Input argument #1</param>
+             <param name="q2">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionProduct(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the quaternionProduct
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             x = q1(2) * q2(1)  + q1(3) * q2(4) - q1(4) * q2(3) + q1(1) * q2(2);
+             y = -q1(2) * q2(4) + q1(3) * q2(1) + q1(4) * q2(2) + q1(1) * q2(3);
+             z = q1(2) * q2(3)  - q1(3) * q2(2) + q1(4) * q2(1) + q1(1) * q2(4);
+             s = -q1(2) * q2(2) - q1(3) * q2(3) - q1(4) * q2(4) + q1(1) * q2(1);
+             q=[s,x,y,z];</remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionProduct(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the quaternionProduct
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             x = q1(2) * q2(1)  + q1(3) * q2(4) - q1(4) * q2(3) + q1(1) * q2(2);
+             y = -q1(2) * q2(4) + q1(3) * q2(1) + q1(4) * q2(2) + q1(1) * q2(3);
+             z = q1(2) * q2(3)  - q1(3) * q2(2) + q1(4) * q2(1) + q1(1) * q2(4);
+             s = -q1(2) * q2(2) - q1(3) * q2(3) - q1(4) * q2(4) + q1(1) * q2(1);
+             q=[s,x,y,z];</remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="q1">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionProduct(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the quaternionProduct
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             x = q1(2) * q2(1)  + q1(3) * q2(4) - q1(4) * q2(3) + q1(1) * q2(2);
+             y = -q1(2) * q2(4) + q1(3) * q2(1) + q1(4) * q2(2) + q1(1) * q2(3);
+             z = q1(2) * q2(3)  - q1(3) * q2(2) + q1(4) * q2(1) + q1(1) * q2(4);
+             s = -q1(2) * q2(2) - q1(3) * q2(3) - q1(4) * q2(4) + q1(1) * q2(1);
+             q=[s,x,y,z];</remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="q1">Input argument #1</param>
+             <param name="q2">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionProduct(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the quaternionProduct function in which the input and
+             output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             x = q1(2) * q2(1)  + q1(3) * q2(4) - q1(4) * q2(3) + q1(1) * q2(2);
+             y = -q1(2) * q2(4) + q1(3) * q2(1) + q1(4) * q2(2) + q1(1) * q2(3);
+             z = q1(2) * q2(3)  - q1(3) * q2(2) + q1(4) * q2(1) + q1(1) * q2(4);
+             s = -q1(2) * q2(2) - q1(3) * q2(3) - q1(4) * q2(4) + q1(1) * q2(1);
+             q=[s,x,y,z];</remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionQuTEMSampling">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the quaternionQuTEMSampling
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             s1=s2=s3 =>uniform Sampling
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionQuTEMSampling(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the quaternionQuTEMSampling
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             s1=s2=s3 =>uniform Sampling
+             </remarks>
+             <param name="m">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionQuTEMSampling(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the quaternionQuTEMSampling
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             s1=s2=s3 =>uniform Sampling
+             </remarks>
+             <param name="m">Input argument #1</param>
+             <param name="pg">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionQuTEMSampling(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 3-input MWArrayinterface to the quaternionQuTEMSampling
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             s1=s2=s3 =>uniform Sampling
+             </remarks>
+             <param name="m">Input argument #1</param>
+             <param name="pg">Input argument #2</param>
+             <param name="samples">Input argument #3</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionQuTEMSampling(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the quaternionQuTEMSampling
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             s1=s2=s3 =>uniform Sampling
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionQuTEMSampling(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the quaternionQuTEMSampling
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             s1=s2=s3 =>uniform Sampling
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="m">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionQuTEMSampling(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the quaternionQuTEMSampling
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             s1=s2=s3 =>uniform Sampling
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="m">Input argument #1</param>
+             <param name="pg">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionQuTEMSampling(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 3-input MWArray interface to the quaternionQuTEMSampling
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             s1=s2=s3 =>uniform Sampling
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="m">Input argument #1</param>
+             <param name="pg">Input argument #2</param>
+             <param name="samples">Input argument #3</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionQuTEMSampling(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the quaternionQuTEMSampling function in which the input
+             and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             s1=s2=s3 =>uniform Sampling
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionRotation">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the quaternionRotation
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Create vector of quaternion point
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionRotation(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the quaternionRotation
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Create vector of quaternion point
+             </remarks>
+             <param name="vector">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionRotation(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the quaternionRotation
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Create vector of quaternion point
+             </remarks>
+             <param name="vector">Input argument #1</param>
+             <param name="quaternion">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionRotation(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the quaternionRotation
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Create vector of quaternion point
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionRotation(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the quaternionRotation
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Create vector of quaternion point
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="vector">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionRotation(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the quaternionRotation
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Create vector of quaternion point
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="vector">Input argument #1</param>
+             <param name="quaternion">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.quaternionRotation(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the quaternionRotation function in which the input and
+             output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             Create vector of quaternion point
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.remostrejar">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the remostrejar M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             r
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.remostrejar(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the remostrejar M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             r
+             </remarks>
+             <param name="particles">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.remostrejar(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the remostrejar M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             r
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.remostrejar(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the remostrejar M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             r
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="particles">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.remostrejar(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the remostrejar function in which the input and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             r
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.S_Touch">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the S_Touch M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos 
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.S_Touch(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the S_Touch M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos 
+             </remarks>
+             <param name="chain">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.S_Touch(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the S_Touch M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos 
+             </remarks>
+             <param name="chain">Input argument #1</param>
+             <param name="S">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.S_Touch(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the S_Touch M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos 
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.S_Touch(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the S_Touch M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos 
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="chain">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.S_Touch(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the S_Touch M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos 
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="chain">Input argument #1</param>
+             <param name="S">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.S_Touch(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the S_Touch function in which the input and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             S: 
+             S = [O1 O2 ... Ok]
+             Ok.ptos: lista de puntos 
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.setGaussianParameters">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the setGaussianParameters
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.setGaussianParameters(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the setGaussianParameters
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="media_gausiana">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.setGaussianParameters(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the setGaussianParameters
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="media_gausiana">Input argument #1</param>
+             <param name="rotar_en_x">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.setGaussianParameters(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 3-input MWArrayinterface to the setGaussianParameters
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="media_gausiana">Input argument #1</param>
+             <param name="rotar_en_x">Input argument #2</param>
+             <param name="rotar_en_y">Input argument #3</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.setGaussianParameters(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 4-input MWArrayinterface to the setGaussianParameters
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="media_gausiana">Input argument #1</param>
+             <param name="rotar_en_x">Input argument #2</param>
+             <param name="rotar_en_y">Input argument #3</param>
+             <param name="rotar_en_z">Input argument #4</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.setGaussianParameters(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the setGaussianParameters
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.setGaussianParameters(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the setGaussianParameters
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="media_gausiana">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.setGaussianParameters(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the setGaussianParameters
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="media_gausiana">Input argument #1</param>
+             <param name="rotar_en_x">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.setGaussianParameters(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 3-input MWArray interface to the setGaussianParameters
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="media_gausiana">Input argument #1</param>
+             <param name="rotar_en_x">Input argument #2</param>
+             <param name="rotar_en_y">Input argument #3</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.setGaussianParameters(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 4-input MWArray interface to the setGaussianParameters
+             M-function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="media_gausiana">Input argument #1</param>
+             <param name="rotar_en_x">Input argument #2</param>
+             <param name="rotar_en_y">Input argument #3</param>
+             <param name="rotar_en_z">Input argument #4</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.setGaussianParameters(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the setGaussianParameters function in which the input
+             and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.weightFunction">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the weightFunction
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             euclideanDistance
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.weightFunction(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the weightFunction
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             euclideanDistance
+             </remarks>
+             <param name="chain">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.weightFunction(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the weightFunction
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             euclideanDistance
+             </remarks>
+             <param name="chain">Input argument #1</param>
+             <param name="goal">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.weightFunction(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 3-input MWArrayinterface to the weightFunction
+             M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             euclideanDistance
+             </remarks>
+             <param name="chain">Input argument #1</param>
+             <param name="goal">Input argument #2</param>
+             <param name="S">Input argument #3</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.weightFunction(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the weightFunction M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             euclideanDistance
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.weightFunction(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the weightFunction M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             euclideanDistance
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="chain">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.weightFunction(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the weightFunction M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             euclideanDistance
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="chain">Input argument #1</param>
+             <param name="goal">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.weightFunction(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 3-input MWArray interface to the weightFunction M-function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             euclideanDistance
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="chain">Input argument #1</param>
+             <param name="goal">Input argument #2</param>
+             <param name="S">Input argument #3</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.weightFunction(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the weightFunction function in which the input and
+             output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             euclideanDistance
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:IK_ParticleFiltering_NET.Matlab_PF_Class.WaitForFiguresToDie">
+             <summary>
+             This method will cause a MATLAB figure window to behave as a modal dialog box.
+             The method will not return until all the figure windows associated with this
+             component have been closed.
+             </summary>
+             <remarks>
+             An application should only call this method when required to keep the
+             MATLAB figure window from disappearing.  Other techniques, such as calling
+             Console.ReadLine() from the application should be considered where
+             possible.</remarks>
+            
+        </member>
+    </members>
+</doc>

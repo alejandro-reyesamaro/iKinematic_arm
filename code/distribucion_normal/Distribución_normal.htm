@@ -1,0 +1,2998 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="client-firefox 
+client-firefox-3 client-gecko client-win client-js" dir="ltr" lang="es"><head>
+
+
+<title>Distribución normal - Wikipedia, la enciclopedia libre</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="generator" content="MediaWiki 1.18wmf1">
+<link rel="alternate" type="application/x-wiki" title="Editar" 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit">
+<link rel="edit" title="Editar" 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit">
+<link rel="apple-touch-icon" 
+href="http://es.wikipedia.org/apple-touch-icon.png">
+<link rel="shortcut icon" href="http://es.wikipedia.org/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" 
+href="http://es.wikipedia.org/w/opensearch_desc.php" title="Wikipedia 
+(es)">
+<link rel="EditURI" type="application/rsd+xml" 
+href="http://es.wikipedia.org/w/api.php?action=rsd">
+<link rel="copyright" 
+href="http://creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Feed Atom de 
+Wikipedia" 
+href="http://es.wikipedia.org/w/index.php?title=Especial:CambiosRecientes&amp;feed=atom">
+<link rel="stylesheet" 
+href="Distribuci%C3%B3n_normal_files/load_002.css" type="text/css" 
+media="all">
+<style type="text/css" media="all">.mw-collapsible-toggle{float:right} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+
+/* cache key: eswiki:resourceloader:filter:minify-css:4:4250852ed2349a0d4d0fc6509a3e7d4c */</style><style type="text/css" media="all">.js-messagebox{margin:1em 5%;padding:0.5em 2.5%;border:1px solid #ccc;background-color:#fcfcfc;font-size:0.8em}.js-messagebox .js-messagebox-group{margin:1px;padding:0.5em 2.5%;border-bottom:1px solid #ddd}.js-messagebox .js-messagebox-group:last-child{border-bottom:thin none transparent}
+
+/* cache key: eswiki:resourceloader:filter:minify-css:4:8b08bdc91c52a9ffba396dccfb5b473c */</style><style type="text/css" media="all">.suggestions{overflow:hidden;position:absolute;top:0px;left:0px;width:0px;border:none;z-index:1099;padding:0;margin:-1px -1px 0 0} html > body .suggestions{margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:Window;font-size:0.8em;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;background-color:Window;font-size:0.8em;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;color:WindowText;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left}.suggestions-result-current{background-color:#4C59A6;background-color:Highlight;color:white;color:HighlightText}.suggestions-special .special-label{font-size:0.8em;color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white;color:HighlightText}.autoellipsis-matched,.highlight{font-weight:bold}
+
+/* cache key: eswiki:resourceloader:filter:minify-css:4:1421bbe1922a44daa3fbb100d858b3d8 */</style><style type="text/css" media="all">#mw-panel.collapsible-nav div.portal{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAAABCAMAAAA7MLYKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEtQTFRF29vb2tra4ODg6urq5OTk4uLi6+vr7e3t7Ozs8PDw5+fn4+Pj4eHh3d3d39/f6Ojo5eXl6enp8fHx8/Pz8vLy7+/v3Nzc2dnZ2NjYnErj7QAAAD1JREFUeNq0wQUBACAMALDj7hf6JyUFGxzEnYhC9GaNPG1xVffGDErk/iCigLl1XV2xM49lfAxEaSM+AQYA9HMKuv4liFQAAAAASUVORK5CYII=);background-image:url(//bits.wikimedia.org/w/extensions-1.18/Vector/modules/images/portal-break.png?2011-09-19T16:38:20Z)!ie;background-position:left top;background-repeat:no-repeat;padding:0.25em 0 !important;margin:-11px 9px 10px 11px}#mw-panel.collapsible-nav div.portal h5{color:#4D4D4D;font-weight:normal;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA9QTFRFeXl53d3dmpqasbGx////GU0iEgAAAAV0Uk5T/////wD7tg5TAAAAK0lEQVQI12NwgQIG0hhCDAwMTCJAhqMCA4MiWEoIJABiOCooQhULi5BqMgB2bh4svs8t+QAAAABJRU5ErkJggg==) left center no-repeat;background:url(//bits.wikimedia.org/w/extensions-1.18/Vector/modules/images/open.png?2011-09-19T16:38:20Z) left center no-repeat!ie;padding:4px 0 3px 1.5em;margin-bottom:0px}#mw-panel.collapsible-nav div.collapsed h5{color:#0645AD;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAxQTFRF3d3deXl5////nZ2dQA6SoAAAAAN0Uk5T//8A18oNQQAAADNJREFUeNpiYEIDDMQKMKALMDOgCTDCRWACcBG4AEwEIcDITEAFuhnotmC4g4EEzwEEGAADqgHmQSPJKgAAAABJRU5ErkJggg==) left center no-repeat;background:url(//bits.wikimedia.org/w/extensions-1.18/Vector/modules/images/closed-ltr.png?2011-09-19T16:38:20Z) left center no-repeat!ie;margin-bottom:0px}#mw-panel.collapsible-nav div h5:hover{cursor:pointer;text-decoration:none}#mw-panel.collapsible-nav div.collapsed h5:hover{text-decoration:underline}#mw-panel.collapsible-nav div.portal div.body{background:none !important;padding-top:0px;display:none}#mw-panel.collapsible-nav div.persistent div.body{display:block}#mw-panel.collapsible-nav div.first h5{display:none}#mw-panel.collapsible-nav div.persistent h5{background:none !important;padding-left:0.7em;cursor:default}#mw-panel.collapsible-nav div.portal div.body ul li{padding:0.25em 0}#mw-panel.collapsible-nav div.first{background-image:none;margin-top:0px}#mw-panel.collapsible-nav div.persistent div.body{margin-left:0.5em}
+
+/* cache key: eswiki:resourceloader:filter:minify-css:4:c8be98782f5923ebff49ad2985ebc275 */</style><meta
+ name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="Distribuci%C3%B3n_normal_files/load.css" 
+type="text/css" media="all">
+<style type="text/css" media="all">a.new,#quickbar a.new{color:#ba0000}
+
+/* cache key: eswiki:resourceloader:filter:minify-css:4:f2a9127573a22335c2a9102b208c73e7 */</style>
+<script src="Distribuci%C3%B3n_normal_files/load_003.php" type="text/javascript"></script><script src="Distribuci%C3%B3n_normal_files/load_002.php" type="text/javascript"></script>
+<script type="text/javascript">if ( window.mediaWiki ) {
+	mw.config.set({"wgCanonicalNamespace": "", "wgCanonicalSpecialPageName": false, "wgNamespaceNumber": 0, "wgPageName": "Distribución_normal", "wgTitle": "Distribución normal", "wgCurRevisionId": 50950725, "wgArticleId": 48866, "wgIsArticle": true, "wgAction": "view", "wgUserName": null, "wgUserGroups": ["*"], "wgCategories": ["Wikipedia:Artículos con pasajes que requieren referencias", "Distribuciones continuas"], "wgBreakFrames": false, "wgRestrictionEdit": [], "wgRestrictionMove": [], "wgSearchNamespaces": [0, 100, 104], "wgVectorEnabledModules": {"collapsiblenav": true, "collapsibletabs": true, "editwarning": true, "expandablesearch": false, "footercleanup": false, "sectioneditlinks": false, "simplesearch": true, "experiments": true}, "wgWikiEditorEnabledModules": {"toolbar": true, "dialogs": true, "hidesig": true, "templateEditor": false, "templates": false, "preview": false, "previewDialog": false, "publish": false, "toc": false}, "Geo": {"city": "", "country": ""}, "wgNoticeProject": "wikipedia"});
+}
+</script><script type="text/javascript">if ( window.mediaWiki ) {
+	mw.loader.load(["mediawiki.page.startup"]);
+}
+</script><script type="text/javascript" src="Distribuci%C3%B3n_normal_files/load_006.php"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/skins-1.18/vector/csshover.min.htc")}</style><![endif]--><script type="text/javascript" src="Distribuci%C3%B3n_normal_files/index_005.php"></script><script type="text/javascript" src="Distribuci%C3%B3n_normal_files/index_007.php"></script><script type="text/javascript" src="Distribuci%C3%B3n_normal_files/index_003.php"></script><style type="text/css">#interProject {display: none; speak: none;} #p-tb .pBody {padding-right: 0;}</style><script type="text/javascript" src="Distribuci%C3%B3n_normal_files/index_002.php"></script><script type="text/javascript" src="Distribuci%C3%B3n_normal_files/index.php"></script></head><body
+ class="mediawiki ltr sitedir-ltr ns-0 ns-subject 
+page-Distribución_normal action-view skin-vector">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content">
+			<a id="top"></a>
+			<div class="js-messagebox" id="mw-js-message" style="display: none;"></div>
+						<!-- sitenotice -->
+			<div id="siteNotice"><!-- centralNotice loads here --></div>
+			<!-- /sitenotice -->
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">Distribución normal</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+								<!-- tagline -->
+				<div id="siteSub">De Wikipedia, la enciclopedia libre</div>
+				<!-- /tagline -->
+								<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav">
+					Saltar a: <a href="#mw-head">navegación</a>,
+					<a href="#p-search">búsqueda</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodycontent -->
+				<div dir="ltr" class="mw-content-ltr" lang="es"><table 
+class="infobox_v2" style="width: 22.7em; line-height: 1.4em; text-align:
+ left; padding: 0.23em;">
+<tbody><tr>
+<th class="cabecera física" colspan="2" style="text-align: center; 
+background-color: SkyBlue;">Distribución normal</th>
+</tr>
+<tr class="">
+<td colspan="2" class="" style="text-align: center;"><a 
+href="http://es.wikipedia.org/wiki/Archivo:Normal_distribution_pdf.png" 
+class="image"><img alt="Normal distribution pdf.png" 
+src="Distribuci%C3%B3n_normal_files/325px-Normal_distribution_pdf.png" 
+width="325" height="244"></a><br>
+<small>La línea verde corresponde a la distribución normal estándar</small><br>
+<small>Función de densidad de probabilidad</small></td>
+</tr>
+<tr class="">
+<td colspan="2" class="" style="text-align: center;"><a 
+href="http://es.wikipedia.org/wiki/Archivo:Normal_distribution_cdf.png" 
+class="image"><img alt="Normal distribution cdf.png" 
+src="Distribuci%C3%B3n_normal_files/325px-Normal_distribution_cdf.png" 
+width="325" height="244"></a><br>
+<small>Función de distribución de probabilidad</small></td>
+</tr>
+<tr class="">
+<th class="" scope="row" style="text-align: left;">Parámetros</th>
+<td class="" style=""><img class="tex" alt="\mu \in\mathbb{R} \,\!" 
+src="Distribuci%C3%B3n_normal_files/8b2f1ecae6cd7cf6bda4ad3339a60ac1.png"><br>
+σ &gt; 0</td>
+</tr>
+<tr class="">
+<th class="" scope="row" style="text-align: left;"><a 
+href="http://es.wikipedia.org/wiki/Dominio_de_definici%C3%B3n" 
+title="Dominio de definición">Dominio</a></th>
+<td class="" style=""><img class="tex" alt="x \in\mathbb{R} \,\!" 
+src="Distribuci%C3%B3n_normal_files/1eab8ccba646cd47ecc05d3202e9f3fc.png"></td>
+</tr>
+<tr class="">
+<th class="" scope="row" style="text-align: left;"><a 
+href="http://es.wikipedia.org/wiki/Funci%C3%B3n_de_densidad" 
+title="Función de densidad" class="mw-redirect">Función de densidad</a> 
+(pdf)</th>
+<td class="" style=""><img class="tex" alt="\frac1{\sigma\sqrt{2\pi}}\; 
+e^{ - \frac{1}{2} \left(\frac{x-\mu}{\sigma}\right)^2}  \,\!" 
+src="Distribuci%C3%B3n_normal_files/bd3e7af3a4d20ee2b1cac4c1315a2c3b.png"></td>
+</tr>
+<tr class="">
+<th class="" scope="row" style="text-align: left;"><a 
+href="http://es.wikipedia.org/wiki/Funci%C3%B3n_de_distribuci%C3%B3n" 
+title="Función de distribución" class="mw-redirect">Función de 
+distribución</a> (cdf)</th>
+<td class="" style=""><img class="tex" alt="\int\limits_{-\infty}^{x} 
+\frac1{\sigma\sqrt{2\pi}}\; e^{ - \frac{1}{2} 
+\left(\frac{t-\mu}{\sigma}\right)^2}    \, dt \,\!" 
+src="Distribuci%C3%B3n_normal_files/2f7ce00df77c89146bb716e79c7e7e5d.png"></td>
+</tr>
+<tr class="">
+<th class="" scope="row" style="text-align: left;"><a 
+href="http://es.wikipedia.org/wiki/Esperanza_matem%C3%A1tica" 
+title="Esperanza matemática">Media</a></th>
+<td class="" style=""><img class="tex" alt="\mu \,\!" 
+src="Distribuci%C3%B3n_normal_files/74b8eddf4b37de80c7c8eed1b64e46fc.png"></td>
+</tr>
+<tr class="">
+<th class="" scope="row" style="text-align: left;"><a 
+href="http://es.wikipedia.org/wiki/Mediana_%28estad%C3%ADstica%29" 
+title="Mediana (estadística)">Mediana</a></th>
+<td class="" style=""><img class="tex" alt="\mu \,\!" 
+src="Distribuci%C3%B3n_normal_files/74b8eddf4b37de80c7c8eed1b64e46fc.png"></td>
+</tr>
+<tr class="">
+<th class="" scope="row" style="text-align: left;"><a 
+href="http://es.wikipedia.org/wiki/Moda_%28estad%C3%ADstica%29" 
+title="Moda (estadística)">Moda</a></th>
+<td class="" style=""><img class="tex" alt="\mu \,\!" 
+src="Distribuci%C3%B3n_normal_files/74b8eddf4b37de80c7c8eed1b64e46fc.png"></td>
+</tr>
+<tr class="">
+<th class="" scope="row" style="text-align: left;"><a 
+href="http://es.wikipedia.org/wiki/Varianza" title="Varianza">Varianza</a></th>
+<td class="" style=""><img class="tex" alt="\sigma^2 \,\!" 
+src="Distribuci%C3%B3n_normal_files/850707adf2adeba94c688b9c1a02494c.png"></td>
+</tr>
+<tr class="">
+<th class="" scope="row" style="text-align: left;"><a 
+href="http://es.wikipedia.org/wiki/Coeficiente_de_simetr%C3%ADa" 
+title="Coeficiente de simetría" class="mw-redirect">Coeficiente de 
+simetría</a></th>
+<td class="" style="">0</td>
+</tr>
+<tr class="">
+<th class="" scope="row" style="text-align: left;"><a 
+href="http://es.wikipedia.org/wiki/Curtosis" title="Curtosis">Curtosis</a></th>
+<td class="" style="">0</td>
+</tr>
+<tr class="">
+<th class="" scope="row" style="text-align: left;"><a 
+href="http://es.wikipedia.org/wiki/Entrop%C3%ADa_%28informaci%C3%B3n%29"
+ title="Entropía (información)">Entropía</a></th>
+<td class="" style=""><img class="tex" 
+alt="\ln\left(\sigma\sqrt{2\,\pi\,e}\right)  \,\!" 
+src="Distribuci%C3%B3n_normal_files/a9ac8c2e8a4a26975a653e0b8c425ad4.png"></td>
+</tr>
+<tr class="">
+<th class="" scope="row" style="text-align: left;"><a 
+href="http://es.wikipedia.org/wiki/Funci%C3%B3n_generadora_de_momentos" 
+title="Función generadora de momentos">Función generadora de momentos</a>
+ (mgf)</th>
+<td class="" style=""><img class="tex" alt="M_X(t)= 
+e^{\mu\,t+\frac{\sigma^2 t^2}{2}} \,\!" 
+src="Distribuci%C3%B3n_normal_files/c488f1c0ea72d30c11d513d796ab98c1.png"></td>
+</tr>
+<tr class="">
+<th class="" scope="row" style="text-align: left;"><a 
+href="http://es.wikipedia.org/wiki/Funci%C3%B3n_caracter%C3%ADstica" 
+title="Función característica">Función característica</a></th>
+<td class="" style=""><img class="tex" 
+alt="\chi_X(t)=e^{\mu\,i\,t-\frac{\sigma^2 t^2}{2}} \,\!" 
+src="Distribuci%C3%B3n_normal_files/c76d02afcff415b0cb7169ebd57f8b00.png"></td>
+</tr>
+</tbody></table>
+<p>En <a href="http://es.wikipedia.org/wiki/Estad%C3%ADstica" 
+title="Estadística">estadística</a> y <a 
+href="http://es.wikipedia.org/wiki/Teor%C3%ADa_de_probabilidades" 
+title="Teoría de probabilidades" class="mw-redirect">probabilidad</a> se
+ llama <b>distribución normal</b>, <b>distribución de Gauss</b> o <b>distribución
+ gaussiana</b>, a una de las <a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_de_probabilidad" 
+title="Distribución de probabilidad">distribuciones de probabilidad</a> 
+de <a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_de_probabilidad#Distribuciones_de_variable_continua"
+ title="Distribución de probabilidad">variable continua</a> que con más 
+frecuencia aparece en fenómenos reales.</p>
+<p>La <a href="http://es.wikipedia.org/wiki/Gr%C3%A1fica" 
+title="Gráfica">gráfica</a> de su <a 
+href="http://es.wikipedia.org/wiki/Funci%C3%B3n_de_densidad" 
+title="Función de densidad" class="mw-redirect">función de densidad</a> 
+tiene una forma acampanada y es simétrica respecto de un determinado <a 
+href="http://es.wikipedia.org/wiki/Par%C3%A1metro" title="Parámetro">parámetro</a>.
+ Esta curva se conoce como <a 
+href="http://es.wikipedia.org/wiki/Campana_de_Gauss" title="Campana de 
+Gauss" class="mw-redirect">campana de Gauss</a>.</p>
+<p>La importancia de esta distribución radica en que permite <a 
+href="http://es.wikipedia.org/wiki/Modelo_matem%C3%A1tico" title="Modelo
+ matemático">modelar</a> numerosos fenómenos naturales, sociales y 
+psicológicos. Mientras que los mecanismos que subyacen a gran parte de 
+este tipo de fenómenos son desconocidos, por la enorme cantidad de 
+variables incontrolables que en ellos intervienen, el uso del modelo 
+normal puede justificarse asumiendo que cada observación se obtiene como
+ la suma de unas pocas causas independientes.</p>
+<p>De hecho, la estadística es un modelo matemático que sólo permite 
+describir un fenómeno, sin explicación alguna. Para la explicación 
+causal es preciso el <i>diseño experimental</i>, de ahí que al uso de la
+ estadística en psicología y sociología sea conocido como <i>método 
+correlacional</i>.</p>
+<p>La distribución normal también es importante por su relación con la 
+estimación por <a 
+href="http://es.wikipedia.org/wiki/M%C3%ADnimos_cuadrados" 
+title="Mínimos cuadrados">mínimos cuadrados</a>, uno de los métodos de 
+estimación más simples y antiguos.</p>
+<p>Algunos ejemplos de variables asociadas a fenómenos naturales que 
+siguen el modelo de la normal son:</p>
+<ul>
+<li>caracteres <a 
+href="http://es.wikipedia.org/wiki/Morfolog%C3%ADa_%28biolog%C3%ADa%29" 
+title="Morfología (biología)">morfológicos</a> de individuos como la <a 
+href="http://es.wikipedia.org/wiki/Estatura" title="Estatura">estatura</a>;</li>
+<li>caracteres <a href="http://es.wikipedia.org/wiki/Fisiolog%C3%ADa" 
+title="Fisiología">fisiológicos</a> como el efecto de un <a 
+href="http://es.wikipedia.org/wiki/F%C3%A1rmaco" title="Fármaco">fármaco</a>;</li>
+<li>caracteres <a href="http://es.wikipedia.org/wiki/Sociolog%C3%ADa" 
+title="Sociología">sociológicos</a> como el <a 
+href="http://es.wikipedia.org/wiki/Consumo" title="Consumo">consumo</a> 
+de cierto producto por un mismo grupo de individuos;</li>
+<li>caracteres <a href="http://es.wikipedia.org/wiki/Psicolog%C3%ADa" 
+title="Psicología">psicológicos</a> como el <a 
+href="http://es.wikipedia.org/wiki/Cociente_intelectual" title="Cociente
+ intelectual">cociente intelectual</a>;</li>
+<li>nivel de <a 
+href="http://es.wikipedia.org/wiki/Ruido_%28f%C3%ADsica%29" title="Ruido
+ (física)">ruido</a> en <a 
+href="http://es.wikipedia.org/wiki/Telecomunicaci%C3%B3n" 
+title="Telecomunicación">telecomunicaciones</a>;</li>
+<li><a href="http://es.wikipedia.org/wiki/Error_experimental" 
+title="Error experimental">errores</a> cometidos al medir ciertas 
+magnitudes;</li>
+<li>etc.</li>
+</ul>
+<p>La distribución normal también aparece en muchas áreas de la propia 
+estadística. Por ejemplo, la <a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_muestral" 
+title="Distribución muestral">distribución muestral</a> de las <a 
+href="http://es.wikipedia.org/wiki/Media_aritm%C3%A9tica" title="Media 
+aritmética">medias</a> muestrales es aproximadamente normal, cuando la 
+distribución de la población de la cual se extrae la muestra no es 
+normal.<sup id="cite_ref-0" class="reference"><a href="#cite_note-0"><span
+ class="corchete-llamada">[</span>1<span class="corchete-llamada">]</span></a></sup>
+ Además, la distribución normal maximiza la <a 
+href="http://es.wikipedia.org/wiki/Entrop%C3%ADa_%28informaci%C3%B3n%29"
+ title="Entropía (información)">entropía</a> entre todas las 
+distribuciones con media y <a 
+href="http://es.wikipedia.org/wiki/Varianza" title="Varianza">varianza</a>
+ conocidas, lo cual la convierte en la elección natural de la 
+distribución subyacente a una lista de datos resumidos en términos de 
+media muestral y varianza. La distribución normal es la más extendida en
+ estadística y muchos tests estadísticos están basados en una supuesta 
+"normalidad".</p>
+<p>En probabilidad, la distribución normal aparece como el límite de 
+varias distribuciones de probabilidad <a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_de_probabilidad_continua"
+ title="Distribución de probabilidad continua">continuas</a> y <a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_de_probabilidad#Distribuciones_de_variable_discreta"
+ title="Distribución de probabilidad">discretas</a>.</p>
+<table id="toc" class="toc">
+<tbody><tr>
+<td>
+<div id="toctitle">
+<h2>Contenido</h2>
+<span class="toctoggle">&nbsp;[<a href="#" class="internal" 
+id="togglelink">ocultar</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Historia"><span 
+class="tocnumber">1</span> <span class="toctext">Historia</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Definici.C3.B3n_formal"><span
+ class="tocnumber">2</span> <span class="toctext">Definición formal</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Funci.C3.B3n_de_densidad"><span
+ class="tocnumber">2.1</span> <span class="toctext">Función de densidad</span></a></li>
+<li class="toclevel-2 tocsection-4"><a 
+href="#Funci.C3.B3n_de_distribuci.C3.B3n"><span class="tocnumber">2.2</span>
+ <span class="toctext">Función de distribución</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a 
+href="#L.C3.ADmite_inferior_y_superior_estrictos_para_la_funci.C3.B3n_de_distribuci.C3.B3n"><span
+ class="tocnumber">2.2.1</span> <span class="toctext">Límite inferior y 
+superior estrictos para la función de distribución</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-6"><a href="#Funciones_generadoras"><span
+ class="tocnumber">2.3</span> <span class="toctext">Funciones 
+generadoras</span></a>
+<ul>
+<li class="toclevel-3 tocsection-7"><a 
+href="#Funci.C3.B3n_generadora_de_momentos"><span class="tocnumber">2.3.1</span>
+ <span class="toctext">Función generadora de momentos</span></a></li>
+<li class="toclevel-3 tocsection-8"><a 
+href="#Funci.C3.B3n_caracter.C3.ADstica"><span class="tocnumber">2.3.2</span>
+ <span class="toctext">Función característica</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Propiedades"><span 
+class="tocnumber">3</span> <span class="toctext">Propiedades</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a 
+href="#Estandarizaci.C3.B3n_de_variables_aleatorias_normales"><span 
+class="tocnumber">3.1</span> <span class="toctext">Estandarización de 
+variables aleatorias normales</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Momentos"><span 
+class="tocnumber">3.2</span> <span class="toctext">Momentos</span></a></li>
+<li class="toclevel-2 tocsection-12"><a 
+href="#El_Teorema_del_L.C3.ADmite_Central"><span class="tocnumber">3.3</span>
+ <span class="toctext">El Teorema del Límite Central</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Divisibilidad_infinita"><span
+ class="tocnumber">3.4</span> <span class="toctext">Divisibilidad 
+infinita</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Estabilidad"><span 
+class="tocnumber">3.5</span> <span class="toctext">Estabilidad</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-15"><a 
+href="#Desviaci.C3.B3n_t.C3.ADpica_e_intervalos_de_confianza"><span 
+class="tocnumber">4</span> <span class="toctext">Desviación típica e 
+intervalos de confianza</span></a>
+<ul>
+<li class="toclevel-2 tocsection-16"><a 
+href="#Forma_familia_exponencial"><span class="tocnumber">4.1</span> <span
+ class="toctext">Forma familia exponencial</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-17"><a 
+href="#Distribuci.C3.B3n_normal_compleja"><span class="tocnumber">5</span>
+ <span class="toctext">Distribución normal compleja</span></a></li>
+<li class="toclevel-1 tocsection-18"><a 
+href="#Distribuciones_relacionadas"><span class="tocnumber">6</span> <span
+ class="toctext">Distribuciones relacionadas</span></a></li>
+<li class="toclevel-1 tocsection-19"><a 
+href="#Estad.C3.ADstica_descriptiva_e_inferencial"><span 
+class="tocnumber">7</span> <span class="toctext">Estadística descriptiva
+ e inferencial</span></a>
+<ul>
+<li class="toclevel-2 tocsection-20"><a href="#Resultados"><span 
+class="tocnumber">7.1</span> <span class="toctext">Resultados</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#Tests_de_normalidad"><span
+ class="tocnumber">7.2</span> <span class="toctext">Tests de normalidad</span></a></li>
+<li class="toclevel-2 tocsection-22"><a 
+href="#Estimaci.C3.B3n_de_par.C3.A1metros"><span class="tocnumber">7.3</span>
+ <span class="toctext">Estimación de parámetros</span></a>
+<ul>
+<li class="toclevel-3 tocsection-23"><a 
+href="#Estimaci.C3.B3n_de_par.C3.A1metros_de_m.C3.A1xima_verosimilitud"><span
+ class="tocnumber">7.3.1</span> <span class="toctext">Estimación de 
+parámetros de máxima verosimilitud</span></a>
+<ul>
+<li class="toclevel-4 tocsection-24"><a 
+href="#Sorprendente_generalizaci.C3.B3n"><span class="tocnumber">7.3.1.1</span>
+ <span class="toctext">Sorprendente generalización</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-25"><a 
+href="#Estimaci.C3.B3n_insesgada_de_par.C3.A1metros"><span 
+class="tocnumber">7.3.2</span> <span class="toctext">Estimación 
+insesgada de parámetros</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-26"><a href="#Incidencia"><span 
+class="tocnumber">8</span> <span class="toctext">Incidencia</span></a>
+<ul>
+<li class="toclevel-2 tocsection-27"><a href="#Recuento_de_fotones"><span
+ class="tocnumber">8.1</span> <span class="toctext">Recuento de fotones</span></a></li>
+<li class="toclevel-2 tocsection-28"><a href="#Medida_de_errores"><span 
+class="tocnumber">8.2</span> <span class="toctext">Medida de errores</span></a></li>
+<li class="toclevel-2 tocsection-29"><a 
+href="#Caracter.C3.ADsticas_f.C3.ADsicas_de_espec.C3.ADmenes_biol.C3.B3gicos"><span
+ class="tocnumber">8.3</span> <span class="toctext">Características 
+físicas de especímenes biológicos</span></a></li>
+<li class="toclevel-2 tocsection-30"><a href="#Variables_financieras"><span
+ class="tocnumber">8.4</span> <span class="toctext">Variables 
+financieras</span></a></li>
+<li class="toclevel-2 tocsection-31"><a 
+href="#Distribuciones_en_tests_de_inteligencia"><span class="tocnumber">8.5</span>
+ <span class="toctext">Distribuciones en tests de inteligencia</span></a></li>
+<li class="toclevel-2 tocsection-32"><a 
+href="#Ecuaci.C3.B3n_de_difusi.C3.B3n"><span class="tocnumber">8.6</span>
+ <span class="toctext">Ecuación de difusión</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-33"><a 
+href="#Uso_en_estad.C3.ADstica_computacional"><span class="tocnumber">9</span>
+ <span class="toctext">Uso en estadística computacional</span></a>
+<ul>
+<li class="toclevel-2 tocsection-34"><a 
+href="#Generaci.C3.B3n_de_valores_para_una_variable_aleatoria_normal"><span
+ class="tocnumber">9.1</span> <span class="toctext">Generación de 
+valores para una variable aleatoria normal</span></a></li>
+<li class="toclevel-2 tocsection-35"><a 
+href="#Aproximaciones_num.C3.A9ricas_de_la_distribuci.C3.B3n_normal_y_su_funci.C3.B3n_de_distribuci.C3.B3n"><span
+ class="tocnumber">9.2</span> <span class="toctext">Aproximaciones 
+numéricas de la distribución normal y su función de distribución</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-36"><a href="#V.C3.A9ase_tambi.C3.A9n"><span
+ class="tocnumber">10</span> <span class="toctext">Véase también</span></a></li>
+<li class="toclevel-1 tocsection-37"><a href="#Referencias"><span 
+class="tocnumber">11</span> <span class="toctext">Referencias</span></a></li>
+<li class="toclevel-1 tocsection-38"><a href="#Enlaces_externos"><span 
+class="tocnumber">12</span> <span class="toctext">Enlaces externos</span></a></li>
+</ul>
+</td>
+</tr>
+</tbody></table>
+<h2><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=1"
+ title="Editar sección: Historia">editar</a>]</span> <span 
+class="mw-headline" id="Historia">Historia</span></h2>
+<div class="thumb tleft">
+<div class="thumbinner" style="width: 222px;"><a 
+href="http://es.wikipedia.org/wiki/Archivo:Abraham_de_moivre.jpg" 
+class="image"><img alt="" 
+src="Distribuci%C3%B3n_normal_files/220px-Abraham_de_moivre.jpg" 
+class="thumbimage" width="220" height="280"></a>
+<div class="thumbcaption">
+<div class="magnify"><a 
+href="http://es.wikipedia.org/wiki/Archivo:Abraham_de_moivre.jpg" 
+class="internal" title="Aumentar"><img 
+src="Distribuci%C3%B3n_normal_files/magnify-clip.png" alt="" width="15" 
+height="11"></a></div>
+Abraham de Moivre, descubridor de la distribución normal</div>
+</div>
+</div>
+<p>La distribución normal fue presentada por primera vez por <a 
+href="http://es.wikipedia.org/wiki/Abraham_de_Moivre" title="Abraham de 
+Moivre">Abraham de Moivre</a> en un artículo del año 1733,<sup 
+id="cite_ref-1" class="reference"><a href="#cite_note-1"><span 
+class="corchete-llamada">[</span>2<span class="corchete-llamada">]</span></a></sup>
+ que fue reimpreso en la segunda edición de su <i><a 
+href="http://es.wikipedia.org/wiki/The_Doctrine_of_Chances" title="The 
+Doctrine of Chances">The Doctrine of Chances</a></i>, de 1738, en el 
+contexto de cierta aproximación de la <a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_binomial" 
+title="Distribución binomial">distribución binomial</a> para grandes 
+valores de <i>n</i>. Su resultado fue ampliado por <a 
+href="http://es.wikipedia.org/wiki/Pierre_Simon_Laplace" title="Pierre 
+Simon Laplace">Laplace</a> en su libro <i><a 
+href="http://es.wikipedia.org/wiki/Teor%C3%ADa_anal%C3%ADtica_de_las_probabilidades"
+ title="Teoría analítica de las probabilidades" class="mw-redirect">Teoría
+ analítica de las probabilidades</a></i> (1812), y en la actualidad se 
+llama <a 
+href="http://es.wikipedia.org/wiki/Teorema_de_De_Moivre-Laplace" 
+title="Teorema de De Moivre-Laplace">Teorema de De Moivre-Laplace</a>.</p>
+<p>Laplace usó la distribución normal en el <a 
+href="http://es.wikipedia.org/wiki/An%C3%A1lisis_de_errores" 
+title="Análisis de errores">análisis de errores</a> de experimentos. El 
+importante <a 
+href="http://es.wikipedia.org/wiki/M%C3%A9todo_de_m%C3%ADnimos_cuadrados"
+ title="Método de mínimos cuadrados" class="mw-redirect">método de 
+mínimos cuadrados</a> fue introducido por <a 
+href="http://es.wikipedia.org/wiki/Adrien_Marie_Legendre" title="Adrien 
+Marie Legendre" class="mw-redirect">Legendre</a> en 1805. <a 
+href="http://es.wikipedia.org/wiki/Carl_Friedrich_Gauss" title="Carl 
+Friedrich Gauss">Gauss</a>, que afirmaba haber usado el método desde <a 
+href="http://es.wikipedia.org/wiki/1794" title="1794">1794</a>, lo 
+justificó rigurosamente en <a href="http://es.wikipedia.org/wiki/1809" 
+title="1809">1809</a> asumiendo una distribución normal de los errores. 
+El nombre de Gauss se ha asociado a esta distribución porque la usó con 
+profusión cuando analizaba datos astronómicos<sup id="cite_ref-2" 
+class="reference"><a href="#cite_note-2"><span class="corchete-llamada">[</span>3<span
+ class="corchete-llamada">]</span></a></sup> y algunos autores le 
+atribuyen un descubrimiento independiente del de De Moivre.<sup 
+id="cite_ref-3" class="reference"><a href="#cite_note-3"><span 
+class="corchete-llamada">[</span>4<span class="corchete-llamada">]</span></a></sup>
+ Esta atribución del nombre de la distribución a una persona distinta de
+ su primer descubridor es un claro ejemplo de la <a 
+href="http://es.wikipedia.org/wiki/Ley_de_Stigler" title="Ley de 
+Stigler">Ley de Stigler</a>.</p>
+<p>El nombre de "campana" viene de <a 
+href="http://es.wikipedia.org/wiki/Esprit_Jouffret" title="Esprit 
+Jouffret">Esprit Jouffret</a> que usó el término "bell surface" 
+(superficie campana) por primera vez en <a 
+href="http://es.wikipedia.org/wiki/1872" title="1872">1872</a> para una <a
+ 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_normal_multivariante"
+ title="Distribución normal multivariante">distribución normal 
+bivariante</a> de componentes independientes. El nombre de "distribución
+ normal" fue otorgado independientemente por <a 
+href="http://es.wikipedia.org/wiki/Charles_Sanders_Peirce" 
+title="Charles Sanders Peirce">Charles S. Peirce</a>, <a 
+href="http://es.wikipedia.org/wiki/Francis_Galton" title="Francis 
+Galton">Francis Galton</a> y <a 
+href="http://es.wikipedia.org/wiki/Wilhelm_Lexis" title="Wilhelm Lexis">Wilhelm
+ Lexis</a> hacia <a href="http://es.wikipedia.org/wiki/1875" 
+title="1875">1875</a>.<sup>[<i><a 
+href="http://es.wikipedia.org/wiki/Wikipedia:Verificabilidad" 
+title="Wikipedia:Verificabilidad">cita&nbsp;requerida</a></i>]</sup> A 
+pesar de esta terminología, otras distribuciones de probabilidad podrían
+ ser más apropiadas en determinados contextos; véase la discusión sobre <a
+ href="#Ocurrencia">ocurrencia</a>, más abajo.</p>
+<h2><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=2"
+ title="Editar sección: Definición formal">editar</a>]</span> <span 
+class="mw-headline" id="Definici.C3.B3n_formal">Definición formal</span></h2>
+<p>Hay varios modos de definir formalmente una <a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_de_probabilidad" 
+title="Distribución de probabilidad">distribución de probabilidad</a>. 
+La forma más visual es mediante su <a 
+href="http://es.wikipedia.org/wiki/Funci%C3%B3n_de_densidad" 
+title="Función de densidad" class="mw-redirect">función de densidad</a>.
+ De forma equivalente, también pueden darse para su definición la <a 
+href="http://es.wikipedia.org/wiki/Funci%C3%B3n_de_distribuci%C3%B3n" 
+title="Función de distribución" class="mw-redirect">función de 
+distribución</a>, los <a 
+href="http://es.wikipedia.org/wiki/Momento_centrado" title="Momento 
+centrado" class="mw-redirect">momentos</a>, la <a 
+href="http://es.wikipedia.org/wiki/Funci%C3%B3n_caracter%C3%ADstica" 
+title="Función característica">función característica</a> y la <a 
+href="http://es.wikipedia.org/wiki/Funci%C3%B3n_generatriz_de_momentos" 
+title="Función generatriz de momentos" class="mw-redirect">función 
+generatriz de momentos</a>, entre otros.</p>
+<h3><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=3"
+ title="Editar sección: Función de densidad">editar</a>]</span> <span 
+class="mw-headline" id="Funci.C3.B3n_de_densidad">Función de densidad</span></h3>
+<div class="floatright"><a 
+href="http://es.wikipedia.org/wiki/Archivo:DisNormal01.svg" 
+class="image" title="Gráfica de la distribución normal de media 0 y 
+desviación típica 1"><img alt="Gráfica de la distribución normal de 
+media 0 y desviación típica 1" 
+src="Distribuci%C3%B3n_normal_files/400px-DisNormal01.png" width="400" 
+height="165"></a></div>
+<p>Se dice que una <a 
+href="http://es.wikipedia.org/wiki/Variable_aleatoria" title="Variable 
+aleatoria">variable aleatoria</a> <a 
+href="http://es.wikipedia.org/wiki/Variable_aleatoria#Tipos_de_variables_aleatorias"
+ title="Variable aleatoria">continua</a> <i>X</i> sigue una distribución
+ normal de parámetros <i>μ</i> y <i>σ</i> y se denota <i>X~N(μ, σ)</i> 
+si su función de densidad está dada por:</p>
+<dl>
+<dd><img class="tex" 
+alt="f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2},
+ \, \quad x\in\mathbb{R}," 
+src="Distribuci%C3%B3n_normal_files/cc5093d4b8722c51614f7982bcaa7d1a.png"></dd>
+</dl>
+<p>donde <i>μ</i> (<a href="http://es.wikipedia.org/wiki/%CE%9C" 
+title="Μ">miu</a>) es la <a 
+href="http://es.wikipedia.org/wiki/Media_aritm%C3%A9tica" title="Media 
+aritmética">media</a> y <i>σ</i> (<a 
+href="http://es.wikipedia.org/wiki/Sigma" title="Sigma" 
+class="mw-redirect">sigma</a>) es la <a 
+href="http://es.wikipedia.org/wiki/Desviaci%C3%B3n_t%C3%ADpica" 
+title="Desviación típica" class="mw-redirect">desviación típica</a> (<i>σ</i><sup>2</sup>
+ es la <a href="http://es.wikipedia.org/wiki/Varianza" title="Varianza">varianza</a>).<sup
+ id="cite_ref-4" class="reference"><a href="#cite_note-4"><span 
+class="corchete-llamada">[</span>5<span class="corchete-llamada">]</span></a></sup></p>
+<p>Se llama <b>distribución normal "estándar"</b> a aquélla en la que 
+sus parámetros toman los valores <i>μ</i> = 0 y <i>σ</i> = 1. En este 
+caso la función de densidad tiene la siguiente expresión:</p>
+<dl>
+<dd><img class="tex" 
+alt="f(x)=f_{0,1}(x)=\frac{e^\frac{-x^2}{2}}{\sqrt{2\pi\,}}, \,\quad 
+x\in\mathbb{R}." 
+src="Distribuci%C3%B3n_normal_files/4ce0687bf645db4624040ce1308a1566.png"></dd>
+</dl>
+<p>Su gráfica se muestra a la derecha y con frecuencia se usan ...<a 
+href="http://es.wikibooks.org/wiki/es:Tablas_estad%C3%ADsticas/Distribuci%C3%B3n_normal"
+ class="extiw" title="b:es:Tablas estadísticas/Distribución normal">tablas</a>
+ para el cálculo de los valores de su distribución.</p>
+<h3><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=4"
+ title="Editar sección: Función de distribución">editar</a>]</span> <span
+ class="mw-headline" id="Funci.C3.B3n_de_distribuci.C3.B3n">Función de 
+distribución</span></h3>
+<div class="floatright"><a 
+href="http://es.wikipedia.org/wiki/Archivo:Normal_Distribution_CDF.svg" 
+class="image" title="Función de distribución para la distribución 
+normal"><img alt="Función de distribución para la distribución normal" 
+src="Distribuci%C3%B3n_normal_files/360px-Normal_Distribution_CDF.png" 
+width="360" height="230"></a></div>
+<p>La <a 
+href="http://es.wikipedia.org/wiki/Funci%C3%B3n_de_distribuci%C3%B3n" 
+title="Función de distribución" class="mw-redirect">función de 
+distribución</a> de la distribución normal está definida como sigue:</p>
+<dl>
+<dd><img class="tex" alt=" \begin{align}
+\Phi_{\mu,\sigma^2}(x)
+&amp;{}=\int_{-\infty}^x\varphi_{\mu,\sigma^2}(u)\,du\\
+&amp;{}=\frac{1}{\sigma\sqrt{2\pi}}
+\int_{-\infty}^x
+e^{-\frac{(u - \mu)^2}{2\sigma^2}}\, du ,\quad x\in\mathbb{R}\\
+\end{align}" 
+src="Distribuci%C3%B3n_normal_files/838bfb3b7b1398ad726da26631818c35.png"></dd>
+</dl>
+<p>Por tanto, la función de distribución de la normal estándar es:</p>
+<dl>
+<dd><img class="tex" alt="\Phi(x) = \Phi_{0,1}(x)
+= \frac{1}{\sqrt{2\pi}}
+\int_{-\infty}^x
+e^{-\frac{u^2}{2}}
+\, du, \quad x\in\mathbb{R}." 
+src="Distribuci%C3%B3n_normal_files/4f1fb8501ef45ef5571528f65458e1c4.png"></dd>
+</dl>
+<p>Esta función de distribución puede expresarse en términos de una <a 
+href="http://es.wikipedia.org/wiki/Funci%C3%B3n_especial" title="Función
+ especial">función especial</a> llamada <a 
+href="http://es.wikipedia.org/wiki/Funci%C3%B3n_error" title="Función 
+error">función error</a> de la siguiente forma:</p>
+<dl>
+<dd><img class="tex" alt="\Phi(x)
+=\frac{1}{2} \Bigl[ 1 + \operatorname{erf} \Bigl( \frac{x}{\sqrt{2}} 
+\Bigr) \Bigr],
+\quad x\in\mathbb{R}," 
+src="Distribuci%C3%B3n_normal_files/04b42ce6e6eaae4ad68c77d210b9d3ef.png"></dd>
+</dl>
+<p>y la propia función de distribución puede, por consiguiente, 
+expresarse así:</p>
+<dl>
+<dd><img class="tex" alt="\Phi_{\mu,\sigma^2}(x)
+=\frac{1}{2} \Bigl[ 1 + \operatorname{erf} \Bigl( 
+\frac{x-\mu}{\sigma\sqrt{2}} \Bigr) \Bigr],
+\quad x\in\mathbb{R}." 
+src="Distribuci%C3%B3n_normal_files/1097cbbb6816a7c2e9ce05bdd0ff09d3.png"></dd>
+</dl>
+<p>El complemento de la función de distribución de la normal estándar, <span
+ class="texhtml" dir="ltr">1 − Φ(<i>x</i>)</span>, se denota con 
+frecuencia <span class="texhtml" dir="ltr"><i>Q</i>(<i>x</i>)</span>, y 
+es referida, a veces, como simplemente <b>función Q</b>, especialmente 
+en textos de ingeniería.<sup id="cite_ref-5" class="reference"><a 
+href="#cite_note-5"><span class="corchete-llamada">[</span>6<span 
+class="corchete-llamada">]</span></a></sup> <sup id="cite_ref-6" 
+class="reference"><a href="#cite_note-6"><span class="corchete-llamada">[</span>7<span
+ class="corchete-llamada">]</span></a></sup> Esto representa la cola de 
+probabilidad de la distribución gaussiana. También se usan 
+ocasionalmente otras definiciones de la función Q, las cuales son todas 
+ellas transformaciones simples de <span class="texhtml" dir="ltr">Φ</span>.<sup
+ id="cite_ref-7" class="reference"><a href="#cite_note-7"><span 
+class="corchete-llamada">[</span>8<span class="corchete-llamada">]</span></a></sup></p>
+<p>La inversa de la función de distribución de la normal estándar (<a 
+href="http://es.wikipedia.org/wiki/Funci%C3%B3n_cuantil" title="Función 
+cuantil">función cuantil</a>) puede expresarse en términos de la inversa
+ de la función de error:</p>
+<dl>
+<dd><img class="tex" alt="\Phi^{-1}(p)
+= \sqrt2
+\;\operatorname{erf}^{-1} (2p - 1),
+\quad p\in(0,1)," 
+src="Distribuci%C3%B3n_normal_files/796247e3293cd246347f737e6ef4fd5d.png"></dd>
+</dl>
+<p>y la inversa de la función de distribución puede, por consiguiente, 
+expresarse como:</p>
+<dl>
+<dd><img class="tex" alt="\Phi_{\mu,\sigma^2}^{-1}(p)
+= \mu + \sigma\Phi^{-1}(p)
+= \mu + \sigma\sqrt2
+\; \operatorname{erf}^{-1}(2p - 1),
+\quad p\in(0,1)." 
+src="Distribuci%C3%B3n_normal_files/1c04dbdf133e63da1fc3ec637a85807e.png"></dd>
+</dl>
+<p>Esta función cuantil se llama a veces la <a 
+href="http://es.wikipedia.org/wiki/Funci%C3%B3n_probit" title="Función 
+probit">función probit</a>. No hay una <a 
+href="http://es.wikipedia.org/wiki/Funci%C3%B3n_primitiva" 
+title="Función primitiva" class="mw-redirect">primitiva</a> elemental 
+para la función probit. Esto no quiere decir meramente que no se conoce,
+ sino que se ha probado la inexistencia de tal función. Existen varios 
+métodos exactos para aproximar la función cuantil mediante la 
+distribución normal (véase <a 
+href="http://es.wikipedia.org/wiki/Funci%C3%B3n_cuantil" title="Función 
+cuantil">función cuantil</a>).</p>
+<p>Los valores Φ(<i>x</i>) pueden aproximarse con mucha precisión por 
+distintos métodos, tales como <a 
+href="http://es.wikipedia.org/wiki/Integraci%C3%B3n_num%C3%A9rica" 
+title="Integración numérica">integración numérica</a>, <a 
+href="http://es.wikipedia.org/wiki/Series_de_Taylor" title="Series de 
+Taylor" class="mw-redirect">series de Taylor</a>, <a 
+href="http://es.wikipedia.org/wiki/Serie_asint%C3%B3tica" title="Serie 
+asintótica">series asintóticas</a> y <a 
+href="http://es.wikipedia.org/wiki/Fracci%C3%B3n_continua_de_Gauss" 
+title="Fracción continua de Gauss">fracciones continuas</a>.</p>
+<h4><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=5"
+ title="Editar sección: Límite inferior y superior estrictos para la 
+función de distribución">editar</a>]</span> <span class="mw-headline" 
+id="L.C3.ADmite_inferior_y_superior_estrictos_para_la_funci.C3.B3n_de_distribuci.C3.B3n">Límite
+ inferior y superior estrictos para la función de distribución</span></h4>
+<p>Para grandes valores de <i>x</i> la función de distribución de la 
+normal estándar <img class="tex" alt="\scriptstyle\Phi(x)" 
+src="Distribuci%C3%B3n_normal_files/cc57e4f204394489bae179e29e37342e.png">
+ es muy próxima a 1 y <img class="tex" 
+alt="\scriptstyle\Phi(-x)\,{=}\,1\,{-}\,\Phi(x)" 
+src="Distribuci%C3%B3n_normal_files/718022d3a4e16e2cc9bcb0fa4af44b76.png">
+ está muy cerca de 0. Los límites elementales</p>
+<dl>
+<dd><img class="tex" 
+alt="\frac{x}{1+x^2}\varphi(x)&lt;1-\Phi(x)&lt;\frac{\varphi(x)}{x}, 
+\qquad x&gt;0," 
+src="Distribuci%C3%B3n_normal_files/e78b5da834658b5e515529f0dc9f1d2e.png"></dd>
+</dl>
+<p>en términos de la densidad <img class="tex" alt="\scriptstyle\varphi"
+ 
+src="Distribuci%C3%B3n_normal_files/455136e0a43e7634fcc7d2904c0612d9.png">
+ son útiles.</p>
+<p>Usando el <a 
+href="http://es.wikipedia.org/wiki/M%C3%A9todos_de_integraci%C3%B3n#M.C3.A9todo_de_integraci.C3.B3n_por_sustituci.C3.B3n"
+ title="Métodos de integración">cambio de variable</a> <i>v</i>&nbsp;=&nbsp;<i>u</i>²/2,
+ el límite superior se obtiene como sigue:</p>
+<dl>
+<dd><img class="tex" alt="\begin{align}
+1-\Phi(x)
+&amp;=\int_x^\infty\varphi(u)\,du\\
+&amp;&lt;\int_x^\infty\frac ux\varphi(u)\,du
+=\int_{x^2/2}^\infty\frac{e^{-v}}{x\sqrt{2\pi}}\,dv
+=-\biggl.\frac{e^{-v}}{x\sqrt{2\pi}}\biggr|_{x^2/2}^\infty
+=\frac{\varphi(x)}{x}.
+\end{align}" 
+src="Distribuci%C3%B3n_normal_files/4ffbd8d2ec48f8851654ecc99d9670f8.png"></dd>
+</dl>
+<p>De forma similar, usando <img class="tex" 
+alt="\scriptstyle\varphi'(u)\,{=}\,-u\,\varphi(u)" 
+src="Distribuci%C3%B3n_normal_files/4c477cf2ebb1709861de34160880d771.png">
+ y la <a href="http://es.wikipedia.org/wiki/Regla_del_cociente" 
+title="Regla del cociente">regla del cociente</a>,</p>
+<dl>
+<dd><img class="tex" alt="\begin{align}
+\Bigl(1+\frac1{x^2}\Bigr)(1-\Phi(x))&amp;=\Bigl(1+\frac1{x^2}\Bigr)\int_x^\infty\varphi(u)\,du\\
+&amp;=\int_x^\infty
+ \Bigl(1+\frac1{x^2}\Bigr)\varphi(u)\,du\\
+&amp;&gt;\int_x^\infty \Bigl(1+\frac1{u^2}\Bigr)\varphi(u)\,du
+=-\biggl.\frac{\varphi(u)}u\biggr|_x^\infty
+=\frac{\varphi(x)}x.
+\end{align}" 
+src="Distribuci%C3%B3n_normal_files/8a88bd78187f01c2c2736dd2bb11a9a5.png"></dd>
+</dl>
+<p>Resolviendo para <img class="tex" alt="\scriptstyle 
+1\,{-}\,\Phi(x)\," 
+src="Distribuci%C3%B3n_normal_files/72d8d9eac77ab922c98663247b1f5ee3.png">
+ proporciona el límite inferior.</p>
+<h3><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=6"
+ title="Editar sección: Funciones generadoras">editar</a>]</span> <span 
+class="mw-headline" id="Funciones_generadoras">Funciones generadoras</span></h3>
+<h4><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=7"
+ title="Editar sección: Función generadora de momentos">editar</a>]</span>
+ <span class="mw-headline" id="Funci.C3.B3n_generadora_de_momentos">Función
+ generadora de momentos</span></h4>
+<p>La <a 
+href="http://es.wikipedia.org/wiki/Funci%C3%B3n_generadora_de_momentos" 
+title="Función generadora de momentos">función generadora de momentos</a>
+ se define como la <a 
+href="http://es.wikipedia.org/wiki/Esperanza_matem%C3%A1tica" 
+title="Esperanza matemática">esperanza</a> de <i>e</i><sup>(<i>tX</i>)</sup>.
+ Para una distribución normal, la función generadora de momentos es:</p>
+<dl>
+<dd><img class="tex" alt=" M_X(t) = \mathrm{E} \left[ e^{tX} \right] = 
+\int_{-\infty}^{\infty}  \frac{1}{\sigma \sqrt{2\pi} } e^{-\frac{(x - 
+\mu)^2}{2 \sigma^2}} e^{tx} \, dx = e^{\mu t + \frac{\sigma^2 t^2}{2}} "
+ 
+src="Distribuci%C3%B3n_normal_files/76bec293edeb9c6d302cfd36e6c98d15.png"></dd>
+</dl>
+<p>como puede comprobarse <a 
+href="http://es.wikipedia.org/wiki/Completando_el_cuadrado" 
+title="Completando el cuadrado">completando el cuadrado</a> en el 
+exponente.</p>
+<p><br></p>
+<h4><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=8"
+ title="Editar sección: Función característica">editar</a>]</span> <span
+ class="mw-headline" id="Funci.C3.B3n_caracter.C3.ADstica">Función 
+característica</span></h4>
+<p>La <a 
+href="http://es.wikipedia.org/wiki/Funci%C3%B3n_caracter%C3%ADstica" 
+title="Función característica">función característica</a> se define como
+ la esperanza de <i>e</i><sup><i>itX</i></sup>, donde <i>i</i> es la <a 
+href="http://es.wikipedia.org/wiki/Unidad_imaginaria" title="Unidad 
+imaginaria" class="mw-redirect">unidad imaginaria</a>. De este modo, la 
+función característica se obtiene reemplazando <i>t</i> por <i>it</i> en
+ la función generadora de momentos.</p>
+<p>Para una distribución normal, la función característica es<sup 
+id="cite_ref-8" class="reference"><a href="#cite_note-8"><span 
+class="corchete-llamada">[</span>9<span class="corchete-llamada">]</span></a></sup></p>
+<dl>
+<dd><img class="tex" alt=" 
+\begin{align}
+\chi_X(t;\mu,\sigma) &amp;{} = M_X(i t) = \mathrm{E}
+\left[ e^{i t X} \right] \\
+&amp;{}=
+\int_{-\infty}^{\infty}
+\frac{1}{\sigma \sqrt{2\pi}}
+e^{- \frac{(x - \mu)^2}{2\sigma^2}}
+e^{i t x}
+\, dx \\
+&amp;{}=
+e^{i \mu t - \frac{\sigma^2 t^2}{2}}.
+\end{align}" 
+src="Distribuci%C3%B3n_normal_files/25696af92beee0e9d40f562cfc31d09f.png"></dd>
+</dl>
+<h2><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=9"
+ title="Editar sección: Propiedades">editar</a>]</span> <span 
+class="mw-headline" id="Propiedades">Propiedades</span></h2>
+<p>Algunas propiedades de la distribución normal son:</p>
+<ol>
+<li>Es simétrica respecto de su media, <i>μ</i>;
+<div class="thumb tright">
+<div class="thumbinner" style="width: 327px;"><a 
+href="http://es.wikipedia.org/wiki/Archivo:Standard_deviation_diagram_%28decimal_comma%29.svg"
+ class="image"><img alt="" 
+src="Distribuci%C3%B3n_normal_files/325px-Standard_deviation_diagram_decimal_comma.png"
+ class="thumbimage" width="325" height="163"></a>
+<div class="thumbcaption">
+<div class="magnify"><a 
+href="http://es.wikipedia.org/wiki/Archivo:Standard_deviation_diagram_%28decimal_comma%29.svg"
+ class="internal" title="Aumentar"><img 
+src="Distribuci%C3%B3n_normal_files/magnify-clip.png" alt="" width="15" 
+height="11"></a></div>
+Distribución de probabilidad alrededor de la media en una distribución 
+N(<i>μ</i>, <i>σ</i>).</div>
+</div>
+</div>
+</li>
+<li>La <a 
+href="http://es.wikipedia.org/wiki/Medidas_de_tendencia_central" 
+title="Medidas de tendencia central">moda</a> y la <a 
+href="http://es.wikipedia.org/wiki/Mediana_%28estad%C3%ADstica%29" 
+title="Mediana (estadística)">mediana</a> son ambas iguales a la media, <i>μ</i>;</li>
+<li>Los <a href="http://es.wikipedia.org/wiki/Punto_de_inflexi%C3%B3n" 
+title="Punto de inflexión">puntos de inflexión</a> de la curva se dan 
+para x = <i>μ</i>&nbsp;−&nbsp;<i>σ</i> y x = <i>μ</i>&nbsp;+&nbsp;<i>σ</i>.</li>
+<li>Distribución de probabilidad en un entorno de la media:
+<ol>
+<li>en el intervalo [<i>μ</i> - <i>σ</i>, <i>μ</i> + <i>σ</i>] se 
+encuentra comprendida, aproximadamente, el 68,26% de la distribución;</li>
+<li>en el intervalo [<i>μ</i> - 2<i>σ</i>, <i>μ</i> + 2<i>σ</i>] se 
+encuentra, aproximadamente, el 95,44% de la distribución;</li>
+<li>por su parte, en el intervalo [<i>μ</i> -3<i>σ</i>, <i>μ</i> + 3<i>σ</i>]
+ se encuentra comprendida, aproximadamente, el 99,74% de la 
+distribución. Estas propiedades son de gran utilidad para el 
+establecimiento de <a 
+href="http://es.wikipedia.org/wiki/Intervalo_de_confianza" 
+title="Intervalo de confianza">intervalos de confianza</a>. Por otra 
+parte, el hecho de que prácticamente la totalidad de la distribución se 
+encuentre a tres desviaciones típicas de la media justifica los límites 
+de las tablas empleadas habitualmente en la normal estándar.</li>
+</ol>
+</li>
+<li>Si <i>X</i> ~ N(<i>μ</i>, <i>σ</i><sup>2</sup>) y <i>a</i> y <i>b</i>
+ son <a href="http://es.wikipedia.org/wiki/N%C3%BAmeros_reales" 
+title="Números reales" class="mw-redirect">números reales</a>, entonces (<i>aX</i>
+ + <i>b</i>) ~ N(<i>aμ</i>+<i>b</i>, <i>a</i><sup>2</sup><i>σ</i><sup>2</sup>).</li>
+<li>Si <i>X</i> ~ N(<i>μ<sub>x</sub></i>, <i>σ<sub>x</sub><sup>2</sup></i>)
+ e <i>Y</i> ~ N(<i>μ<sub>y</sub></i>, <i>σ<sub>y</sub><sup>2</sup></i>) 
+son variables aleatorias normales <a 
+href="http://es.wikipedia.org/wiki/Independencia_estad%C3%ADstica" 
+title="Independencia estadística" class="mw-redirect">independientes</a>,
+ entonces:
+<ul>
+<li>Su suma está normalmente distribuida con <i>U</i> = <i>X</i> + <i>Y</i>
+ ~ N(<i>μ<sub>x</sub></i> + <i>μ<sub>y</sub></i>, <i>σ<sub>x</sub></i><sup>2</sup>
+ + <i>σ<sub>y</sub></i><sup>2</sup>) (<a 
+href="http://es.wikipedia.org/w/index.php?title=Suma_de_variables_aleatorias_normalmente_distribuidas&amp;action=edit&amp;redlink=1"
+ class="new" title="Suma de variables aleatorias normalmente 
+distribuidas (aún no redactado)">demostración</a>). Recíprocamente, si 
+dos variables aleatorias independientes tienen una suma normalmente 
+distribuida, deben ser normales (<a 
+href="http://es.wikipedia.org/w/index.php?title=Teorema_de_Cr%C3%A1mer&amp;action=edit&amp;redlink=1"
+ class="new" title="Teorema de Crámer (aún no redactado)">Teorema de 
+Crámer</a>).</li>
+<li>Su diferencia está normalmente distribuida con <img class="tex" 
+alt="V = X - Y \sim N(\mu_X - \mu_Y, \sigma^2_X + \sigma^2_Y)" 
+src="Distribuci%C3%B3n_normal_files/8b22e1778fd0e4548eda237bad71aa44.png">.</li>
+<li>Si las varianzas de <i>X</i> e <i>Y</i> son iguales, entonces <i>U</i>
+ y <i>V</i> son independientes entre sí.</li>
+<li>La <a 
+href="http://es.wikipedia.org/wiki/Divergencia_de_Kullback-Leibler" 
+title="Divergencia de Kullback-Leibler">divergencia de Kullback-Leibler</a>,
+ <img class="tex" alt="D {\rm KL}( X \| Y ) =
+{ 1 \over 2 } \left( \log \left( { \sigma^2_Y \over \sigma^2_X } \right)
+ + \frac{\sigma^2_X}{\sigma^2_Y} +
+\frac{\left(\mu_Y - \mu_X\right)^2}{\sigma^2_Y} - 1\right)." 
+src="Distribuci%C3%B3n_normal_files/00173b0cb04fe27088e1cd83113543ac.png"></li>
+</ul>
+</li>
+<li>Si <img class="tex" alt="X \sim N(0, \sigma^2_X)" 
+src="Distribuci%C3%B3n_normal_files/1a368150e2171639da10166086a11bd3.png">
+ e <img class="tex" alt="Y \sim N(0, \sigma^2_Y)" 
+src="Distribuci%C3%B3n_normal_files/9d49cf31b33111492ae2884c760231e9.png">
+ son variables aleatorias independientes normalmente distribuidas, 
+entonces:
+<ul>
+<li>Su producto <span class="texhtml" dir="ltr"><i>X</i><i>Y</i></span> 
+sigue una distribución con densidad <span class="texhtml" dir="ltr"><i>p</i></span>
+ dada por
+<dl>
+<dd><img class="tex" alt="p(z) = \frac{1}{\pi\,\sigma_X\,\sigma_Y} \; 
+K_0\left(\frac{|z|}{\sigma_X\,\sigma_Y}\right)," 
+src="Distribuci%C3%B3n_normal_files/b009e9a11285d981783c4467debe66e0.png">
+ donde <span class="texhtml" dir="ltr"><i>K</i><sub>0</sub></span> es 
+una <a 
+href="http://es.wikipedia.org/wiki/Funci%C3%B3n_de_Bessel#Funciones_de_Bessel_modificadas"
+ title="Función de Bessel">función de Bessel modificada de segundo tipo</a>.</dd>
+</dl>
+</li>
+<li>Su cociente sigue una <a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_de_Cauchy" 
+title="Distribución de Cauchy">distribución de Cauchy</a> con <span 
+class="texhtml" dir="ltr"><i>X</i> / <i>Y</i>∼Cauchy(0,σ<sub><i>X</i></sub>
+ / σ<sub><i>Y</i></sub>)</span>. De este modo la distribución de Cauchy 
+es un tipo especial de <a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_cociente&amp;action=edit&amp;redlink=1"
+ class="new" title="Distribución cociente (aún no redactado)">distribución
+ cociente</a>.</li>
+</ul>
+</li>
+<li>Si <img class="tex" alt="X_1, \dots, X_n" 
+src="Distribuci%C3%B3n_normal_files/e8eacc087b64e56391a3b8ddf4216d77.png">
+ son variables normales estándar independientes, entonces <img 
+class="tex" alt="X_1^2 + \cdots + X_n^2" 
+src="Distribuci%C3%B3n_normal_files/4b82e42397459f7359433c6673601109.png">
+ sigue una <a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_%CF%87%C2%B2" 
+title="Distribución χ²">distribución χ²</a> con <i>n</i> grados de 
+libertad.</li>
+<li>Si <img class="tex" alt="X_1,\dots,X_n" 
+src="Distribuci%C3%B3n_normal_files/e8eacc087b64e56391a3b8ddf4216d77.png">
+ son variables normales estándar independientes, entonces la <a 
+href="http://es.wikipedia.org/wiki/Media_muestral" title="Media 
+muestral" class="mw-redirect">media muestral</a> <img class="tex" 
+alt="\bar{X}=(X_1+\cdots+X_n)/n" 
+src="Distribuci%C3%B3n_normal_files/582610d6a6247319e56047c01a30cc4d.png">
+ y la <a 
+href="http://es.wikipedia.org/w/index.php?title=Varianza_muestral&amp;action=edit&amp;redlink=1"
+ class="new" title="Varianza muestral (aún no redactado)">varianza 
+muestral</a> <img class="tex" 
+alt="S^2=((X_1-\bar{X})^2+\cdots+(X_n-\bar{X})^2)/(n-1)" 
+src="Distribuci%C3%B3n_normal_files/92071496ebce3b40db85600bfb26afbb.png">
+ son independientes. Esta propiedad <a 
+href="http://es.wikipedia.org/w/index.php?title=Definici%C3%B3n_matem%C3%A1tica&amp;action=edit&amp;redlink=1"
+ class="new" title="Definición matemática (aún no redactado)">caracteriza</a>
+ a las distribuciones normales y contribuye a explicar por qué el <a 
+href="http://es.wikipedia.org/w/index.php?title=Test-F&amp;action=edit&amp;redlink=1"
+ class="new" title="Test-F (aún no redactado)">test-F</a> no es robusto 
+respecto a la no-normalidad).</li>
+</ol>
+<h3><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=10"
+ title="Editar sección: Estandarización de variables aleatorias 
+normales">editar</a>]</span> <span class="mw-headline" 
+id="Estandarizaci.C3.B3n_de_variables_aleatorias_normales">Estandarización
+ de variables aleatorias normales</span></h3>
+<p>Como consecuencia de la Propiedad 1; es posible relacionar todas las 
+variables aleatorias normales con la distribución normal estándar.</p>
+<p>Si <span class="texhtml" dir="ltr"><i>X</i></span> ~ <span 
+class="texhtml" dir="ltr"><i>N</i>(μ,σ<sup>2</sup>)</span>, entonces</p>
+<dl>
+<dd><img class="tex" alt="Z = \frac{X - \mu}{\sigma} \!" 
+src="Distribuci%C3%B3n_normal_files/f7aa6c4c6f1dc137bb57a719ca20edb0.png"></dd>
+</dl>
+<p>es una variable aleatoria normal estándar: <span class="texhtml" 
+dir="ltr"><i>Z</i></span> ~ <span class="texhtml" dir="ltr"><i>N</i>(0,1)</span>.</p>
+<p>La transformación de una distribución X ~ N(μ, σ) en una N(0, 1) se 
+llama <b>normalización</b>, <b>estandarización</b> o <b>tipificación</b>
+ de la variable X.</p>
+<p>Una consecuencia importante de esto es que la función de distribución
+ de una distribución normal es, por consiguiente,</p>
+<dl>
+<dd><img class="tex" alt="\Pr(X \le x)
+=
+\Phi
+\left(
+\frac{x-\mu}{\sigma}
+\right)
+=
+\frac{1}{2}
+\left(
+1 + \operatorname{erf}
+\left(
+  \frac{x-\mu}{\sigma\sqrt{2}}
+\right)
+\right)
+." 
+src="Distribuci%C3%B3n_normal_files/a54e9e99e0428ee724eb08a364e2709b.png"></dd>
+</dl>
+<p>A la inversa, si <span class="texhtml" dir="ltr"><i>Z</i></span> es 
+una distribución normal estándar, <span class="texhtml" dir="ltr"><i>Z</i></span>
+ ~ <span class="texhtml" dir="ltr"><i>N</i>(0,1)</span>, entonces</p>
+<dl>
+<dd><span class="texhtml" dir="ltr"><i>X</i> = σ<i>Z</i> + μ</span></dd>
+</dl>
+<p>es una variable aleatoria normal tipificada de media <span 
+class="texhtml" dir="ltr">μ</span> y varianza <span class="texhtml" 
+dir="ltr">σ<sup>2</sup></span>.</p>
+<p>La distribución normal estándar está tabulada (habitualmente en la 
+forma de el valor de la función de distribución Φ) y las otras 
+distribuciones normales pueden obtenerse como transformaciones simples, 
+como se describe más arriba, de la distribución estándar. De este modo 
+se pueden usar los valores tabulados de la función de distribución 
+normal estándar para encontrar valores de la función de distribución de 
+cualquier otra distribución normal.</p>
+<h3><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=11"
+ title="Editar sección: Momentos">editar</a>]</span> <span 
+class="mw-headline" id="Momentos">Momentos</span></h3>
+<p>Los primeros <a 
+href="http://es.wikipedia.org/w/index.php?title=Momento_%28matem%C3%A1ticas%29&amp;action=edit&amp;redlink=1"
+ class="new" title="Momento (matemáticas) (aún no redactado)">momentos</a>
+ de la distribución normal son:</p>
+<table class="wikitable">
+<tbody><tr bgcolor="#cccccc">
+<th>Número</th>
+<th>Momento</th>
+<th>Momento central</th>
+<th>Cumulante</th>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td><span class="texhtml" dir="ltr">μ</span></td>
+<td>0</td>
+<td><span class="texhtml" dir="ltr">μ</span></td>
+</tr>
+<tr>
+<td>2</td>
+<td><span class="texhtml" dir="ltr">μ<sup>2</sup> + σ<sup>2</sup></span></td>
+<td><span class="texhtml" dir="ltr">σ<sup>2</sup></span></td>
+<td><span class="texhtml" dir="ltr">σ<sup>2</sup></span></td>
+</tr>
+<tr>
+<td>3</td>
+<td><span class="texhtml" dir="ltr">μ<sup>3</sup> + 3μσ<sup>2</sup></span></td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>4</td>
+<td><span class="texhtml" dir="ltr">μ<sup>4</sup> + 6μ<sup>2</sup>σ<sup>2</sup>
+ + 3σ<sup>4</sup></span></td>
+<td><span class="texhtml" dir="ltr">3σ<sup>4</sup></span></td>
+<td>0</td>
+</tr>
+<tr>
+<td>5</td>
+<td><span class="texhtml" dir="ltr">μ<sup>5</sup> + 10μ<sup>3</sup>σ<sup>2</sup>
+ + 15μσ<sup>4</sup></span></td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>6</td>
+<td><span class="texhtml" dir="ltr">μ<sup>6</sup> + 15μ<sup>4</sup>σ<sup>2</sup>
+ + 45μ<sup>2</sup>σ<sup>4</sup> + 15σ<sup>6</sup></span></td>
+<td><span class="texhtml" dir="ltr">15σ<sup>6</sup></span></td>
+<td>0</td>
+</tr>
+<tr>
+<td>7</td>
+<td><span class="texhtml" dir="ltr">μ<sup>7</sup> + 21μ<sup>5</sup>σ<sup>2</sup>
+ + 105μ<sup>3</sup>σ<sup>4</sup> + 105μσ<sup>6</sup></span></td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>8</td>
+<td><span class="texhtml" dir="ltr">μ<sup>8</sup> + 28μ<sup>6</sup>σ<sup>2</sup>
+ + 210μ<sup>4</sup>σ<sup>4</sup> + 420μ<sup>2</sup>σ<sup>6</sup> + 105σ<sup>8</sup></span></td>
+<td><span class="texhtml" dir="ltr">105σ<sup>8</sup></span></td>
+<td>0</td>
+</tr>
+</tbody></table>
+<p>Todos los <a 
+href="http://es.wikipedia.org/w/index.php?title=Cumulante&amp;action=edit&amp;redlink=1"
+ class="new" title="Cumulante (aún no redactado)">cumulantes</a> de la 
+distribución normal, más allá del segundo, son cero.</p>
+<p><br>
+Los momentos centrales de orden superior (2<i>k</i> con <i>μ&nbsp;=&nbsp;0)
+ vienen dados por la fórmula</i></p>
+<dl>
+<dd><img class="tex" alt=" E\left[X^{2k}\right]=\frac{(2k)!}{2^k k!} 
+\sigma^{2k}. " 
+src="Distribuci%C3%B3n_normal_files/9ee2fb62550523bac223697b7ad104b0.png"></dd>
+</dl>
+<h3><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=12"
+ title="Editar sección: El Teorema del Límite Central">editar</a>]</span>
+ <span class="mw-headline" id="El_Teorema_del_L.C3.ADmite_Central">El 
+Teorema del Límite Central</span></h3>
+<div class="noprint AP" style="margin: 0pt 0pt 0.2ex 1em;"><i><span 
+style="font-size: 87%;">Artículo principal:</span> <a 
+href="http://es.wikipedia.org/wiki/Teorema_del_l%C3%ADmite_central" 
+title="Teorema del límite central">Teorema del límite central</a></i></div>
+<div class="thumb tright">
+<div class="thumbinner" style="width: 327px;"><a 
+href="http://es.wikipedia.org/wiki/Archivo:Normal_approximation_to_binomial.svg"
+ class="image"><img alt="" 
+src="Distribuci%C3%B3n_normal_files/325px-Normal_approximation_to_binomial.png"
+ class="thumbimage" width="325" height="260"></a>
+<div class="thumbcaption">
+<div class="magnify"><a 
+href="http://es.wikipedia.org/wiki/Archivo:Normal_approximation_to_binomial.svg"
+ class="internal" title="Aumentar"><img 
+src="Distribuci%C3%B3n_normal_files/magnify-clip.png" alt="" width="15" 
+height="11"></a></div>
+Gráfica de la función de distribución de una normal con μ = 12 y σ = 3, 
+aproximando la función de distribución de una <a 
+href="http://es.wikipedia.org/wiki/Binomial" title="Binomial" 
+class="mw-redirect">binomial</a> con <i>n</i> = 48 y <i>p</i> = 1/4</div>
+</div>
+</div>
+<p>El <a 
+href="http://es.wikipedia.org/wiki/Teorema_del_l%C3%ADmite_central" 
+title="Teorema del límite central">Teorema del límite central</a> 
+establece que bajo ciertas condiciones (como pueden ser <a 
+href="http://es.wikipedia.org/w/index.php?title=Independencia_y_distribuci%C3%B3n_id%C3%A9ntica_de_variables_aleatorias&amp;action=edit&amp;redlink=1"
+ class="new" title="Independencia y distribución idéntica de variables 
+aleatorias (aún no redactado)">independientes e idénticamente 
+distribuidas</a> con varianza finita), la suma de un gran número de 
+variables aleatorias se distribuye aproximadamente como una normal.</p>
+<p>La importancia práctica del Teorema del límite central es que la 
+función de distribución de la normal puede usarse como aproximación de 
+algunas otras funciones de distribución. Por ejemplo:</p>
+<ul>
+<li>Una <a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_binomial" 
+title="Distribución binomial">distribución binomial</a> de parámetros <i>n</i>
+ y <i>p</i> es aproximadamente normal para grandes valores de <i>n</i>, y
+ <i>p</i> no demasiado cercano a 1 ó 0 (algunos libros recomiendan usar 
+esta aproximación sólo si <i>np</i> y <i>n</i>(1&nbsp;−&nbsp;<i>p</i>) 
+son ambos, al menos, 5; en este caso se debería aplicar una <a 
+href="http://es.wikipedia.org/w/index.php?title=Correcci%C3%B3n_de_continuidad&amp;action=edit&amp;redlink=1"
+ class="new" title="Corrección de continuidad (aún no redactado)">corrección
+ de continuidad</a>).<br>
+La normal aproximada tiene parámetros μ = <i>np</i>, σ<sup>2</sup> = <i>np</i>(1&nbsp;−&nbsp;<i>p</i>).</li>
+</ul>
+<ul>
+<li>Una <a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_de_Poisson" 
+title="Distribución de Poisson">distribución de Poisson</a> con 
+parámetro λ es aproximadamente normal para grandes valores de λ.<br>
+La distribución normal aproximada tiene parámetros μ = σ<sup>2</sup> = 
+λ.</li>
+</ul>
+<p>La exactitud de estas aproximaciones depende del propósito para el 
+que se necesiten y de la tasa de convergencia a la distribución normal. 
+Se da el caso típico de que tales aproximaciones son menos precisas en 
+las colas de la distribución. El <a 
+href="http://es.wikipedia.org/w/index.php?title=Teorema_de_Berry-Ess%C3%A9en&amp;action=edit&amp;redlink=1"
+ class="new" title="Teorema de Berry-Esséen (aún no redactado)">Teorema 
+de Berry-Esséen</a> proporciona un límite superior general del error de 
+aproximación de la función de distribución.</p>
+<h3><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=13"
+ title="Editar sección: Divisibilidad infinita">editar</a>]</span> <span
+ class="mw-headline" id="Divisibilidad_infinita">Divisibilidad infinita</span></h3>
+<div class="noprint AP" style="margin: 0pt 0pt 0.2ex 1em;"><i><span 
+style="font-size: 87%;">Artículo principal:</span> <a 
+href="http://es.wikipedia.org/wiki/Divisibilidad_infinita_%28probabilidad%29"
+ title="Divisibilidad infinita (probabilidad)">Divisibilidad infinita 
+(probabilidad)</a></i></div>
+<p>Las normales tienen una distribución de probabilidad <a 
+href="http://es.wikipedia.org/wiki/Divisibilidad_infinita_%28probabilidad%29"
+ title="Divisibilidad infinita (probabilidad)">infinitamente divisible</a>:
+ Para una distribución normal X de media <i>μ</i> y varianza <i>σ</i><sup>2</sup>&nbsp;≥&nbsp;0,
+ es posible encontrar <i>n</i> variables aleatorias independientes {<i>X</i><sub>1</sub>,...,<i>X</i><sub>n</sub>}
+ cada una con distribución normal de media <i>μ/n</i> y varianza <i>σ</i><sup>2</sup>/n
+ dado que la suma <i>X</i><sub>1</sub>&nbsp;+ .&nbsp;.&nbsp;.&nbsp;+ <i>X<sub>n</sub></i>
+ de estas <i>n</i> variables aleatorias</p>
+<dl>
+<dd><img class="tex" alt="X_1+X_2+\dots+X_n \sim N(\mu, \sigma^2)\," 
+src="Distribuci%C3%B3n_normal_files/95e7bc566a61ddc5157bff924ded37c0.png"></dd>
+</dl>
+<p>tenga esta específica distribución normal (para verificarlo, úsese la
+ <a 
+href="http://es.wikipedia.org/w/index.php?title=Funci%C3%B3n_caracter%C3%ADstica_de_convoluci%C3%B3n&amp;action=edit&amp;redlink=1"
+ class="new" title="Función característica de convolución (aún no 
+redactado)">función característica de convolución</a> y la <a 
+href="http://es.wikipedia.org/wiki/Inducci%C3%B3n_matem%C3%A1tica" 
+title="Inducción matemática">inducción matemática</a>).</p>
+<h3><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=14"
+ title="Editar sección: Estabilidad">editar</a>]</span> <span 
+class="mw-headline" id="Estabilidad">Estabilidad</span></h3>
+<p>Las distribuciones normales son estrictamente <a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_estable&amp;action=edit&amp;redlink=1"
+ class="new" title="Distribución estable (aún no redactado)">estables</a>.</p>
+<h2><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=15"
+ title="Editar sección: Desviación típica e intervalos de confianza">editar</a>]</span>
+ <span class="mw-headline" 
+id="Desviaci.C3.B3n_t.C3.ADpica_e_intervalos_de_confianza">Desviación 
+típica e intervalos de confianza</span></h2>
+<p>Alrededor del 68% de los valores de una distribución normal están a 
+una distancia σ&nbsp;&lt;&nbsp;1 (desviación típica) de la media, μ; 
+alrededor del 95% de los valores están a dos desviaciones típicas de la 
+media y alrededor del 99,7% están a tres desviaciones típicas de la 
+media. Esto se conoce como la "<a 
+href="http://es.wikipedia.org/w/index.php?title=Regla_68-95-99,7&amp;action=edit&amp;redlink=1"
+ class="new" title="Regla 68-95-99,7 (aún no redactado)">regla 
+68-95-99,7</a>" o la "<a 
+href="http://es.wikipedia.org/w/index.php?title=Regla_emp%C3%ADrica&amp;action=edit&amp;redlink=1"
+ class="new" title="Regla empírica (aún no redactado)">regla empírica</a>".</p>
+<p>Para ser más precisos, el área bajo la curva campana entre 
+μ&nbsp;−&nbsp;<i>n</i>σ y μ&nbsp;+&nbsp;<i>n</i>σ en términos de la 
+función de distribución normal viene dada por</p>
+<dl>
+<dd><img class="tex" 
+alt="\begin{align}&amp;\Phi_{\mu,\sigma^2}(\mu+n\sigma)-\Phi_{\mu,\sigma^2}(\mu-n\sigma)\\
+&amp;=\Phi(n)-\Phi(-n)=2\Phi(n)-1=\mathrm{erf}\bigl(n/\sqrt{2}\,\bigr),\end{align}"
+ 
+src="Distribuci%C3%B3n_normal_files/9999782b2f577594a74abbceb5c42bd9.png"></dd>
+</dl>
+<p>donde erf es la función error. Con 12 decimales, los valores para los
+ puntos 1-, 2-, hasta 6-σ son:</p>
+<table class="wikitable" style="text-align: center;">
+<tbody><tr bgcolor="#cccccc">
+<th>&nbsp;<img class="tex" alt="n\," 
+src="Distribuci%C3%B3n_normal_files/a957404c96e59f1746f97ab668c8e1f8.png">&nbsp;</th>
+<th><img class="tex" alt="\mathrm{erf}\bigl(n/\sqrt{2}\,\bigr)\," 
+src="Distribuci%C3%B3n_normal_files/91f08e9934e5bf807dc054d4953053d4.png"></th>
+</tr>
+<tr>
+<td>1</td>
+<td>&nbsp;0,682689492137&nbsp;</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0,954499736104</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0,997300203937</td>
+</tr>
+<tr>
+<td>4</td>
+<td>0,999936657516</td>
+</tr>
+<tr>
+<td>5</td>
+<td>0,999999426697</td>
+</tr>
+<tr>
+<td>6</td>
+<td>0,999999998027</td>
+</tr>
+</tbody></table>
+<p>La siguiente tabla proporciona la relación inversa de múltiples σ 
+correspondientes a unos pocos valores usados con frecuencia para el área
+ bajo la campana de Gauss. Estos valores son útiles para determinar <a 
+href="http://es.wikipedia.org/wiki/Intervalo_de_confianza" 
+title="Intervalo de confianza">intervalos de confianza</a> para los 
+niveles especificados basados en una curva normalmente distribuida (o <a
+ href="http://es.wikipedia.org/wiki/Estimador" title="Estimador">estimadores</a>
+ <a 
+href="http://es.wikipedia.org/wiki/Estimador#Normalidad_asint.C3.B3tica"
+ title="Estimador">asintóticamente normales</a>):</p>
+<table class="wikitable" style="text-align: center;">
+<tbody><tr bgcolor="#cccccc">
+<th>&nbsp;<img class="tex" alt="\mathrm{erf}\bigl(n/\sqrt{2}\,\bigr)" 
+src="Distribuci%C3%B3n_normal_files/64151eeb9063d9b0dc7ad0128217998a.png">&nbsp;</th>
+<th><img class="tex" alt="n\," 
+src="Distribuci%C3%B3n_normal_files/a957404c96e59f1746f97ab668c8e1f8.png">&nbsp;</th>
+</tr>
+<tr>
+<td>0,80</td>
+<td>&nbsp;1,28155&nbsp;</td>
+</tr>
+<tr>
+<td>0,90</td>
+<td>1,64485</td>
+</tr>
+<tr>
+<td>0,95</td>
+<td>1,95996</td>
+</tr>
+<tr>
+<td>0,98</td>
+<td>2,32635</td>
+</tr>
+<tr>
+<td>0,99</td>
+<td>2,57583</td>
+</tr>
+<tr>
+<td>0,995</td>
+<td>2,80703</td>
+</tr>
+<tr>
+<td>0,998</td>
+<td>3,09023</td>
+</tr>
+<tr>
+<td>0,999</td>
+<td>3,29052</td>
+</tr>
+<tr>
+<td>0,9999</td>
+<td>3,8906</td>
+</tr>
+<tr>
+<td>0,99999</td>
+<td>4,4172</td>
+</tr>
+</tbody></table>
+<p>donde el valor a la izquierda de la tabla es la proporción de valores
+ que caerán en el intervalo dado y <i>n</i> es un múltiplo de la 
+desviación típica que determina la anchura de el intervalo.</p>
+<h3><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=16"
+ title="Editar sección: Forma familia exponencial">editar</a>]</span> <span
+ class="mw-headline" id="Forma_familia_exponencial">Forma familia 
+exponencial</span></h3>
+<p>La distribución normal tiene forma de <a 
+href="http://es.wikipedia.org/wiki/Familia_exponencial" title="Familia 
+exponencial">familia exponencial</a> biparamétrica con dos parámetros 
+naturales, μ y 1/σ<sup>2</sup>, y estadísticos naturales <i>X</i> y <i>X</i><sup>2</sup>.
+ La forma canónica tiene como parámetros <img class="tex" alt="{\mu 
+\over \sigma^2}" 
+src="Distribuci%C3%B3n_normal_files/66df9aac994e6a8ea9cc06b1cc0c776f.png">
+ y <img class="tex" alt="{1 \over \sigma^2}" 
+src="Distribuci%C3%B3n_normal_files/3fe28694087012d2ba28ab97f4a6b418.png">
+ y <a 
+href="http://es.wikipedia.org/w/index.php?title=Estad%C3%ADstico_suficiente&amp;action=edit&amp;redlink=1"
+ class="new" title="Estadístico suficiente (aún no redactado)">estadísticos
+ suficientes</a> <img class="tex" alt="\sum  x " 
+src="Distribuci%C3%B3n_normal_files/350173c119b3d463b62e0b4652b236d4.png">
+ y <img class="tex" alt="-{1 \over 2} \sum  x^2. " 
+src="Distribuci%C3%B3n_normal_files/f39d4ac183ef3ac4be54a68ecb60ed0a.png"></p>
+<h2><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=17"
+ title="Editar sección: Distribución normal compleja">editar</a>]</span>
+ <span class="mw-headline" id="Distribuci.C3.B3n_normal_compleja">Distribución
+ normal compleja</span></h2>
+<p>Considérese la <a 
+href="http://es.wikipedia.org/w/index.php?title=Variable_aleatoria_compleja&amp;action=edit&amp;redlink=1"
+ class="new" title="Variable aleatoria compleja (aún no redactado)">variable
+ aleatoria compleja</a> gaussiana</p>
+<dl>
+<dd><img class="tex" alt="Z=X+iY\," 
+src="Distribuci%C3%B3n_normal_files/3846c58224f32eb63cb9af01dba206d3.png"></dd>
+</dl>
+<p>donde <i>X</i> e <i>Y</i> son variables gaussianas reales e 
+independientes con igual varianza <img class="tex" alt="\sigma_r^2" 
+src="Distribuci%C3%B3n_normal_files/4f783b17edc97d759d6310207f15a66d.png">.
+ La función de distribución de la variable conjunta es entonces</p>
+<dl>
+<dd><img class="tex" alt="\frac{1}{2\,\pi\,\sigma_r^2} e^{-(x^2+y^2)/(2 
+\sigma_r ^2)}." 
+src="Distribuci%C3%B3n_normal_files/d05312c0b660c21133cbd2051e941a6c.png"></dd>
+</dl>
+<p>Como <img class="tex" alt="\sigma_Z =\sqrt{2}\sigma_r" 
+src="Distribuci%C3%B3n_normal_files/ad7037ddce9df0c5db90e54927d30b6b.png">,
+ la función de distribución resultante para la variable gaussiana 
+compleja <i>Z</i> es</p>
+<dl>
+<dd><img class="tex" alt="\frac{1}{\pi\,\sigma_Z^2} 
+e^{-|Z|^2\!/\sigma_Z^2}." 
+src="Distribuci%C3%B3n_normal_files/e4c9a348d522b49bbf13aa15a8698b4d.png"></dd>
+</dl>
+<h2><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=18"
+ title="Editar sección: Distribuciones relacionadas">editar</a>]</span> <span
+ class="mw-headline" id="Distribuciones_relacionadas">Distribuciones 
+relacionadas</span></h2>
+<ul>
+<li><span class="texhtml" dir="ltr"><i>R</i>∼Rayleigh(σ)</span> es una <a
+ href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_de_Rayleigh" 
+title="Distribución de Rayleigh">distribución de Rayleigh</a> si <img 
+class="tex" alt="R = \sqrt{X^2 + Y^2}" 
+src="Distribuci%C3%B3n_normal_files/e41a5f870054bbda1373726fb25c6520.png">
+ donde <span class="texhtml" dir="ltr"><i>X</i>∼<i>N</i>(0,σ<sup>2</sup>)</span>
+ y <span class="texhtml" dir="ltr"><i>Y</i>∼<i>N</i>(0,σ<sup>2</sup>)</span>
+ son dos distribuciones normales independientes.</li>
+</ul>
+<ul>
+<li><img class="tex" alt="Y \sim \chi_{\nu}^2" 
+src="Distribuci%C3%B3n_normal_files/263b03672200fc829ba95f4651f1607d.png">
+ es una <a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_%CF%87%C2%B2" 
+title="Distribución χ²">distribución χ²</a> con <span class="texhtml" 
+dir="ltr">ν</span> <a 
+href="http://es.wikipedia.org/wiki/Grados_de_libertad" title="Grados de 
+libertad" class="mw-redirect">grados de libertad</a> si <img class="tex"
+ alt="Y = \sum_{k=1}^{\nu} X_k^2" 
+src="Distribuci%C3%B3n_normal_files/f866c1f5f0db1418fb7c8adae6043808.png">
+ donde <span class="texhtml" dir="ltr"><i>X</i><sub><i>k</i></sub>∼<i>N</i>(0,1)</span>
+ para <img class="tex" alt="k=1,\dots,\nu" 
+src="Distribuci%C3%B3n_normal_files/3266063c0c346f762ca500127846e0fa.png">
+ y son independientes.</li>
+</ul>
+<ul>
+<li><span class="texhtml" dir="ltr"><i>Y</i>∼Cauchy(μ = 0,θ = 1)</span> 
+es una <a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_de_Cauchy" 
+title="Distribución de Cauchy">distribución de Cauchy</a> si <span 
+class="texhtml" dir="ltr"><i>Y</i> = <i>X</i><sub>1</sub> / <i>X</i><sub>2</sub></span>
+ para <span class="texhtml" dir="ltr"><i>X</i><sub>1</sub>∼<i>N</i>(0,1)</span>
+ y <span class="texhtml" dir="ltr"><i>X</i><sub>2</sub>∼<i>N</i>(0,1)</span>
+ son dos distribuciones normales independientes.</li>
+</ul>
+<ul>
+<li><span class="texhtml" dir="ltr"><i>Y</i>∼Log-N(μ,σ<sup>2</sup>)</span>
+ es una <a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_log-normal" 
+title="Distribución log-normal">distribución log-normal</a> si <span 
+class="texhtml" dir="ltr"><i>Y</i> = <i>e</i><sup><i>X</i></sup></span> y
+ <span class="texhtml" dir="ltr"><i>X</i>∼<i>N</i>(μ,σ<sup>2</sup>)</span>.</li>
+</ul>
+<ul>
+<li>Relación con una <a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_estable&amp;action=edit&amp;redlink=1"
+ class="new" title="Distribución estable (aún no redactado)">distribución
+ estable</a>: si <img class="tex" alt="X\sim 
+\textrm{stable}(2,\beta,\sigma/\sqrt{2},\mu)" 
+src="Distribuci%C3%B3n_normal_files/5ebca3545303d7099bedf2c4e0c165fd.png">
+ entonces <span class="texhtml" dir="ltr"><i>X</i>˜<i>N</i>(μ,σ<sup>2</sup>)</span>.</li>
+</ul>
+<ul>
+<li><a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal_truncada&amp;action=edit&amp;redlink=1"
+ class="new" title="Distribución normal truncada (aún no redactado)">Distribución
+ normal truncada</a>. si <img class="tex" alt="X \sim N(\mu, 
+\sigma^2),\!" 
+src="Distribuci%C3%B3n_normal_files/4b5014ecb9e82cc8fcb1fe51d29a3b1b.png">
+ entonces truncando <i>X</i> por debajo de <span class="texhtml" 
+dir="ltr"><i>A</i></span> y por encima de <span class="texhtml" 
+dir="ltr"><i>B</i></span> dará lugar a una variable aleatoria de media <img
+ class="tex" alt="E(X)=\mu + \frac{\sigma(\varphi_1-\varphi_2)}{T},\!" 
+src="Distribuci%C3%B3n_normal_files/338ea5f5da32ea4e8c66715f472d014d.png">
+ donde <img class="tex" 
+alt="T=\Phi\left(\frac{B-\mu}{\sigma}\right)-\Phi\left(\frac{A-\mu}{\sigma}\right),
+ \; \varphi_1 = \varphi\left(\frac{A-\mu}{\sigma}\right), \; \varphi_2 =
+ \varphi\left(\frac{B-\mu}{\sigma}\right)" 
+src="Distribuci%C3%B3n_normal_files/d585042effa2995bbdde4f98076d6e4f.png">
+ y <span class="texhtml" dir="ltr">φ</span> es la función de densidad de
+ una variable normal estándar.</li>
+</ul>
+<ul>
+<li>Si <span class="texhtml" dir="ltr"><i>X</i></span> es una variable 
+aleatoria normalmente distribuida e <span class="texhtml" dir="ltr"><i>Y</i>
+ = | <i>X</i> |</span> , entonces <span class="texhtml" dir="ltr"><i>Y</i></span>
+ tiene una <a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal_doblada&amp;action=edit&amp;redlink=1"
+ class="new" title="Distribución normal doblada (aún no redactado)">distribución
+ normal doblada</a>.</li>
+</ul>
+<h2><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=19"
+ title="Editar sección: Estadística descriptiva e inferencial">editar</a>]</span>
+ <span class="mw-headline" 
+id="Estad.C3.ADstica_descriptiva_e_inferencial">Estadística descriptiva e
+ inferencial</span></h2>
+<h3><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=20"
+ title="Editar sección: Resultados">editar</a>]</span> <span 
+class="mw-headline" id="Resultados">Resultados</span></h3>
+<p>De la distribución normal se derivan muchos resultados, incluyendo <a
+ 
+href="http://es.wikipedia.org/w/index.php?title=Rango_percentil&amp;action=edit&amp;redlink=1"
+ class="new" title="Rango percentil (aún no redactado)">rangos de 
+percentiles</a> ("percentiles" o "cuantiles"), <a 
+href="http://es.wikipedia.org/w/index.php?title=Curva_normal_equivalente&amp;action=edit&amp;redlink=1"
+ class="new" title="Curva normal equivalente (aún no redactado)">curvas 
+normales equivalentes</a>, <a 
+href="http://es.wikipedia.org/w/index.php?title=Stanine&amp;action=edit&amp;redlink=1"
+ class="new" title="Stanine (aún no redactado)">stanines</a>, <a 
+href="http://es.wikipedia.org/w/index.php?title=Standard_score&amp;action=edit&amp;redlink=1"
+ class="new" title="Standard score (aún no redactado)">z-scores</a>, y <a
+ 
+href="http://es.wikipedia.org/w/index.php?title=T-scores&amp;action=edit&amp;redlink=1"
+ class="new" title="T-scores (aún no redactado)">T-scores</a>. Además, 
+un número de procedimientos de estadísticos de comportamiento están 
+basados en la asunción de que esos resultados están normalmente 
+distribuidos. Por ejemplo, el <a 
+href="http://es.wikipedia.org/wiki/Test_de_Student" title="Test de 
+Student" class="mw-redirect">test de Student</a> y el <a 
+href="http://es.wikipedia.org/wiki/An%C3%A1lisis_de_varianza" 
+title="Análisis de varianza" class="mw-redirect">análisis de varianza</a>
+ (ANOVA) (véase más abajo). La <a 
+href="http://es.wikipedia.org/w/index.php?title=Gradaci%C3%B3n_de_la_curva_campana&amp;action=edit&amp;redlink=1"
+ class="new" title="Gradación de la curva campana (aún no redactado)">gradación
+ de la curva campana</a> asigna grados relativos basados en una 
+distribución normal de resultados.</p>
+<h3><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=21"
+ title="Editar sección: Tests de normalidad">editar</a>]</span> <span 
+class="mw-headline" id="Tests_de_normalidad">Tests de normalidad</span></h3>
+<div class="noprint AP" style="margin: 0pt 0pt 0.2ex 1em;"><i><span 
+style="font-size: 87%;">Artículo principal:</span> <a 
+href="http://es.wikipedia.org/w/index.php?title=Test_de_normalidad&amp;action=edit&amp;redlink=1"
+ class="new" title="Test de normalidad (aún no redactado)">Test de 
+normalidad</a></i></div>
+<p>Los tests de normalidad se aplican a conjuntos de datos para 
+determinar su similitud con una distribución normal. La <a 
+href="http://es.wikipedia.org/wiki/Hip%C3%B3tesis_nula" title="Hipótesis
+ nula">hipótesis nula</a> es, en estos casos, si el conjunto de datos es
+ similar a una distribución normal, por lo que un <a 
+href="http://es.wikipedia.org/wiki/P-valor" title="P-valor" 
+class="mw-redirect">P-valor</a> suficientemente pequeño indica datos no 
+normales.</p>
+<ul>
+<li><a 
+href="http://es.wikipedia.org/wiki/Prueba_de_Kolmog%C3%B3rov-Smirnov" 
+title="Prueba de Kolmogórov-Smirnov">Prueba de Kolmogórov-Smirnov</a></li>
+<li><a 
+href="http://es.wikipedia.org/w/index.php?title=Test_de_Lilliefors&amp;action=edit&amp;redlink=1"
+ class="new" title="Test de Lilliefors (aún no redactado)">Test de 
+Lilliefors</a></li>
+<li><a 
+href="http://es.wikipedia.org/w/index.php?title=Test_de_Anderson%E2%80%93Darling&amp;action=edit&amp;redlink=1"
+ class="new" title="Test de Anderson–Darling (aún no redactado)">Test de
+ Anderson–Darling</a></li>
+<li><a 
+href="http://es.wikipedia.org/w/index.php?title=Test_de_Ryan%E2%80%93Joiner&amp;action=edit&amp;redlink=1"
+ class="new" title="Test de Ryan–Joiner (aún no redactado)">Test de 
+Ryan–Joiner</a></li>
+<li><a href="http://es.wikipedia.org/wiki/Test_de_Shapiro%E2%80%93Wilk" 
+title="Test de Shapiro–Wilk">Test de Shapiro–Wilk</a></li>
+<li><a 
+href="http://es.wikipedia.org/w/index.php?title=Normal_probability_plot&amp;action=edit&amp;redlink=1"
+ class="new" title="Normal probability plot (aún no redactado)">Normal 
+probability plot</a> (<a 
+href="http://es.wikipedia.org/w/index.php?title=Rankit&amp;action=edit&amp;redlink=1"
+ class="new" title="Rankit (aún no redactado)">rankit</a> plot)</li>
+<li><a 
+href="http://es.wikipedia.org/w/index.php?title=Test_de_Jarque%E2%80%93Bera&amp;action=edit&amp;redlink=1"
+ class="new" title="Test de Jarque–Bera (aún no redactado)">Test de 
+Jarque–Bera</a></li>
+<li><a 
+href="http://es.wikipedia.org/w/index.php?title=Test_omnib%C3%BAs_de_Spiegelhalter&amp;action=edit&amp;redlink=1"
+ class="new" title="Test omnibús de Spiegelhalter (aún no redactado)">Test
+ omnibús de Spiegelhalter</a></li>
+</ul>
+<h3><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=22"
+ title="Editar sección: Estimación de parámetros">editar</a>]</span> <span
+ class="mw-headline" id="Estimaci.C3.B3n_de_par.C3.A1metros">Estimación 
+de parámetros</span></h3>
+<h4><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=23"
+ title="Editar sección: Estimación de parámetros de máxima 
+verosimilitud">editar</a>]</span> <span class="mw-headline" 
+id="Estimaci.C3.B3n_de_par.C3.A1metros_de_m.C3.A1xima_verosimilitud">Estimación
+ de parámetros de máxima verosimilitud</span></h4>
+<div class="VT" style="margin: 0pt 0pt 0.2ex 1em;"><i><span 
+style="font-size: 87%;">Véase también:</span> <a 
+href="http://es.wikipedia.org/wiki/M%C3%A1xima_verosimilitud" 
+title="Máxima verosimilitud">Máxima verosimilitud</a></i></div>
+<p>Supóngase que</p>
+<dl>
+<dd><img class="tex" alt="X_1,\dots,X_n" 
+src="Distribuci%C3%B3n_normal_files/e8eacc087b64e56391a3b8ddf4216d77.png"></dd>
+</dl>
+<p>son independientes y cada una está normalmente distribuida con media <i>μ</i>
+ y varianza <i>σ</i><sup>&nbsp;2</sup> &gt; 0. En términos estadísticos 
+los valores observados de estas <i>n</i> variables aleatorias 
+constituyen una "muestra de tamaño <i>n</i> de una población normalmente
+ distribuida. Se desea estimar la <a 
+href="http://es.wikipedia.org/wiki/Media_poblacional" title="Media 
+poblacional" class="mw-redirect">media poblacional</a> <i>μ</i> y la <a 
+href="http://es.wikipedia.org/w/index.php?title=Desviaci%C3%B3n_t%C3%ADpica_poblacional&amp;action=edit&amp;redlink=1"
+ class="new" title="Desviación típica poblacional (aún no redactado)">desviación
+ típica poblacional</a> <i>σ</i>, basándose en las valores observados de
+ esta muestra. La función de densidad conjunta de estas <i>n</i> 
+variables aleatorias independientes es</p>
+<dl>
+<dd><img class="tex" alt="\begin{align}f(x_1,\dots,x_n;\mu,\sigma)
+&amp;= \prod_{i=1}^n \varphi_{\mu,\sigma^2}(x_i)\\
+&amp;=\frac1{(\sigma\sqrt{2\pi})^n}\prod_{i=1}^n \exp\biggl(-{1 \over 2}
+ \Bigl({x_i-\mu \over \sigma}\Bigr)^2\biggr),
+\quad(x_1,\ldots,x_n)\in\mathbb{R}^n.
+\end{align}" 
+src="Distribuci%C3%B3n_normal_files/417deafba7ab3ad6627740d503deffb8.png"></dd>
+</dl>
+<p>Como función de <i>μ</i> y <i>σ</i>, la <a 
+href="http://es.wikipedia.org/wiki/Funci%C3%B3n_de_verosimilitud" 
+title="Función de verosimilitud">función de verosimilitud</a> basada en 
+las observaciones <i>X</i><sub>1</sub>, ..., <i>X</i><sub><i>n</i></sub>
+ es</p>
+<dl>
+<dd><img class="tex" alt="L(\mu,\sigma) = \frac C{\sigma^n} 
+\exp\left(-{\sum_{i=1}^n (X_i-\mu)^2 \over 2\sigma^2}\right),
+\quad\mu\in\mathbb{R},\ \sigma&gt;0," 
+src="Distribuci%C3%B3n_normal_files/db25f42945b388b0c52202ffc3033e27.png"></dd>
+</dl>
+<p>con alguna constante <i>C</i> &gt; 0 (de la cual, en general, se 
+permitiría incluso que dependiera de <i>X</i><sub>1</sub>, ..., <i>X</i><sub><i>n</i></sub>,
+ aunque desapareciera con las derivadas parciales de la función de 
+log-verosimilitud respecto a los parámetros tenidos en cuenta, véase más
+ abajo).</p>
+<p>En el método de <a 
+href="http://es.wikipedia.org/wiki/M%C3%A1xima_verosimilitud" 
+title="Máxima verosimilitud">máxima verosimilitud</a>, los valores de <i>μ</i>
+ y <i>σ</i> que maximizan la función de verosimilitud se toman como 
+estimadores de los parámetros poblacionales <i>μ</i> y <i>σ</i>.</p>
+<p>Habitualmente en la maximización de una función de dos variables, se 
+podrían considerar <a 
+href="http://es.wikipedia.org/wiki/Derivadas_parciales" title="Derivadas
+ parciales" class="mw-redirect">derivadas parciales</a>. Pero aquí se 
+explota el hecho de que el valor de <i>μ</i> que maximiza la función de 
+verosimilitud con <i>σ</i> fijo no depende de <i>σ</i>. No obstante, 
+encontramos que ese valor de <i>μ</i>, entonces se sustituye por <i>μ</i>
+ en la función de verosimilitud y finalmente encontramos el valor de <i>σ</i>
+ que maximiza la expresión resultante.</p>
+<p>Es evidente que la función de verosimilitud es una función 
+decreciente de la suma</p>
+<dl>
+<dd><img class="tex" alt="\sum_{i=1}^n (X_i-\mu)^2. \,\!" 
+src="Distribuci%C3%B3n_normal_files/dcdb239464bff0c2e7116c297542fd6f.png"></dd>
+</dl>
+<p>Así que se desea el valor de <i>μ</i> que <i>minimiza</i> esta suma. 
+Sea</p>
+<dl>
+<dd><img class="tex" alt="\overline{X}_n=(X_1+\cdots+X_n)/n" 
+src="Distribuci%C3%B3n_normal_files/10cde146ccb69e09988422d7cc032d43.png"></dd>
+</dl>
+<p>la media muestral basada en las <i>n</i> observaciones. Nótese que</p>
+<dl>
+<dd><img class="tex" alt="\begin{align}
+\sum_{i=1}^n (X_i-\mu)^2
+&amp;=\sum_{i=1}^n\bigl((X_i-\overline{X}_n)+(\overline{X}_n-\mu)\bigr)^2\\
+&amp;=\sum_{i=1}^n(X_i-\overline{X}_n)^2
+ + 2(\overline{X}_n-\mu)\underbrace{\sum_{i=1}^n 
+(X_i-\overline{X}_n)}_{=\,0} + \sum_{i=1}^n (\overline{X}_n-\mu)^2\\
+&amp;=\sum_{i=1}^n(X_i-\overline{X}_n)^2 + n(\overline{X}_n-\mu)^2.
+\end{align}" 
+src="Distribuci%C3%B3n_normal_files/0e373807170105a24cfaaa4742d92c46.png"></dd>
+</dl>
+<p>Sólo el último término depende de <i>μ</i> y se minimiza por</p>
+<dl>
+<dd><img class="tex" alt="\widehat{\mu}_n=\overline{X}_n." 
+src="Distribuci%C3%B3n_normal_files/c7d6e35b614f7bd59400bddb5dbc7c5a.png"></dd>
+</dl>
+<p>Esta es la estimación de máxima verosimilitud de <i>μ</i> basada en 
+las <i>n</i> observaciones <i>X</i><sub>1</sub>, ..., <i>X</i><sub><i>n</i></sub>.
+ Cuando sustituimos esta estimación por <i>μ</i> en la función de 
+verosimilitud, obtenemos</p>
+<dl>
+<dd><img class="tex" alt="L(\overline{X}_n,\sigma) = \frac C{\sigma^n} 
+\exp\biggl(-{\sum_{i=1}^n (X_i-\overline{X}_n)^2 \over 
+2\sigma^2}\biggr),
+\quad\sigma&gt;0." 
+src="Distribuci%C3%B3n_normal_files/185f223ff69fcf06c2d9a472cfcb8d32.png"></dd>
+</dl>
+<p>Se conviene en denotar la "log-función de verosimilitud", esto es, el
+ logaritmo de la función de verosimilitud, con una minúscula <i>ℓ</i>, y
+ tenemos</p>
+<dl>
+<dd><img class="tex" alt="\ell(\overline{X}_n,\sigma)=\log 
+C-n\log\sigma-{\sum_{i=1}^n(X_i-\overline{X}_n)^2 \over 2\sigma^2},
+\quad\sigma&gt;0," 
+src="Distribuci%C3%B3n_normal_files/ca0731f310bc4a80c60ae04c46bf97df.png"></dd>
+</dl>
+<p>entonces</p>
+<dl>
+<dd><img class="tex" alt="\begin{align}
+{\partial \over \partial\sigma}\ell(\overline{X}_n,\sigma)
+&amp;=-{n \over \sigma} +{\sum_{i=1}^n (X_i-\overline{X}_n)^2 \over 
+\sigma^3}\\
+&amp;=-{n \over \sigma^3}\biggl(\sigma^2-{1 \over n}\sum_{i=1}^n 
+(X_i-\overline{X}_n)^2 \biggr),
+\quad\sigma&gt;0.
+\end{align}" 
+src="Distribuci%C3%B3n_normal_files/3b349f10f4c462a40cc60c7020090276.png"></dd>
+</dl>
+<p>Esta derivada es positiva, cero o negativa según <i>σ</i><sup>2</sup>
+ esté entre 0 y</p>
+<dl>
+<dd><img class="tex" alt="\hat\sigma_n^2:={1 \over 
+n}\sum_{i=1}^n(X_i-\overline{X}_n)^2," 
+src="Distribuci%C3%B3n_normal_files/00e96b19f69c3a59c992d2fcfe0159a8.png"></dd>
+</dl>
+<p>o sea igual a esa cantidad, o mayor que esa cantidad. (Si hay 
+solamente una observación, lo que significa que <i>n</i> = 1, o si <i>X</i><sub>1</sub>
+ = ... = <i>X</i><sub><i>n</i></sub>, lo cual sólo ocurre con 
+probabilidad cero, entonces <img class="tex" alt="\hat\sigma{}_n^2=0" 
+src="Distribuci%C3%B3n_normal_files/d57203c1217d7e63d94c7884371d0605.png">
+ por esta fórmula, refleja el hecho de que en estos casos la función de 
+verosimilitud es ilimitada cuando <i>σ</i> decrece hasta cero.)</p>
+<p>Consecuentemente esta media de cuadrados de <a 
+href="http://es.wikipedia.org/w/index.php?title=Errores_y_residuos&amp;action=edit&amp;redlink=1"
+ class="new" title="Errores y residuos (aún no redactado)">residuos</a> 
+es el estimador de máxima verosimilitud de <i>σ</i><sup>2</sup>, y su 
+raíz cuadrada es el estimador de máxima verosimilitud de <i>σ</i> basado
+ en las <i>n</i> observaciones. Este estimador <img class="tex" 
+alt="\hat\sigma{}_n^2" 
+src="Distribuci%C3%B3n_normal_files/ed65f8702bc6856e0111d2a11fc7705b.png">
+ es <a href="http://es.wikipedia.org/wiki/Estimador_sesgado" 
+title="Estimador sesgado" class="mw-redirect">sesgado</a>, pero tiene un
+ menor <a 
+href="http://es.wikipedia.org/w/index.php?title=Error_medio_al_cuadrado&amp;action=edit&amp;redlink=1"
+ class="new" title="Error medio al cuadrado (aún no redactado)">error 
+medio al cuadrado</a> que el habitual estimador insesgado, que es <i>n</i>/(<i>n</i>&nbsp;−&nbsp;1)
+ veces este estimador.</p>
+<h5><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=24"
+ title="Editar sección: Sorprendente generalización">editar</a>]</span> <span
+ class="mw-headline" id="Sorprendente_generalizaci.C3.B3n">Sorprendente 
+generalización</span></h5>
+<p>La derivada del estimador de máxima verosimilitud de la <a 
+href="http://es.wikipedia.org/wiki/Matriz_de_covarianza" title="Matriz 
+de covarianza">matriz de covarianza</a> de una <a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_normal_multivariante"
+ title="Distribución normal multivariante">distribución normal 
+multivariante</a> es despreciable. Involucra el <a 
+href="http://es.wikipedia.org/wiki/Teorema_espectral" title="Teorema 
+espectral" class="mw-redirect">teorema espectral</a> y la razón por la 
+que puede ser mejor para ver un <a 
+href="http://es.wikipedia.org/wiki/Escalar" title="Escalar">escalar</a> 
+como la <a href="http://es.wikipedia.org/wiki/Traza" title="Traza">traza</a>
+ de una <a 
+href="http://es.wikipedia.org/wiki/Matriz_%28matem%C3%A1tica%29" 
+title="Matriz (matemática)">matriz</a> 1×1 que como un mero escalar. 
+Véase <a 
+href="http://es.wikipedia.org/w/index.php?title=Estimaci%C3%B3n_de_la_covarianza_de_matrices&amp;action=edit&amp;redlink=1"
+ class="new" title="Estimación de la covarianza de matrices (aún no 
+redactado)">estimación de la covarianza de matrices</a>.</p>
+<h4><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=25"
+ title="Editar sección: Estimación insesgada de parámetros">editar</a>]</span>
+ <span class="mw-headline" 
+id="Estimaci.C3.B3n_insesgada_de_par.C3.A1metros">Estimación insesgada 
+de parámetros</span></h4>
+<p>El estimador <img class="tex" alt=" \overline{X}" 
+src="Distribuci%C3%B3n_normal_files/a6e4e8639d2e624fd2d30a0829c27c5b.png">
+ de máxima verosimilitud de la media poblacional <i>μ</i>, es un <a 
+href="http://es.wikipedia.org/wiki/Estimador_insesgado" title="Estimador
+ insesgado" class="mw-redirect">estimador insesgado</a> de la media 
+poblacional.</p>
+<p>El estimador de máxima verosimilitud de la varianza es insesgado si 
+asumimos que la media de la población es conocida <i>a priori</i>, pero 
+en la práctica esto no ocurre. Cuando disponemos de una muestra y no 
+sabemos nada de la media o la varianza de la población de la que se ha 
+extraído, como se asumía en la derivada de máxima verosimilitud de 
+arriba, entonces el estimador de máxima verosimilitud de la varianza es 
+sesgado. Un estimador insesgado de la varianza <i>σ</i><sup>2</sup> es 
+la cuasi varianza muestral:</p>
+<dl>
+<dd><img class="tex" alt="S^2 = \frac{1}{n-1} \sum_{i=1}^n (X_i - 
+\overline{X})^2." 
+src="Distribuci%C3%B3n_normal_files/0debce5d084f617b4cd82f2278eef7fd.png"></dd>
+</dl>
+<p>que sigue una <a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_Gamma" 
+title="Distribución Gamma" class="mw-redirect">distribución Gamma</a> 
+cuando las <i>X</i><sub><i>i</i></sub> son normales independientes e 
+idénticamente distribuidas:</p>
+<dl>
+<dd><img class="tex" alt="S^2 \sim 
+\operatorname{Gamma}\left(\frac{n-1}{2},\frac{2 \sigma^2}{n-1}\right)," 
+src="Distribuci%C3%B3n_normal_files/c0b0b7d5528117ab3ba8cef8db2fd2b4.png"></dd>
+</dl>
+<p>con media <img class="tex" alt="\operatorname{E}(S^2)=\sigma^2" 
+src="Distribuci%C3%B3n_normal_files/660aa55a31bf7a0fc4268237ae3422ed.png">
+ y varianza <img class="tex" 
+alt="\operatorname{Var}(S^2)=2\sigma^4/(n-1)." 
+src="Distribuci%C3%B3n_normal_files/03ea0d006804147070546ed303929f00.png"></p>
+<p>La estimación de máxima verosimilitud de la desviación típica es la 
+raíz cuadrada de la estimación de máxima verosimilitud de la varianza. 
+No obstante, ni ésta, ni la raíz cuadrada de la cuasivarianza muestral 
+proporcionan un estimador insesgado para la desviación típica (véase <a 
+href="http://es.wikipedia.org/w/index.php?title=Estimaci%C3%B3n_insesgada_de_la_desviaci%C3%B3n_t%C3%ADpica&amp;action=edit&amp;redlink=1"
+ class="new" title="Estimación insesgada de la desviación típica (aún no
+ redactado)">estimación insesgada de la desviación típica</a> para una 
+fórmula particular para la distribución normal.</p>
+<h2><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=26"
+ title="Editar sección: Incidencia">editar</a>]</span> <span 
+class="mw-headline" id="Incidencia">Incidencia</span></h2>
+<p>Las distribuciones <i>aproximadamente</i> normales aparecen por 
+doquier, como queda explicado por el <a 
+href="http://es.wikipedia.org/wiki/Teorema_del_l%C3%ADmite_central" 
+title="Teorema del límite central">teorema central del límite</a>. 
+Cuando en un fenómeno se sospecha la presencia de un gran número de 
+pequeñas causas <i>actuando de forma aditiva e independiente</i> es 
+razonable pensar que las observaciones serán "normales". Hay métodos 
+estadísticos para probar empíricamente esta asunción, por ejemplo, el <a
+ href="http://es.wikipedia.org/wiki/Test_de_Kolmogorov-Smirnov" 
+title="Test de Kolmogorov-Smirnov" class="mw-redirect">test de 
+Kolmogorov-Smirnov</a>.</p>
+<p>Hay causas que pueden actuar de forma <i>multiplicativa</i> (más que 
+aditiva). En este caso, la asunción de normalidad no está justificada y 
+es el <a href="http://es.wikipedia.org/wiki/Logaritmo" title="Logaritmo">logaritmo</a>
+ de la variable en cuestión el que estaría normalmente distribuido. La 
+distribución de las variables directamente observadas en este caso se 
+denomina <a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_log-normal" 
+title="Distribución log-normal">log-normal</a>.</p>
+<p>Finalmente, si hay una simple influencia externa que tiene un gran 
+efecto en la variable en consideración, la asunción de normalidad no 
+está tampoco justificada. Esto es cierto incluso si, cuando la variable 
+externa se mantiene constante, las distribuciones marginales resultantes
+ son, en efecto, normales. La distribución completa será una 
+superposición de variables normales, que no es en general normal. Ello 
+está relacionado con la teoría de errores (véase más abajo).</p>
+<p>A continuación se muestran una lista de situaciones que estarían, 
+aproximadamente, normalmente distribuidas. Más abajo puede encontrarse 
+una discusión detallada de cada una de ellas:</p>
+<ul>
+<li>En problemas de recuento, donde el teorema central del límite 
+incluye una aproximación de discreta a continua y donde las 
+distribuciones <a 
+href="http://es.wikipedia.org/w/index.php?title=Infinitamente_divisibles&amp;action=edit&amp;redlink=1"
+ class="new" title="Infinitamente divisibles (aún no redactado)">infinitamente
+ divisibles</a> y <a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_no_descomponible&amp;action=edit&amp;redlink=1"
+ class="new" title="Distribución no descomponible (aún no redactado)">descomponibles</a>
+ están involucradas, tales como:
+<ul>
+<li><a href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_binomial" 
+title="Distribución binomial">variables aleatorias binomiales</a>, 
+asociadas con preguntas sí/no;</li>
+<li><a href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_de_Poisson" 
+title="Distribución de Poisson">variables aleatorias de Poisson</a>, 
+asociadas con <a 
+href="http://es.wikipedia.org/w/index.php?title=Eventos_raros&amp;action=edit&amp;redlink=1"
+ class="new" title="Eventos raros (aún no redactado)">eventos raros</a>;</li>
+</ul>
+</li>
+<li>En medidas fisiológicas de especímenes biológicos:
+<ul>
+<li>El <i>logaritmo</i> de las medidas del tamaño de tejidos vivos 
+(longitud, altura, superficie de piel, peso);</li>
+<li>La <i>longitud</i> de apéndices <i>inertes</i> (pelo, garras, rabos,
+ dientes) de especímenes biológicos <i>en la dirección del crecimento</i>;</li>
+<li>Otras medidas fisiológicas podrían estar normalmente distribuidas, 
+aunque no hay razón para esperarlo <i>a priori</i>;</li>
+</ul>
+</li>
+<li>Se asume con frecuencia que los errores de medida están normalmente 
+distribuidos y cualquier desviación de la normalidad se considera una 
+cuestión que debería explicarse;</li>
+<li>Variables financieras, en el <a 
+href="http://es.wikipedia.org/w/index.php?title=Modelo_Black-Scholes&amp;action=edit&amp;redlink=1"
+ class="new" title="Modelo Black-Scholes (aún no redactado)">modelo 
+Black-Scholes</a>:
+<ul>
+<li>Cambios en el <i>logaritmo</i> de</li>
+</ul>
+</li>
+</ul>
+<p>Cambios en el <i>logaritmo</i> de tasas de cambio, índices de 
+precios, índices de existencias de mercado; estas variables se comportan
+ como el interés compuesto, no como el interés simple, por tanto, son 
+multiplicativas;</p>
+<ul>
+<li>
+<ul>
+<li>Mientras que el modelo Black-Scholes presupone normalidad, en 
+realidad estas variables exhiben <a 
+href="http://es.wikipedia.org/w/index.php?title=Colas_pesadas&amp;action=edit&amp;redlink=1"
+ class="new" title="Colas pesadas (aún no redactado)">colas pesadas</a>,
+ como puede verse en <a 
+href="http://es.wikipedia.org/w/index.php?title=Crash_de_las_existencias_de_mercado&amp;action=edit&amp;redlink=1"
+ class="new" title="Crash de las existencias de mercado (aún no 
+redactado)">crash de las existencias de mercado</a>;</li>
+<li>Otras variables financieras podrían estar normalmente distribuidas, 
+pero no hay razón para esperarlo <i>a priori</i>;</li>
+</ul>
+</li>
+<li>Intensidad de la luz:
+<ul>
+<li>La intensidad de la luz láser está normalmente distribuida;</li>
+<li>La <a 
+href="http://es.wikipedia.org/w/index.php?title=Luz_t%C3%A9rmica&amp;action=edit&amp;redlink=1"
+ class="new" title="Luz térmica (aún no redactado)">luz térmica</a> 
+tiene una <a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_de_Bose-Einstein&amp;action=edit&amp;redlink=1"
+ class="new" title="Distribución de Bose-Einstein (aún no redactado)">distribución
+ de Bose-Einstein</a> en escalas de tiempo muy breves y una distribución
+ normal en grandes escalas de tiempo debido al teorema central del 
+límite.</li>
+</ul>
+</li>
+</ul>
+<p>Es relevante para la biolgía y la economía el hecho de que los 
+sistemas complejos tienden a mostrar la <a 
+href="http://es.wikipedia.org/wiki/Ley_de_potencias" title="Ley de 
+potencias">ley de potencias</a> más que normal.</p>
+<h3><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=27"
+ title="Editar sección: Recuento de fotones">editar</a>]</span> <span 
+class="mw-headline" id="Recuento_de_fotones">Recuento de fotones</span></h3>
+<p>La intensidad de la luz de una sola fuente varía con el tiempo, así 
+como las fluctuaciones térmicas que pueden observarse si la luz se 
+analiza a una resolución suficientemente alta. La <a 
+href="http://es.wikipedia.org/wiki/Mec%C3%A1nica_cu%C3%A1ntica" 
+title="Mecánica cuántica">mecánica cuántica</a> interpreta las medidas 
+de la intensidad de la luz como un recuento de <a 
+href="http://es.wikipedia.org/wiki/Fot%C3%B3n" title="Fotón">fotones</a>,
+ donde la asunción natural es usar la <a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_de_Poisson" 
+title="Distribución de Poisson">distribución de Poisson</a>. Cuando la 
+intensidad de la luz se integra a lo largo de grandes periodos de tiempo
+ mayores que el tiempo de coherencia, la aproximación Poisson - Normal 
+es apropiada.</p>
+<h3><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=28"
+ title="Editar sección: Medida de errores">editar</a>]</span> <span 
+class="mw-headline" id="Medida_de_errores">Medida de errores</span></h3>
+<p>La normalidad es la <i>asunción central</i> de la <a 
+href="http://es.wikipedia.org/w/index.php?title=Teor%C3%ADa_de_errores&amp;action=edit&amp;redlink=1"
+ class="new" title="Teoría de errores (aún no redactado)">teoría 
+matemática de errores</a>. De forma similar en el ajuste de modelos 
+estadístico, un indicador de la bondad del ajuste es que el <a 
+href="http://es.wikipedia.org/w/index.php?title=Error_residual&amp;action=edit&amp;redlink=1"
+ class="new" title="Error residual (aún no redactado)">error residual</a>
+ (así es como se llaman los errores en esta circunstancia) sea 
+independiente y normalmente distribuido. La asunción es que cualquier 
+desviación de la normalidad necesita ser explicada. En ese sentido, en 
+ambos, ajuste de modelos y teoría de errores, la normalidad es la única 
+observación que no necesita ser explicada, sino que es esperada. No 
+obstante, si los datos originales no están normalmente distribuidos (por
+ ejemplo, si siguen una <a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_de_Cauchy" 
+title="Distribución de Cauchy">distribución de Cauchy</a>, entonces los 
+residuos tampoco estarán normalmente distribuidos. Este hecho es 
+ignorado habitualmente en la práctica.</p>
+<p>Las medidas repetidas de la misma cantidad se espera que cedan el 
+paso a resultados que están agrupados entorno a un valor particular. Si 
+todas las fuentes principales de errores se han tomado en cuenta, se <i>asume</i>
+ que el error que queda debe ser el resultado de un gran número de muy 
+pequeños y <i>aditivos</i> efectos y, por consiguiente, normal. Las 
+desviaciones de la normalidad se interpretan como indicaciones de 
+errores sistemáticos que no han sido tomados en cuenta. Puede debatirse 
+si esta asunción es válida.</p>
+<p>Una famosa observación atribuida a <a 
+href="http://es.wikipedia.org/wiki/Gabriel_Lippmann" title="Gabriel 
+Lippmann">Gabriel Lippmann</a> dice:<sup>[<i><a 
+href="http://es.wikipedia.org/wiki/Wikipedia:Verificabilidad" 
+title="Wikipedia:Verificabilidad">cita&nbsp;requerida</a></i>]</sup></p>
+<div style="margin: 1em 4em;" class="citado">Todo el mundo cree en la 
+ley normal de los errores: los matemáticos, porque piensan que es un 
+hecho experimental; y los experimentadores, porque suponen que es un 
+teorema matemático</div>
+<p>Otra fuente podría ser <a rel="nofollow" class="external text" 
+href="http://en.wikiquote.org/wiki/Henri_Poincar%C3%A9#Misattributed">Henri
+ Poincaré</a>.</p>
+<h3><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=29"
+ title="Editar sección: Características físicas de especímenes 
+biológicos">editar</a>]</span> <span class="mw-headline" 
+id="Caracter.C3.ADsticas_f.C3.ADsicas_de_espec.C3.ADmenes_biol.C3.B3gicos">Características
+ físicas de especímenes biológicos</span></h3>
+<p>Los tamaños de los animales adultos siguen aproximadamente una 
+distribución <a href="http://es.wikipedia.org/wiki/Log-normal" 
+title="Log-normal" class="mw-redirect">log-normal</a>. La evidencia y 
+explicación basada en modelos de crecimiento fue publicada por primera 
+vez en el libro <i><a 
+href="http://es.wikipedia.org/w/index.php?title=Problemas_de_crecimiento_relativo&amp;action=edit&amp;redlink=1"
+ class="new" title="Problemas de crecimiento relativo (aún no 
+redactado)">Problemas de crecimiento relativo</a></i>, de 1932, por <a 
+href="http://es.wikipedia.org/wiki/Julian_Huxley" title="Julian Huxley">Julian
+ Huxley</a>.</p>
+<p>Las diferencias de tamaño debido a <a 
+href="http://es.wikipedia.org/wiki/Dimorfismo_sexual" title="Dimorfismo 
+sexual">dimorfismos sexuales</a> u otros <a 
+href="http://es.wikipedia.org/wiki/Polimorfismo" title="Polimorfismo">polimorfismos</a>
+ de insectos, como la división social de las abejas en obreras, zánganos
+ y reinas, por ejemplo, hace que la distribución de tamaños se desvíe 
+hacia la lognormalidad.</p>
+<p>La asunción de que el tamaño lineal de los especímenes biológicos es 
+normal (más que lognormal) nos lleva a una distribución no normal del 
+peso (puesto que el peso o el volumen es proporcional al cuadrado o el 
+cubo de la longitud y las distribuciones gaussianas sólo mantienen las 
+transformaciones lineales). A la inversa, asumir que el peso sigue una 
+distribución normal implica longitudes no normales. Esto es un problema 
+porque, <i>a priori</i>, no hay razón por la que cualquiera de ellas 
+(longitud, masa corporal u otras) debería estar normalmente distribuida.
+ Las distribuciones lognormales, por otro lado, se mantienen entre 
+potencias, así que el "problema" se desvanece si se asume la 
+lognormalidad.</p>
+<p>Por otra parte, hay algunas medidas biológicas donde se asume 
+normalidad, tales como la presión sanguínea en humanos adultos. Esta 
+asunción sólo es posible tras separar a hombres y mujeres en distintas 
+poblaciones, cada una de las cuales está normalmente distribuida.</p>
+<h3><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=30"
+ title="Editar sección: Variables financieras">editar</a>]</span> <span 
+class="mw-headline" id="Variables_financieras">Variables financieras</span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width: 222px;"><a 
+href="http://es.wikipedia.org/wiki/Archivo:Crowd_outside_nyse.jpg" 
+class="image"><img alt="" 
+src="Distribuci%C3%B3n_normal_files/220px-Crowd_outside_nyse.jpg" 
+class="thumbimage" width="220" height="306"></a>
+<div class="thumbcaption">
+<div class="magnify"><a 
+href="http://es.wikipedia.org/wiki/Archivo:Crowd_outside_nyse.jpg" 
+class="internal" title="Aumentar"><img 
+src="Distribuci%C3%B3n_normal_files/magnify-clip.png" alt="" width="15" 
+height="11"></a></div>
+El modelo normal de movimiento de activos no incluye movimientos 
+extremos tales como <a 
+href="http://es.wikipedia.org/wiki/Quiebra_financiera" title="Quiebra 
+financiera">quiebras financieras</a>.</div>
+</div>
+</div>
+<p>Ya en 1900 <a href="http://es.wikipedia.org/wiki/Louis_Bachelier" 
+title="Louis Bachelier">Louis Bachelier</a> propuso representar los 
+precios de cambio usando la distribución normal. Esta aproximación se ha
+ modificado desde entonces ligeramente. A causa de la naturaleza 
+multiplicativa del <a 
+href="http://es.wikipedia.org/wiki/Inter%C3%A9s_compuesto" 
+title="Interés compuesto">interés compuesto</a>, los indicadores 
+financieros como valores de mercado y precios de las materias primas 
+exhiben un "comportamiento multiplicativo". Como tales, sus cambios 
+periódicos (por ejemplo, cambios anuales) no son normales, sino <a 
+href="http://es.wikipedia.org/wiki/Lognormal" title="Lognormal" 
+class="mw-redirect">lognormales</a>. Esta es todavía la hipótesis más 
+comúnmente aceptada en <a 
+href="http://es.wikipedia.org/wiki/Econom%C3%ADa" title="Economía">economía</a>.</p>
+<p>No obstante, en realidad las variables financieras exhiben <a 
+href="http://es.wikipedia.org/w/index.php?title=Colas_pesadas&amp;action=edit&amp;redlink=1"
+ class="new" title="Colas pesadas (aún no redactado)">colas pesadas</a> y
+ así, la asunción de normalidad infravalora la probabilidad de eventos 
+extremos como <a href="http://es.wikipedia.org/wiki/Quiebra_financiera" 
+title="Quiebra financiera">quiebras financieras</a>. Se han sugerido 
+correcciones a este modelo por parte de matemáticos como <a 
+href="http://es.wikipedia.org/wiki/Beno%C3%AEt_Mandelbrot" title="Benoît
+ Mandelbrot">Benoît Mandelbrot</a>, quien observó que los cambios en el 
+logaritmo durante breves periodos de tiempo (como un día) se aproximan 
+bien por distribuciones que no tienen una varianza finita y, por 
+consiguiente, el teorema central del límite no puede aplicarse. Más aún,
+ la suma de muchos de tales cambios sigue una <a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_de_log-Levy&amp;action=edit&amp;redlink=1"
+ class="new" title="Distribución de log-Levy (aún no redactado)">distribución
+ de log-Levy</a>.</p>
+<h3><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=31"
+ title="Editar sección: Distribuciones en tests de inteligencia">editar</a>]</span>
+ <span class="mw-headline" id="Distribuciones_en_tests_de_inteligencia">Distribuciones
+ en tests de inteligencia</span></h3>
+<p>A veces, la dificultad y número de preguntas en un <a 
+href="http://es.wikipedia.org/wiki/Test_de_inteligencia" title="Test de 
+inteligencia">test de inteligencia</a> se selecciona de modo que 
+proporcionen resultados normalmente distribuidos. Más aún, las 
+puntuaciones "en crudo" se convierten a valores que marcan el <a 
+href="http://es.wikipedia.org/wiki/Cociente_intelectual" title="Cociente
+ intelectual">cociente intelectual</a> ajustándolas a la distribución 
+normal. En cualquier caso se trata de un resultado causado 
+deliberadamente por la construcción del test o de una interpretación de 
+las puntuaciones que sugiere normalidad para la mayoría de la población.
+ Sin embargo, la cuestión acerca de si la <a 
+href="http://es.wikipedia.org/wiki/Inteligencia" title="Inteligencia">inteligencia</a>
+ en sí está normalmente distribuida es más complicada porque se trata de
+ una <a 
+href="http://es.wikipedia.org/w/index.php?title=Variable_latente&amp;action=edit&amp;redlink=1"
+ class="new" title="Variable latente (aún no redactado)">variable 
+latente</a> y, por consiguiente, no puede observarse directamente.</p>
+<h3><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=32"
+ title="Editar sección: Ecuación de difusión">editar</a>]</span> <span 
+class="mw-headline" id="Ecuaci.C3.B3n_de_difusi.C3.B3n">Ecuación de 
+difusión</span></h3>
+<p>La función de densidad de la distribución normal está estrechamente 
+relacionada con la <a 
+href="http://es.wikipedia.org/wiki/Ecuaci%C3%B3n_de_difusi%C3%B3n" 
+title="Ecuación de difusión">ecuación de difusión</a> (homogénea e 
+isótropa) y, por tanto, también con la <a 
+href="http://es.wikipedia.org/wiki/Ecuaci%C3%B3n_de_calor" 
+title="Ecuación de calor" class="mw-redirect">ecuación de calor</a>. 
+Esta <a 
+href="http://es.wikipedia.org/w/index.php?title=Ecuaci%C3%B3n_diferencial_parcial&amp;action=edit&amp;redlink=1"
+ class="new" title="Ecuación diferencial parcial (aún no redactado)">ecuación
+ diferencial parcial</a> describe el tiempo de evolución de una función 
+de densidad bajo <a 
+href="http://es.wikipedia.org/wiki/Difusi%C3%B3n_%28f%C3%ADsica%29" 
+title="Difusión (física)">difusión</a>. En particular, la función de 
+densidad de masa</p>
+<dl>
+<dd><img class="tex" alt="\varphi_{0,t}(x) = \frac{1}{\sqrt{2\pi 
+t\,}}\exp\left(-\frac{x^2}{2t}\right), " 
+src="Distribuci%C3%B3n_normal_files/84d21de0b4a10081e20374d1dac949e4.png"></dd>
+</dl>
+<p>para la distribución normal con esperanza 0 y varianza <i>t</i> 
+satisface la ecuación de difusión:</p>
+<dl>
+<dd><img class="tex" alt=" \frac{\partial}{\partial t} \varphi_{0,t}(x) =
+ \frac{1}{2} \frac{\partial^2}{\partial x^2} \varphi_{0,t}(x). " 
+src="Distribuci%C3%B3n_normal_files/0614c1455b4bef4b914153a570f7b460.png"></dd>
+</dl>
+<p>Si la densidad de masa para un tiempo <i>t</i>&nbsp;=&nbsp;0 viene 
+dada por la <a href="http://es.wikipedia.org/wiki/Delta_de_Dirac" 
+title="Delta de Dirac">delta de Dirac</a>, lo cual significa, 
+esencialemente que toda la masa está inicialmente concentrada en un 
+punto, entonces la función de densidad de masa en el tiempo <i>t</i> 
+tendrá la forma de la función de densidad de la normal, con varianza 
+creciendo linealmente con <i>t</i>. Esta conexión no es coincidencia: la
+ difusión se debe a un <a 
+href="http://es.wikipedia.org/w/index.php?title=Movimiento_Browniano&amp;action=edit&amp;redlink=1"
+ class="new" title="Movimiento Browniano (aún no redactado)">movimiento 
+Browniano</a> que queda descrito matemáticamente por un <a 
+href="http://es.wikipedia.org/w/index.php?title=Proceso_de_Wiener&amp;action=edit&amp;redlink=1"
+ class="new" title="Proceso de Wiener (aún no redactado)">proceso de 
+Wiener</a>, y tal proceso en un tiempo <i>t</i> también resultará normal
+ con varianza creciendo linealmente con <i>t'</i>.</p>
+<p>Más generalmente, si la densidad de masa inicial viene dada por una 
+función φ(<i>x</i>), entonces la densidad de masa en un tiempo <i>t</i> 
+vendrá dada por la <a 
+href="http://es.wikipedia.org/wiki/Convoluci%C3%B3n" title="Convolución">convolución</a>
+ de φ y una función de densidad normal.</p>
+<h2><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=33"
+ title="Editar sección: Uso en estadística computacional">editar</a>]</span>
+ <span class="mw-headline" id="Uso_en_estad.C3.ADstica_computacional">Uso
+ en estadística computacional</span></h2>
+<h3><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=34"
+ title="Editar sección: Generación de valores para una variable 
+aleatoria normal">editar</a>]</span> <span class="mw-headline" 
+id="Generaci.C3.B3n_de_valores_para_una_variable_aleatoria_normal">Generación
+ de valores para una variable aleatoria normal</span></h3>
+<p>Para simulaciones por ordenador es útil, en ocasiones, generar 
+valores que podrían seguir una distribución normal. Hay varios métodos y
+ el más básico de ellos es invertir la función de distribución de la 
+normal estándar. Se conocen otros métodos más eficientes, uno de los 
+cuales es la <a 
+href="http://es.wikipedia.org/w/index.php?title=Transformaci%C3%B3n_de_Box-Muller&amp;action=edit&amp;redlink=1"
+ class="new" title="Transformación de Box-Muller (aún no redactado)">transformación
+ de Box-Muller</a>. Un algoritmo incluso más rápido es el <a 
+href="http://es.wikipedia.org/w/index.php?title=Algoritmo_zigurat&amp;action=edit&amp;redlink=1"
+ class="new" title="Algoritmo zigurat (aún no redactado)">algoritmo 
+zigurat</a>. Ambos se discuten más abajo. Una aproximación simple a 
+estos métodos es programarlos como sigue: simplemente súmense 12 
+desviaciones uniformes (0,1) y réstense 6 (la mitad de 12). Esto es 
+bastante útil en muchas aplicaciones. La suma de esos 12 valores sigue 
+la <a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_de_Irwin-Hall&amp;action=edit&amp;redlink=1"
+ class="new" title="Distribución de Irwin-Hall (aún no redactado)">distribución
+ de Irwin-Hall</a>; son elegidos 12 para dar a la suma una varianza de 
+uno, exactamente. Las desviaciones aleatorias resultantes están 
+limitadas al rango (−6,&nbsp;6) y tienen una densidad que es una doceava
+ sección de una aproximación polinomial de undécimo orden a la 
+distribución normal .<sup id="cite_ref-9" class="reference"><a 
+href="#cite_note-9"><span class="corchete-llamada">[</span>10<span 
+class="corchete-llamada">]</span></a></sup></p>
+<p>El <a href="http://es.wikipedia.org/wiki/M%C3%A9todo_de_Box-Muller" 
+title="Método de Box-Muller">método de Box-Muller</a> dice que, si 
+tienes dos números aleatorios <i>U</i> y <i>V</i> <a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_uniforme_continua" 
+title="Distribución uniforme continua">uniformemente distribuidos</a> en
+ (0, 1], (por ejemplo, la salida de un <a 
+href="http://es.wikipedia.org/wiki/Generador_de_n%C3%BAmeros_aleatorios"
+ title="Generador de números aleatorios">generador de números aleatorios</a>),
+ entonces <i>X</i> e <i>Y</i> son dos variables aleatorias estándar 
+normalmente distribuidas, donde:</p>
+<dl>
+<dd><img class="tex" alt="Y = \sqrt{- 2 \ln U} \, \sin(2 \pi V) ." 
+src="Distribuci%C3%B3n_normal_files/90e975ff53d1c2842b85766a5b49c0f3.png"></dd>
+</dl>
+<p>Esta formulación aparece porque la distribución χ² con dos grados de 
+libertad (véase la propiedad 4, más arriba) es una variable aleatoria <a
+ href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_exponencial" 
+title="Distribución exponencial">exponencial</a> fácilmente generada (la
+ cual corresponde a la cantidad ln<i>U</i> en estas ecuaciones). Así, un
+ ángulo elegido uniformemente alrededor de un círculo vía la variable 
+aleatoria <i>V</i> y un radio elegido para ser exponencial se 
+transforman entonces en coordenadas <i>x</i> e <i>y</i> normalmente 
+distribuidas.</p>
+<p>Un método mucho más rápido que la transformación de Box-Muller, pero 
+que sigue siendo exacto es el llamado <a 
+href="http://es.wikipedia.org/w/index.php?title=Algoritmo_Zigurat&amp;action=edit&amp;redlink=1"
+ class="new" title="Algoritmo Zigurat (aún no redactado)">algoritmo 
+Zigurat</a>, desarrollado por <a 
+href="http://es.wikipedia.org/w/index.php?title=George_Marsaglia&amp;action=edit&amp;redlink=1"
+ class="new" title="George Marsaglia (aún no redactado)">George 
+Marsaglia</a>. En alrededor del 97% de los casos usa sólo dos números 
+aleatorios, un entero aleatorio y un uniforme aleatorio, una 
+multiplicación y un test-si . Sólo un 3% de los casos donde la 
+combinación de estos dos cae fuera del "corazón del zigurat", un tipo de
+ rechazo muestral usando logaritmos, exponenciales y números aleatorios 
+más uniformes deberían ser empleados.</p>
+<p>Hay también alguna investigación sobre la conexión entre la rápida <a
+ 
+href="http://es.wikipedia.org/w/index.php?title=Transformaci%C3%B3n_de_Hadamard&amp;action=edit&amp;redlink=1"
+ class="new" title="Transformación de Hadamard (aún no redactado)">transformación
+ de Hadamard</a> y la distribución normal, en virtud de que la 
+transformación emplea sólo adición y sustracción y por el teorema 
+central del límite los números aleatorios de casi cualquier distribución
+ serán transformados en la distribución normal. En esta visión se pueden
+ combinar una serie de transformaciones de Hadamard con permutaciones 
+aleatorias para devolver conjuntos de datos aleatorios normalmente 
+distribuidos.</p>
+<h3><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=35"
+ title="Editar sección: Aproximaciones numéricas de la distribución 
+normal y su función de distribución">editar</a>]</span> <span 
+class="mw-headline" 
+id="Aproximaciones_num.C3.A9ricas_de_la_distribuci.C3.B3n_normal_y_su_funci.C3.B3n_de_distribuci.C3.B3n">Aproximaciones
+ numéricas de la distribución normal y su función de distribución</span></h3>
+<p>La función de distribución normal se usa extensamente en computación 
+científica y estadística. Por consiguiente, ha sido implementada de 
+varias formas.</p>
+<p>Abramowitz y Stegun (1964) dan la conocida como "mejor aproximación 
+de Hastings" para Φ(<i>x</i>) con <i>x &gt; 0</i> con un error absoluto |<i>ε</i>(<i>x</i>)|&nbsp;&lt;&nbsp;7.5·10<sup>−8</sup>
+ (algoritmo <a rel="nofollow" class="external text" 
+href="http://www.math.sfu.ca/%7Ecbm/aands/page_932.htm">26.2.17</a>):</p>
+<dl>
+<dd><img class="tex" alt="    \Phi(x) = 1 - \phi(x)\Big(b_1t + b_2t^2 + 
+b_3t^3 + b_4t^4 + b_5t^5\Big) + \varepsilon(x), \qquad t = 
+\frac{1}{1+b_0x},
+  " 
+src="Distribuci%C3%B3n_normal_files/e60ce4728498ae5c3ad783250a0ba0a2.png"></dd>
+</dl>
+<p>donde <i>ϕ</i>(<i>x</i>) es la función de densidad de la distribución
+ normal estándar,</p>
+<dl>
+<dd><img class="tex" alt="    \phi(x) = \tfrac{1}{\sqrt{2\pi}}\, e^{- 
+\frac{\scriptscriptstyle 1}{\scriptscriptstyle 2} x^2}
+  " 
+src="Distribuci%C3%B3n_normal_files/7e3e29421d4feac0c2905a625a9a4447.png"></dd>
+</dl>
+<p>y las constantes son <i>b</i><sub>0</sub> = 0.2316419, <i>b</i><sub>1</sub>
+ = 0.319381530, <i>b</i><sub>2</sub> = −0.356563782, <i>b</i><sub>3</sub>
+ = 1.781477937, <i>b</i><sub>4</sub> = −1.821255978, <i>b</i><sub>5</sub>
+ = 1.330274429.</p>
+<p>La <a 
+href="http://es.wikipedia.org/w/index.php?title=Biblioteca_Cient%C3%ADfica_GNU&amp;action=edit&amp;redlink=1"
+ class="new" title="Biblioteca Científica GNU (aún no redactado)">Biblioteca
+ Científica GNU</a> calcula valores de la función de distribución normal
+ estándar usando aproximaciones por <a 
+href="http://es.wikipedia.org/w/index.php?title=Funciones_racionales&amp;action=edit&amp;redlink=1"
+ class="new" title="Funciones racionales (aún no redactado)">funciones 
+racionales</a> <a 
+href="http://es.wikipedia.org/w/index.php?title=A_trozos&amp;action=edit&amp;redlink=1"
+ class="new" title="A trozos (aún no redactado)">a trozos</a>. Otro 
+método de aproximación usa polinomios de tercer grado en intervalos.<sup
+ id="cite_ref-10" class="reference"><a href="#cite_note-10"><span 
+class="corchete-llamada">[</span>11<span class="corchete-llamada">]</span></a></sup>
+ El artículo sobre el <a 
+href="http://es.wikipedia.org/wiki/Lenguaje_de_programaci%C3%B3n_bc" 
+title="Lenguaje de programación bc" class="mw-redirect">lenguaje de 
+programación bc</a> proporciona un ejemplo de cómo computar la función 
+de distribución en GNU bc.</p>
+<p>Para una discusión más detallada sobre cómo calcular la distribución 
+normal, véase la sección 3.4.1C. de <i><a 
+href="http://es.wikipedia.org/w/index.php?title=The_Art_of_Computer_Programming&amp;action=edit&amp;redlink=1"
+ class="new" title="The Art of Computer Programming (aún no redactado)">The
+ Art of Computer Programming</a></i> (<i>El arte de la programación por 
+ordenador</i>), de <a href="http://es.wikipedia.org/wiki/Donald_Knuth" 
+title="Donald Knuth">Knuth</a>.</p>
+<h2><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=36"
+ title="Editar sección: Véase también">editar</a>]</span> <span 
+class="mw-headline" id="V.C3.A9ase_tambi.C3.A9n">Véase también</span></h2>
+<ul>
+<li><a href="http://es.wikipedia.org/wiki/Carl_Friedrich_Gauss" 
+title="Carl Friedrich Gauss">Carl Friedrich Gauss</a>.</li>
+<li><a href="http://es.wikipedia.org/wiki/Cociente_intelectual" 
+title="Cociente intelectual">Cociente intelectual</a>.</li>
+<li><a href="http://es.wikipedia.org/wiki/Desenfoque_gaussiano" 
+title="Desenfoque gaussiano">Desenfoque gaussiano</a> y <a 
+href="http://es.wikipedia.org/wiki/Convoluci%C3%B3n" title="Convolución">convolución</a>
+ usando la distribución normal como núcleo.</li>
+<li><a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_%CF%87%C2%B2" 
+title="Distribución χ²">Distribución χ²</a>.</li>
+<li><a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_de_Pearson&amp;action=edit&amp;redlink=1"
+ class="new" title="Distribución de Pearson (aún no redactado)">Distribución
+ de Pearson</a> Familia general de distribuciones de probabilidad que 
+extienden la distribución gaussiana para incluir diferentes valores de 
+asimetrías y curtosis.</li>
+<li><a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_gaussiana_inversa&amp;action=edit&amp;redlink=1"
+ class="new" title="Distribución gaussiana inversa (aún no redactado)">Distribución
+ gaussiana inversa</a></li>
+<li><a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_log%C3%ADstica" 
+title="Distribución logística">Distribución logística</a></li>
+<li><a href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_log-normal" 
+title="Distribución log-normal">Distribución log-normal</a></li>
+<li><a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_Normal-gamma&amp;action=edit&amp;redlink=1"
+ class="new" title="Distribución Normal-gamma (aún no redactado)">Distribución
+ Normal-gamma</a></li>
+<li><a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal_matriz&amp;action=edit&amp;redlink=1"
+ class="new" title="Distribución normal matriz (aún no redactado)">Distribución
+ normal matriz</a></li>
+<li><a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_normal_multivariante"
+ title="Distribución normal multivariante">Distribución normal 
+multivariante</a></li>
+<li><a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal_torcida&amp;action=edit&amp;redlink=1"
+ class="new" title="Distribución normal torcida (aún no redactado)">Distribución
+ normal torcida</a></li>
+<li><a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal_truncada&amp;action=edit&amp;redlink=1"
+ class="new" title="Distribución normal truncada (aún no redactado)">Distribución
+ normal truncada</a></li>
+<li><a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_t_de_Student" 
+title="Distribución t de Student">Distribución t de Student</a></li>
+<li><a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuciones_Tweedie&amp;action=edit&amp;redlink=1"
+ class="new" title="Distribuciones Tweedie (aún no redactado)">Distribuciones
+ Tweedie</a></li>
+<li><a href="http://es.wikipedia.org/wiki/Funci%C3%B3n_gaussiana" 
+title="Función gaussiana">Función gaussiana</a> (campana de Gauss).</li>
+<li><a href="http://es.wikipedia.org/wiki/Logit" title="Logit">Función 
+logit</a>.</li>
+<li><a href="http://es.wikipedia.org/wiki/Funci%C3%B3n_probit" 
+title="Función probit">Función probit</a></li>
+<li><a 
+href="http://es.wikipedia.org/w/index.php?title=Gradaci%C3%B3n_de_la_curva_campana&amp;action=edit&amp;redlink=1"
+ class="new" title="Gradación de la curva campana (aún no redactado)">Gradación
+ de la curva campana</a></li>
+<li><a href="http://es.wikipedia.org/wiki/Iannis_Xenakis" title="Iannis 
+Xenakis">Iannis Xenakis</a>, distribución gaussiana en <a 
+href="http://es.wikipedia.org/wiki/M%C3%BAsica" title="Música">música</a>.</li>
+<li><a 
+href="http://es.wikipedia.org/w/index.php?title=Integral_del_Gauss&amp;action=edit&amp;redlink=1"
+ class="new" title="Integral del Gauss (aún no redactado)">Integral del 
+Gauss</a></li>
+<li><a 
+href="http://es.wikipedia.org/w/index.php?title=Normalmente_distribuidas_e_incorreladas_no_implica_independencia&amp;action=edit&amp;redlink=1"
+ class="new" title="Normalmente distribuidas e incorreladas no implica 
+independencia (aún no redactado)">Normalmente distribuidas e 
+incorreladas no implica independencia</a> (un ejemplo de dos variables 
+aleatorias normalmente distribuidas e incorreladas que no son 
+independientes; esto no ocurriría en presencia de una <a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_normal_multivariante"
+ title="Distribución normal multivariante">distribución conjunta</a>).</li>
+<li><a 
+href="http://es.wikipedia.org/w/index.php?title=Problema_de_Behrens%E2%80%93Fisher&amp;action=edit&amp;redlink=1"
+ class="new" title="Problema de Behrens–Fisher (aún no redactado)">Problema
+ de Behrens–Fisher</a></li>
+<li><a href="http://es.wikipedia.org/wiki/Proceso_de_Gauss" 
+title="Proceso de Gauss">Proceso de Gauss</a>
+<ul>
+<li><a 
+href="http://es.wikipedia.org/w/index.php?title=Puente_Browniano&amp;action=edit&amp;redlink=1"
+ class="new" title="Puente Browniano (aún no redactado)">Puente 
+Browniano</a></li>
+<li><a 
+href="http://es.wikipedia.org/w/index.php?title=Proceso_de_Ornstein-Uhlenbeck&amp;action=edit&amp;redlink=1"
+ class="new" title="Proceso de Ornstein-Uhlenbeck (aún no redactado)">Proceso
+ de Ornstein-Uhlenbeck</a></li>
+<li><a 
+href="http://es.wikipedia.org/w/index.php?title=Proceso_de_Wiener&amp;action=edit&amp;redlink=1"
+ class="new" title="Proceso de Wiener (aún no redactado)">Proceso de 
+Wiener</a></li>
+</ul>
+</li>
+<li><a href="http://es.wikipedia.org/wiki/Prueba_de_Mann-Whitney" 
+title="Prueba de Mann-Whitney" class="mw-redirect">Prueba de 
+Mann-Whitney</a>. Método no paramétrico que aproxima a una normal.</li>
+<li><a 
+href="http://es.wikipedia.org/w/index.php?title=Suma_de_variables_aleatorias_normalmente_distribuidas&amp;action=edit&amp;redlink=1"
+ class="new" title="Suma de variables aleatorias normalmente 
+distribuidas (aún no redactado)">Suma de variables aleatorias 
+normalmente distribuidas</a></li>
+<li><a 
+href="http://es.wikibooks.org/wiki/es:Tablas_estad%C3%ADsticas/Distribuci%C3%B3n_normal"
+ class="extiw" title="b:es:Tablas estadísticas/Distribución normal">Tabla
+ distribución normal tipificada</a></li>
+<li><a href="http://es.wikipedia.org/wiki/Tama%C3%B1o_de_la_muestra" 
+title="Tamaño de la muestra">Tamaño de la muestra</a></li>
+<li><a 
+href="http://es.wikipedia.org/wiki/Teorema_del_l%C3%ADmite_central" 
+title="Teorema del límite central">Teorema Central del Límite</a>.</li>
+<li><a 
+href="http://es.wikipedia.org/w/index.php?title=Transformaci%C3%B3n_de_datos_%28Estad%C3%ADstica%29&amp;action=edit&amp;redlink=1"
+ class="new" title="Transformación de datos (Estadística) (aún no 
+redactado)">Transformación de datos (Estadística)</a>. Técnicas simples 
+de transformación de datos en una distribución normal.</li>
+<li><a 
+href="http://es.wikipedia.org/w/index.php?title=Teorema_de_Erd%C5%91s-Kac&amp;action=edit&amp;redlink=1"
+ class="new" title="Teorema de Erdős-Kac (aún no redactado)">Teorema de 
+Erdős-Kac</a>, sobre la ocurrencia de la distribución normal en <a 
+href="http://es.wikipedia.org/wiki/Teor%C3%ADa_de_n%C3%BAmeros" 
+title="Teoría de números">teoría de números</a>.</li>
+</ul>
+<h2><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=37"
+ title="Editar sección: Referencias">editar</a>]</span> <span 
+class="mw-headline" id="Referencias">Referencias</span></h2>
+<div class="listaref" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-0"><a href="#cite_ref-0">↑</a> Es una consecuencia del
+ <a href="http://es.wikipedia.org/wiki/Teorema_Central_del_L%C3%ADmite" 
+title="Teorema Central del Límite" class="mw-redirect">Teorema Central 
+del Límite</a></li>
+<li id="cite_note-1"><a href="#cite_ref-1">↑</a> Abraham de Moivre, 
+"Approximatio ad Summam Terminorum Binomii (<i>a</i>&nbsp;+&nbsp;<i>b</i>)<sup><i>n</i></sup>
+ in Seriem expansi" (impreso el 12 de noviembre de 1733 en Londres para 
+una edición privada). Este panfleto se reimprimió en: <b>(1)</b> Richard
+ C. Archibald (1926) “A rare pamphlet of Moivre and some of his 
+discoveries,” <i>Isis</i>, vol. 8, páginas 671-683; <b>(2)</b> Helen M. 
+Walker, “De Moivre on the law of normal probability” en David Eugene 
+Smith, <i>A Source Book in Mathematics</i> [Nueva York, Nueva York: 
+McGraw-Hill, 1929; reimpresión: Nueva York, Nueva York: Dover, 1959], 
+vol. 2, páginas 566-575.; <b>(3)</b> Abraham De Moivre, <i>The Doctrine 
+of Chances</i> (2ª ed.) [Londres: H. Woodfall, 1738; reimpresión: 
+Londres: Cass, 1967], páginas 235-243; (3ª ed.) [Londres: A Millar, 
+1756; reimpresión: Nueva York, Nueva York: Chelsea, 1967], páginas 
+243-254; <b>(4)</b> Florence N. David, <i>Games, Gods and Gambling: A 
+History of Probability and Statistical Ideas</i> [Londres: Griffin, 
+1962], Apéndice 5, páginas 254-267.</li>
+<li id="cite_note-2"><a href="#cite_ref-2">↑</a> Havil, 2003</li>
+<li id="cite_note-3"><a href="#cite_ref-3">↑</a> <span class="citation 
+cita-libro" id="CITAREFWussing1998">Wussing, Hans (marzo de 1998). «<a 
+rel="nofollow" class="external text" 
+href="http://books.google.es/books?id=IG3_b5Xm8PMC">Lección 10</a>». <i>Lecciones
+ de Historia de las Matemáticas</i> (1ª (castellano) edición). Siglo XXI
+ de España Editores, S.A.. pp.&nbsp;190. <small><a 
+href="http://es.wikipedia.org/wiki/ISBN" title="ISBN">ISBN</a> <a 
+href="http://es.wikipedia.org/wiki/Especial:FuentesDeLibros/84-323-0966-4"
+ title="Especial:FuentesDeLibros/84-323-0966-4">84-323-0966-4</a></small><span
+ class="printonly">. <a rel="nofollow" class="external free" 
+href="http://books.google.es/books?id=IG3_b5Xm8PMC">http://books.google.es/books?id=IG3_b5Xm8PMC</a></span>.
+  «"La distribución normal y sus aplicaciones a la teoría de errores se 
+asocia a menudo con el nombre de Gauss, quien la descubrió -igual que 
+Laplace- independientemente; no obstante ya había sido estudiada por de 
+Moivre»</span><span class="Z3988" 
+title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Lecci%C3%B3n+10&amp;rft.atitle=Lecciones+de+Historia+de+las+Matem%C3%A1ticas&amp;rft.aulast=Wussing&amp;rft.aufirst=Hans&amp;rft.au=Wussing%2C%26%2332%3BHans&amp;rft.date=marzo+de+1998&amp;rft.pages=pp.%26nbsp%3B190&amp;rft.edition=1%C2%AA+%28castellano%29&amp;rft.pub=Siglo+XXI+de+Espa%C3%B1a+Editores%2C+S.A.&amp;rft.isbn=84-323-0966-4&amp;rft_id=http%3A%2F%2Fbooks.google.es%2Fbooks%3Fid%3DIG3_b5Xm8PMC&amp;rfr_id=info:sid/es.wikipedia.org:Distribuci%C3%B3n_normal"><span
+ style="display: none;">&nbsp;</span></span></li>
+<li id="cite_note-4"><a href="#cite_ref-4">↑</a> <span class="citation 
+cita-genérica" id="Reference-Mathworld-Normal_Distribution"><a 
+href="http://es.wikipedia.org/wiki/Eric_W._Weisstein" title="Eric W. 
+Weisstein">Weisstein, Eric W.</a>, «<a rel="nofollow" class="external 
+text" href="http://mathworld.wolfram.com/NormalDistribution.html">Normal
+ Distribution</a>» <span style="color: rgb(85, 85, 85);">(en inglés)</span>,
+ <i><a href="http://es.wikipedia.org/wiki/MathWorld" title="MathWorld">MathWorld</a></i>,
+ <a href="http://es.wikipedia.org/wiki/Wolfram_Research" title="Wolfram 
+Research">Wolfram Research</a><span class="printonly">, <a 
+rel="nofollow" class="external free" 
+href="http://mathworld.wolfram.com/NormalDistribution.html">http://mathworld.wolfram.com/NormalDistribution.html</a></span><span
+ class="reference-accessdate">, consultado el 18 de marzo</span></span><span
+ class="Z3988" 
+title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Normal+Distribution&amp;rft.atitle=%5B%5BMathWorld%5D%5D&amp;rft.aulast=Weisstein%2C+Eric+W.&amp;rft.au=Weisstein%2C+Eric+W.&amp;rft.pub=%5B%5BWolfram+Research%5D%5D&amp;rft_id=http%3A%2F%2Fmathworld.wolfram.com%2FNormalDistribution.html&amp;rfr_id=info:sid/es.wikipedia.org:Distribuci%C3%B3n_normal"><span
+ style="display: none;">&nbsp;</span></span>.</li>
+<li id="cite_note-5"><a href="#cite_ref-5">↑</a> <a rel="nofollow" 
+class="external text" href="http://cnx.org/content/m11537/latest/">La 
+función Q</a></li>
+<li id="cite_note-6"><a href="#cite_ref-6">↑</a> <a rel="nofollow" 
+class="external free" 
+href="http://www.eng.tau.ac.il/%7Ejo/academic/Q.pdf">http://www.eng.tau.ac.il/~jo/academic/Q.pdf</a></li>
+<li id="cite_note-7"><a href="#cite_ref-7">↑</a> <span class="citation 
+cita-genérica" id="Reference-Mathworld-Normal_Distribution_Function"><a 
+href="http://es.wikipedia.org/wiki/Eric_W._Weisstein" title="Eric W. 
+Weisstein">Weisstein, Eric W.</a>, «<a rel="nofollow" class="external 
+text" 
+href="http://mathworld.wolfram.com/NormalDistributionFunction.html">Normal
+ Distribution Function</a>» <span style="color: rgb(85, 85, 85);">(en 
+inglés)</span>, <i><a href="http://es.wikipedia.org/wiki/MathWorld" 
+title="MathWorld">MathWorld</a></i>, <a 
+href="http://es.wikipedia.org/wiki/Wolfram_Research" title="Wolfram 
+Research">Wolfram Research</a><span class="printonly">, <a 
+rel="nofollow" class="external free" 
+href="http://mathworld.wolfram.com/NormalDistributionFunction.html">http://mathworld.wolfram.com/NormalDistributionFunction.html</a></span></span><span
+ class="Z3988" 
+title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Normal+Distribution+Function&amp;rft.atitle=%5B%5BMathWorld%5D%5D&amp;rft.aulast=Weisstein%2C+Eric+W.&amp;rft.au=Weisstein%2C+Eric+W.&amp;rft.pub=%5B%5BWolfram+Research%5D%5D&amp;rft_id=http%3A%2F%2Fmathworld.wolfram.com%2FNormalDistributionFunction.html&amp;rfr_id=info:sid/es.wikipedia.org:Distribuci%C3%B3n_normal"><span
+ style="display: none;">&nbsp;</span></span>.</li>
+<li id="cite_note-8"><a href="#cite_ref-8">↑</a> M.A. Sanders. «<a 
+rel="nofollow" class="external text" 
+href="http://www.planetmathematics.com/CharNormal.pdf">Characteristic 
+function of the univariate normal distribution</a>». Consultado el 
+06-03-2009.</li>
+<li id="cite_note-9"><a href="#cite_ref-9">↑</a> Johnson NL, Kotz S, 
+Balakrishnan N. (1995) Continuous Univariate Distributions Volume 2, 
+Wiley. Equation(26.48)</li>
+<li id="cite_note-10"><a href="#cite_ref-10">↑</a> Andy Salter. «<a 
+rel="nofollow" class="external text" 
+href="http://www.doc.ic.ac.uk/%7Edfg/AndysSplineTutorial/BSplines.html">B-Spline
+ curves</a>». Consultado el 05-12-2008.</li>
+</ol>
+</div>
+<h2><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit&amp;section=38"
+ title="Editar sección: Enlaces externos">editar</a>]</span> <span 
+class="mw-headline" id="Enlaces_externos">Enlaces externos</span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" 
+href="http://www.digitalreview.com.ar/distribucionnormal/">Áreas bajo la
+ curva normal</a> Tabla conteniendo los valores de la función normal</li>
+<li><a rel="nofollow" class="external text" 
+href="http://www.ugr.es/%7Ejsalinas/normal.htm">Calculadora de 
+probabilidades en una distribución Normal</a>. Permite hacer cálculos 
+directos e inversos.</li>
+<li><a rel="nofollow" class="external text" 
+href="http://www.vaxasoftware.com/doc_edu/mat/dnormal.pdf">Tabla de la 
+distribución normal</a> Tabla de la distribución normal en formato PDF</li>
+</ul>
+<p>Se puede usar <a href="http://es.wikipedia.org/wiki/Software" 
+title="Software">software</a> y un <a 
+href="http://es.wikipedia.org/wiki/Programa_de_computadora" 
+title="Programa de computadora" class="mw-redirect">programa de 
+computadora</a> para el ajuste de una <a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_de_probabilidad" 
+title="Distribución de probabilidad">distribución de probabilidad</a>, 
+incluyendo la normal, a una serie de datos:</p>
+<ul>
+<li><a rel="nofollow" class="external text" 
+href="http://www.mathwave.com/articles/distribution_fitting.html">Easy 
+fit</a>, "data analysis &amp; simulation"</li>
+<li><a rel="nofollow" class="external text" 
+href="http://www.mathworks.nl/products/statistics/demos.html?file=/products/demos/shipping/stats/cfitdfitdemo.html">MathWorks
+ Benelux</a></li>
+<li><a rel="nofollow" class="external text" 
+href="http://www.vosesoftware.com/">ModelRisk</a>, "risk modelling 
+software"</li>
+<li>Ricci distributions, <a rel="nofollow" class="external text" 
+href="http://cran.r-project.org/doc/contrib/Ricci-distributions-en.pdf">fitting
+ distrubutions with R</a> , Vito Ricci, 2005</li>
+<li>Risksolver, <a rel="nofollow" class="external text" 
+href="http://www.solver.com/risksolver8.htm">automatically fit 
+distributions and parameters to samples</a></li>
+<li><a rel="nofollow" class="external text" 
+href="http://www.statsoft.com/textbook/distribution-fitting/">StatSoft 
+distribution fitting</a></li>
+<li>CumFreq <a rel="nofollow" class="external autonumber" 
+href="http://www.waterlog.info/cumfreq.htm">[1]</a> , libre sin costo, 
+incluye la distribución normal, la <a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_lognormal" 
+title="Distribución lognormal" class="mw-redirect">lognormal</a>, 
+raíz-normal, cuadrado-normal, e <a 
+href="http://es.wikipedia.org/wiki/Intervalo_de_confianza" 
+title="Intervalo de confianza">intervalos de confianza</a> a base de la <a
+ href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_binomial" 
+title="Distribución binomial">distribución binomial</a></li>
+<li><a rel="nofollow" class="external text" 
+href="http://www.stud.feec.vutbr.cz/%7Exvapen02/vypocty/no.php?language=espanol">Calculadora
+ Distribución normal</a></li>
+<li><a rel="nofollow" class="external autonumber" 
+href="http://cajael.com/mestadisticos/T7DContinuas/node3.php">[2]</a> 
+Calcular la probabilidad de una distribucion normal con <a 
+href="http://es.wikipedia.org/wiki/R_%28lenguaje_de_programaci%C3%B3n%29"
+ title="R (lenguaje de programación)">R (lenguaje de programación)</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 6159/1000000
+Post-expand include size: 34224/2048000 bytes
+Template argument size: 10997/2048000 bytes
+Expensive parser function count: 0/500
+-->
+
+<!-- Saved in parser cache with key eswiki:pcache:idhash:48866-0!1!0!!es!4!* and timestamp 20111029141756 -->
+</div>				<!-- /bodycontent -->
+								<!-- printfooter -->
+				<div class="printfooter">
+				Obtenido de «<a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;oldid=50950725">http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;oldid=50950725</a>»
+				</div>
+				<!-- /printfooter -->
+												<!-- catlinks -->
+				<div id="catlinks" class="catlinks"><div id="mw-normal-catlinks"><a 
+href="http://es.wikipedia.org/wiki/Especial:Categor%C3%ADas" 
+title="Especial:Categorías">Categoría</a>: <ul><li><a 
+href="http://es.wikipedia.org/wiki/Categor%C3%ADa:Distribuciones_continuas"
+ title="Categoría:Distribuciones continuas">Distribuciones continuas</a></li></ul></div><div
+ id="mw-hidden-catlinks" class="mw-hidden-cats-hidden">Categoría oculta:
+ <ul><li><a 
+href="http://es.wikipedia.org/wiki/Categor%C3%ADa:Wikipedia:Art%C3%ADculos_con_pasajes_que_requieren_referencias"
+ title="Categoría:Wikipedia:Artículos con pasajes que requieren 
+referencias">Wikipedia:Artículos con pasajes que requieren referencias</a></li></ul></div></div>
+				<!-- /catlinks -->
+												<div class="visualClear"></div>
+				<!-- debughtml -->
+								<!-- /debughtml -->
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>Herramientas personales</h5>
+	<ul>
+		<li id="pt-login"><a 
+href="http://es.wikipedia.org/w/index.php?title=Especial:Entrar&amp;returnto=Distribuci%C3%B3n_normal"
+ title="Te recomendamos iniciar sesión, sin embargo no es obligatorio 
+[alt-shift-o]" accesskey="o">Iniciar sesión / crear cuenta</a></li>
+	</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Espacios de nombres</h5>
+	<ul>
+					<li id="ca-nstab-main" class="selected"><span><a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_normal" title="Ver 
+el artículo [alt-shift-c]" accesskey="c">Artículo</a></span></li>
+					<li id="ca-talk"><span><a 
+href="http://es.wikipedia.org/wiki/Discusi%C3%B3n:Distribuci%C3%B3n_normal"
+ title="Discusión acerca del artículo [alt-shift-t]" accesskey="t">Discusión</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variantes</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Vistas</h5>
+	<ul>
+					<li id="ca-view" class="selected"><span><a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_normal">Leer</a></span></li>
+					<li id="ca-edit"><span><a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=edit"
+ title="Puedes editar esta página. Utiliza el botón de previsualización 
+antes de guardar [alt-shift-e]" accesskey="e">Editar</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;action=history"
+ title="Versiones anteriores de esta página y sus autores [alt-shift-h]"
+ accesskey="h">Ver historial</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Acciones</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Buscar</label></h5>
+	<form action="/w/index.php" id="searchform">
+		<input name="title" value="Especial:Buscar" type="hidden">
+				<div id="simpleSearch">
+						<input autocomplete="off" class="placeholder" placeholder="Buscar"
+ tabindex="1" name="search" value="Buscar" title="Buscar en este wiki 
+[alt-shift-f]" accesskey="f" id="searchInput" type="text">						<button 
+type="submit" name="button" title="Busca páginas con este texto." 
+id="searchButton"><img 
+src="Distribuci%C3%B3n_normal_files/search-ltr.png" alt="Buscar"></button>
+					</div>
+			</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint collapsible-nav">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: 
+url(&quot;//upload.wikimedia.org/wikipedia/commons/8/8c/Wikipedia-logo-v2-es.png&quot;);"
+ href="http://es.wikipedia.org/wiki/Wikipedia:Portada" title="Visitar la
+ página principal"></a></div>
+				<!-- /logo -->
+				
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- navigation -->
+<div class="portal first persistent" id="p-navigation">
+	<h5>Navegación</h5>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a 
+href="http://es.wikipedia.org/wiki/Wikipedia:Portada" title="Visitar la 
+página principal [alt-shift-z]" accesskey="z">Portada</a></li>
+			<li id="n-portal"><a 
+href="http://es.wikipedia.org/wiki/Portal:Comunidad" title="Acerca del 
+proyecto, lo que puedes hacer, dónde encontrar información">Portal de la
+ comunidad</a></li>
+			<li id="n-currentevents"><a 
+href="http://es.wikipedia.org/wiki/Portal:Actualidad" title="Información
+ de contexto sobre acontecimientos actuales">Actualidad</a></li>
+			<li id="n-recentchanges"><a 
+href="http://es.wikipedia.org/wiki/Especial:CambiosRecientes" 
+title="Lista de cambios recientes en el wiki [alt-shift-r]" 
+accesskey="r">Cambios recientes</a></li>
+			<li id="n-newpages"><a 
+href="http://es.wikipedia.org/wiki/Especial:P%C3%A1ginasNuevas">Páginas 
+nuevas</a></li>
+			<li id="n-randompage"><a 
+href="http://es.wikipedia.org/wiki/Especial:Aleatoria" title="Cargar una
+ página al azar [alt-shift-x]" accesskey="x">Página aleatoria</a></li>
+			<li id="n-help"><a 
+href="http://es.wikipedia.org/wiki/Ayuda:Contenidos" title="El lugar 
+para aprender">Ayuda</a></li>
+			<li id="n-sitesupport"><a 
+href="http://wikimediafoundation.org/wiki/Special:Landingcheck?landing_page=WMFJA085&amp;language=es&amp;utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=20101204SB002"
+ rel="nofollow" title="Apóyanos">Donaciones</a></li>
+			<li id="n-bug_in_article"><a 
+href="http://es.wikipedia.org/wiki/Wikipedia:Informes_de_error">Notificar
+ un error</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- coll-print_export -->
+<div class="portal expanded" id="p-coll-print_export">
+	<h5 tabindex="2">Imprimir/exportar</h5>
+	<div style="display: block;" class="body">
+		<ul id="collectionPortletList"><li id="coll-create_a_book"><a 
+href="http://es.wikipedia.org/w/index.php?title=Especial:Libro&amp;bookcmd=book_creator&amp;referer=Distribuci%C3%B3n+normal"
+ title="Crear un libro o colección de página" rel="nofollow">Crear un 
+libro</a></li><li id="coll-download-as-rl"><a 
+href="http://es.wikipedia.org/w/index.php?title=Especial:Libro&amp;bookcmd=render_article&amp;arttitle=Distribuci%C3%B3n+normal&amp;oldid=50950725&amp;writer=rl"
+ title="Descargar una versión PDF de esta página wiki" rel="nofollow">Descargar
+ como PDF</a></li><li id="t-print"><a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;printable=yes"
+ title="Versión imprimible de esta página [alt-shift-p]" accesskey="p">Versión
+ para imprimir</a></li></ul>	</div>
+</div>
+
+<!-- /coll-print_export -->
+
+<!-- TOOLBOX -->
+<div class="portal collapsed" id="p-tb">
+	<h5 tabindex="3">Herramientas</h5>
+	<div class="body">
+		<ul>
+			<li id="t-whatlinkshere"><a 
+href="http://es.wikipedia.org/wiki/Especial:LoQueEnlazaAqu%C3%AD/Distribuci%C3%B3n_normal"
+ title="Lista de todas las páginas del wiki que enlazan aquí 
+[alt-shift-j]" accesskey="j">Lo que enlaza aquí</a></li>
+			<li id="t-recentchangeslinked"><a 
+href="http://es.wikipedia.org/wiki/Especial:CambiosEnEnlazadas/Distribuci%C3%B3n_normal"
+ title="Cambios recientes en las páginas que enlazan con ésta 
+[alt-shift-k]" accesskey="k">Cambios en enlazadas</a></li>
+			<li id="t-upload"><a 
+href="http://commons.wikimedia.org/wiki/Commons:Upload/es" title="Subir 
+imágenes o archivos multimedia [alt-shift-u]" accesskey="u">Subir 
+archivo</a></li>
+			<li id="t-specialpages"><a 
+href="http://es.wikipedia.org/wiki/Especial:P%C3%A1ginasEspeciales" 
+title="Lista de todas las páginas especiales [alt-shift-q]" 
+accesskey="q">Páginas especiales</a></li>
+			<li id="t-permalink"><a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;oldid=50950725"
+ title="Enlace permanente a esta versión de la página">Enlace permanente</a></li>
+<li id="t-cite"><a 
+href="http://es.wikipedia.org/w/index.php?title=Especial:Citar&amp;page=Distribuci%C3%B3n_normal&amp;id=50950725"
+ title="Información de como citar esta página">Citar este artículo</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- LANGUAGES -->
+<div class="portal expanded" id="p-lang">
+	<h5 tabindex="4">En otros idiomas</h5>
+	<div style="display: block;" class="body">
+		<ul>
+			<li class="interwiki-ar"><a 
+href="http://ar.wikipedia.org/wiki/%D8%AA%D9%88%D8%B2%D9%8A%D8%B9_%D8%A7%D8%AD%D8%AA%D9%85%D8%A7%D9%84%D9%8A_%D8%B7%D8%A8%D9%8A%D8%B9%D9%8A">العربية</a></li>
+			<li class="interwiki-az"><a 
+href="http://az.wikipedia.org/wiki/Normal_paylanma">Azərbaycanca</a></li>
+			<li class="interwiki-bg"><a 
+href="http://bg.wikipedia.org/wiki/%D0%9D%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D0%BD%D0%BE_%D1%80%D0%B0%D0%B7%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">Български</a></li>
+			<li class="interwiki-ca"><a 
+href="http://ca.wikipedia.org/wiki/Distribuci%C3%B3_normal">Català</a></li>
+			<li class="interwiki-cs"><a 
+href="http://cs.wikipedia.org/wiki/Norm%C3%A1ln%C3%AD_rozd%C4%9Blen%C3%AD">Česky</a></li>
+			<li class="interwiki-cy"><a 
+href="http://cy.wikipedia.org/wiki/Dosraniad_normal">Cymraeg</a></li>
+			<li class="interwiki-da"><a 
+href="http://da.wikipedia.org/wiki/Normalfordeling">Dansk</a></li>
+			<li class="interwiki-de"><a 
+href="http://de.wikipedia.org/wiki/Normalverteilung">Deutsch</a></li>
+			<li class="interwiki-el"><a 
+href="http://el.wikipedia.org/wiki/%CE%9A%CE%B1%CE%BD%CE%BF%CE%BD%CE%B9%CE%BA%CE%AE_%CE%BA%CE%B1%CF%84%CE%B1%CE%BD%CE%BF%CE%BC%CE%AE">Ελληνικά</a></li>
+			<li class="interwiki-en"><a 
+href="http://en.wikipedia.org/wiki/Normal_distribution">English</a></li>
+			<li class="interwiki-eo"><a 
+href="http://eo.wikipedia.org/wiki/Normala_distribuo">Esperanto</a></li>
+			<li class="interwiki-eu"><a 
+href="http://eu.wikipedia.org/wiki/Banakuntza_normal">Euskara</a></li>
+			<li class="interwiki-fa"><a 
+href="http://fa.wikipedia.org/wiki/%D8%AA%D9%88%D8%B2%DB%8C%D8%B9_%D9%86%D8%B1%D9%85%D8%A7%D9%84">فارسی</a></li>
+			<li class="interwiki-fi"><a 
+href="http://fi.wikipedia.org/wiki/Normaalijakauma">Suomi</a></li>
+			<li class="interwiki-fr"><a 
+href="http://fr.wikipedia.org/wiki/Loi_normale">Français</a></li>
+			<li class="interwiki-gl"><a 
+href="http://gl.wikipedia.org/wiki/Distribuci%C3%B3n_normal">Galego</a></li>
+			<li class="interwiki-he"><a 
+href="http://he.wikipedia.org/wiki/%D7%94%D7%AA%D7%A4%D7%9C%D7%92%D7%95%D7%AA_%D7%A0%D7%95%D7%A8%D7%9E%D7%9C%D7%99%D7%AA">עברית</a></li>
+			<li class="interwiki-hr"><a 
+href="http://hr.wikipedia.org/wiki/Normalna_raspodjela">Hrvatski</a></li>
+			<li class="interwiki-hu"><a 
+href="http://hu.wikipedia.org/wiki/Norm%C3%A1lis_eloszl%C3%A1s">Magyar</a></li>
+			<li class="interwiki-id"><a 
+href="http://id.wikipedia.org/wiki/Distribusi_normal">Bahasa Indonesia</a></li>
+			<li class="interwiki-is"><a 
+href="http://is.wikipedia.org/wiki/Normaldreifing">Íslenska</a></li>
+			<li class="interwiki-it"><a 
+href="http://it.wikipedia.org/wiki/Distribuzione_normale">Italiano</a></li>
+			<li class="interwiki-ja"><a 
+href="http://ja.wikipedia.org/wiki/%E6%AD%A3%E8%A6%8F%E5%88%86%E5%B8%83">日
+本語</a></li>
+			<li class="interwiki-ka"><a 
+href="http://ka.wikipedia.org/wiki/%E1%83%9C%E1%83%9D%E1%83%A0%E1%83%9B%E1%83%90%E1%83%9A%E1%83%A3%E1%83%A0%E1%83%98_%E1%83%92%E1%83%90%E1%83%9C%E1%83%90%E1%83%AC%E1%83%98%E1%83%9A%E1%83%94%E1%83%91%E1%83%90">ქართული</a></li>
+			<li class="interwiki-kk"><a 
+href="http://kk.wikipedia.org/wiki/%D2%9A%D0%B0%D0%BB%D1%8B%D0%BF%D1%82%D1%8B_%D0%B4%D0%B8%D1%81%D0%BF%D0%B5%D1%80%D1%81%D0%B8%D1%8F">Қазақша</a></li>
+			<li class="interwiki-ko"><a 
+href="http://ko.wikipedia.org/wiki/%EC%A0%95%EA%B7%9C%EB%B6%84%ED%8F%AC">한
+국어</a></li>
+			<li class="interwiki-la"><a 
+href="http://la.wikipedia.org/wiki/Distributio_normalis">Latina</a></li>
+			<li class="interwiki-lt"><a 
+href="http://lt.wikipedia.org/wiki/Normalusis_skirstinys">Lietuvių</a></li>
+			<li class="interwiki-mr"><a 
+href="http://mr.wikipedia.org/wiki/%E0%A4%B8%E0%A4%BE%E0%A4%AE%E0%A4%BE%E0%A4%A8%E0%A5%8D%E0%A4%AF_%E0%A4%B5%E0%A4%BF%E0%A4%A4%E0%A4%B0%E0%A4%A3">मराठी</a></li>
+			<li class="interwiki-nl"><a 
+href="http://nl.wikipedia.org/wiki/Normale_verdeling">Nederlands</a></li>
+			<li class="interwiki-nn"><a 
+href="http://nn.wikipedia.org/wiki/Normalfordeling">‪Norsk (nynorsk)‬</a></li>
+			<li class="interwiki-no"><a 
+href="http://no.wikipedia.org/wiki/Normalfordeling">‪Norsk (bokmål)‬</a></li>
+			<li class="interwiki-pl"><a 
+href="http://pl.wikipedia.org/wiki/Rozk%C5%82ad_normalny">Polski</a></li>
+			<li class="interwiki-pms"><a 
+href="http://pms.wikipedia.org/wiki/Distribussion_%C3%ABd_Gauss">Piemontèis</a></li>
+			<li class="interwiki-pt"><a 
+href="http://pt.wikipedia.org/wiki/Distribui%C3%A7%C3%A3o_normal">Português</a></li>
+			<li class="interwiki-ru"><a 
+href="http://ru.wikipedia.org/wiki/%D0%9D%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">Русский</a></li>
+			<li class="interwiki-sh"><a 
+href="http://sh.wikipedia.org/wiki/Normalna_raspodela">Srpskohrvatski / 
+Српскохрватски</a></li>
+			<li class="interwiki-simple"><a 
+href="http://simple.wikipedia.org/wiki/Normal_distribution">Simple 
+English</a></li>
+			<li class="interwiki-sk"><a 
+href="http://sk.wikipedia.org/wiki/Norm%C3%A1lne_rozdelenie">Slovenčina</a></li>
+			<li class="interwiki-sl"><a 
+href="http://sl.wikipedia.org/wiki/Normalna_porazdelitev">Slovenščina</a></li>
+			<li class="interwiki-sr"><a 
+href="http://sr.wikipedia.org/wiki/%D0%9D%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D0%BD%D0%B0_%D1%80%D0%B0%D1%81%D0%BF%D0%BE%D0%B4%D0%B5%D0%BB%D0%B0">Српски
+ / Srpski</a></li>
+			<li class="interwiki-su"><a 
+href="http://su.wikipedia.org/wiki/Sebaran_normal">Basa Sunda</a></li>
+			<li class="interwiki-sv"><a 
+href="http://sv.wikipedia.org/wiki/Normalf%C3%B6rdelning">Svenska</a></li>
+			<li class="interwiki-ta"><a 
+href="http://ta.wikipedia.org/wiki/%E0%AE%87%E0%AE%AF%E0%AE%B2%E0%AF%8D%E0%AE%A8%E0%AE%BF%E0%AE%B2%E0%AF%88%E0%AE%AA%E0%AF%8D_%E0%AE%AA%E0%AE%B0%E0%AE%B5%E0%AE%B2%E0%AF%8D">தமிழ்</a></li>
+			<li class="interwiki-th"><a 
+href="http://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%88%E0%B8%81%E0%B9%81%E0%B8%88%E0%B8%87%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%9B%E0%B8%A3%E0%B8%81%E0%B8%95%E0%B8%B4">ไทย</a></li>
+			<li class="interwiki-tr"><a 
+href="http://tr.wikipedia.org/wiki/Normal_da%C4%9F%C4%B1l%C4%B1m">Türkçe</a></li>
+			<li class="interwiki-uk"><a 
+href="http://uk.wikipedia.org/wiki/%D0%9D%D0%BE%D1%80%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D1%80%D0%BE%D0%B7%D0%BF%D0%BE%D0%B4%D1%96%D0%BB">Українська</a></li>
+			<li class="interwiki-ur"><a 
+href="http://ur.wikipedia.org/wiki/%D9%85%D8%B9%D9%85%D9%88%D9%84_%D8%AA%D9%88%D8%B2%DB%8C%D8%B9">اردو</a></li>
+			<li class="interwiki-vi"><a 
+href="http://vi.wikipedia.org/wiki/Ph%C3%A2n_ph%E1%BB%91i_chu%E1%BA%A9n">Tiếng
+ Việt</a></li>
+			<li class="interwiki-yi"><a 
+href="http://yi.wikipedia.org/wiki/%D7%A0%D7%90%D7%A8%D7%9E%D7%90%D7%9C%D7%A2_%D7%A4%D7%90%D7%A8%D7%98%D7%99%D7%99%D7%9C%D7%95%D7%A0%D7%92">ייִדיש</a></li>
+			<li class="interwiki-zh"><a 
+href="http://zh.wikipedia.org/wiki/%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83">中
+文</a></li>
+			<li class="interwiki-zh-min-nan"><a 
+href="http://zh-min-nan.wikipedia.org/wiki/Si%C3%B4ng-th%C3%A0i_hun-p%C3%B2%CD%98">Bân-lâm-gú</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> Esta página fue modificada por 
+última vez el 29 oct 2011, a las 14:17.</li>
+											<li id="footer-info-copyright">El texto está disponible bajo 
+la <a rel="license" 
+href="http://es.wikipedia.org/wiki/Wikipedia:Texto_de_la_Licencia_Creative_Commons_Atribuci%C3%B3n/Compartir-Igual_3.0">Licencia
+ Creative Commons Atribución Compartir Igual 3.0</a><a rel="license" 
+href="http://creativecommons.org/licenses/by-sa/3.0/" style="display: 
+none;"></a>;
+podrían ser aplicables cláusulas adicionales.
+Lee los <a 
+href="http://wikimediafoundation.org/wiki/T%C3%A9rminos_de_Uso">términos
+ de uso</a> para más información.<br>
+Wikipedia® es una marca registrada de la <a 
+href="http://www.wikimediafoundation.org/">Fundación Wikimedia, Inc.</a>,
+ una organización sin ánimo de lucro.<br></li><li class="noprint"><a 
+class="internal" href="http://es.wikipedia.org/wiki/Wikipedia:Contacto">Contacto</a></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a 
+href="http://wikimediafoundation.org/wiki/Pol%C3%ADtica_de_privacidad" 
+title="wikimedia:Política de privacidad">Política de privacidad</a></li>
+											<li id="footer-places-about"><a 
+href="http://es.wikipedia.org/wiki/Wikipedia:Acerca_de" 
+title="Wikipedia:Acerca de">Acerca de Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a 
+href="http://es.wikipedia.org/wiki/Wikipedia:Limitaci%C3%B3n_general_de_responsabilidad"
+ title="Wikipedia:Limitación general de responsabilidad">Limitación de 
+responsabilidad</a></li>
+											<li id="footer-places-mobileview"><a 
+href="http://es.wikipedia.org/w/index.php?title=Distribuci%C3%B3n_normal&amp;useformat=mobile">Versión
+ para móviles</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-copyrightico">
+						<a href="http://wikimediafoundation.org/"><img 
+src="Distribuci%C3%B3n_normal_files/wikimedia-button.png" alt="Wikimedia
+ Foundation" width="88" height="31"></a>
+					</li>
+					<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img 
+src="Distribuci%C3%B3n_normal_files/poweredby_mediawiki_88x31.png" 
+alt="Powered by MediaWiki" width="88" height="31"></a>
+					</li>
+				</ul>
+						<div style="clear: both;"></div>
+		</div>
+		<!-- /footer -->
+		<!-- fixalpha -->
+		<script type="text/javascript"> if ( window.isMSIE55 ) fixalpha(); </script>
+		<!-- /fixalpha -->
+		<script src="Distribuci%C3%B3n_normal_files/load_005.php" type="text/javascript"></script>
+<script type="text/javascript">if ( window.mediaWiki ) {
+	mw.loader.load(["mediawiki.user", "mediawiki.util", "mediawiki.page.ready", "mediawiki.legacy.wikibits", "mediawiki.legacy.ajax", "mediawiki.legacy.mwsuggest", "ext.vector.collapsibleNav", "ext.vector.collapsibleTabs", "ext.vector.editWarning", "ext.vector.simpleSearch"]);
+}
+</script><script type="text/javascript" src="Distribuci%C3%B3n_normal_files/load.php"></script><script type="text/javascript" src="Distribuci%C3%B3n_normal_files/load_004.php"></script>
+<script src="Distribuci%C3%B3n_normal_files/index_006.php" type="text/javascript"></script>
+<script src="Distribuci%C3%B3n_normal_files/load_007.php" type="text/javascript"></script><script type="text/javascript" src="Distribuci%C3%B3n_normal_files/index_004.php"></script>
+<script type="text/javascript">if ( window.mediaWiki ) {
+	mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"highlightbroken":1,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":false,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":4,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,
+	"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"vector-simplesearch":1,"useeditwarning":1,"vector-collapsiblenav":1,"usebetatoolbar":1,"usebetatoolbar-cgd":1,"variant":"es","language":"es","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":true,"searchNs101":false,"searchNs102":false,"searchNs103":false,"searchNs104":true,"searchNs105":false});;mw.user.tokens.set({"editToken":"+\\","watchToken":false});;mw.loader.state({"user.options":"ready","user.tokens":"ready"});
+	
+	/* cache key: eswiki:resourceloader:filter:minify-js:4:916d7c6c4a8fddf9452bb840e8e01f5d */
+}
+</script><script src="Distribuci%C3%B3n_normal_files/a" type="text/javascript"></script><!-- Served by mw47 in 0.097 secs. -->
+	<div class="suggestions" style="top: 72px; width: 204px; display: none;
+ left: auto; right: 29px;"><div class="suggestions-results"></div><div 
+class="suggestions-special"></div></div></body></html>

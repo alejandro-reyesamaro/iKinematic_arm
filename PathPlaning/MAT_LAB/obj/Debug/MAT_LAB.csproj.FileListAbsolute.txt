@@ -1,0 +1,5 @@
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\MAT_LAB\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\MAT_LAB\bin\Debug\MAT_LAB.dll
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\MAT_LAB\bin\Debug\MAT_LAB.pdb
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\MAT_LAB\obj\Debug\MAT_LAB.dll
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\MAT_LAB\obj\Debug\MAT_LAB.pdb

@@ -1,0 +1,8 @@
+<Modules>
+  <Module PersistentId="079E564F-8C47-43E8-9360-8B66FD5BE5E4" ModuleId="PathPlanning" />
+  <Module PersistentId="C39D2BEA-10BF-41A5-BB78-D4240E59A4A1" ModuleId="TajectoryMap" />
+  <Module PersistentId="CAF94EE7-3DA9-4BEA-A9F0-A3C523856F2E" ModuleId="Optimization" />
+  <Module PersistentId="FA6EE426-B31E-4389-B96E-3041B7A5CA70" ModuleId="CS_ParticleFilter" />
+  <Module PersistentId="d:Miscellaneous Files" ModuleId="System.Drawing" />
+  <Module PersistentId="519FA4E8-C915-4B25-A827-7F9B74580F4E" ModuleId="MATLAB_NormalRandom" />
+</Modules>

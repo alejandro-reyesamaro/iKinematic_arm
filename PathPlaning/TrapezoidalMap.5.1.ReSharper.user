@@ -1,0 +1,253 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">False</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="C39D2BEA-10BF-41A5-BB78-D4240E59A4A1/d:Trajectory/f:TRRange.cs" caret="0" fromTop="0" />
+      <File id="C39D2BEA-10BF-41A5-BB78-D4240E59A4A1/d:Trajectory/f:TRTrajectoryGraph.cs" caret="583" fromTop="20" />
+      <File id="C39D2BEA-10BF-41A5-BB78-D4240E59A4A1/d:TrapMap/f:TMANode.cs" caret="634" fromTop="28" />
+      <File id="C39D2BEA-10BF-41A5-BB78-D4240E59A4A1/d:TrapMap/f:TMFamilia.cs" caret="654" fromTop="22" />
+      <File id="C39D2BEA-10BF-41A5-BB78-D4240E59A4A1/d:TrapMap/f:TMNode.cs" caret="33" fromTop="0" />
+      <File id="C39D2BEA-10BF-41A5-BB78-D4240E59A4A1/d:TrapMap/f:TMNodeType.cs" caret="0" fromTop="0" />
+      <File id="C39D2BEA-10BF-41A5-BB78-D4240E59A4A1/d:TrapMap/f:TMObstacleSystem.cs" caret="3059" fromTop="20" />
+      <File id="C39D2BEA-10BF-41A5-BB78-D4240E59A4A1/d:TrapMap/f:TMPNode.cs" caret="0" fromTop="0" />
+      <File id="C39D2BEA-10BF-41A5-BB78-D4240E59A4A1/d:TrapMap/f:TMPoint.cs" caret="13" fromTop="0" />
+      <File id="C39D2BEA-10BF-41A5-BB78-D4240E59A4A1/d:TrapMap/f:TMPoligonList.cs" caret="68" fromTop="2" />
+      <File id="C39D2BEA-10BF-41A5-BB78-D4240E59A4A1/d:TrapMap/f:TMSearchGraph.cs" caret="2458" fromTop="53" />
+      <File id="C39D2BEA-10BF-41A5-BB78-D4240E59A4A1/d:TrapMap/f:TMSegment.cs" caret="13" fromTop="0" />
+      <File id="C39D2BEA-10BF-41A5-BB78-D4240E59A4A1/d:TrapMap/f:TMSNode.cs" caret="0" fromTop="0" />
+      <File id="C39D2BEA-10BF-41A5-BB78-D4240E59A4A1/d:TrapMap/f:TMTrapezoid.cs" caret="0" fromTop="0" />
+      <File id="C39D2BEA-10BF-41A5-BB78-D4240E59A4A1/d:TrapMap/f:TMTrapezoidList.cs" caret="292" fromTop="10" />
+      <File id="C39D2BEA-10BF-41A5-BB78-D4240E59A4A1/f:Utils.cs" caret="13" fromTop="0" />
+      <File id="CAF94EE7-3DA9-4BEA-A9F0-A3C523856F2E/d:Opt_Project/f:ap.cs" caret="0" fromTop="0" />
+      <File id="FA6EE426-B31E-4389-B96E-3041B7A5CA70/f:SistemaObstaculos.cs" caret="2653" fromTop="59" />
+      <File id="FA6EE426-B31E-4389-B96E-3041B7A5CA70/f:Obstaculo.cs" caret="1852" fromTop="0" />
+      <File id="C39D2BEA-10BF-41A5-BB78-D4240E59A4A1/d:TrapMap/f:TMPoligon.cs" caret="0" fromTop="0" />
+      <File id="FA6EE426-B31E-4389-B96E-3041B7A5CA70/f:Particle.cs" caret="1665" fromTop="22" />
+      <File id="519FA4E8-C915-4B25-A827-7F9B74580F4E/f:NormalRandom.cs" caret="1029" fromTop="25" />
+      <File id="FA6EE426-B31E-4389-B96E-3041B7A5CA70/f:CS_ParticleFilter.cs" caret="354" fromTop="0" />
+      <File id="FA6EE426-B31E-4389-B96E-3041B7A5CA70/f:Quaternion.cs" caret="2657" fromTop="73" />
+      <File id="079E564F-8C47-43E8-9360-8B66FD5BE5E4/d:IK/f:ParticleFilter.cs" caret="5499" fromTop="10" />
+      <File id="CAF94EE7-3DA9-4BEA-A9F0-A3C523856F2E/d:Opt_Project/f:Control.cs" caret="0" fromTop="0" />
+      <File id="CAF94EE7-3DA9-4BEA-A9F0-A3C523856F2E/d:Opt_Project/f:ControlProblem.cs" caret="0" fromTop="0" />
+      <File id="CAF94EE7-3DA9-4BEA-A9F0-A3C523856F2E/f:OptimalPath.cs" caret="464" fromTop="11" />
+      <File id="079E564F-8C47-43E8-9360-8B66FD5BE5E4/f:Graphics.cs" caret="316" fromTop="14" />
+      <File id="079E564F-8C47-43E8-9360-8B66FD5BE5E4/d:Examples/f:Aplicador.cs" caret="16201" fromTop="0" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="079E564F-8C47-43E8-9360-8B66FD5BE5E4/d:Examples/f:Aplicador.cs" caret="21925" fromTop="30" />
+      <File id="079E564F-8C47-43E8-9360-8B66FD5BE5E4/d:Examples/f:Aplicador.cs" caret="22233" fromTop="34" />
+      <File id="079E564F-8C47-43E8-9360-8B66FD5BE5E4/d:Examples/f:Aplicador.cs" caret="19863" fromTop="9" />
+      <File id="079E564F-8C47-43E8-9360-8B66FD5BE5E4/d:IK/f:ParticleFilter.cs" caret="8272" fromTop="12" />
+      <File id="079E564F-8C47-43E8-9360-8B66FD5BE5E4/d:Examples/f:Aplicador.cs" caret="20352" fromTop="11" />
+      <File id="079E564F-8C47-43E8-9360-8B66FD5BE5E4/d:IK/f:ParticleFilter.cs" caret="2842" fromTop="10" />
+      <File id="079E564F-8C47-43E8-9360-8B66FD5BE5E4/d:IK/f:ParticleFilter.cs" caret="1985" fromTop="20" />
+      <File id="079E564F-8C47-43E8-9360-8B66FD5BE5E4/d:IK/f:ParticleFilter.cs" caret="5835" fromTop="16" />
+      <File id="079E564F-8C47-43E8-9360-8B66FD5BE5E4/d:Examples/f:Aplicador.cs" caret="21575" fromTop="26" />
+      <File id="079E564F-8C47-43E8-9360-8B66FD5BE5E4/d:Examples/f:Aplicador.cs" caret="6412" fromTop="0" />
+      <File id="079E564F-8C47-43E8-9360-8B66FD5BE5E4/d:Examples/f:Aplicador.cs" caret="13246" fromTop="14" />
+      <File id="079E564F-8C47-43E8-9360-8B66FD5BE5E4/f:Graphics.cs" caret="4728" fromTop="21" />
+      <File id="079E564F-8C47-43E8-9360-8B66FD5BE5E4/d:Examples/f:Aplicador.cs" caret="16137" fromTop="39" />
+      <File id="079E564F-8C47-43E8-9360-8B66FD5BE5E4/d:Examples/f:Aplicador.cs" caret="15599" fromTop="25" />
+      <File id="079E564F-8C47-43E8-9360-8B66FD5BE5E4/d:Examples/f:Aplicador.cs" caret="14851" fromTop="10" />
+      <File id="079E564F-8C47-43E8-9360-8B66FD5BE5E4/d:Examples/f:Aplicador.cs" caret="25960" fromTop="21" />
+      <File id="FA6EE426-B31E-4389-B96E-3041B7A5CA70/f:SistemaObstaculos.cs" caret="2659" fromTop="25" />
+      <File id="FA6EE426-B31E-4389-B96E-3041B7A5CA70/f:CS_ParticleFilter.cs" caret="2905" fromTop="20" />
+      <File id="FA6EE426-B31E-4389-B96E-3041B7A5CA70/f:CS_ParticleFilter.cs" caret="3306" fromTop="31" />
+      <File id="079E564F-8C47-43E8-9360-8B66FD5BE5E4/d:Examples/f:Aplicador.cs" caret="14676" fromTop="10" />
+      <File id="079E564F-8C47-43E8-9360-8B66FD5BE5E4/d:IK/f:ParticleFilter.cs" caret="455" fromTop="15" />
+      <File id="519FA4E8-C915-4B25-A827-7F9B74580F4E/f:NormalRandom.cs" caret="1541" fromTop="6" />
+      <File id="519FA4E8-C915-4B25-A827-7F9B74580F4E/f:NormalRandom.cs" caret="1542" fromTop="31" />
+      <File id="079E564F-8C47-43E8-9360-8B66FD5BE5E4/d:Examples/f:Aplicador.cs" caret="20416" fromTop="5" />
+      <File id="079E564F-8C47-43E8-9360-8B66FD5BE5E4/d:Examples/f:Aplicador.cs" caret="21181" fromTop="16" />
+      <File id="079E564F-8C47-43E8-9360-8B66FD5BE5E4/d:IK/f:ParticleFilter.cs" caret="8484" fromTop="31" />
+      <File id="079E564F-8C47-43E8-9360-8B66FD5BE5E4/d:Examples/f:Aplicador.cs" caret="20719" fromTop="10" />
+      <File id="079E564F-8C47-43E8-9360-8B66FD5BE5E4/d:IK/f:ParticleFilter.cs" caret="3519" fromTop="7" />
+      <File id="079E564F-8C47-43E8-9360-8B66FD5BE5E4/d:Examples/f:Aplicador.cs" caret="16155" fromTop="21" />
+      <File id="079E564F-8C47-43E8-9360-8B66FD5BE5E4/d:Examples/f:Aplicador.cs" caret="15393" fromTop="20" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="MATLAB_ParticleFilter" priority="0" />
+      <Item value="MatlabParticleFilter_v2`0" priority="0" />
+      <Item value="filterResult" priority="5" />
+      <Item value="CS_ParticleFilter" priority="3" />
+      <Item value="ParticleFilter`0" priority="2" />
+      <Item value="particleFilter" priority="1" />
+      <Item value="new" priority="24" />
+      <Item value="ParticleFilter" priority="0" />
+      <Item value="SistemaObstaculos" priority="0" />
+      <Item value="S" priority="0" />
+      <Item value="foreach" priority="7" />
+      <Item value="var" priority="3" />
+      <Item value="public" priority="2" />
+      <Item value="List" priority="4" />
+      <Item value="Obstaculo`0" priority="2" />
+      <Item value="obstaculos" priority="4" />
+      <Item value="List&lt;Obstaculo&gt;" priority="0" />
+      <Item value="poligon" priority="3" />
+      <Item value="Obstaculo" priority="2" />
+      <Item value="double" priority="11" />
+      <Item value="xVector" priority="2" />
+      <Item value="for" priority="2" />
+      <Item value="i" priority="4" />
+      <Item value="yVector" priority="0" />
+      <Item value="PointD`0" priority="0" />
+      <Item value="arm" priority="0" />
+      <Item value="tmPoint" priority="2" />
+      <Item value="TMPoint" priority="1" />
+      <Item value="PointD" priority="5" />
+      <Item value="obj" priority="1" />
+      <Item value="chain_result" priority="1" />
+      <Item value="point" priority="1" />
+      <Item value="List&lt;TMPoint&gt;" priority="0" />
+      <Item value="it" priority="0" />
+      <Item value="distance" priority="0" />
+      <Item value="pf" priority="0" />
+      <Item value="private" priority="1" />
+      <Item value="Vector" priority="0" />
+      <Item value="GetLength`0" priority="1" />
+      <Item value="c" priority="0" />
+      <Item value="Qs" priority="0" />
+      <Item value="int" priority="8" />
+      <Item value="System" priority="0" />
+      <Item value="Environment`0" priority="1" />
+      <Item value="b" priority="1" />
+      <Item value="segs" priority="1" />
+      <Item value="frac" priority="0" />
+      <Item value="MessageBox`0" priority="1" />
+      <Item value="this" priority="0" />
+      <Item value="string" priority="2" />
+      <Item value="ifrac" priority="0" />
+      <Item value="TRNode`0" priority="0" />
+      <Item value="optimal_path" priority="0" />
+      <Item value="dist" priority="2" />
+      <Item value="MathUtils`0" priority="0" />
+      <Item value="ant" priority="2" />
+      <Item value="l_nodes" priority="0" />
+      <Item value="trNode" priority="2" />
+      <Item value="return" priority="0" />
+      <Item value="lb_distancias" priority="0" />
+      <Item value="iteraciones" priority="2" />
+      <Item value="suma_distancia" priority="1" />
+      <Item value="distancia" priority="1" />
+      <Item value="cant_iteraciones" priority="1" />
+      <Item value="MathWorks" priority="0" />
+      <Item value="current_path" priority="1" />
+      <Item value="indexOf_t" priority="0" />
+      <Item value="Top_MaxIter" priority="0" />
+      <Item value="Top_esp" priority="0" />
+      <Item value="out" priority="1" />
+      <Item value="w_best_particle" priority="0" />
+      <Item value="MWNumericArray`0" priority="0" />
+      <Item value="if" priority="2" />
+      <Item value="w" priority="0" />
+      <Item value="void" priority="0" />
+      <Item value="TMPoligon`0" priority="0" />
+      <Item value="TMPoligon" priority="0" />
+      <Item value="ap" priority="0" />
+      <Item value="pol1" priority="0" />
+      <Item value="px1" priority="0" />
+      <Item value="obs" priority="0" />
+      <Item value="Segment" priority="0" />
+      <Item value="oc" priority="4" />
+      <Item value="AccessibleEvents`0" priority="0" />
+      <Item value="Length" priority="1" />
+      <Item value="r" priority="1" />
+      <Item value="bestIndex" priority="1" />
+      <Item value="IK_ParticleFiltering_NET" priority="0" />
+      <Item value="Matlab_PF_Class`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TrapezoidalMap.TMObstacleSystem">
+      <Item value="Obstacles" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TrapezoidalMap.TMPoligonList">
+      <Item value="Poligons" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TrapezoidalMap.TMPoligon">
+      <Item value="Points" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="4" />
+      <Item value="Count" priority="2" />
+      <Item value="IndexOf`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TrapezoidalMap.TMPoint">
+      <Item value="X" priority="4" />
+      <Item value="Y" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CS_ParticleFilter.FilterResult">
+      <Item value="ChainResult_points" priority="0" />
+      <Item value="Iterations" priority="0" />
+      <Item value="Distance" priority="0" />
+      <Item value="ChainResult" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CS_ParticleFilter.PointD">
+      <Item value="X" priority="0" />
+      <Item value="Y" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:PathPlaning.ParticleFilter">
+      <Item value="CS_Filter`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CS_ParticleFilter.Chain">
+      <Item value="Vector" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Environment">
+      <Item value="TickCount" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBox">
+      <Item value="Show`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TrajectoryMap.TRNode">
+      <Item value="Point" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@CS_ParticleFilter.MathUtils">
+      <Item value="euclidianDistance`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Math">
+      <Item value="Pow`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CS_ParticleFilter.Particle">
+      <Item value="W" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MathWorks.MATLAB.NET.Arrays.MWNumericArray">
+      <Item value="ToScalarDouble`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Drawing.Color">
+      <Item value="Black" priority="0" />
+      <Item value="Blue" priority="0" />
+      <Item value="Red" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:PathPlaning.Aplicador">
+      <Item value="Cargar_Obstaculo_Crecido1`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CS_ParticleFilter.Obstaculo">
+      <Item value="obstaculo_crecido`0" priority="0" />
+      <Item value="xVector" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@ZedGraph.SymbolType">
+      <Item value="Diamond" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

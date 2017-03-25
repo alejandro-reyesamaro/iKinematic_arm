@@ -1,0 +1,34 @@
+Ejemplo 1 (No alcanzable)
+(Particulas-Tiempo) : (25-92) (10-36)
+Enlaces: 2
+ee - obj: 80 px
+
+Ejemplo 2 (No alcanzable)
+(Particulas-Tiempo) : (25-37) (10-15)
+Enlaces: 2
+ee - obj: 45 px
+
+Ejemplo 3 (No alcanzable)
+(Particulas-Tiempo) : (25-69) (10-33)
+Enlaces: 2
+ee - obj: 61 px
+
+Ejemplo 4 (No alcanzable)
+(Particulas-Tiempo) : (25-55) (10-23)
+Enlaces: 2
+ee - obj: 66 px
+
+Ejemplo 5 (Alcanzable)
+(Particulas-Tiempo) : (25-38) (10-20)
+Enlaces: 2
+ee - obj: 52
+
+Ejemplo 6 (Alcanzable)
+(Particulas-Tiempo) : (25-53) (10-23)
+Enlaces: 3
+ee - obj: 60
+
+Ejemplo 7 (Alcanzable)
+(Particulas-Tiempo) : (25-40) (10-19)
+Enlaces: 2
+ee - obj: 58

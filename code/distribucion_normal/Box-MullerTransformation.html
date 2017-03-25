@@ -1,0 +1,546 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<title>Box-Muller Transformation -- from Wolfram MathWorld</title>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<meta name="DC.Creator" content="Weisstein, Eric W.">
+<meta name="DC.Description" content="A transformation which transforms 
+from a two-dimensional continuous uniform distribution to a 
+two-dimensional bivariate normal distribution (or complex normal 
+distribution). If x_1 and x_2 are uniformly and independently 
+distributed between 0 and 1, then z_1 and z_2 as defined below have a 
+normal distribution with mean mu=0 and variance sigma^2=1. z_1 = 
+sqrt(-2lnx_1)cos(2pix_2) (1)  z_2 = sqrt(-2lnx_1)sin(2pix_2). (2)  This 
+can be verified by solving for x_1 and x_2, x_1 =...">
+<meta name="DC.Subject" scheme="MathWorld" 
+content="Mathematics:Probability and Statistics:Statistical 
+Distributions:Continuous Distributions">
+<meta name="DC.Subject" scheme="MathWorld" 
+content="Mathematics:Probability and Statistics:Random Numbers">
+<meta name="DC.Subject" scheme="MSC_2000" content="60">
+<meta name="DC.Subject" scheme="MSC_2000" content="60E">
+<meta name="DC.Subject" scheme="MSC_2000" content="62E">
+<meta name="DC.Rights" content="Copyright 1999-2011 Wolfram Research, 
+Inc.  See http://mathworld.wolfram.com/about/terms.html for a full terms
+ of use statement.">
+<meta name="DC.Format" scheme="IMT" content="text/html">
+<meta name="DC.Identifier" scheme="URI" 
+content="http://mathworld.wolfram.com/Box-MullerTransformation.html">
+<meta name="DC.Language" scheme="RFC3066" content="en">
+<meta name="DC.Publisher" content="Wolfram Research, Inc.">
+<meta name="DC.Relation.IsPartOf" scheme="URI" 
+content="http://mathworld.wolfram.com/">
+<meta name="DC.Type" scheme="DCMIType" content="Text">
+<link rel="alternate" type="application/rss+xml" title="MathWorld 
+Headline News" href="http://mathworld.wolfram.com/news/rss.xml">
+<link rel="stylesheet" type="text/css" 
+href="Box-MullerTransformation_files/mathworld.css">
+<link rel="shortcut icon" 
+href="http://mathworld.wolfram.com/favicon_mathworld.png" 
+type="image/png">
+<script src="Box-MullerTransformation_files/ga.js" async="" type="text/javascript"></script><script language="JavaScript" type="text/javascript" src="Box-MullerTransformation_files/menu.js"></script>
+<script language="JavaScript" type="text/javascript" src="Box-MullerTransformation_files/mathworld.js"></script>
+<script language="JavaScript" type="text/javascript" src="Box-MullerTransformation_files/downloadNotebook.js"></script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5677369-3']);
+  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head><body>
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <!-- IE Mac will fail on url('') -->
+      <td style="background-image: 
+url(&quot;/images/topbar/header.gif&quot;); background-repeat: 
+no-repeat;">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody><tr>
+            <td><img src="Box-MullerTransformation_files/spacer.gif" 
+alt="" usemap="#TopMap" width="615" border="0" height="80"></td>
+<td width="300"><img src="Box-MullerTransformation_files/spacer.gif" 
+alt="" width="50">
+<div class="formwrapper">
+<form name="NavBarSearch" action="http://mathworld.wolfram.com/search/" 
+method="get" accept-charset="UTF-8" onsubmit=" if 
+(checkForDefaultInput('query_1', 'SEARCH MATHWORLD')) { return false; }">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<!--
+<td valign="middle" nowrap="nowrap"><a href="/search/" style="font-size:10px;">
+Search Site</a>
+</td>
+-->
+<td>
+<table class="searchboxborder" border="0" cellpadding="0" 
+cellspacing="0">
+  <tbody><tr>
+  <td><input id="query_1" class="searchboxsub" name="query" 
+value="SEARCH MATHWORLD" onfocus="initTextInput(this,'clear','SEARCH 
+MATHWORLD')" onblur="initTextInput(this,'setDefault','SEARCH 
+MATHWORLD')" type="text"></td>
+<!--
+  <td><input type="image" src="/common/images/search/searchbox_arrows.gif" class="searchbox" alt="Search" onclick="if (checkForDefaultInput('query_1', 'SEARCH MATHWORLD')) { return false;} else {document.NavBarSearch.submit(); }" /></td>
+-->
+  </tr>
+</tbody></table></td>
+<td valign="middle"><input src="Box-MullerTransformation_files/go.gif" 
+type="image"></td>
+</tr>
+</tbody></table>
+</form>
+</div>
+            </td>
+          </tr>
+        </tbody></table>
+        <div style="padding-right: 840px;"></div>
+      </td>
+      <td width="100%"><img 
+src="Box-MullerTransformation_files/header-extend.gif" alt="" 
+width="100%" height="79"></td>
+    </tr>
+  </tbody></table>
+
+<map name="TopMap" id="TopMap">
+  <area shape="rect" coords="11,34,198,51" 
+href="http://www.wolfram.com/products/mathematica/" target="_blank" 
+alt="made with Mathematica technology">
+  <area shape="rect" coords="8,8,197,30" 
+href="http://mathworld.wolfram.com/" alt="MathWorld">
+</map>
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr valign="top">
+<td>
+<!-- Sidebar -->
+
+<table border="0" cellpadding="0" cellspacing="0">
+  <tbody><tr><td width="185" align="left" nowrap="nowrap" valign="top">
+    <table width="175" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr><td>
+    <div class="leftsidebar">
+    <div class="mainindices">
+      <a href="http://mathworld.wolfram.com/topics/Algebra.html">Algebra</a><br>
+      <a 
+href="http://mathworld.wolfram.com/topics/AppliedMathematics.html">Applied
+ Mathematics</a><br>
+      <a 
+href="http://mathworld.wolfram.com/topics/CalculusandAnalysis.html">Calculus
+ and Analysis</a><br>
+      <a 
+href="http://mathworld.wolfram.com/topics/DiscreteMathematics.html">Discrete
+ Mathematics</a><br>
+      <a 
+href="http://mathworld.wolfram.com/topics/FoundationsofMathematics.html">Foundations
+ of Mathematics</a><br>
+      <a href="http://mathworld.wolfram.com/topics/Geometry.html">Geometry</a><br>
+      <a 
+href="http://mathworld.wolfram.com/topics/HistoryandTerminology.html">History
+ and Terminology</a><br>
+      <a href="http://mathworld.wolfram.com/topics/NumberTheory.html">Number
+ Theory</a><br>
+      <a 
+href="http://mathworld.wolfram.com/topics/ProbabilityandStatistics.html">Probability
+ and Statistics</a><br>
+      <a 
+href="http://mathworld.wolfram.com/topics/RecreationalMathematics.html">Recreational
+ Mathematics</a><br>
+      <a href="http://mathworld.wolfram.com/topics/Topology.html">Topology</a><br>
+    </div>
+    </div>
+    </td></tr></tbody></table>
+</td></tr>
+<tr><td height="10"></td></tr>
+<tr><td width="185" align="left" nowrap="nowrap" valign="top">
+<table width="175" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr><td>
+    <div class="leftsidebar2">
+    <div class="subindices">
+    <a href="http://mathworld.wolfram.com/letters/">Alphabetical Index</a><br>
+    <a 
+href="http://mathworld.wolfram.com/topics/InteractiveEntries.html">Interactive
+ Entries</a><br>
+    <a href="http://mathworld.wolfram.com/cgi-bin/random.cgi">Random 
+Entry</a><br>
+    <a href="http://mathworld.wolfram.com/whatsnew/">New in <i>MathWorld</i></a><br>
+    </div>
+    <div class="divider"></div>
+    <div class="subindices">
+      <a href="http://mathworld.wolfram.com/classroom/"><i>MathWorld</i>
+ Classroom</a><br>
+    </div>
+    <div class="divider"></div>
+    <div class="subindices">
+       <a href="http://mathworld.wolfram.com/about/">About <i>MathWorld</i></a><br>
+       <a href="http://mathworld.wolfram.com/contact/contribute.html">Contribute
+ to <i>MathWorld</i></a><br>
+       <a href="http://mathworld.wolfram.com/contact/">Send a Message to
+ the Team</a><br>
+    </div>
+    <div class="divider"></div>
+    <div class="subindices">
+       <a 
+href="http://www.amazon.com/exec/obidos/ASIN/1584883472/ref=nosim/weisstein-20"
+ target="_blank"><i>MathWorld</i> Book</a><br>
+    </div>
+    </div>
+    <div class="leftsidebarfooter">
+      <div class="last-updated">
+      <a href="http://mathworld.wolfram.com/whatsnew/">13,081 entries</a>
+      </div>
+      <div class="last-updated">
+      <a href="http://mathworld.wolfram.com/whatsnew/">Last updated: Mon
+ Oct 24 2011</a><br>
+      </div>
+      <br>
+      <a href="http://mathworld.wolfram.com/about/author.html" 
+onmouseover="MM_swapImage('Image1','','/images/sidebar/created-over_01.gif',1)"
+ onmouseout="MM_swapImgRestore()"><img 
+src="Box-MullerTransformation_files/created_01.gif" name="Image1" 
+id="Image1" title="Created, developed, and nurtured by Eric Weisstein" 
+alt="Created, developed, and nurtured by Eric Weisstein" width="120" 
+border="0" height="32"></a><br>
+      <a href="http://www.wolfram.com/" target="_blank" 
+onmouseover="MM_swapImage('Image2','','/images/sidebar/created-over_02.gif',1)"
+ onmouseout="MM_swapImgRestore()"><img 
+src="Box-MullerTransformation_files/created_02.gif" name="Image2" 
+id="Image2" title="at Wolfram Research" alt="at Wolfram Research" 
+width="120" border="0" height="17"></a> 
+    </div>
+  </td></tr>
+  </tbody></table>
+
+  </td></tr>
+</tbody></table>
+
+<!-- End Sidebar -->
+
+</td>
+<td><img src="Box-MullerTransformation_files/spacer.gif" alt="" 
+width="20" height="1"></td>
+<td>
+<div class="leftshadow">
+<div class="centertable">
+<table width="100%">
+<!-- Begin Body -->
+<tbody><tr>
+<td><img src="Box-MullerTransformation_files/spacer.gif" alt="" 
+width="400" height="1"></td>
+</tr>
+<tr>
+<td width="100%" align="left" valign="top">
+<!-- Begin Subject -->
+<div class="subjectnavbar">
+<a 
+href="http://mathworld.wolfram.com/topics/ProbabilityandStatistics.html">Probability
+ and Statistics</a>&nbsp;&gt;&nbsp;<a 
+href="http://mathworld.wolfram.com/topics/StatisticalDistributions.html">Statistical
+ Distributions</a>&nbsp;&gt;&nbsp;<a 
+href="http://mathworld.wolfram.com/topics/ContinuousDistributions.html">Continuous
+ Distributions</a>&nbsp;&gt;<br>
+</div>
+<div class="subjectnavbar">
+<a 
+href="http://mathworld.wolfram.com/topics/ProbabilityandStatistics.html">Probability
+ and Statistics</a>&nbsp;&gt;&nbsp;<a 
+href="http://mathworld.wolfram.com/topics/RandomNumbers.html">Random 
+Numbers</a>&nbsp;&gt;<br>
+</div>
+<!-- End Subject -->
+<br>
+<!-- Begin Title -->
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr><td class="title" valign="baseline"><span class="nowrap">Box-Muller
+ Transformation</span></td></tr><tr><td valign="top"><span 
+class="nowrap"><img src="Box-MullerTransformation_files/underline.gif" 
+alt="" width="100%" height="3"><img 
+src="Box-MullerTransformation_files/underline.gif" alt="" width="20" 
+height="3"></span></td><td><img 
+src="Box-MullerTransformation_files/spacer.gif" alt="" height="15"></td></tr>
+</tbody></table>
+<!-- End Title -->
+</td>
+</tr>
+<tr valign="top">
+<td>
+<!-- Begin Total Content -->
+<a 
+href="http://mathworld.wolfram.com/notebooks/Statistics/Box-MullerTransformation.nb"
+ 
+onclick="downloadNotebook('http://mathworld.wolfram.com/notebooks/Statistics/Box-MullerTransformation.nb');return
+ false;"><img src="Box-MullerTransformation_files/dnld-nb.gif" 
+alt="DOWNLOAD Mathematica Notebook" width="119" border="0" height="26"></a>
+<!-- Begin Content -->
+<p class="Text">
+A transformation which transforms from a two-dimensional continuous <a 
+href="http://mathworld.wolfram.com/UniformDistribution.html" 
+class="Hyperlink">uniform distribution</a> to a two-dimensional <a 
+href="http://mathworld.wolfram.com/BivariateNormalDistribution.html" 
+class="Hyperlink">bivariate normal distribution</a> (or <a 
+href="http://mathworld.wolfram.com/ComplexNumber.html" class="Hyperlink">complex</a>
+ <a href="http://mathworld.wolfram.com/NormalDistribution.html" 
+class="Hyperlink">normal
+ distribution</a>). If <img 
+src="Box-MullerTransformation_files/Inline1.gif" class="inlineformula" 
+alt="x_1" width="13" border="0" height="14"> and <img 
+src="Box-MullerTransformation_files/Inline2.gif" class="inlineformula" 
+alt="x_2" width="13" border="0" height="14"> are uniformly
+ and independently distributed between 0 and 1, then <img 
+src="Box-MullerTransformation_files/Inline3.gif" class="inlineformula" 
+alt="z_1" width="12" border="0" height="14"> and <img 
+src="Box-MullerTransformation_files/Inline4.gif" class="inlineformula" 
+alt="z_2" width="12" border="0" height="14"> as defined below
+ have a <a href="http://mathworld.wolfram.com/NormalDistribution.html" 
+class="Hyperlink">normal distribution</a>
+ with <a href="http://mathworld.wolfram.com/Mean.html" class="Hyperlink">mean</a>
+ <img src="Box-MullerTransformation_files/Inline5.gif" 
+class="inlineformula" alt="mu=0" width="32" border="0" height="14"> and <a
+ href="http://mathworld.wolfram.com/Variance.html" class="Hyperlink">variance</a>
+ <img src="Box-MullerTransformation_files/Inline6.gif" 
+class="inlineformula" alt="sigma^2=1" width="40" border="0" height="17">.
+</p>
+<table style="padding-left: 50px;" width="100%" align="center" 
+border="0" cellpadding="0" cellspacing="0">
+<tbody><tr style=""><td width="1" align="right"><img 
+src="Box-MullerTransformation_files/Inline7.gif" class="displayformula" 
+alt="z_1" width="12" border="0" height="14"></td><td width="14" 
+align="center"><img src="Box-MullerTransformation_files/Inline8.gif" 
+class="displayformula" alt="=" width="9" border="0" height="14"></td><td
+ align="left"><img src="Box-MullerTransformation_files/Inline9.gif" 
+class="displayformula" alt="sqrt(-2lnx_1)cos(2pix_2)" width="131" 
+border="0" height="27"></td><td width="10" align="right">
+<div id="eqn1" class="eqnum">
+(1)
+</div>
+</td></tr><tr style=""><td width="1" align="right"><img 
+src="Box-MullerTransformation_files/Inline10.gif" class="displayformula"
+ alt="z_2" width="12" border="0" height="14"></td><td width="14" 
+align="center"><img src="Box-MullerTransformation_files/Inline11.gif" 
+class="displayformula" alt="=" width="9" border="0" height="14"></td><td
+ align="left"><img src="Box-MullerTransformation_files/Inline12.gif" 
+class="displayformula" alt="sqrt(-2lnx_1)sin(2pix_2)." width="132" 
+border="0" height="27"></td><td width="10" align="right">
+<div id="eqn2" class="eqnum">
+(2)
+</div>
+</td></tr>
+</tbody></table>
+<p class="Text">
+This can be verified by solving for <img 
+src="Box-MullerTransformation_files/Inline13.gif" class="inlineformula" 
+alt="x_1" width="13" border="0" height="14"> and <img 
+src="Box-MullerTransformation_files/Inline14.gif" class="inlineformula" 
+alt="x_2" width="13" border="0" height="14">,
+</p>
+<table style="padding-left: 50px;" width="100%" align="center" 
+border="0" cellpadding="0" cellspacing="0">
+<tbody><tr style=""><td width="1" align="right"><img 
+src="Box-MullerTransformation_files/Inline15.gif" class="displayformula"
+ alt="x_1" width="13" border="0" height="14"></td><td width="14" 
+align="center"><img src="Box-MullerTransformation_files/Inline16.gif" 
+class="displayformula" alt="=" width="9" border="0" height="14"></td><td
+ align="left"><img src="Box-MullerTransformation_files/Inline17.gif" 
+class="displayformula" alt="e^(-(z_1^2+z_2^2)/2)" width="55" border="0" 
+height="20"></td><td width="10" align="right">
+<div id="eqn3" class="eqnum">
+(3)
+</div>
+</td></tr><tr style=""><td width="1" align="right"><img 
+src="Box-MullerTransformation_files/Inline18.gif" class="displayformula"
+ alt="x_2" width="13" border="0" height="14"></td><td width="14" 
+align="center"><img src="Box-MullerTransformation_files/Inline19.gif" 
+class="displayformula" alt="=" width="9" border="0" height="14"></td><td
+ align="left"><img src="Box-MullerTransformation_files/Inline20.gif" 
+class="displayformula" alt="1/(2pi)tan^(-1)((z_2)/(z_1))." width="89" 
+border="0" height="38"></td><td width="10" align="right">
+<div id="eqn4" class="eqnum">
+(4)
+</div>
+</td></tr>
+</tbody></table>
+<p class="Text">
+Taking the <a href="http://mathworld.wolfram.com/Jacobian.html" 
+class="Hyperlink">Jacobian</a> yields
+</p>
+<table style="padding-left: 50px;" width="100%" align="center" 
+border="0" cellpadding="0" cellspacing="0">
+<tbody><tr style=""><td width="1" align="right"><img 
+src="Box-MullerTransformation_files/Inline21.gif" class="displayformula"
+ alt="(partial(x_1,x_2))/(partial(z_1,z_2))" width="55" border="0" 
+height="38"></td><td width="14" align="center"><img 
+src="Box-MullerTransformation_files/Inline22.gif" class="displayformula"
+ alt="=" width="9" border="0" height="14"></td><td align="left"><img 
+src="Box-MullerTransformation_files/Inline23.gif" class="displayformula"
+ alt="|(partialx_1)/(partialz_1) (partialx_1)/(partialz_2); 
+(partialx_2)/(partialz_1) (partialx_2)/(partialz_2)|" width="70" 
+border="0" height="86"></td><td width="10" align="right">
+<div id="eqn5" class="eqnum">
+(5)
+</div>
+</td></tr><tr style=""><td width="1" align="right"><img 
+src="Box-MullerTransformation_files/Inline24.gif" class="displayformula"
+ alt="" width="12" border="0" height="14"></td><td width="14" 
+align="center"><img src="Box-MullerTransformation_files/Inline25.gif" 
+class="displayformula" alt="=" width="9" border="0" height="14"></td><td
+ align="left"><img src="Box-MullerTransformation_files/Inline26.gif" 
+class="displayformula" 
+alt="-[1/(sqrt(2pi))e^(-z_1^2/2)][1/(sqrt(2pi))e^(-z_2^2/2)]." 
+width="184" border="0" height="40"></td><td width="10" align="right">
+<div id="eqn6" class="eqnum">
+(6)
+</div>
+</td></tr>
+</tbody></table>
+<!-- End Content -->
+<!-- Begin See Also -->
+<form name="SearchLinks" method="get" 
+action="http://mathworld.wolfram.com/search/">
+<p class="CrossRefs">
+<span class="crosslinkheader">SEE ALSO:</span> <a 
+href="http://mathworld.wolfram.com/BivariateNormalDistribution.html" 
+class="Hyperlink">Bivariate Normal Distribution</a>, <a 
+href="http://mathworld.wolfram.com/NormalDeviate.html" class="Hyperlink">Normal
+ Deviate</a>, <a 
+href="http://mathworld.wolfram.com/NormalDistribution.html" 
+class="Hyperlink">Normal
+ Distribution</a>
+</p>
+</form>
+<!-- End See Also -->
+<!-- Begin CrossURL -->
+<!-- End CrossURL -->
+<!-- Begin Contributor -->
+<!-- End Contributor -->
+<!-- Begin References -->
+<p>
+<img src="Box-MullerTransformation_files/underline.gif" alt="" 
+width="300" height="3">
+</p>
+<span class="crosslinkheader">REFERENCES:</span>
+<p class="Reference">
+Box, G.&nbsp;E.&nbsp;P. and Muller, M.&nbsp;E. "A Note on the Generation
+ of
+Random Normal Deviates." <i>Ann. Math. Stat.</i> <b>29</b>, 610-611, 
+1958.
+</p>
+<!-- End References -->
+<!-- Begin CiteAs -->
+<div>
+<img src="Box-MullerTransformation_files/underline.gif" alt="" 
+width="300" height="3"><br><br><br><span class="crosslinkheader">CITE 
+THIS AS:</span><br>
+<p class="citation">
+<a href="http://mathworld.wolfram.com/about/author.html">Weisstein, Eric
+ W.</a> "Box-Muller Transformation."
+From <a href="http://mathworld.wolfram.com/"><i>MathWorld</i></a>--A 
+Wolfram Web Resource. <a 
+href="http://mathworld.wolfram.com/Box-MullerTransformation.html">http://mathworld.wolfram.com/Box-MullerTransformation.html</a>
+</p>
+</div>
+<!-- End CiteAs -->
+<!-- End Total Content -->
+</td></tr>
+<!-- End Body -->
+</tbody></table>
+</div>
+</div>
+<div class="bottomshadow">
+<img src="Box-MullerTransformation_files/spacer.gif" alt="" width="1" 
+height="17">
+</div>
+<p class="footer">
+<a href="http://mathworld.wolfram.com/contact/"><img 
+src="Box-MullerTransformation_files/send.gif" alt="Send" title="Send" 
+width="16" border="0" height="17">Contact the <i>MathWorld</i> Team</a><br>
+© 1999-2011 <a href="http://www.wolfram.com/" target="_blank">Wolfram 
+Research, Inc.</a> | <a 
+href="http://mathworld.wolfram.com/about/terms.html">Terms of Use</a>
+</p>
+
+</td>
+<td valign="top">
+
+<div style="margin-left: 20px; margin-right: 10px;">
+<div class="ad">
+<map name="demomap" id="demomap">
+<area shape="rect" href="http://demonstrations.wolfram.com/" alt="The 
+Wolfram Demonstrations Project" title="The Wolfram Demonstrations 
+Project" target="_blank" coords="0,0,213,300">
+<area shape="rect" href="http://demonstrations.wolfram.com/topics.html" 
+alt="Browse Topics" title="Browse Topics" target="_blank" 
+coords="0,300,106,345">
+<area shape="rect" href="http://demonstrations.wolfram.com/new.html" 
+alt="View Latest" title="View Latest" target="_blank" 
+coords="107,300,213,345">
+</map>
+<img usemap="#demomap" 
+src="Box-MullerTransformation_files/demonstrations3.jpg" alt="" 
+width="213" border="0" height="345">
+</div>
+</div>
+
+
+<div style="margin-left: 16px; margin-right: 10px; margin-top: 30px;">
+<a href="http://www.wolfram.com/products/mathematica/" target="_blank">
+  <img src="Box-MullerTransformation_files/mathematica_bar.gif" 
+alt="Wolfram Mathematica 8" title="Wolfram Mathematica 8" width="224" 
+border="0" height="79"></a>
+</div>
+
+<!-- The code below handles :hover and :active for IE6 and below -->
+<!--[if lte IE 6]>
+<style type="text/css">
+div.redwebmenu {
+   behavior: url(/scripts/csshover.htc);
+   }
+ </style>
+<![endif]-->
+
+<div style="position: absolute; margin-left: 27px; margin-right: 30px; 
+margin-top: 20px;">
+<table>
+<tbody><tr>
+<td>
+<div class="redwebmenu">
+	<div class="redwebmenuheader"><a class="aredmenuheader" 
+href="http://www.wolfram.com/webresources.html">&nbsp;Other Wolfram Web 
+Resources »</a>
+		<div class="redwebsubmenu">
+			<div class="redwebitem"><a href="http://www.wolfram.com/" 
+target="_blank">Wolfram Research</a></div>
+			<div class="redwebitem"><a 
+href="http://www.wolfram.com/products/mathematica/" target="_blank"><i>Mathematica</i>
+ Home Page</a></div>
+			<div class="redwebitem"><a href="http://reference.wolfram.com/" 
+target="_blank"><i>Mathematica</i> Documentation Center</a></div>
+			<div class="redwebitem"><a href="http://demonstrations.wolfram.com/" 
+target="_blank">Wolfram Demonstrations Project</a></div>
+			<div class="redwebitem"><a href="http://integrals.wolfram.com/" 
+target="_blank">Online Integrator</a></div>
+			<div class="redwebitem"><a href="http://functions.wolfram.com/" 
+target="_blank">Functions Site</a></div>
+			<div class="redwebitem"><a href="http://tones.wolfram.com/" 
+target="_blank">Wolfram Tones</a></div>
+			<div class="redwebitem"><a href="http://www.wolframscience.com/" 
+target="_blank">Wolfram Science</a></div>
+			<div class="redwebitem"><a href="http://blog.wolfram.com/" 
+target="_blank">Wolfram Blog</a></div>
+			<div class="redwebitem"><a 
+href="http://www.wolfram.com/webresources.html" target="_blank">more&#8230;</a></div>
+		</div>
+	</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</body></html>

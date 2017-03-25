@@ -1,0 +1,3298 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:expr="http://www.google.com/2005/gml/expr" 
+xmlns:data="http://www.google.com/2005/gml/data" 
+xmlns:b="http://www.google.com/2005/gml/b" 
+xmlns="http://www.w3.org/1999/xhtml" dir="ltr"><head>
+
+
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<script type="text/javascript">(function() { var a=window;function c(b){this.t={};this.tick=function(b,i,d){d=d!=void 0?d:(new Date).getTime();this.t[b]=[d,i]};this.tick("start",null,b)}var e=new c;a.jstiming={Timer:c,load:e};try{var g=null;a.chrome&&a.chrome.csi&&(g=Math.floor(a.chrome.csi().pageT));g==null&&a.gtbExternal&&(g=a.gtbExternal.pageT());g==null&&a.external&&(g=a.external.pageT);g&&(a.jstiming.pt=g)}catch(h){};a.tickAboveFold=function(b){var f=0;if(b.offsetParent){do f+=b.offsetTop;while(b=b.offsetParent)}b=f;b<=750&&a.jstiming.load.tick("aft")};var j=false;function k(){j||(j=true,a.jstiming.load.tick("firstScrollTime"))}a.addEventListener?a.addEventListener("scroll",k,false):a.attachEvent("onscroll",k);
+ })();</script>
+<meta content="true" name="MSSmartTagsPreventParsing">
+<meta content="blogger" name="generator">
+<link href="http://trucosexcel.blogspot.com/favicon.ico" rel="icon" 
+type="image/x-icon">
+<link 
+href="http://trucosexcel.blogspot.com/2008/08/simulacin-de-una-distribucin-normal.html"
+ rel="canonical">
+<link rel="alternate" type="application/atom+xml" title="Excel Avanzado -
+ Atom" href="http://trucosexcel.blogspot.com/feeds/posts/default">
+<link rel="alternate" type="application/rss+xml" title="Excel Avanzado -
+ RSS" href="http://trucosexcel.blogspot.com/feeds/posts/default?alt=rss">
+<link rel="service.post" type="application/atom+xml" title="Excel 
+Avanzado - Atom" 
+href="http://www.blogger.com/feeds/8263944010888306433/posts/default">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" 
+href="http://www.blogger.com/rsd.g?blogID=8263944010888306433">
+<link rel="alternate" type="application/atom+xml" title="Excel Avanzado -
+ Atom" 
+href="http://trucosexcel.blogspot.com/feeds/1693273636364305596/comments/default">
+<link rel="image_src" 
+href="http://3.bp.blogspot.com/_AePKOkg2t_s/SKSjEHyIFXI/AAAAAAAABD4/lBryApNzO64/s72-c/normal.png">
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>Excel Avanzado: Simulación de una Distribución Normal</title>
+<meta content="Blog Casos practicos ejemplo gestion empresarial 
+aplicaciones financieras con Excel macros avanzado Trucos Excel Calculo 
+financiero matematicas finanzas Programacion VBA Visual Basic 
+Applications Adolfo Aparicio URJC Universidad Rey Juan Carlos Madrid 
+access" name="description">
+<meta content="Excel Avanzado Macros Matematica Financiera Trucos 
+Regresion Simplex optimizacion simulacion finanzas van tir amortizacion 
+prestamo metodo frances modelo interes renta ejercicio resuelto ejemplo 
+practico forward sensibilidad Montecarlo escenarios base datos" 
+name="keywords">
+<link type="text/css" rel="stylesheet" 
+href="simulacin-de-una-distribucin-normal_files/1690079772-widget_css_bundle.css">
+<link type="text/css" rel="stylesheet" 
+href="simulacin-de-una-distribucin-normal_files/authorization.css">
+<style type="text/css">
+#navbar-iframe { display:block }
+</style>
+<style id="page-skin-1" type="text/css"><!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 3
+Designer: Douglas Bowman
+URL:      www.stopdesign.com
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+#navbar-iframe {
+height: 0px;
+visibility: hidden;
+display: none;
+}
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#eec">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#333">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#333">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#586">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#456">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#234">
+<Variable name="titleBgColor" description="Page Header Background Color"
+type="color" default="#000">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#586">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarHeaderColor"
+description="Bottom Sidebar Title Color"
+type="color" default="#abc">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#99ddbb">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#ffffff">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Blog Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#123;
+margin:0;
+text-align:center;
+line-height: 100.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#333333;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:890px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:635px;
+float:left;
+background:#eeeecc url("http://www1.blogblog.com/rounders3/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#333333;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("http://www1.blogblog.com/rounders3/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("http://www.blogblog.com/rounders3/rails_main.gif") no-repeat-y left;
+padding:0;
+width:635px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 4px;
+width: 618px;
+padding: 0 13px;
+}
+.main .Blog {
+margin: 0;
+padding: 0;
+width: 634px;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #6f3c1b;
+}
+a:visited {
+color: #11593C;
+}
+a:hover {
+color: #11593C;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background:#193919 url("http://www2.blogblog.com/rounders3/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffff66;
+}
+#header {
+background:url("http://www.blogblog.com/rounders3/corners_cap_bot.gif") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 293% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffff66;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 130% Trebuchet, Trebuchet MS, Arial, sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#990000;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+line-height:1.5em;
+background:url("http://www2.blogblog.com/rounders3/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #6131BD;
+font: normal bold 149% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #6131BD;
+}
+a.title-link:hover {
+background-color: #bbbbbb;
+color: #333333;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#eeeecc;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #ffffff;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #666666;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #456;
+}
+.post-footer a:hover {
+color: #234;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("http://www.blogblog.com/rounders/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("http://www.blogblog.com/rounders3/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #990000;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#6131BD;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("http://www.blogblog.com/rounders3/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #333;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top:0;
+margin-right:15px;
+margin-bottom:.5em;
+margin-left:0;
+padding-top:8px;
+}
+.profile-link {
+background:url("http://www.blogblog.com/rounders3/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#558866 url("http://www.blogblog.com/rounders3/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("http://www2.blogblog.com/rounders3/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffff66;
+border-bottom: 1px dotted #ffff66;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #CAF99B;
+}
+#sidebartop a:visited {
+color: #CAF99B;
+}
+#sidebar a {
+color: #99ddbb;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #ffcc66;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background:#193919 url("http://www.blogblog.com/rounders3/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #ffff66;
+}
+#sidebarbottom-wrap2 {
+background:url("http://www1.blogblog.com/rounders3/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+.sidebar h2 {
+margin-top:0;
+margin-right:0;
+margin-bottom:.5em;
+margin-left:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("http://www2.blogblog.com/rounders3/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+#sidebar h2 {
+color: #aabbcc;
+border-bottom: 1px dotted #aabbcc;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#193919 url("http://www2.blogblog.com/rounders3/corners_cap_top.gif") no-repeat left top;
+color:#ffff66;
+}
+#footer {
+background:url("http://www.blogblog.com/rounders3/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffff66;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 880px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+--></style>
+<!-- Fin código de Primera Letra Enorme -->
+<style type="text/css">
+.letrag {
+float:left;
+color: #990000;
+font-size:60px;
+font-family:none;
+line-height:48px;
+padding-top:1px;
+padding-right:5px;
+}
+</style>
+<!-- Fin código de Primera Letra Enorme -->
+<script type="text/javascript">(function(){var a;var b=navigator.userAgent;a=b.indexOf("Mobile")!=-1&&b.indexOf("WebKit")!=-1&&b.indexOf("iPad")==-1?true:b.indexOf("Opera Mini")!=-1?true:false;if(a){var c;a:{var d=window.location.href,e=d.split("?");switch(e.length){case 1:c=d+"?m=1";break a;case 2:c=e[1].search("(^|&)m=")>=0?null:d+"&m=1";break a;default:c=null}}c&&window.location.replace(c)};})();
+</script><script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('headEnd');
+</script><link type="text/css" rel="stylesheet" 
+href="simulacin-de-una-distribucin-normal_files/widget.css"><style type="text/css">#twtr-widget-1 .twtr-avatar { display: none; } #twtr-widget-1 .twtr-tweet-text { margin-left: 0; }</style><style type="text/css">#twtr-widget-1 .twtr-doc,                      #twtr-widget-1 .twtr-hd a,                      #twtr-widget-1 h3,                      #twtr-widget-1 h4 {            background-color: #333333 !important;            color: #ffffff !important;          }          #twtr-widget-1 .twtr-tweet a {            color: #4aed05 !important;          }          #twtr-widget-1 .twtr-bd, #twtr-widget-1 .twtr-timeline i a,           #twtr-widget-1 .twtr-bd p {            color: #ffffff !important;          }          #twtr-widget-1 .twtr-new-results,           #twtr-widget-1 .twtr-results-inner,           #twtr-widget-1 .twtr-timeline {            background: #000000 !important;          }</style></head><body>
+<div class="navbar section" id="navbar"><div class="widget Navbar" 
+id="Navbar1"><script src="simulacin-de-una-distribucin-normal_files/plusone.js" async="" type="text/javascript"></script><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener("load",
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<iframe src="simulacin-de-una-distribucin-normal_files/navbar.htm" 
+marginwidth="0" marginheight="0" id="navbar-iframe" 
+allowtransparency="true" title="Blogger Navigation and Search" 
+width="100%" frameborder="0" height="30px" scrolling="no"></iframe>
+<div></div></div></div>
+<div id="outer-wrapper">
+<div id="header-wrapper">
+<div class="header section" id="header"><div class="widget Header" 
+id="Header1">
+<div id="header-inner" style="background-image: 
+url(&quot;http://3.bp.blogspot.com/_AePKOkg2t_s/SLjxOgAyXaI/AAAAAAAABHM/VX5MdlaOHAU/S880-R/P1010040.JPG&quot;);
+ background-position: left center; min-height: 430px; background-repeat:
+ no-repeat;">
+<div class="titlewrapper" style="background: none repeat scroll 0% 0% 
+transparent;">
+<h1 class="title" style="background: none repeat scroll 0% 0% 
+transparent; border-width: 0px;">
+<a href="http://trucosexcel.blogspot.com/">Excel Avanzado</a>
+</h1>
+</div>
+<div class="descriptionwrapper">
+<p class="description"><span>Macros, Funciones de Excel, Trucos</span></p>
+</div>
+</div>
+</div></div>
+</div>
+<div id="crosscol-wrapper" style="text-align: center;">
+<div class="crosscol section" id="crosscol"><div class="widget PageList"
+ id="PageList1">
+<h2>Páginas</h2>
+<div class="widget-content">
+<ul>
+<li><a href="http://trucosexcel.blogspot.com/">Página principal</a></li>
+<li><a href="http://trucosexcel.blogspot.com/p/macros.html">Macros</a></li>
+</ul>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" 
+href="http://www.blogger.com/rearrange?blogID=8263944010888306433&amp;widgetType=PageList&amp;widgetId=PageList1&amp;action=editWidget&amp;sectionId=crosscol"
+ onclick='return 
+_WidgetManager._PopupConfig(document.getElementById("PageList1"));' 
+target="configPageList1" title="Editar">
+<img alt="" 
+src="simulacin-de-una-distribucin-normal_files/icon18_wrench_allbkg.png"
+ width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget AdSense" id="AdSense1">
+<div class="widget-content">
+<script type="text/javascript"><!--
+google_ad_client="pub-9063294874795488";
+google_ad_host="pub-1556223355139109";
+google_ad_width=728;
+google_ad_height=90;
+google_ad_format="728x90_as";
+google_ad_type="text_image";
+google_ad_host_channel="0001";
+google_color_border="EEEECC";
+google_color_bg="EEEECC";
+google_color_link="6F3C1B";
+google_color_url="6F3C1B";
+google_color_text="333333";
+//--></script>
+<script type="text/javascript" src="simulacin-de-una-distribucin-normal_files/show_ads.js">
+</script><ins style="display: inline-table; border: medium none; height:
+ 90px; margin: 0pt; padding: 0pt; position: relative; visibility: 
+visible; width: 728px;"><ins id="aswift_0_anchor" style="display: block;
+ border: medium none; height: 90px; margin: 0pt; padding: 0pt; position:
+ relative; visibility: visible; width: 728px;"><iframe 
+allowtransparency="true" hspace="0" marginwidth="0" marginheight="0" 
+onload="var 
+i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){i+='.call';setTimeout(h,0)}else
+ 
+if(h.match){i+='.nav';w.location.replace(h)}s.log&amp;&amp;s.log.push(i)}"
+ vspace="0" id="aswift_0" name="aswift_0" style="left: 0pt; position: 
+absolute; top: 0pt;" width="728" frameborder="0" height="90" 
+scrolling="no"></iframe></ins></ins>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" 
+href="http://www.blogger.com/rearrange?blogID=8263944010888306433&amp;widgetType=AdSense&amp;widgetId=AdSense1&amp;action=editWidget&amp;sectionId=crosscol"
+ onclick='return 
+_WidgetManager._PopupConfig(document.getElementById("AdSense1"));' 
+target="configAdSense1" title="Editar">
+<img alt="" 
+src="simulacin-de-una-distribucin-normal_files/icon18_wrench_allbkg.png"
+ width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div></div>
+</div>
+<div id="main-wrap1"><div id="main-wrap2">
+<div class="main section" id="main"><div class="widget Blog" id="Blog1">
+<div class="blog-posts hfeed">
+<!-- google_ad_section_start(name=default) -->
+
+          <div class="date-outer">
+        
+<h2 class="date-header"><span>jueves 14 de agosto de 2008</span></h2>
+
+          <div class="date-posts">
+        
+<div class="post-outer">
+<div class="post hentry">
+<a name="1693273636364305596"></a>
+<h3 class="post-title entry-title">
+<a 
+href="http://trucosexcel.blogspot.com/2008/08/simulacin-de-una-distribucin-normal.html">Simulación
+ de una Distribución Normal</a>
+</h3>
+<div class="post-header-line-1"></div>
+<div class="post-body entry-content">
+<div><span class="letrag">E</span>n Excel disponemos de una función de 
+distribución que genera directamente valores ajustados a una 
+distribución normal, pero en esta ocasión vamos a generarlos sin 
+recurrir a las funciones de Excel. La denominada transformada de 
+Box-Müller permite generar una distribución Normal. Para ello se 
+utilizan dos distribuciones Uniformes [0;1], que en Excel se obtienen 
+con la función:</div><br><div style="color: rgb(51, 51, 255);">   
+=ALEATORIO()</div><br><div></div><br><div>La función es la siguiente:</div><div></div><br><div
+ style="color: rgb(51, 51, 255);">   
+=+RAIZ((-2*LN(ALEATORIO())))*SENO(2*PI()*ALEATORIO())</div><br><div></div><br><div>Podríamos
+ programar una función que nos de una Normal de media mu y desviación 
+típica sigma.</div><br><div></div><img 
+id="BLOGGER_PHOTO_ID_5234487958115456370" style="margin: 0px auto 10px; 
+display: block; text-align: center;" alt="" 
+src="simulacin-de-una-distribucin-normal_files/normal.png" border="0"><div
+ style="margin: 5px 20px 20px;"><br><div class="smallfont" 
+style="margin-bottom: 2px;">Código:</div><br><pre class="alt2" dir="ltr" style="margin: 0px; background-color: rgb(205, 241, 250); padding: 6px; border: 1px inset; width: 480px; height: 60px; text-align: left; overflow: auto;">Function xNORMAL(mu, sigma)<br>Dim NORMAL01<br>Const Pi As Double = 3.14159265358979<br>Randomize<br>NORMAL01 = Sqr((-2 * LN(Rnd))) * Sin(2 * Pi * Rnd)<br>xNORMAL = mu + sigma * NORMAL01<br>End Function<br><br>Function LN(x)<br>LN = Log(x) / Log(Exp(1))<br>End Function<br></pre><br></div><div>Por
+ ejemplo, la función =xNORMAL(100;2) nos proporcionará un número 
+aleatorio que se ajusta a una distribución normal de media 100 y 
+desviación típica 2.</div>
+<div style="clear: both;"></div>
+</div>
+<div class="post-footer">
+<div class="post-footer-line post-footer-line-1"><span 
+class="post-author vcard">
+Publicado por
+<span class="fn">Adolfo Aparicio</span>
+</span>
+<span class="post-timestamp">
+a las
+<a class="timestamp-link" 
+href="http://trucosexcel.blogspot.com/2008/08/simulacin-de-una-distribucin-normal.html"
+ rel="bookmark" title="permanent link"><abbr class="published" 
+title="2008-08-14T23:13:00+02:00">23:13</abbr></a>
+</span>
+<span class="post-comment-link">
+</span>
+<span class="post-icons">
+<span class="item-action">
+<a 
+href="http://www.blogger.com/email-post.g?blogID=8263944010888306433&amp;postID=1693273636364305596"
+ title="Enviar entrada por correo electrónico">
+<img alt="" class="icon-action" 
+src="simulacin-de-una-distribucin-normal_files/icon18_email.gif">
+</a>
+</span>
+<span class="item-control blog-admin pid-684700285">
+<a 
+href="http://www.blogger.com/post-edit.g?blogID=8263944010888306433&amp;postID=1693273636364305596&amp;from=pencil"
+ title="Editar entrada">
+<img alt="" class="icon-action" 
+src="simulacin-de-una-distribucin-normal_files/icon18_edit_allbkg.gif" 
+width="18" height="18">
+</a>
+</span>
+</span>
+</div>
+<div class="post-footer-line post-footer-line-2"><span 
+class="post-labels">
+Etiquetas:
+<a href="http://trucosexcel.blogspot.com/search/label/Aleatorio" 
+rel="tag">Aleatorio</a>,
+<a href="http://trucosexcel.blogspot.com/search/label/Constante" 
+rel="tag">Constante</a>,
+<a 
+href="http://trucosexcel.blogspot.com/search/label/Distribuci%C3%B3n%20Normal"
+ rel="tag">Distribución Normal</a>,
+<a href="http://trucosexcel.blogspot.com/search/label/Excel" rel="tag">Excel</a>,
+<a href="http://trucosexcel.blogspot.com/search/label/Funciones" 
+rel="tag">Funciones</a>,
+<a href="http://trucosexcel.blogspot.com/search/label/logaritmo" 
+rel="tag">logaritmo</a>,
+<a href="http://trucosexcel.blogspot.com/search/label/Macros" rel="tag">Macros</a>,
+<a href="http://trucosexcel.blogspot.com/search/label/Neperiano" 
+rel="tag">Neperiano</a>,
+<a href="http://trucosexcel.blogspot.com/search/label/Simulaci%C3%B3n" 
+rel="tag">Simulación</a>,
+<a href="http://trucosexcel.blogspot.com/search/label/VBA" rel="tag">VBA</a>
+</span>
+</div>
+<div class="post-footer-line post-footer-line-3"></div>
+</div>
+</div>
+<div class="comments" id="comments">
+<a name="comments"></a>
+<h4>
+5
+comentarios:
+        
+</h4>
+<div id="Blog1_comments-block-wrapper">
+<dl class="avatar-comment-indent" id="comments-block">
+<dt class="comment-author " id="c8789479172366844389">
+<a name="c8789479172366844389"></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><a 
+href="http://www.blogger.com/profile/17287005591486719455" 
+rel="nofollow" onclick="" class="avatar-hovercard" 
+id="av-0-17287005591486719455"><img 
+src="simulacin-de-una-distribucin-normal_files/b16-rounded.gif" alt="" 
+title="((_/s&amp;#39;eye&amp;#39;s\_))_ Vïctor_" width="16" height="16">
+
+</a></span></div>
+<a href="http://www.blogger.com/profile/17287005591486719455" 
+rel="nofollow">((_/s'eye's\_))_ Vïctor_</a>
+dijo...
+</dt>
+<dd class="comment-body" id="Blog1_cmt-8789479172366844389">
+<p>
+Interesante forma... pero hay una forma un poco mas simple:<br><br><b>=DISTR.NORM.INV(ALEATORIO();media;desviacion)</b><br><br>y
+ lo arrastras ;)
+</p>
+</dd>
+<dd class="comment-footer">
+<span class="comment-timestamp">
+<a 
+href="http://trucosexcel.blogspot.com/2008/08/simulacin-de-una-distribucin-normal.html?showComment=1225368900000#c8789479172366844389"
+ title="comment permalink">
+30 de octubre de 2008 13:15
+</a>
+<span class="item-control blog-admin pid-1905632515">
+<a class="comment-delete" 
+href="http://www.blogger.com/delete-comment.g?blogID=8263944010888306433&amp;postID=8789479172366844389"
+ title="Suprimir comentario">
+<img src="simulacin-de-una-distribucin-normal_files/icon_delete13.gif">
+</a>
+</span>
+</span>
+</dd>
+<dt class="comment-author blog-author" id="c6013788341512392914">
+<a name="c6013788341512392914"></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><a 
+href="http://www.blogger.com/profile/18373309889444674587" 
+rel="nofollow" onclick="" class="avatar-hovercard" 
+id="av-1-18373309889444674587"><img 
+src="simulacin-de-una-distribucin-normal_files/b16-rounded.gif" alt="" 
+title="Adolfo Aparicio" width="16" height="16">
+
+</a></span></div>
+<a href="http://www.blogger.com/profile/18373309889444674587" 
+rel="nofollow">Adolfo Aparicio</a>
+dijo...
+</dt>
+<dd class="comment-body" id="Blog1_cmt-6013788341512392914">
+<p>
+La forma que indicas es el método clásico.<br><br>La novedad de la 
+transformada de <b>Box-Müller</b> es que desde una macro, simplemente 
+utilizando código VBA no es necesario recurrir a la hoja de cálculo, ni a
+ sus funciones predefinidas para conseguir la Normal Inversa.
+</p>
+</dd>
+<dd class="comment-footer">
+<span class="comment-timestamp">
+<a 
+href="http://trucosexcel.blogspot.com/2008/08/simulacin-de-una-distribucin-normal.html?showComment=1227570540000#c6013788341512392914"
+ title="comment permalink">
+25 de noviembre de 2008 00:49
+</a>
+<span class="item-control blog-admin pid-684700285">
+<a class="comment-delete" 
+href="http://www.blogger.com/delete-comment.g?blogID=8263944010888306433&amp;postID=6013788341512392914"
+ title="Suprimir comentario">
+<img src="simulacin-de-una-distribucin-normal_files/icon_delete13.gif">
+</a>
+</span>
+</span>
+</dd>
+<dt class="comment-author " id="c8853819025290495732">
+<a name="c8853819025290495732"></a>
+<div class="avatar-image-container vcard"><span dir="ltr"><a 
+href="http://www.blogger.com/profile/03224599285022168266" 
+rel="nofollow" onclick="" class="avatar-hovercard" 
+id="av-2-03224599285022168266"><img 
+src="simulacin-de-una-distribucin-normal_files/974291c6cdb6547ead98960b2fe58e0d.jpg"
+ alt="" class="delayLoad" style="" 
+longdesc="http://3.bp.blogspot.com/__2rx5TP3rzs/SafzBShMmfI/AAAAAAAAAAk/pIGhGlWTMe4/S45/974291c6cdb6547ead98960b2fe58e0d.jpeg"
+ title="Carlos Arístegui" width="35" height="35">
+
+<noscript><img src="http://3.bp.blogspot.com/__2rx5TP3rzs/SafzBShMmfI/AAAAAAAAAAk/pIGhGlWTMe4/S45/974291c6cdb6547ead98960b2fe58e0d.jpeg" width="35" height="35" class="photo" alt=""></noscript></a></span></div>
+<a href="http://www.blogger.com/profile/03224599285022168266" 
+rel="nofollow">Carlos Arístegui</a>
+dijo...
+</dt>
+<dd class="comment-body" id="Blog1_cmt-8853819025290495732">
+<p>
+Muchas gracias por tu publicación! ya no tengo q usar el objeto excel 
+para sacar la normal inversa. Creo q hay unas librerias para .NET que 
+incluyen una función NormalInverse(), pero no las encontré por ningún 
+sitio, seguramente no sean gratuitas..<br><br>Un saludo.
+</p>
+</dd>
+<dd class="comment-footer">
+<span class="comment-timestamp">
+<a 
+href="http://trucosexcel.blogspot.com/2008/08/simulacin-de-una-distribucin-normal.html?showComment=1247827517087#c8853819025290495732"
+ title="comment permalink">
+17 de julio de 2009 12:45
+</a>
+<span class="item-control blog-admin pid-1091035378">
+<a class="comment-delete" 
+href="http://www.blogger.com/delete-comment.g?blogID=8263944010888306433&amp;postID=8853819025290495732"
+ title="Suprimir comentario">
+<img src="simulacin-de-una-distribucin-normal_files/icon_delete13.gif">
+</a>
+</span>
+</span>
+</dd>
+<dt class="comment-author " id="c7956402677977063467">
+<a name="c7956402677977063467"></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><a 
+href="http://www.blogger.com/profile/16716741397189009183" 
+rel="nofollow" onclick="" class="avatar-hovercard" 
+id="av-3-16716741397189009183"><img 
+src="simulacin-de-una-distribucin-normal_files/b16-rounded.gif" alt="" 
+title="Magdalena" width="16" height="16">
+
+</a></span></div>
+<a href="http://www.blogger.com/profile/16716741397189009183" 
+rel="nofollow">Magdalena</a>
+dijo...
+</dt>
+<dd class="comment-body" id="Blog1_cmt-7956402677977063467">
+<p>
+Adolfo Aparicio: Por favor  me interesa mucho usar tu algoritmo. 
+Requiero también por favor si me puedes facilitar tu mail para hacerte 
+unas preguntitas sobre este método que estas usando. Es el metodo de la 
+transformada inversa o de box muller? Necesito un poco mas de 
+informacion para poder documentar el uso de este algoritmo. Te lo 
+agradecería infinitamente<br>!!!<br>Mil gracias de antemanos<br>Saludos 
+desde Chile
+</p>
+</dd>
+<dd class="comment-footer">
+<span class="comment-timestamp">
+<a 
+href="http://trucosexcel.blogspot.com/2008/08/simulacin-de-una-distribucin-normal.html?showComment=1306183880795#c7956402677977063467"
+ title="comment permalink">
+23 de mayo de 2011 22:51
+</a>
+<span class="item-control blog-admin pid-514981010">
+<a class="comment-delete" 
+href="http://www.blogger.com/delete-comment.g?blogID=8263944010888306433&amp;postID=7956402677977063467"
+ title="Suprimir comentario">
+<img src="simulacin-de-una-distribucin-normal_files/icon_delete13.gif">
+</a>
+</span>
+</span>
+</dd>
+<dt class="comment-author blog-author" id="c1273976689533815865">
+<a name="c1273976689533815865"></a>
+<div class="avatar-image-container vcard"><span dir="ltr"><a 
+href="http://www.blogger.com/profile/18373309889444674587" 
+rel="nofollow" onclick="" class="avatar-hovercard" 
+id="av-4-18373309889444674587"><img 
+src="simulacin-de-una-distribucin-normal_files/profe_002.jpg" alt="" 
+class="delayLoad" style="" 
+longdesc="http://2.bp.blogspot.com/_AePKOkg2t_s/Sb9EJD0Yw3I/AAAAAAAABL8/afm7oA9gEuE/S45/profe.jpg"
+ title="Adolfo Aparicio" width="35" height="35">
+
+<noscript><img src="http://2.bp.blogspot.com/_AePKOkg2t_s/Sb9EJD0Yw3I/AAAAAAAABL8/afm7oA9gEuE/S45/profe.jpg" width="35" height="35" class="photo" alt=""></noscript></a></span></div>
+<a href="http://www.blogger.com/profile/18373309889444674587" 
+rel="nofollow">Adolfo Aparicio</a>
+dijo...
+</dt>
+<dd class="comment-body" id="Blog1_cmt-1273976689533815865">
+<p>
+Hola Magdalena.<br><br>La transformada de Box-Muller la tienes en la 
+wikipedia:<br><br><a 
+href="http://en.wikipedia.org/wiki/Box%E2%80%93Muller_transform" 
+rel="nofollow">http://en.wikipedia.org/wiki/Box%E2%80%93Muller_transform</a><br><br>Mi
+ correo es: financieras@gmail.com<br><br>Un saludo.
+</p>
+</dd>
+<dd class="comment-footer">
+<span class="comment-timestamp">
+<a 
+href="http://trucosexcel.blogspot.com/2008/08/simulacin-de-una-distribucin-normal.html?showComment=1306192885854#c1273976689533815865"
+ title="comment permalink">
+24 de mayo de 2011 01:21
+</a>
+<span class="item-control blog-admin pid-684700285">
+<a class="comment-delete" 
+href="http://www.blogger.com/delete-comment.g?blogID=8263944010888306433&amp;postID=1273976689533815865"
+ title="Suprimir comentario">
+<img src="simulacin-de-una-distribucin-normal_files/icon_delete13.gif">
+</a>
+</span>
+</span>
+</dd>
+</dl>
+</div>
+<p class="comment-footer">
+<a 
+href="http://www.blogger.com/comment.g?blogID=8263944010888306433&amp;postID=1693273636364305596"
+ onclick="">Publicar un comentario en la entrada</a>
+</p>
+<div id="backlinks-container">
+<div id="Blog1_backlinks-container"><a name="links"></a><h4>Enlaces a 
+esta entrada</h4>
+<p class="comment-footer">
+<a class="comment-link" href="http://www.blogger.com/blog-this.g" 
+id="Blog1_backlinks-create-link" target="_blank">Crear un enlace</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="latency-1693273636364305596"></div><script type="text/javascript">if (window['tickAboveFold']) {window['tickAboveFold'](document.getElementById("latency-1693273636364305596")); } </script>
+
+        </div></div>
+      
+<!-- google_ad_section_end -->
+</div>
+<div class="blog-pager" id="blog-pager">
+<span id="blog-pager-newer-link">
+<a class="blog-pager-newer-link" 
+href="http://trucosexcel.blogspot.com/2008/08/random-walk-lognormal.html"
+ id="Blog1_blog-pager-newer-link" title="Entrada más reciente">Entrada 
+más reciente</a>
+</span>
+<span id="blog-pager-older-link">
+<a class="blog-pager-older-link" 
+href="http://trucosexcel.blogspot.com/2008/08/edad.html" 
+id="Blog1_blog-pager-older-link" title="Entrada antigua">Entrada antigua</a>
+</span>
+<a class="home-link" href="http://trucosexcel.blogspot.com/">Página 
+principal</a>
+</div>
+<div class="clear"></div>
+<div class="post-feeds">
+<div class="feed-links">
+Suscribirse a:
+<a class="feed-link" 
+href="http://trucosexcel.blogspot.com/feeds/1693273636364305596/comments/default"
+ target="_blank" type="application/atom+xml">Enviar comentarios (Atom)</a>
+</div>
+</div>
+<script type="text/javascript">window.___gcfg = {'lang': 'es'};window.___gapisync = false;(function() {var po = document.createElement('script');po.type = 'text/javascript';po.async = true;po.src = 'https://apis.google.com/js/plusone.js';var s = document.body.getElementsByTagName('script')[0];s.parentNode.insertBefore(po, s);})();</script>
+</div></div>
+</div></div>
+<div id="sidebar-wrap">
+<div id="sidebartop-wrap"><div id="sidebartop-wrap2">
+<div class="sidebar section" id="sidebartop"><div class="widget 
+LinkList" id="LinkList1">
+<h2>Excel Avanzado</h2>
+<div class="widget-content">
+<ul>
+<li><a href="http://excelavanzado.com/">http://excelavanzado.com</a></li>
+</ul>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" 
+href="http://www.blogger.com/rearrange?blogID=8263944010888306433&amp;widgetType=LinkList&amp;widgetId=LinkList1&amp;action=editWidget&amp;sectionId=sidebartop"
+ onclick='return 
+_WidgetManager._PopupConfig(document.getElementById("LinkList1"));' 
+target="configLinkList1" title="Editar">
+<img alt="" 
+src="simulacin-de-una-distribucin-normal_files/icon18_wrench_allbkg.png"
+ width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget Profile" id="Profile1">
+<h2>Datos personales</h2>
+<div class="widget-content">
+<a href="http://www.blogger.com/profile/18373309889444674587"><img 
+alt="Mi foto" class="profile-img" 
+src="simulacin-de-una-distribucin-normal_files/profe.jpg" width="80" 
+height="80"></a>
+<dl class="profile-datablock">
+<dt class="profile-data">
+<a class="profile-name-link" 
+href="http://www.blogger.com/profile/18373309889444674587" rel="author">
+Adolfo Aparicio
+</a>
+</dt>
+<dd class="profile-data">Madrid, Spain</dd>
+<dd class="profile-textblock"><a href="http://excelavanzado.com/">Página
+ de Excel Avanzado</a><br>
+<a href="http://trucosexcel.blogspot.com/">Blog de Excel Avanzado</a><br>
+<a href="http://valorfinan.blogspot.com/">Valoración Financiera</a><br>
+<a href="http://trucosaccess.blogspot.com/">Blog de Access</a><br>
+<a href="http://www.youtube.com/user/valoro22">Canal de YouTube</a><br>
+<a href="http://twitter.com/addolfo">Twitter</a><br></dd>
+</dl>
+<a class="profile-link" 
+href="http://www.blogger.com/profile/18373309889444674587" rel="author">Ver
+ todo mi perfil</a>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" 
+href="http://www.blogger.com/rearrange?blogID=8263944010888306433&amp;widgetType=Profile&amp;widgetId=Profile1&amp;action=editWidget&amp;sectionId=sidebartop"
+ onclick='return 
+_WidgetManager._PopupConfig(document.getElementById("Profile1"));' 
+target="configProfile1" title="Editar">
+<img alt="" 
+src="simulacin-de-una-distribucin-normal_files/icon18_wrench_allbkg.png"
+ width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div></div>
+</div></div>
+<div id="sidebarbottom-wrap1"><div id="sidebarbottom-wrap2">
+<div class="sidebar section" id="sidebar"><div class="widget HTML" 
+id="HTML9">
+<h2 class="title">Facebook</h2>
+<div class="widget-content">
+<iframe src="simulacin-de-una-distribucin-normal_files/likebox.htm" 
+style="border: medium none; overflow: hidden; width: 220px; height: 
+62px;" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" 
+href="http://www.blogger.com/rearrange?blogID=8263944010888306433&amp;widgetType=HTML&amp;widgetId=HTML9&amp;action=editWidget&amp;sectionId=sidebar"
+ onclick='return 
+_WidgetManager._PopupConfig(document.getElementById("HTML9"));' 
+target="configHTML9" title="Editar">
+<img alt="" 
+src="simulacin-de-una-distribucin-normal_files/icon18_wrench_allbkg.png"
+ width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div><div class="widget HTML" id="HTML5">
+<h2 class="title">Suscriptores</h2>
+<div class="widget-content">
+<p><a href="http://feeds.feedburner.com/ExcelAvanzado"><img 
+style="border: 0pt none;" alt="" 
+src="simulacin-de-una-distribucin-normal_files/ExcelAvanzado.gif" 
+width="88" height="26"></a></p>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" 
+href="http://www.blogger.com/rearrange?blogID=8263944010888306433&amp;widgetType=HTML&amp;widgetId=HTML5&amp;action=editWidget&amp;sectionId=sidebar"
+ onclick='return 
+_WidgetManager._PopupConfig(document.getElementById("HTML5"));' 
+target="configHTML5" title="Editar">
+<img alt="" 
+src="simulacin-de-una-distribucin-normal_files/icon18_wrench_allbkg.png"
+ width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div><div class="widget HTML" id="HTML2">
+<h2 class="title">Suscribase via email</h2>
+<div class="widget-content">
+<form action="http://www.feedburner.com/fb/a/emailverify" style="border:
+ 1px solid rgb(204, 204, 204); padding: 3px; text-align: center;" 
+target="popupwindow" method="post" 
+onsubmit="window.open('http://www.feedburner.com/fb/a/emailverifySubmit?feedId=1713873',
+ 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><p>Introduzca
+ su email:</p><p><input style="width: 140px;" name="email" type="text"></p><input
+ value="http://feeds.feedburner.com/~e?ffid=1713873" name="url" 
+type="hidden"><input value="Excel Avanzado" name="title" type="hidden"><input
+ value="es_ES" name="loc" type="hidden"><input value="Suscribirse" 
+type="submit"><p>Delivered by <a href="http://www.feedburner.com/" 
+target="_blank">FeedBurner</a></p></form>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" 
+href="http://www.blogger.com/rearrange?blogID=8263944010888306433&amp;widgetType=HTML&amp;widgetId=HTML2&amp;action=editWidget&amp;sectionId=sidebar"
+ onclick='return 
+_WidgetManager._PopupConfig(document.getElementById("HTML2"));' 
+target="configHTML2" title="Editar">
+<img alt="" 
+src="simulacin-de-una-distribucin-normal_files/icon18_wrench_allbkg.png"
+ width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div><div class="widget LinkList" id="LinkList2">
+<h2>Páginas recomendadas</h2>
+<div class="widget-content">
+<ul>
+<li><a href="http://plus.webatu.com/nif.html">Cálculo de la Letra del 
+DNI</a></li>
+<li><a href="http://excelavanzado.com/">Excel Avanzado</a></li>
+<li><a 
+href="http://office.microsoft.com/es-es/excel/FX100487623082.aspx">Página
+ oficial Excel</a></li>
+<li><a href="http://www.contextures.com/">Contextures</a></li>
+<li><a href="http://jldexcelsp.blogspot.com/">Blog: JLD Excel</a></li>
+<li><a href="http://hojas-de-calculo-en-excel.blogspot.com/">Blog: Hojas
+ de cálculo Excel</a></li>
+<li><a href="http://trucosdeexcel.com/">Trucos de Excel</a></li>
+<li><a href="http://economia-excel.blogspot.com/">Economía Excel</a></li>
+<li><a href="http://excelforo.blogspot.com/">Excel Foro</a></li>
+</ul>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" 
+href="http://www.blogger.com/rearrange?blogID=8263944010888306433&amp;widgetType=LinkList&amp;widgetId=LinkList2&amp;action=editWidget&amp;sectionId=sidebar"
+ onclick='return 
+_WidgetManager._PopupConfig(document.getElementById("LinkList2"));' 
+target="configLinkList2" title="Editar">
+<img alt="" 
+src="simulacin-de-una-distribucin-normal_files/icon18_wrench_allbkg.png"
+ width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget LinkList" id="LinkList3">
+<h2>Páginas en Inglés</h2>
+<div class="widget-content">
+<ul>
+<li><a href="http://www.cpearson.com/">Chip Pearson</a></li>
+</ul>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" 
+href="http://www.blogger.com/rearrange?blogID=8263944010888306433&amp;widgetType=LinkList&amp;widgetId=LinkList3&amp;action=editWidget&amp;sectionId=sidebar"
+ onclick='return 
+_WidgetManager._PopupConfig(document.getElementById("LinkList3"));' 
+target="configLinkList3" title="Editar">
+<img alt="" 
+src="simulacin-de-una-distribucin-normal_files/icon18_wrench_allbkg.png"
+ width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget HTML" id="HTML1">
+<div class="widget-content">
+<form action="http://www.google.es/cse" id="cse-search-box">
+  <div>
+    <input name="cx" value="partner-pub-9063294874795488:af6unb-t5kb" 
+type="hidden">
+    <input name="ie" value="ISO-8859-1" type="hidden">
+    <input style="border: 1px solid rgb(126, 157, 185); padding: 2px; 
+background: 
+url(&quot;http://www.google.es/cse/intl/es/images/google_custom_search_watermark.gif&quot;)
+ no-repeat scroll left center rgb(255, 255, 255);" name="q" size="29" 
+type="text">
+    <input name="sa" value="Buscar" type="submit">
+  </div>
+<input 
+value="trucosexcel.blogspot.com/2008/08/simulacin-de-una-distribucin-normal.html"
+ name="siteurl" type="hidden"></form>
+<script type="text/javascript" src="simulacin-de-una-distribucin-normal_files/brand"></script>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" 
+href="http://www.blogger.com/rearrange?blogID=8263944010888306433&amp;widgetType=HTML&amp;widgetId=HTML1&amp;action=editWidget&amp;sectionId=sidebar"
+ onclick='return 
+_WidgetManager._PopupConfig(document.getElementById("HTML1"));' 
+target="configHTML1" title="Editar">
+<img alt="" 
+src="simulacin-de-una-distribucin-normal_files/icon18_wrench_allbkg.png"
+ width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div><div class="widget BlogArchive" id="BlogArchive1">
+<h2>Archivo del blog</h2>
+<div class="widget-content">
+<div id="ArchiveList">
+<div id="BlogArchive1_ArchiveList">
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/search?updated-min=2011-01-01T00%3A00%3A00%2B01%3A00&amp;updated-max=2012-01-01T00%3A00%3A00%2B01%3A00&amp;max-results=30">2011</a>
+<span class="post-count" dir="ltr">(30)</span>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2011_10_01_archive.html">octubre</a>
+<span class="post-count" dir="ltr">(4)</span>
+<ul class="posts">
+<li><a 
+href="http://trucosexcel.blogspot.com/2011/10/rangos-variables-en-formulas.html">Rangos
+ variables en fórmulas</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2011/10/libro-personal-en-excel.html">Libro
+ Personal en #Excel</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2011/10/facturacion-por-meses.html">Facturación
+ por meses</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2011/10/seleccinar-datos-con-un-desplegable.html">Seleccinar
+ datos con un desplegable</a></li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2011_09_01_archive.html">septiembre</a>
+<span class="post-count" dir="ltr">(2)</span>
+<ul class="posts">
+<li><a 
+href="http://trucosexcel.blogspot.com/2011/09/marcar-la-celda-si-se-encuentra-en-ella.html">Marcar
+ la celda si se encuentra en ella una palabr...</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2011/09/ultimo-valor-de-la-fila.html">Último
+ valor de la fila</a></li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2011_08_01_archive.html">agosto</a>
+<span class="post-count" dir="ltr">(3)</span>
+<ul class="posts">
+<li><a 
+href="http://trucosexcel.blogspot.com/2011/08/convertir-una-tabla-de-doble-entrada-en.html">Convertir
+ una tabla de doble entrada en una base d...</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2011/08/tiempo-de-respuesta.html">Tiempo
+ de Respuesta</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2011/08/tablas-dinamicas-y-elementos-calculados.html">Tablas
+ Dinámicas y Elementos Calculados</a></li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2011_07_01_archive.html">julio</a>
+<span class="post-count" dir="ltr">(4)</span>
+<ul class="posts">
+<li><a 
+href="http://trucosexcel.blogspot.com/2011/07/teoria-de-colas-con-excel.html">Teoría
+ de Colas con #Excel</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2011/07/control-de-almacen-y-pedidos-en-excel.html">Control
+ de almacén y pedidos en #Excel</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2011/07/un-juego-en-excel-el-que-quite-la.html">Un
+ Juego en Excel: El que quite la última piedra, ...</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2011/07/programar-una-funcion-de-redondeo.html">Programar
+ una función de redondeo</a></li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2011_06_01_archive.html">junio</a>
+<span class="post-count" dir="ltr">(10)</span>
+<ul class="posts">
+<li><a 
+href="http://trucosexcel.blogspot.com/2011/06/eliminar-filas-y-columnas-vacias.html">Eliminar
+ Filas y Columnas vacias</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2011/06/userform-para-alimentar-una-base-de.html">UserForm
+ para alimentar una base de datos</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2011/06/seleccion-de-graficos.html">Selección
+ de Gráficos</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2011/06/rango-dinamico.html">Rango
+ Dinámico</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2011/06/convertir-una-tabla-de-doble-entrada-en.html">Convertir
+ una Tabla de doble entrada en una base d...</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2011/06/estructuras-repetitivas-do-while-loop.html">Estructuras
+ repetitivas: Do While ... Loop</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2011/06/tablas-dinamicas-y-campos-calculados.html">Tablas
+ Dinámicas y Campos calculados</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2011/06/ajuste-potencial.html">Ajuste
+ Potencial</a></li>
+<li><a href="http://trucosexcel.blogspot.com/2011/06/interpolacion.html">Interpolación</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2011/06/suma-con-errores.html">Suma
+ con errores</a></li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2011_05_01_archive.html">mayo</a>
+<span class="post-count" dir="ltr">(2)</span>
+<ul class="posts">
+<li><a 
+href="http://trucosexcel.blogspot.com/2011/05/comparacion-de-tablas.html">Comparación
+ de tablas</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2011/05/indice-de-gini.html">Índice
+ de Gini</a></li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2011_04_01_archive.html">abril</a>
+<span class="post-count" dir="ltr">(1)</span>
+<ul class="posts">
+<li><a 
+href="http://trucosexcel.blogspot.com/2011/04/ordenar-dentro-de-una-tabla-dinamica.html">Ordenar
+ dentro de una Tabla Dinámica</a></li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2011_03_01_archive.html">marzo</a>
+<span class="post-count" dir="ltr">(1)</span>
+<ul class="posts">
+<li><a 
+href="http://trucosexcel.blogspot.com/2011/03/glosario-excel-2010.html">Glosario
+ Excel 2010</a></li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2011_02_01_archive.html">febrero</a>
+<span class="post-count" dir="ltr">(3)</span>
+<ul class="posts">
+<li><a 
+href="http://trucosexcel.blogspot.com/2011/02/borrar-o-editar-un-nombre-de-rango.html">Borrar
+ o Editar un Nombre de Rango</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2011/02/actualizacion-automatica-de-una-td-ante.html">Actualización
+ Automática de una TD ante el recálcu...</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2011/02/programar-la-funcion-que-nos-da-una.html">Programar
+ la función que nos da una distribución d...</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/search?updated-min=2010-01-01T00%3A00%3A00%2B01%3A00&amp;updated-max=2011-01-01T00%3A00%3A00%2B01%3A00&amp;max-results=35">2010</a>
+<span class="post-count" dir="ltr">(35)</span>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2010_11_01_archive.html">noviembre</a>
+<span class="post-count" dir="ltr">(3)</span>
+<ul class="posts">
+<li><a 
+href="http://trucosexcel.blogspot.com/2010/11/listado-de-valores-con-macro.html">Listado
+ de valores con Macro</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2010/11/sensibilidad-de-un-forward-con-solver.html">Sensibilidad
+ de un Forward con Solver</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2010/11/replica-de-bonos-con-solver.html">Réplica
+ de bonos con Solver</a></li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2010_10_01_archive.html">octubre</a>
+<span class="post-count" dir="ltr">(2)</span>
+<ul class="posts">
+<li><a 
+href="http://trucosexcel.blogspot.com/2010/10/tablas-dinamicas-inversas.html">Tablas
+ Dinámicas Inversas</a></li>
+<li><a href="http://trucosexcel.blogspot.com/2010/10/lluvia.html">Lluvia</a></li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2010_09_01_archive.html">septiembre</a>
+<span class="post-count" dir="ltr">(1)</span>
+<ul class="posts">
+<li><a 
+href="http://trucosexcel.blogspot.com/2010/09/lanzar-macros-con-iconos-y-botones.html">Lanzar
+ macros con iconos y botones</a></li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2010_08_01_archive.html">agosto</a>
+<span class="post-count" dir="ltr">(9)</span>
+<ul class="posts">
+<li><a 
+href="http://trucosexcel.blogspot.com/2010/08/nuevas-formas-de-escribir-con-macro.html">Nuevas
+ formas de escribir con macro</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2010/08/escribir-en-una-hoja-desde-una-macro.html">Escribir
+ en una hoja desde una macro</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2010/08/mi-primera-macro.html">Mi 
+primera macro</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2010/08/valoracion-de-rentas-tipo-variable.html">Valoración
+ de Rentas a tipo variable</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2010/08/texto-en-columnas.html">Texto
+ en Columnas</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2010/08/un-test-de-excel.html">Un 
+test de Excel</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2010/08/van-y-tir-evitando-errores.html">VAN
+ y TIR, evitando errores</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2010/08/tablas-dinamicas-con-rangos-de.html">Tablas
+ Dinámicas con Rangos de Consolidación Múlti...</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2010/08/concatenar-para-comparar.html">Concatenar
+ para comparar</a></li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2010_05_01_archive.html">mayo</a>
+<span class="post-count" dir="ltr">(3)</span>
+<ul class="posts">
+<li><a 
+href="http://trucosexcel.blogspot.com/2010/05/operacion-de-leasing.html">Operación
+ de Leasing</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2010/05/descargar-el-fichero-vfrances6.html">Préstamo
+ a tipo variable mensual calculando la anu...</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2010/05/los-dolares-en-excel.html">Los
+ Dólares en Excel</a></li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2010_04_01_archive.html">abril</a>
+<span class="post-count" dir="ltr">(14)</span>
+<ul class="posts">
+<li><a 
+href="http://trucosexcel.blogspot.com/2010/04/ficha-programador.html">Ficha
+ Programador</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2010/04/valoracion-de-bonos-con-solver.html">Valoración
+ de Bonos con Solver</a></li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2010_03_01_archive.html">marzo</a>
+<span class="post-count" dir="ltr">(2)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2010_01_01_archive.html">enero</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/search?updated-min=2009-01-01T00%3A00%3A00%2B01%3A00&amp;updated-max=2010-01-01T00%3A00%3A00%2B01%3A00&amp;max-results=40">2009</a>
+<span class="post-count" dir="ltr">(40)</span>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2009_12_01_archive.html">diciembre</a>
+<span class="post-count" dir="ltr">(2)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2009_11_01_archive.html">noviembre</a>
+<span class="post-count" dir="ltr">(5)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2009_10_01_archive.html">octubre</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2009_07_01_archive.html">julio</a>
+<span class="post-count" dir="ltr">(3)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2009_06_01_archive.html">junio</a>
+<span class="post-count" dir="ltr">(12)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2009_05_01_archive.html">mayo</a>
+<span class="post-count" dir="ltr">(2)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2009_04_01_archive.html">abril</a>
+<span class="post-count" dir="ltr">(8)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2009_03_01_archive.html">marzo</a>
+<span class="post-count" dir="ltr">(7)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate expanded">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy toggle-open">▼&nbsp;</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/search?updated-min=2008-01-01T00%3A00%3A00%2B01%3A00&amp;updated-max=2009-01-01T00%3A00%3A00%2B01%3A00&amp;max-results=23">2008</a>
+<span class="post-count" dir="ltr">(23)</span>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2008_11_01_archive.html">noviembre</a>
+<span class="post-count" dir="ltr">(3)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2008_10_01_archive.html">octubre</a>
+<span class="post-count" dir="ltr">(4)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2008_09_01_archive.html">septiembre</a>
+<span class="post-count" dir="ltr">(4)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate expanded">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy toggle-open">▼&nbsp;</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2008_08_01_archive.html">agosto</a>
+<span class="post-count" dir="ltr">(12)</span>
+<ul class="posts">
+<li><a 
+href="http://trucosexcel.blogspot.com/2008/08/auto-open-y-auto-close.html">Auto
+ Open y Auto Close</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2008/08/impedir-repetidos.html">Impedir
+ Repetidos</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2008/08/funcin-que-elige-una-al-azar.html">Función
+ que elige una al azar</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2008/08/tablas-en-excel-2007.html">Tablas
+ en Excel 2007</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2008/08/la-funcin-texto.html">La 
+función =TEXTO</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2008/08/organizar-la-vista-de-varios-libros.html">Organizar
+ la vista de varios libros (Extensión .xl...</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2008/08/random-walk-lognormal.html">Random
+ Walk LogNormal</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2008/08/simulacin-de-una-distribucin-normal.html">Simulación
+ de una Distribución Normal</a></li>
+<li><a href="http://trucosexcel.blogspot.com/2008/08/edad.html">Edad</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2008/08/ltimo-da-del-mes.html">Último
+ día del mes</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2008/08/eliminar-filas-con-macro.html">Eliminar
+ Filas con Macro</a></li>
+<li><a href="http://trucosexcel.blogspot.com/2008/08/random-walk.html">Random
+ Walk</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/search?updated-min=2007-01-01T00%3A00%3A00%2B01%3A00&amp;updated-max=2008-01-01T00%3A00%3A00%2B01%3A00&amp;max-results=1">2007</a>
+<span class="post-count" dir="ltr">(1)</span>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" 
+href="http://trucosexcel.blogspot.com/2007_05_01_archive.html">mayo</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" 
+href="http://www.blogger.com/rearrange?blogID=8263944010888306433&amp;widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=editWidget&amp;sectionId=sidebar"
+ onclick='return 
+_WidgetManager._PopupConfig(document.getElementById("BlogArchive1"));' 
+target="configBlogArchive1" title="Editar">
+<img alt="" 
+src="simulacin-de-una-distribucin-normal_files/icon18_wrench_allbkg.png"
+ width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget HTML" id="HTML4">
+<div class="widget-content">
+<div id="myLuckyPost"></div>
+<script type="text/javascript">
+function showLucky(root){
+var feed = root.feed;
+var entries = feed.entry || [];
+var entry = feed.entry[0];
+for (var j = 0; j < entry.link.length; ++j) {
+if (entry.link[j].rel == "alternate") {
+window.location = entry.link[j].href;
+}
+}
+}
+function fetchLuck(luck){
+script = document.createElement('script');
+script.src = '/feeds/posts/summary?start-index='+luck+'&max-results=1&alt=json-in-script&callback=showLucky';
+script.type = 'text/javascript';
+document.getElementsByTagName('head')[0].appendChild(script);
+}
+function readLucky(root){
+var feed = root.feed;
+var total = parseInt(feed.openSearch$totalResults.$t,10);
+var luckyNumber = Math.floor(Math.random()*total);
+luckyNumber++;
+fetchLuck(luckyNumber);
+}
+function feelingLucky(){
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = '/feeds/posts/summary?max-results=0&alt=json-in-script&callback=readLucky';
+document.getElementsByTagName('head')[0].appendChild(script);
+}
+</script>
+<a href="#random" onclick="feelingLucky()" title="Entrada al azar">Post 
+al azar<img src="simulacin-de-una-distribucin-normal_files/dadosmy1.gif"></a>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" 
+href="http://www.blogger.com/rearrange?blogID=8263944010888306433&amp;widgetType=HTML&amp;widgetId=HTML4&amp;action=editWidget&amp;sectionId=sidebar"
+ onclick='return 
+_WidgetManager._PopupConfig(document.getElementById("HTML4"));' 
+target="configHTML4" title="Editar">
+<img alt="" 
+src="simulacin-de-una-distribucin-normal_files/icon18_wrench_allbkg.png"
+ width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div><div class="widget Followers" id="Followers1">
+<h2 class="title">Seguidores</h2>
+<div class="widget-content">
+<div id="Followers1-wrapper">
+<div style="margin-right: 2px;">
+<script type="text/javascript">
+        if (!window.google || !google.friendconnect) {
+          document.write('<script type="text/javascript"' +
+              'src="http://www.google.com/friendconnect/script/friendconnect.js">' +
+              '</scr' + 'ipt>');
+        }
+      </script><script type="text/javascript" src="simulacin-de-una-distribucin-normal_files/friendconnect.js"></script>
+<script type="text/javascript">
+      if (!window.registeredBloggerCallbacks) {
+        window.registeredBloggerCallbacks = true;
+
+        
+
+        
+        gadgets.rpc.register('requestReload', function() {
+          document.location.reload();
+        });
+
+        
+        gadgets.rpc.register('requestSignOut', function(siteId) {
+          
+          google.friendconnect.container.openSocialSiteId = siteId;
+          google.friendconnect.requestSignOut();
+        });
+      }
+    </script>
+<script type="text/javascript">
+    
+    function registerGetBlogUrls() {
+      gadgets.rpc.register('getBlogUrls', function() {
+        var holder = {};
+        
+          
+            
+            
+              holder.currentPost = "http://www.blogger.com/feeds/8263944010888306433/posts/default/1693273636364305596";
+            
+            
+            
+              holder.currentComments = "http://www.blogger.com/feeds/8263944010888306433/1693273636364305596/comments/default";
+            
+            holder.currentPostUrl = "";
+            holder.currentPostId = 1693273636364305596
+          
+          
+          
+            holder.postFeed = "http://www.blogger.com/feeds/8263944010888306433/posts/default";
+          
+          
+          
+            holder.commentFeed = "http://www.blogger.com/feeds/8263944010888306433/comments/default";
+          
+          holder.currentBlogUrl = "http://trucosexcel.blogspot.com/";
+          holder.currentBlogId = "8263944010888306433";
+        
+        return holder;
+      });
+    }
+  </script>
+<script type="text/javascript">
+  if (!window.registeredCommonBloggerCallbacks) {
+    window.registeredCommonBloggerCallbacks = true;
+
+    gadgets.rpc.register('resize_iframe', function(height) {
+      var el = document.getElementById(this['f']);
+      if (el) {
+        el.style.height = height + 'px';
+      }
+    });
+
+    
+    gadgets.rpc.register('set_pref', function() {});
+
+    registerGetBlogUrls();
+  }
+  </script>
+<div class="gadgets-gadget-container" id="div-ppp6j4vf26l8" 
+style="width: 100%; visibility: visible;"><div 
+id="gfc_iframe_1818435840_0_body"><iframe id="gfc_iframe_1818435840_0" 
+name="gfc_iframe_1818435840_0" style="width: 100%; height: 244px;" 
+allowtransparency="true" frameborder="0" height="260" scrolling="no"></iframe></div></div>
+<script type="text/javascript">
+    var skin = {};
+    skin['FACE_SIZE'] = '32';
+    skin['HEIGHT'] = "260";
+    skin['TITLE'] = "Seguidores";
+    skin['BORDER_COLOR'] = "transparent";
+    skin['ENDCAP_BG_COLOR'] = "transparent";
+    skin['ENDCAP_TEXT_COLOR'] = "#333333";
+    skin['ENDCAP_LINK_COLOR'] = "#000000";
+    skin['ALTERNATE_BG_COLOR'] = "transparent";
+    
+    skin['CONTENT_BG_COLOR'] = "transparent";
+    skin['CONTENT_LINK_COLOR'] = "#000000";
+    skin['CONTENT_TEXT_COLOR'] = "#333333";
+    skin['CONTENT_SECONDARY_LINK_COLOR'] = "#FFFFFF";
+    skin['CONTENT_SECONDARY_TEXT_COLOR'] = "#000000";
+    skin['CONTENT_HEADLINE_COLOR'] = "#000000";
+    skin['FONT_FACE'] = "normal normal 100% \x27Trebuchet MS\x27,Verdana,Arial,Sans-serif";
+    google.friendconnect.container.setParentUrl("/");
+    google.friendconnect.container["renderMembersGadget"](
+    {id: "div-ppp6j4vf26l8",
+     height: 260,
+     
+     
+     
+     site: "12074732825361752094",
+      
+     locale: 'es' },
+     skin);
+  </script>
+</div>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" 
+href="http://www.blogger.com/rearrange?blogID=8263944010888306433&amp;widgetType=Followers&amp;widgetId=Followers1&amp;action=editWidget&amp;sectionId=sidebar"
+ onclick='return 
+_WidgetManager._PopupConfig(document.getElementById("Followers1"));' 
+target="configFollowers1" title="Editar">
+<img alt="" 
+src="simulacin-de-una-distribucin-normal_files/icon18_wrench_allbkg.png"
+ width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget HTML" id="HTML3">
+<div class="widget-content">
+<div id="eXTReMe"><a href="http://extremetracking.com/open?login=excelb">
+<img id="EXim" style="border: 0pt none;" alt="eXTReMe Tracker" 
+src="simulacin-de-una-distribucin-normal_files/i.gif" width="41" 
+height="38"></a>
+<script type="text/javascript"><!--
+var EXlogin='excelb' // Login
+var EXvsrv='s11' // VServer
+EXs=screen;EXw=EXs.width;navigator.appName!="Netscape"?
+EXb=EXs.colorDepth:EXb=EXs.pixelDepth;EXsrc="src";
+navigator.javaEnabled()==1?EXjv="y":EXjv="n";
+EXd=document;EXw?"":EXw="na";EXb?"":EXb="na";
+EXd.write("<img "+EXsrc+"=http://e2.extreme-dm.com",
+"/"+EXvsrv+".g?login="+EXlogin+"&amp;",
+"jv="+EXjv+"&amp;j=y&amp;srw="+EXw+"&amp;srb="+EXb+"&amp;",
+"l="+escape(parent.document.referrer)+" height=1 width=1>");//-->
+</script><img src="simulacin-de-una-distribucin-normal_files/s11.gif" 
+width="1" height="1"><noscript><div id="neXTReMe"><img width="1" alt="" height="1" 
+src="http://e2.extreme-dm.com/s11.g?login=excelb&amp;j=n&amp;jv=n"/>
+</div></noscript></div>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" 
+href="http://www.blogger.com/rearrange?blogID=8263944010888306433&amp;widgetType=HTML&amp;widgetId=HTML3&amp;action=editWidget&amp;sectionId=sidebar"
+ onclick='return 
+_WidgetManager._PopupConfig(document.getElementById("HTML3"));' 
+target="configHTML3" title="Editar">
+<img alt="" 
+src="simulacin-de-una-distribucin-normal_files/icon18_wrench_allbkg.png"
+ width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div><div class="widget Stats" id="Stats1">
+<h2>Páginas vistas los últimos 30 días</h2>
+<div class="widget-content">
+<div id="Stats1_content" style="">
+<img src="simulacin-de-una-distribucin-normal_files/chart.png" 
+alt="Sparkline" id="Stats1_sparkline" width="75" height="30">
+<span class="counter-wrapper graph-counter-wrapper" 
+id="Stats1_totalCount"><span class="digit stage-0"><strong>5</strong><span
+ class="blind-plate"></span></span><span class="digit stage-0"><strong>7</strong><span
+ class="blind-plate"></span></span><span class="digit stage-0"><strong>0</strong><span
+ class="blind-plate"></span></span><span class="digit stage-0"><strong>0</strong><span
+ class="blind-plate"></span></span><span class="digit stage-0"><strong>3</strong><span
+ class="blind-plate"></span></span></span>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" 
+href="http://www.blogger.com/rearrange?blogID=8263944010888306433&amp;widgetType=Stats&amp;widgetId=Stats1&amp;action=editWidget&amp;sectionId=sidebar"
+ onclick='return 
+_WidgetManager._PopupConfig(document.getElementById("Stats1"));' 
+target="configStats1" title="Editar">
+<img alt="" 
+src="simulacin-de-una-distribucin-normal_files/icon18_wrench_allbkg.png"
+ width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div>
+</div><div class="widget Label" id="Label1">
+<h2>Etiquetas</h2>
+<div class="widget-content list-label-widget-content">
+<ul>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/2007">2007</a>
+<span dir="ltr">(2)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/access">access</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/Aleatorio">Aleatorio</a>
+<span dir="ltr">(4)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/amortizaci%C3%B3n%20anticipada">amortización
+ anticipada</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/An%C3%A1lisis%20de%20Sensibilidad">Análisis
+ de Sensibilidad</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/array">array</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/Auto_Close">Auto_Close</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/Auto_Open">Auto_Open</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/bolsa">bolsa</a>
+<span dir="ltr">(2)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/Bonos">Bonos</a>
+<span dir="ltr">(8)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/bot%C3%B3n">botón</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/Buscar%20Objetivo">Buscar
+ Objetivo</a>
+<span dir="ltr">(3)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/BUSCARV">BUSCARV</a>
+<span dir="ltr">(3)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/carencia">carencia</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/COINCIDIR">COINCIDIR</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/color">color</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/concatenar">concatenar</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/Constante">Constante</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/Contar.si">Contar.si</a>
+<span dir="ltr">(2)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/Curso%20de%20Macros">Curso
+ de Macros</a>
+<span dir="ltr">(6)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/DBSUMA">DBSUMA</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/desplegable">desplegable</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/DESREF">DESREF</a>
+<span dir="ltr">(2)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/Distribuci%C3%B3n%20LogNormal">Distribución
+ LogNormal</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/Distribuci%C3%B3n%20Normal">Distribución
+ Normal</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/edad">edad</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/escenarios">escenarios</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/estad%C3%ADstica">estadística</a>
+<span dir="ltr">(4)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/ETTI">ETTI</a>
+<span dir="ltr">(2)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/Euribor">Euribor</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/Excel">Excel</a>
+<span dir="ltr">(17)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/fecha">fecha</a>
+<span dir="ltr">(2)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/financieras">financieras</a>
+<span dir="ltr">(20)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/finanzas">finanzas</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/Formato%20Condicional">Formato
+ Condicional</a>
+<span dir="ltr">(2)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/Forward">Forward</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/Frecuencia">Frecuencia</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/Funciones">Funciones</a>
+<span dir="ltr">(5)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/funci%C3%B3n%20matricial">función
+ matricial</a>
+<span dir="ltr">(11)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/function">function</a>
+<span dir="ltr">(2)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/geom%C3%A9trica">geométrica</a>
+<span dir="ltr">(2)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/geom%C3%A9trico">geométrico</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/glosario">glosario</a>
+<span dir="ltr">(2)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/gr%C3%A1ficos">gráficos</a>
+<span dir="ltr">(4)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/histograma">histograma</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/hist%C3%B3rico">histórico</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/Hoy">Hoy</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/IBEX">IBEX</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/Incertidumbre">Incertidumbre</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/INDIRECTO">INDIRECTO</a>
+<span dir="ltr">(5)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/ingl%C3%A9s">inglés</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/Interseccion%20de%20Fisher">Interseccion
+ de Fisher</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/juego">juego</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/Leasing">Leasing</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/logaritmo">logaritmo</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/Macros">Macros</a>
+<span dir="ltr">(28)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/matriz">matriz</a>
+<span dir="ltr">(2)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/mensual">mensual</a>
+<span dir="ltr">(2)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/Montecarlo">Montecarlo</a>
+<span dir="ltr">(4)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/Neperiano">Neperiano</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/permutaciones">permutaciones</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/poisson">poisson</a>
+<span dir="ltr">(2)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/pospagable">pospagable</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/prepagable">prepagable</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/Pr%C3%A9stamo">Préstamo</a>
+<span dir="ltr">(17)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/Random%20Walk">Random
+ Walk</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/rango">rango</a>
+<span dir="ltr">(2)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/rentas">rentas</a>
+<span dir="ltr">(3)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/Repetidos">Repetidos</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/Rnd">Rnd</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/Simulaci%C3%B3n">Simulación</a>
+<span dir="ltr">(7)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/Solver">Solver</a>
+<span dir="ltr">(7)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/Subtotales">Subtotales</a>
+<span dir="ltr">(2)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/SUMAPRODUCTO">SUMAPRODUCTO</a>
+<span dir="ltr">(4)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/SUMAR.SI">SUMAR.SI</a>
+<span dir="ltr">(3)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/Tabla%20Din%C3%A1mica">Tabla
+ Dinámica</a>
+<span dir="ltr">(14)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/Tablas">Tablas</a>
+<span dir="ltr">(2)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/TASA">TASA</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/test">test</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/texto">texto</a>
+<span dir="ltr">(2)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/tipo%20variable">tipo
+ variable</a>
+<span dir="ltr">(5)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/TIR">TIR</a>
+<span dir="ltr">(9)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/TIR%20modificada">TIR
+ modificada</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/TIR%20multiple">TIR 
+multiple</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/TIR.NO.PER">TIR.NO.PER</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/traducci%C3%B3n">traducción</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/Trucos">Trucos</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/UserForm">UserForm</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/Validaci%C3%B3n">Validación</a>
+<span dir="ltr">(3)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/valor%20actual">valor
+ actual</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/valor%20final">valor 
+final</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/VAN">VAN</a>
+<span dir="ltr">(6)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/VBA">VBA</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/VF">VF</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/VNA.NO.PER">VNA.NO.PER</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/v%C3%ADdeo">vídeo</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/Word">Word</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" 
+href="http://trucosexcel.blogspot.com/search/label/Workbook_Open">Workbook_Open</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="http://trucosexcel.blogspot.com/search/label/xlw">xlw</a>
+<span dir="ltr">(1)</span>
+</li>
+</ul>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" 
+href="http://www.blogger.com/rearrange?blogID=8263944010888306433&amp;widgetType=Label&amp;widgetId=Label1&amp;action=editWidget&amp;sectionId=sidebar"
+ onclick='return 
+_WidgetManager._PopupConfig(document.getElementById("Label1"));' 
+target="configLabel1" title="Editar">
+<img alt="" 
+src="simulacin-de-una-distribucin-normal_files/icon18_wrench_allbkg.png"
+ width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget AdSense" id="AdSense2">
+<div class="widget-content">
+<script type="text/javascript"><!--
+google_ad_client="pub-9063294874795488";
+google_ad_host="pub-1556223355139109";
+google_ad_host_channel="00000+00032+00005+00007";
+google_ad_width=160;
+google_ad_height=600;
+google_ad_format="160x600_as";
+google_ad_type="text_image";
+google_color_border="CFFFD2";
+google_color_bg="CFFFD2";
+google_color_link="72179D";
+google_color_url="72179D";
+google_color_text="5F6F67";
+//--></script>
+<script type="text/javascript" src="simulacin-de-una-distribucin-normal_files/show_ads.js">
+</script><ins style="display: inline-table; border: medium none; height:
+ 600px; margin: 0pt; padding: 0pt; position: relative; visibility: 
+visible; width: 160px;"><ins id="aswift_1_anchor" style="display: block;
+ border: medium none; height: 600px; margin: 0pt; padding: 0pt; 
+position: relative; visibility: visible; width: 160px;"><iframe 
+allowtransparency="true" hspace="0" marginwidth="0" marginheight="0" 
+onload="var 
+i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){i+='.call';setTimeout(h,0)}else
+ 
+if(h.match){i+='.nav';w.location.replace(h)}s.log&amp;&amp;s.log.push(i)}"
+ vspace="0" id="aswift_1" name="aswift_1" style="left: 0pt; position: 
+absolute; top: 0pt;" width="160" frameborder="0" height="600" 
+scrolling="no"></iframe></ins></ins>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" 
+href="http://www.blogger.com/rearrange?blogID=8263944010888306433&amp;widgetType=AdSense&amp;widgetId=AdSense2&amp;action=editWidget&amp;sectionId=sidebar"
+ onclick='return 
+_WidgetManager._PopupConfig(document.getElementById("AdSense2"));' 
+target="configAdSense2" title="Editar">
+<img alt="" 
+src="simulacin-de-una-distribucin-normal_files/icon18_wrench_allbkg.png"
+ width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget HTML" id="HTML7">
+<h2 class="title">Colabora con la <br>Fundación MasNatur</h2>
+<div class="widget-content">
+<a href="http://masnatur.org/"><img style="display: block; margin: 0px 
+auto 10px; text-align: center; cursor: pointer; width: 140px;" 
+src="simulacin-de-una-distribucin-normal_files/SNAG-0421.jpg"></a>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" 
+href="http://www.blogger.com/rearrange?blogID=8263944010888306433&amp;widgetType=HTML&amp;widgetId=HTML7&amp;action=editWidget&amp;sectionId=sidebar"
+ onclick='return 
+_WidgetManager._PopupConfig(document.getElementById("HTML7"));' 
+target="configHTML7" title="Editar">
+<img alt="" 
+src="simulacin-de-una-distribucin-normal_files/icon18_wrench_allbkg.png"
+ width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div><div class="widget HTML" id="HTML8">
+<h2 class="title">Twitter</h2>
+<div class="widget-content">
+<script src="simulacin-de-una-distribucin-normal_files/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 6000,
+  width: 200,
+  height: 300,
+  theme: {
+    shell: {
+      background: '#333333',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#000000',
+      color: '#ffffff',
+      links: '#4aed05'
+    }
+  },
+  features: {
+    scrollbar: true,
+    loop: false,
+    live: true,
+    hashtags: true,
+    timestamp: true,
+    avatars: false,
+    behavior: 'all'
+  }
+}).render().setUser('addolfo').start();
+</script><div class="twtr-widget twtr-widget-profile twtr-scroll" 
+id="twtr-widget-1"><div class="twtr-doc" style="width: 200px;">         
+   <div class="twtr-hd"><a target="_blank" 
+href="http://twitter.com/intent/user?screen_name=addolfo" 
+class="twtr-profile-img-anchor"><img alt="profile" 
+class="twtr-profile-img" 
+src="simulacin-de-una-distribucin-normal_files/profe_normal.jpg"></a>   
+                   <h3>Adolfo Aparicio</h3>                      <h4><a 
+target="_blank" 
+href="http://twitter.com/intent/user?screen_name=addolfo">addolfo</a></h4>
+             </div>            <div class="twtr-bd">              <div 
+class="twtr-timeline" style="height: 300px;">                <div 
+class="twtr-tweets">                  <div class="twtr-reference-tweet"></div><div
+ class="twtr-tweet" id="tweet-id-4"><div class="twtr-tweet-wrap">       
+  <div class="twtr-avatar">           <div class="twtr-img"><a 
+target="_blank" 
+href="http://twitter.com/intent/user?screen_name=addolfo"><img 
+alt="addolfo profile" 
+src="simulacin-de-una-distribucin-normal_files/profe_normal.jpg"></a></div>
+         </div>         <div class="twtr-tweet-text">           <p>     
+        <a target="_blank" 
+href="http://twitter.com/intent/user?screen_name=addolfo" 
+class="twtr-user">addolfo</a> Rangos variables en fórmulas <a 
+href="http://t.co/txv79eQA" urlentities="[object Object]" rel="nofollow">goo.gl/fb/zblO0</a>
+             <em>            <a target="_blank" class="twtr-timestamp" 
+time="Sun Oct 30 12:44:44 +0000 2011" 
+href="http://twitter.com/addolfo/status/130626184949153792">2 hours ago</a>
+ ·            <a target="_blank" class="twtr-reply" 
+href="http://twitter.com/intent/tweet?in_reply_to=130626184949153792">reply</a>
+ ·             <a target="_blank" class="twtr-rt" 
+href="http://twitter.com/intent/retweet?tweet_id=130626184949153792">retweet</a>
+ ·             <a target="_blank" class="twtr-fav" 
+href="http://twitter.com/intent/favorite?tweet_id=130626184949153792">favorite</a>
+             </em>           </p>         </div>       </div></div><div 
+class="twtr-tweet" id="tweet-id-3"><div class="twtr-tweet-wrap">        
+ <div class="twtr-avatar">           <div class="twtr-img"><a 
+target="_blank" 
+href="http://twitter.com/intent/user?screen_name=addolfo"><img 
+alt="addolfo profile" 
+src="simulacin-de-una-distribucin-normal_files/profe_normal.jpg"></a></div>
+         </div>         <div class="twtr-tweet-text">           <p>     
+        <a target="_blank" 
+href="http://twitter.com/intent/user?screen_name=addolfo" 
+class="twtr-user">addolfo</a> Valor Actual de una renta geométrica 
+fraccionada de 100 años: Descargue&nbsp;el fichero: P02MF.xls
+Veamos cómo calcul... <a href="http://t.co/7bDJ2g7S" 
+urlentities="[object Object]" rel="nofollow">bit.ly/qAkcXj</a>          
+   <em>            <a target="_blank" class="twtr-timestamp" time="Sun 
+Oct 23 08:35:36 +0000 2011" 
+href="http://twitter.com/addolfo/status/128026773475696640">7 days ago</a>
+ ·            <a target="_blank" class="twtr-reply" 
+href="http://twitter.com/intent/tweet?in_reply_to=128026773475696640">reply</a>
+ ·             <a target="_blank" class="twtr-rt" 
+href="http://twitter.com/intent/retweet?tweet_id=128026773475696640">retweet</a>
+ ·             <a target="_blank" class="twtr-fav" 
+href="http://twitter.com/intent/favorite?tweet_id=128026773475696640">favorite</a>
+             </em>           </p>         </div>       </div></div><div 
+class="twtr-tweet" id="tweet-id-2"><div class="twtr-tweet-wrap">        
+ <div class="twtr-avatar">           <div class="twtr-img"><a 
+target="_blank" 
+href="http://twitter.com/intent/user?screen_name=addolfo"><img 
+alt="addolfo profile" 
+src="simulacin-de-una-distribucin-normal_files/profe_normal.jpg"></a></div>
+         </div>         <div class="twtr-tweet-text">           <p>     
+        <a target="_blank" 
+href="http://twitter.com/intent/user?screen_name=addolfo" 
+class="twtr-user">addolfo</a> Libro Personal en <a 
+href="http://twitter.com/search?q=%23Excel" title="#Excel" 
+class="tweet-url hashtag" rel="nofollow">#Excel</a> <a 
+href="http://t.co/UUWqA87z" urlentities="[object Object]" rel="nofollow">goo.gl/fb/XolJm</a>
+             <em>            <a target="_blank" class="twtr-timestamp" 
+time="Tue Oct 18 22:45:05 +0000 2011" 
+href="http://twitter.com/addolfo/status/126428614169329664">11 days ago</a>
+ ·            <a target="_blank" class="twtr-reply" 
+href="http://twitter.com/intent/tweet?in_reply_to=126428614169329664">reply</a>
+ ·             <a target="_blank" class="twtr-rt" 
+href="http://twitter.com/intent/retweet?tweet_id=126428614169329664">retweet</a>
+ ·             <a target="_blank" class="twtr-fav" 
+href="http://twitter.com/intent/favorite?tweet_id=126428614169329664">favorite</a>
+             </em>           </p>         </div>       </div></div><div 
+class="twtr-tweet" id="tweet-id-1"><div class="twtr-tweet-wrap">        
+ <div class="twtr-avatar">           <div class="twtr-img"><a 
+target="_blank" 
+href="http://twitter.com/intent/user?screen_name=addolfo"><img 
+alt="addolfo profile" 
+src="simulacin-de-una-distribucin-normal_files/profe_normal.jpg"></a></div>
+         </div>         <div class="twtr-tweet-text">           <p>     
+        <a target="_blank" 
+href="http://twitter.com/intent/user?screen_name=addolfo" 
+class="twtr-user">addolfo</a> Facturación por meses <a 
+href="http://t.co/0qP5SIko" urlentities="[object Object]" rel="nofollow">goo.gl/fb/RJGaz</a>
+             <em>            <a target="_blank" class="twtr-timestamp" 
+time="Mon Oct 17 23:18:59 +0000 2011" 
+href="http://twitter.com/addolfo/status/126074757811675136">12 days ago</a>
+ ·            <a target="_blank" class="twtr-reply" 
+href="http://twitter.com/intent/tweet?in_reply_to=126074757811675136">reply</a>
+ ·             <a target="_blank" class="twtr-rt" 
+href="http://twitter.com/intent/retweet?tweet_id=126074757811675136">retweet</a>
+ ·             <a target="_blank" class="twtr-fav" 
+href="http://twitter.com/intent/favorite?tweet_id=126074757811675136">favorite</a>
+             </em>           </p>         </div>       </div></div>     
+             <!-- tweets show here -->                </div>            
+  </div>            </div>            <div class="twtr-ft">             
+ <div><a target="_blank" href="http://twitter.com/"><img alt="" 
+src="simulacin-de-una-distribucin-normal_files/widget-logo.png"></a>    
+            <span><a target="_blank" class="twtr-join-conv" 
+style="color: rgb(255, 255, 255);" href="http://twitter.com/addolfo">Join
+ the conversation</a></span>              </div>            </div>      
+    </div></div>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" 
+href="http://www.blogger.com/rearrange?blogID=8263944010888306433&amp;widgetType=HTML&amp;widgetId=HTML8&amp;action=editWidget&amp;sectionId=sidebar"
+ onclick='return 
+_WidgetManager._PopupConfig(document.getElementById("HTML8"));' 
+target="configHTML8" title="Editar">
+<img alt="" 
+src="simulacin-de-una-distribucin-normal_files/icon18_wrench_allbkg.png"
+ width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div></div>
+</div></div>
+</div>
+<div id="footer-wrap1"><div id="footer-wrap2">
+<div class="footer section" id="footer"><div class="widget Subscribe" 
+id="Subscribe1">
+<div style="white-space: nowrap;">
+<h2 class="title">Puedes suscribirte via RSS</h2>
+<div class="widget-content">
+<div class="subscribe-wrapper subscribe-type-POST">
+<div class="subscribe expanded subscribe-type-POST" 
+id="SW_READER_LIST_Subscribe1POST" style="display: none;">
+<div class="top">
+<span class="inner" onclick='return(_SW_toggleReaderList(event, 
+"Subscribe1POST"));'>
+<img class="subscribe-dropdown-arrow" 
+src="simulacin-de-una-distribucin-normal_files/arrow_dropdown.gif">
+<img alt="" class="feed-icon" 
+src="simulacin-de-una-distribucin-normal_files/icon_feed12.png" 
+align="absmiddle" border="0">
+Entradas
+</span>
+<div class="feed-reader-links">
+<a class="feed-reader-link" 
+href="http://www.google.com/ig/add?source=bstp&amp;feedurl=http%3A%2F%2Ftrucosexcel.blogspot.com%2Ffeeds%2Fposts%2Fdefault"
+ target="_blank">
+<img 
+src="simulacin-de-una-distribucin-normal_files/subscribe-google.png">
+</a>
+<a class="feed-reader-link" 
+href="http://www.netvibes.com/subscribe.php?url=http%3A%2F%2Ftrucosexcel.blogspot.com%2Ffeeds%2Fposts%2Fdefault"
+ target="_blank">
+<img 
+src="simulacin-de-una-distribucin-normal_files/subscribe-netvibes.png">
+</a>
+<a class="feed-reader-link" 
+href="http://www.newsgator.com/ngs/subscriber/subext.aspx?url=http%3A%2F%2Ftrucosexcel.blogspot.com%2Ffeeds%2Fposts%2Fdefault"
+ target="_blank">
+<img 
+src="simulacin-de-una-distribucin-normal_files/subscribe-newsgator.png">
+</a>
+<a class="feed-reader-link" 
+href="http://add.my.yahoo.com/content?url=http%3A%2F%2Ftrucosexcel.blogspot.com%2Ffeeds%2Fposts%2Fdefault"
+ target="_blank">
+<img src="simulacin-de-una-distribucin-normal_files/subscribe-yahoo.png">
+</a>
+<a class="feed-reader-link" 
+href="http://trucosexcel.blogspot.com/feeds/posts/default" 
+target="_blank">
+<img class="feed-icon" 
+src="simulacin-de-una-distribucin-normal_files/icon_feed12.png" 
+align="absmiddle">
+                Atom
+              </a>
+</div>
+</div>
+<div class="bottom"></div>
+</div>
+<div class="subscribe" id="SW_READER_LIST_CLOSED_Subscribe1POST" 
+onclick='return(_SW_toggleReaderList(event, "Subscribe1POST"));'>
+<div class="top">
+<span class="inner">
+<img class="subscribe-dropdown-arrow" 
+src="simulacin-de-una-distribucin-normal_files/arrow_dropdown.gif">
+<span onclick='return(_SW_toggleReaderList(event, "Subscribe1POST"));'>
+<img alt="" class="feed-icon" 
+src="simulacin-de-una-distribucin-normal_files/icon_feed12.png" 
+align="absmiddle" border="0">
+Entradas
+</span>
+</span>
+</div>
+<div class="bottom"></div>
+</div>
+</div>
+<div class="subscribe-wrapper subscribe-type-PER_POST">
+<div class="subscribe expanded subscribe-type-PER_POST" 
+id="SW_READER_LIST_Subscribe1PER_POST" style="display: none;">
+<div class="top">
+<span class="inner" onclick='return(_SW_toggleReaderList(event, 
+"Subscribe1PER_POST"));'>
+<img class="subscribe-dropdown-arrow" 
+src="simulacin-de-una-distribucin-normal_files/arrow_dropdown.gif">
+<img alt="" class="feed-icon" 
+src="simulacin-de-una-distribucin-normal_files/icon_feed12.png" 
+align="absmiddle" border="0">
+Comentarios
+</span>
+<div class="feed-reader-links">
+<a class="feed-reader-link" 
+href="http://www.google.com/ig/add?source=bstp&amp;feedurl=http%3A%2F%2Ftrucosexcel.blogspot.com%2Ffeeds%2F1693273636364305596%2Fcomments%2Fdefault"
+ target="_blank">
+<img 
+src="simulacin-de-una-distribucin-normal_files/subscribe-google.png">
+</a>
+<a class="feed-reader-link" 
+href="http://www.netvibes.com/subscribe.php?url=http%3A%2F%2Ftrucosexcel.blogspot.com%2Ffeeds%2F1693273636364305596%2Fcomments%2Fdefault"
+ target="_blank">
+<img 
+src="simulacin-de-una-distribucin-normal_files/subscribe-netvibes.png">
+</a>
+<a class="feed-reader-link" 
+href="http://www.newsgator.com/ngs/subscriber/subext.aspx?url=http%3A%2F%2Ftrucosexcel.blogspot.com%2Ffeeds%2F1693273636364305596%2Fcomments%2Fdefault"
+ target="_blank">
+<img 
+src="simulacin-de-una-distribucin-normal_files/subscribe-newsgator.png">
+</a>
+<a class="feed-reader-link" 
+href="http://add.my.yahoo.com/content?url=http%3A%2F%2Ftrucosexcel.blogspot.com%2Ffeeds%2F1693273636364305596%2Fcomments%2Fdefault"
+ target="_blank">
+<img src="simulacin-de-una-distribucin-normal_files/subscribe-yahoo.png">
+</a>
+<a class="feed-reader-link" 
+href="http://trucosexcel.blogspot.com/feeds/1693273636364305596/comments/default"
+ target="_blank">
+<img class="feed-icon" 
+src="simulacin-de-una-distribucin-normal_files/icon_feed12.png" 
+align="absmiddle">
+                Atom
+              </a>
+</div>
+</div>
+<div class="bottom"></div>
+</div>
+<div class="subscribe" id="SW_READER_LIST_CLOSED_Subscribe1PER_POST" 
+onclick='return(_SW_toggleReaderList(event, "Subscribe1PER_POST"));'>
+<div class="top">
+<span class="inner">
+<img class="subscribe-dropdown-arrow" 
+src="simulacin-de-una-distribucin-normal_files/arrow_dropdown.gif">
+<span onclick='return(_SW_toggleReaderList(event, 
+"Subscribe1PER_POST"));'>
+<img alt="" class="feed-icon" 
+src="simulacin-de-una-distribucin-normal_files/icon_feed12.png" 
+align="absmiddle" border="0">
+Comentarios
+</span>
+</span>
+</div>
+<div class="bottom"></div>
+</div>
+</div>
+<div style="clear: both;"></div>
+</div>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" 
+href="http://www.blogger.com/rearrange?blogID=8263944010888306433&amp;widgetType=Subscribe&amp;widgetId=Subscribe1&amp;action=editWidget&amp;sectionId=footer"
+ onclick='return 
+_WidgetManager._PopupConfig(document.getElementById("Subscribe1"));' 
+target="configSubscribe1" title="Editar">
+<img alt="" 
+src="simulacin-de-una-distribucin-normal_files/icon18_wrench_allbkg.png"
+ width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div><div class="widget LinkList" id="LinkList4">
+<h2>Curso de Macros</h2>
+<div class="widget-content">
+<ul>
+<li><a 
+href="http://trucosexcel.blogspot.com/2010/04/ficha-programador.html">0020:
+ Ficha Programador</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2010/08/mi-primera-macro.html">0050:
+ Mi primera macro</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2010/08/escribir-en-una-hoja-desde-una-macro.html">0070:
+ Escribir en una hoja desde una macro</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2010/08/nuevas-formas-de-escribir-con-macro.html">0080:
+ Nuevas formas de escribir con macro</a></li>
+<li><a 
+href="http://trucosexcel.blogspot.com/2010/09/lanzar-macros-con-iconos-y-botones.html">0090:
+ Lanzar macros con iconos y botones</a></li>
+<li><a href="http://trucosexcel.blogspot.com/2010/10/lluvia.html">0100: 
+Lluvia</a></li>
+</ul>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" 
+href="http://www.blogger.com/rearrange?blogID=8263944010888306433&amp;widgetType=LinkList&amp;widgetId=LinkList4&amp;action=editWidget&amp;sectionId=footer"
+ onclick='return 
+_WidgetManager._PopupConfig(document.getElementById("LinkList4"));' 
+target="configLinkList4" title="Editar">
+<img alt="" 
+src="simulacin-de-una-distribucin-normal_files/icon18_wrench_allbkg.png"
+ width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget AdSense" id="AdSense3">
+<div class="widget-content">
+<script type="text/javascript"><!--
+google_ad_client="pub-9063294874795488";
+google_ad_host="pub-1556223355139109";
+google_ad_width=336;
+google_ad_height=280;
+google_ad_format="336x280_as";
+google_ad_type="text_image";
+google_ad_host_channel="0001";
+google_color_border="193919";
+google_color_bg="193919";
+google_color_link="FFFF66";
+google_color_url="6F3C1B";
+google_color_text="FFFF66";
+//--></script>
+<script type="text/javascript" src="simulacin-de-una-distribucin-normal_files/show_ads.js">
+</script><ins style="display: inline-table; border: medium none; height:
+ 280px; margin: 0pt; padding: 0pt; position: relative; visibility: 
+visible; width: 336px;"><ins id="aswift_2_anchor" style="display: block;
+ border: medium none; height: 280px; margin: 0pt; padding: 0pt; 
+position: relative; visibility: visible; width: 336px;"><iframe 
+allowtransparency="true" hspace="0" marginwidth="0" marginheight="0" 
+onload="var 
+i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){i+='.call';setTimeout(h,0)}else
+ 
+if(h.match){i+='.nav';w.location.replace(h)}s.log&amp;&amp;s.log.push(i)}"
+ vspace="0" id="aswift_2" name="aswift_2" style="left: 0pt; position: 
+absolute; top: 0pt;" width="336" frameborder="0" height="280" 
+scrolling="no"></iframe></ins></ins>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" 
+href="http://www.blogger.com/rearrange?blogID=8263944010888306433&amp;widgetType=AdSense&amp;widgetId=AdSense3&amp;action=editWidget&amp;sectionId=footer"
+ onclick='return 
+_WidgetManager._PopupConfig(document.getElementById("AdSense3"));' 
+target="configAdSense3" title="Editar">
+<img alt="" 
+src="simulacin-de-una-distribucin-normal_files/icon18_wrench_allbkg.png"
+ width="18" height="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div></div>
+</div></div>
+</div>
+<!-- Inicio código Analytics -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="simulacin-de-una-distribucin-normal_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-1632610-2");
+pageTracker._trackPageview();
+</script>
+<!-- Fin código Analytics -->
+<!-- Inicio código de Efecto Nieve -->
+<!-- <script src='http://inacho07.googlepages.com/snow.js' type='text/javascript'> </script> -->
+<!-- Fin código de Efecto Nieve -->
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('widgetJsBefore');
+</script><script type="text/javascript" src="simulacin-de-una-distribucin-normal_files/2446270697-widgets.js"></script>
+<script type="text/javascript">
+if (typeof(BLOG_attachCsiOnload) != 'undefined' && BLOG_attachCsiOnload != null) { window['blogger_templates_experiment_id'] = "templatesV1";window['blogger_blog_id'] = '8263944010888306433';BLOG_attachCsiOnload('item_'); }_WidgetManager._Init('http://www.blogger.com/rearrange?blogID=8263944010888306433','http://trucosexcel.blogspot.com/2008/08/simulacin-de-una-distribucin-normal.html','8263944010888306433');
+_WidgetManager._SetPageActionUrl('http://www.blogger.com/display?blogID=8263944010888306433','APq4FmAFdiCE73g8ox1iZLXrFbES5MmCqeld9WSx2VG2fUwdU_-xbvXsORgMKnCXwgCgIJaX-Pdg6YTOds2xCUWLBfpcbxNz1Kgk60fnsEv9CnBNxBXA7uo=','AOuZoY55BBNOcUgRI3FJX1O5fO63awWh5w:1319987223608');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'title': 'Excel Avanzado', 'pageType': 'item', 'url': 'http://trucosexcel.blogspot.com/2008/08/simulacin-de-una-distribucin-normal.html', 'canonicalUrl': 'http://trucosexcel.blogspot.com/2008/08/simulacin-de-una-distribucin-normal.html', 'homepageUrl': 'http://trucosexcel.blogspot.com/', 'blogspotFaviconUrl': 'http://trucosexcel.blogspot.com/favicon.ico', 'enabledCommentProfileImages': true, 'searchLabel': '', 'searchQuery': '', 'pageName': 'Simulación de una Distribución Normal', 'pageTitle': 'Excel Avanzado: Simulación de una Distribución Normal', 'encoding': 'UTF-8', 'locale': 'es', 'isPrivate': false, 'isMobile': false, 'mobileClass': '', 'languageDirection': 'ltr', 'feedLinks': '\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Excel Avanzado - Atom\42 href\75\42http://trucosexcel.blogspot.com/feeds/posts/default\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/rss+xml\42 title\75\42Excel Avanzado - RSS\42 href\75\42http://trucosexcel.blogspot.com/feeds/posts/default?alt\75rss\42 /\76\n\74link rel\75\42service.post\42 type\75\42application/atom+xml\42 title\75\42Excel Avanzado - Atom\42 href\75\42http://www.blogger.com/feeds/8263944010888306433/posts/default\42 /\76\n\74link rel\75\42EditURI\42 type\75\42application/rsd+xml\42 title\75\42RSD\42 href\75\42http://www.blogger.com/rsd.g?blogID\758263944010888306433\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Excel Avanzado - Atom\42 href\75\42http://trucosexcel.blogspot.com/feeds/1693273636364305596/comments/default\42 /\76\n', 'meTag': '', 'openIdOpTag': '', 'postImageThumbnailUrl': 'http://3.bp.blogspot.com/_AePKOkg2t_s/SKSjEHyIFXI/AAAAAAAABD4/lBryApNzO64/s72-c/normal.png', 'imageSrcTag': '\74link rel\75\42image_src\42 href\75\42http://3.bp.blogspot.com/_AePKOkg2t_s/SKSjEHyIFXI/AAAAAAAABD4/lBryApNzO64/s72-c/normal.png\42 /\76\n', 'latencyHeadScript': '\74script type\75\42text/javascript\42\76(function() { var a\75window;function c(b){this.t\75{};this.tick\75function(b,i,d){d\75d!\75void 0?d:(new Date).getTime();this.t[b]\75[d,i]};this.tick(\42start\42,null,b)}var e\75new c;a.jstiming\75{Timer:c,load:e};try{var g\75null;a.chrome\46\46a.chrome.csi\46\46(g\75Math.floor(a.chrome.csi().pageT));g\75\75null\46\46a.gtbExternal\46\46(g\75a.gtbExternal.pageT());g\75\75null\46\46a.external\46\46(g\75a.external.pageT);g\46\46(a.jstiming.pt\75g)}catch(h){};a.tickAboveFold\75function(b){var f\0750;if(b.offsetParent){do f+\75b.offsetTop;while(b\75b.offsetParent)}b\75f;b\74\075750\46\46a.jstiming.load.tick(\42aft\42)};var j\75false;function k(){j||(j\75true,a.jstiming.load.tick(\42firstScrollTime\42))}a.addEventListener?a.addEventListener(\42scroll\42,k,false):a.attachEvent(\42onscroll\42,k);\n })();\74/script\076', 'mobileHeadScript': '', 'analyticsAccountNumber': ''}}]);
+_WidgetManager._RegisterWidget('_SubscribeView', new _WidgetInfo('Subscribe1', 'footer', null, document.getElementById('Subscribe1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList4', 'footer', null, document.getElementById('LinkList4'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AdSenseView', new _WidgetInfo('AdSense3', 'footer', null, document.getElementById('AdSense3'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList1', 'crosscol', null, document.getElementById('PageList1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AdSenseView', new _WidgetInfo('AdSense1', 'crosscol', null, document.getElementById('AdSense1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList1', 'sidebartop', null, document.getElementById('LinkList1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ProfileView', new _WidgetInfo('Profile1', 'sidebartop', null, document.getElementById('Profile1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML9', 'sidebar', null, document.getElementById('HTML9'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML5', 'sidebar', null, document.getElementById('HTML5'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'sidebar', null, document.getElementById('HTML2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList2', 'sidebar', null, document.getElementById('LinkList2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList3', 'sidebar', null, document.getElementById('LinkList3'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'sidebar', null, document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar', null, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML4', 'sidebar', null, document.getElementById('HTML4'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_FollowersView', new _WidgetInfo('Followers1', 'sidebar', null, document.getElementById('Followers1'), {'title': 'Seguidores', 'codeSnippet': '\74script type\75\42text/javascript\42\76\n        if (!window.google || !google.friendconnect) {\n          document.write(\47\74script type\75\42text/javascript\42\47 +\n              \47src\75\42http://www.google.com/friendconnect/script/friendconnect.js\42\76\47 +\n              \47\74/scr\47 + \47ipt\76\47);\n        }\n      \74/script\76\n\74script type\75\42text/javascript\42\76\n      if (!window.registeredBloggerCallbacks) {\n        window.registeredBloggerCallbacks \75 true;\n\n        \n\n        \n        gadgets.rpc.register(\47requestReload\47, function() {\n          document.location.reload();\n        });\n\n        \n        gadgets.rpc.register(\47requestSignOut\47, function(siteId) {\n          \n          google.friendconnect.container.openSocialSiteId \75 siteId;\n          google.friendconnect.requestSignOut();\n        });\n      }\n    \74/script\76\n\74script type\75\42text/javascript\42\76\n    \n    function registerGetBlogUrls() {\n      gadgets.rpc.register(\47getBlogUrls\47, function() {\n        var holder \75 {};\n        \n          \n            \n            \n              holder.currentPost \75 \42http://www.blogger.com/feeds/8263944010888306433/posts/default/1693273636364305596\42;\n            \n            \n            \n              holder.currentComments \75 \42http://www.blogger.com/feeds/8263944010888306433/1693273636364305596/comments/default\42;\n            \n            holder.currentPostUrl \75 \42\42;\n            holder.currentPostId \75 1693273636364305596\n          \n          \n          \n            holder.postFeed \75 \42http://www.blogger.com/feeds/8263944010888306433/posts/default\42;\n          \n          \n          \n            holder.commentFeed \75 \42http://www.blogger.com/feeds/8263944010888306433/comments/default\42;\n          \n          holder.currentBlogUrl \75 \42http://trucosexcel.blogspot.com/\42;\n          holder.currentBlogId \75 \428263944010888306433\42;\n        \n        return holder;\n      });\n    }\n  \74/script\76\n\74script type\75\42text/javascript\42\76\n  if (!window.registeredCommonBloggerCallbacks) {\n    window.registeredCommonBloggerCallbacks \75 true;\n\n    gadgets.rpc.register(\47resize_iframe\47, function(height) {\n      var el \75 document.getElementById(this[\47f\47]);\n      if (el) {\n        el.style.height \75 height + \47px\47;\n      }\n    });\n\n    \n    gadgets.rpc.register(\47set_pref\47, function() {});\n\n    registerGetBlogUrls();\n  }\n  \74/script\76\n\74div id\75\42div-gie8q3ajv47r\42 style\75\42width: 100%; \42\76\74/div\76\n\74script type\75\42text/javascript\42\76\n    var skin \75 {};\n    skin[\47FACE_SIZE\47] \75 \04732\47;\n    skin[\47HEIGHT\47] \75 \042260\42;\n    skin[\47TITLE\47] \75 \42Seguidores\42;\n    skin[\47BORDER_COLOR\47] \75 \42transparent\42;\n    skin[\47ENDCAP_BG_COLOR\47] \75 \42transparent\42;\n    skin[\47ENDCAP_TEXT_COLOR\47] \75 \42#333333\42;\n    skin[\47ENDCAP_LINK_COLOR\47] \75 \42#000000\42;\n    skin[\47ALTERNATE_BG_COLOR\47] \75 \42transparent\42;\n    \n    skin[\47CONTENT_BG_COLOR\47] \75 \42transparent\42;\n    skin[\47CONTENT_LINK_COLOR\47] \75 \42#000000\42;\n    skin[\47CONTENT_TEXT_COLOR\47] \75 \42#333333\42;\n    skin[\47CONTENT_SECONDARY_LINK_COLOR\47] \75 \42#FFFFFF\42;\n    skin[\47CONTENT_SECONDARY_TEXT_COLOR\47] \75 \42#000000\42;\n    skin[\47CONTENT_HEADLINE_COLOR\47] \75 \42#000000\42;\n    skin[\47FONT_FACE\47] \75 \42normal normal 100% \\x27Trebuchet MS\\x27,Verdana,Arial,Sans-serif\42;\n    google.friendconnect.container.setParentUrl(\42/\42);\n    google.friendconnect.container[\42renderMembersGadget\42](\n    {id: \42div-gie8q3ajv47r\42,\n     height: 260,\n     \n     \n     \n     site: \04212074732825361752094\42,\n      \n     locale: \47es\47 },\n     skin);\n  \74/script\076'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML3', 'sidebar', null, document.getElementById('HTML3'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_StatsView', new _WidgetInfo('Stats1', 'sidebar', null, document.getElementById('Stats1'), {'title': 'Páginas vistas los últimos 30 días', 'showGraphicalCounter': true, 'showAnimatedCounter': true, 'showSparkline': true, 'statsUrl': 'http://trucosexcel.blogspot.com/b/stats?style\75BLACK_TRANSPARENT\46timeRange\75LAST_MONTH\46token\75ORAWVzMBAAA.C-M54I2ccnX2-p3nuqbuwtT9z5FUNNL4hhKkidn9X3I.58-O8aQR239bf5OmwApQiQ'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 'sidebar', null, document.getElementById('Label1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AdSenseView', new _WidgetInfo('AdSense2', 'sidebar', null, document.getElementById('AdSense2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML7', 'sidebar', null, document.getElementById('HTML7'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML8', 'sidebar', null, document.getElementById('HTML8'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header'));
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'showBacklinks': true, 'postId': '1693273636364305596', 'lightboxEnabled': true, 'lightboxModuleUrl': 'http://www.blogger.com/static/v1/jsbin/1651635301-lbx_es.js', 'lightboxCssUrl': 'http://www.blogger.com/static/v1/v-css/1683166225-lightbox_bundle.css'}, 'displayModeFull'));
+</script>
+</body></html>

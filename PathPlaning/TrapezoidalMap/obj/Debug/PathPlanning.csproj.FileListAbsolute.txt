@@ -1,0 +1,66 @@
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\TrapezoidalMap\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\TrapezoidalMap\obj\Debug\PathPlanning.csproj.GenerateResource.Cache
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\TrapezoidalMap\bin\Debug\PathPlanning.exe
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\TrapezoidalMap\bin\Debug\PathPlanning.pdb
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\TrapezoidalMap\obj\Debug\PathPlaning.Properties.Resources.resources
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\TrapezoidalMap\obj\Debug\PathPlanning.exe
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\TrapezoidalMap\obj\Debug\PathPlanning.pdb
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\TrapezoidalMap\obj\Debug\PathPlaning.Graphics.resources
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\TrapezoidalMap\bin\Debug\TajectoryMap.dll
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\TrapezoidalMap\bin\Debug\TajectoryMap.pdb
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\TrapezoidalMap\bin\Debug\WindowsApplication1.dll
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\TrapezoidalMap\bin\Debug\WindowsApplication1.pdb
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\TrapezoidalMap\obj\Debug\PathPlaning.ConfigForm.resources
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\obj\Debug\PathPlanning.exe
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\obj\Debug\PathPlanning.pdb
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\bin\Debug\PathPlanning.exe
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\bin\Debug\PathPlanning.pdb
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\bin\Debug\TajectoryMap.dll
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\bin\Debug\WindowsApplication1.dll
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\bin\Debug\WindowsApplication1.pdb
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\bin\Debug\TajectoryMap.pdb
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\obj\Debug\ResolveAssemblyReference.cache
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\obj\Debug\PathPlaning.ConfigForm.resources
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\obj\Debug\PathPlaning.Graphics.resources
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\obj\Debug\PathPlaning.Properties.Resources.resources
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\obj\Debug\ResGen.read.1.tlog
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\obj\Debug\ResGen.write.1.tlog
+D:\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\obj\Debug\PathPlanning.exe
+D:\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\obj\Debug\PathPlanning.pdb
+D:\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\obj\Debug\ResolveAssemblyReference.cache
+D:\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\obj\Debug\PathPlaning.ConfigForm.resources
+D:\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\obj\Debug\PathPlaning.Graphics.resources
+D:\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\obj\Debug\PathPlaning.Properties.Resources.resources
+D:\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\obj\Debug\ResGen.read.1.tlog
+D:\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\obj\Debug\ResGen.write.1.tlog
+D:\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\bin\Debug\PathPlanning.exe.config
+D:\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\bin\Debug\PathPlanning.exe
+D:\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\bin\Debug\PathPlanning.pdb
+D:\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\bin\Debug\TajectoryMap.dll
+D:\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\bin\Debug\WindowsApplication1.dll
+D:\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\bin\Debug\WindowsApplication1.pdb
+D:\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\bin\Debug\TajectoryMap.pdb
+D:\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\obj\Debug\GenerateResource.read.1.tlog
+D:\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\obj\Debug\GenerateResource.write.1.tlog
+D:\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\bin\Debug\CS_ParticleFilter.dll
+D:\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\bin\Debug\MATLAB_NormalRandom.dll
+D:\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\bin\Debug\Normrand.dll
+D:\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\bin\Debug\CS_ParticleFilter.pdb
+D:\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\bin\Debug\MATLAB_NormalRandom.pdb
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\bin\Debug\PathPlanning.exe.config
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\bin\Debug\CS_ParticleFilter.dll
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\bin\Debug\MATLAB_NormalRandom.dll
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\bin\Debug\Normrand.dll
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\bin\Debug\CS_ParticleFilter.pdb
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\bin\Debug\MATLAB_NormalRandom.pdb
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\obj\Debug\GenerateResource-ResGen.read.1.tlog
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\obj\Debug\GenerateResource.read.1.tlog
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\obj\Debug\GenerateResource-ResGen.write.1.tlog
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\obj\Debug\GenerateResource.write.1.tlog
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\bin\Debug\IK_ParticleFiltering_NET.dll
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\bin\Debug\IK_ParticleFiltering_NETNative.dll
+D:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\bin\Debug\PathPlanning.exe.config
+D:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\obj\Debug\PathPlanning.exe
+D:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\TrapezoidalMap\obj\Debug\PathPlanning.pdb

@@ -1,0 +1,29 @@
+C:\Documents and Settings\Jane\Escritorio\ProYova20Dec\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+C:\Documents and Settings\Jane\Escritorio\ProYova20Dec\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
+C:\Documents and Settings\Jane\Escritorio\ProYova20Dec\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Documents and Settings\Jane\Escritorio\ProYova20Dec\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Documents and Settings\Jane\Escritorio\ProYova20Dec\WindowsApplication1\WindowsApplication1\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Jane\Escritorio\ProYova20Dec\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.About.resources
+C:\Documents and Settings\Jane\Escritorio\ProYova20Dec\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form1.resources
+C:\Documents and Settings\Jane\Escritorio\ProYova20Dec\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Properties.Resources.resources
+C:\Documents and Settings\Jane\Escritorio\ProYova20Dec\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.csproj.GenerateResource.Cache
+C:\Documents and Settings\Jane\Escritorio\ProYova20DecMod. Puntos\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+C:\Documents and Settings\Jane\Escritorio\ProYova20DecMod. Puntos\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
+C:\Documents and Settings\Jane\Escritorio\ProYova20DecMod. Puntos\WindowsApplication1\WindowsApplication1\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Jane\Escritorio\ProYova20DecMod. Puntos\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.About.resources
+C:\Documents and Settings\Jane\Escritorio\ProYova20DecMod. Puntos\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form1.resources
+C:\Documents and Settings\Jane\Escritorio\ProYova20DecMod. Puntos\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Properties.Resources.resources
+C:\Documents and Settings\Jane\Escritorio\ProYova20DecMod. Puntos\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.csproj.GenerateResource.Cache
+C:\Documents and Settings\Jane\Escritorio\ProYova20DecMod. Puntos\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Documents and Settings\Jane\Escritorio\ProYova20DecMod. Puntos\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Documents and Settings\Jane\Escritorio\ProYova20DecMod. Puntos\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Graphics.resources
+D:\Cosas Yova\Cosas Yovany\Maestria\Maestria\OCSolv Final\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+D:\Cosas Yova\Cosas Yovany\Maestria\Maestria\OCSolv Final\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
+D:\Cosas Yova\Cosas Yovany\Maestria\Maestria\OCSolv Final\WindowsApplication1\WindowsApplication1\obj\Debug\ResolveAssemblyReference.cache
+D:\Cosas Yova\Cosas Yovany\Maestria\Maestria\OCSolv Final\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.About.resources
+D:\Cosas Yova\Cosas Yovany\Maestria\Maestria\OCSolv Final\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form1.resources
+D:\Cosas Yova\Cosas Yovany\Maestria\Maestria\OCSolv Final\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Graphics.resources
+D:\Cosas Yova\Cosas Yovany\Maestria\Maestria\OCSolv Final\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Properties.Resources.resources
+D:\Cosas Yova\Cosas Yovany\Maestria\Maestria\OCSolv Final\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.csproj.GenerateResource.Cache
+D:\Cosas Yova\Cosas Yovany\Maestria\Maestria\OCSolv Final\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+D:\Cosas Yova\Cosas Yovany\Maestria\Maestria\OCSolv Final\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.pdb

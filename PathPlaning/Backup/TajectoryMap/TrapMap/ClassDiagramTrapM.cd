@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TrapezoidalMap.TMNode">
+    <Position X="2" Y="0.5" Width="1.75" />
+    <Members>
+      <Field Name="fathers" Hidden="true" />
+      <Property Name="Fathers" Hidden="true" />
+      <Field Name="node_left" Hidden="true" />
+      <Field Name="node_rigth" Hidden="true" />
+      <Method Name="node_type" Hidden="true" />
+      <Property Name="this" Hidden="true" />
+      <Method Name="TMNode" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>CAAAAAgAAAAAAAAACAQAAAAEAAIAAgAAAAIAAAAAAQA=</HashCode>
+      <FileName>TrapMap\TMNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrapezoidalMap.TMANode">
+    <Position X="4.25" Y="0.5" Width="1.75" />
+    <Members>
+      <Field Name="a" Hidden="true" />
+      <Method Name="TMANode" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAEAAAAAAAAAAIAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>TrapMap\TMANode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrapezoidalMap.TMPNode">
+    <Position X="4.25" Y="2.75" Width="1.75" />
+    <Members>
+      <Field Name="point" Hidden="true" />
+      <Method Name="TMPNode" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="TrapezoidalMap.TMNode" FixedToPoint="true">
+      <Path>
+        <Point X="2.875" Y="2.027" />
+        <Point X="2.875" Y="2.375" />
+        <Point X="5.062" Y="2.375" />
+        <Point X="5.062" Y="2.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAgAAEAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TrapMap\TMPNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrapezoidalMap.TMSNode">
+    <Position X="2" Y="2.75" Width="1.75" />
+    <Members>
+      <Field Name="seg" Hidden="true" />
+      <Method Name="TMSNode" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="TrapezoidalMap.TMNode" ManuallyRouted="true">
+      <Path>
+        <Point X="2.875" Y="2.027" />
+        <Point X="2.875" Y="2.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAUAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TrapMap\TMSNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrapezoidalMap.TMSearchGraph">
+    <Position X="6.25" Y="0.5" Width="2" />
+    <Members>
+      <Method Name="lista_trapecios" Hidden="true" />
+      <Method Name="lista_trapecios_exteriores_recursivo" Hidden="true" />
+      <Method Name="lista_trapecios_recursivo" Hidden="true" />
+      <Method Name="lower_right_recursivo" Hidden="true" />
+      <Field Name="root" Hidden="true" />
+      <Method Name="TMSearchGraph" Hidden="true" />
+      <Method Name="upper_right_recursivo" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAQADIAAACgkACAAABAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>TrapMap\TMSearchGraph.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrapezoidalMap.TMObstacleSystem">
+    <Position X="6.25" Y="2.75" Width="2.5" />
+    <Members>
+      <Method Name="freeConfigurationSpacePrueba" Hidden="true" />
+      <Method Name="GetInit" Hidden="true" />
+      <Method Name="GetInitPrueba" Hidden="true" />
+      <Field Name="p_system" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AiAAAAEAAAAAAAAAAAAEIAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TrapMap\TMObstacleSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="TrapezoidalMap.NodeType" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACACAAAEAAAA=</HashCode>
+      <FileName>TrapMap\TMNode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

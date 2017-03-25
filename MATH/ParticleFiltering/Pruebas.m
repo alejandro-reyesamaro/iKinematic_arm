@@ -1,0 +1,70 @@
+% Esta funcion solo se utiliza para probar los codigos 
+clear all;
+% brazo.p2.x = 1;
+% brazo.p2.y = 2;
+
+
+% DIFERENTES EJEMPLOS DE OBSTACULOS
+
+% Menos coordenada - y (menor x en caso de empate)
+% % -------------------------------- segundo cuadrante
+M = [10 30 40 20 ; 
+     30 30 50 50 ];
+brazo.p1.x = 0;
+brazo.p1.y = 0;
+brazo.p2.x = 0;
+brazo.p2.y = 10;
+% --------------------------------
+% -------------------------------- primer cuadrante
+% M = [6 5 4 1; 
+%      4 6 6 4];
+% brazo.p1.x = 0;
+% brazo.p1.y = 0;
+% brazo.p2.x = 1;
+% brazo.p2.y = 2;
+% --------------------------------
+
+% -------------------------------- tercer cuadrante
+% M = [4 1 3 6; 
+%      5 5 3 3];
+% brazo.p1.x = 0;
+% brazo.p1.y = 0;
+% brazo.p2.x = -1;
+% brazo.p2.y = -2;
+% --------------------------------
+
+xb = [brazo.p1.x brazo.p2.x];
+yb = [brazo.p1.y brazo.p2.y];
+
+[r, k] = size(M);
+for i = 1:k,
+    p.x = M(1, i);
+    p.y = M(2, i);
+    L_puntos(i) = p;
+end
+
+cuerpo = [L_puntos L_puntos(1)];
+[cuerpo.x; cuerpo.y]'
+
+RmasP = obstaculo_crecido(brazo, L_puntos);
+cuerpo_crecido = [RmasP RmasP(1)];
+
+[r, nc] = size(cuerpo);
+for i=1:nc
+    xc(i) = cuerpo(i).x;
+    yc(i) = cuerpo(i).y;
+end
+
+[r, ncc] = size(cuerpo_crecido);
+for i=1:ncc
+    xcc(i) = cuerpo_crecido(i).x;
+    ycc(i) = cuerpo_crecido(i).y;
+end
+
+plot(xc, yc, 'b'); hold on
+plot(xb, yb, 'k'); hold on
+plot(brazo.p2.x, brazo.p2.y, 'ok');
+grid; pause; hold on;
+plot(xcc, ycc, 'r'); hold on
+pause; close
+

@@ -1,0 +1,635 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="client-firefox 
+client-firefox-3 client-gecko client-win client-js" dir="ltr" lang="es"><head>
+
+
+<title>Método de Box-Muller - Wikipedia, la enciclopedia libre</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="generator" content="MediaWiki 1.18wmf1">
+<link rel="alternate" type="application/x-wiki" title="Editar" 
+href="http://es.wikipedia.org/w/index.php?title=M%C3%A9todo_de_Box-Muller&amp;action=edit">
+<link rel="edit" title="Editar" 
+href="http://es.wikipedia.org/w/index.php?title=M%C3%A9todo_de_Box-Muller&amp;action=edit">
+<link rel="apple-touch-icon" 
+href="http://es.wikipedia.org/apple-touch-icon.png">
+<link rel="shortcut icon" href="http://es.wikipedia.org/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" 
+href="http://es.wikipedia.org/w/opensearch_desc.php" title="Wikipedia 
+(es)">
+<link rel="EditURI" type="application/rsd+xml" 
+href="http://es.wikipedia.org/w/api.php?action=rsd">
+<link rel="copyright" 
+href="http://creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Feed Atom de 
+Wikipedia" 
+href="http://es.wikipedia.org/w/index.php?title=Especial:CambiosRecientes&amp;feed=atom">
+<link rel="stylesheet" 
+href="M%C3%A9todo_de_Box-Muller_files/load_002.css" type="text/css" 
+media="all">
+<style type="text/css" media="all">.mw-collapsible-toggle{float:right} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+
+/* cache key: eswiki:resourceloader:filter:minify-css:4:4250852ed2349a0d4d0fc6509a3e7d4c */</style><style type="text/css" media="all">.js-messagebox{margin:1em 5%;padding:0.5em 2.5%;border:1px solid #ccc;background-color:#fcfcfc;font-size:0.8em}.js-messagebox .js-messagebox-group{margin:1px;padding:0.5em 2.5%;border-bottom:1px solid #ddd}.js-messagebox .js-messagebox-group:last-child{border-bottom:thin none transparent}
+
+/* cache key: eswiki:resourceloader:filter:minify-css:4:8b08bdc91c52a9ffba396dccfb5b473c */</style><style type="text/css" media="all">.suggestions{overflow:hidden;position:absolute;top:0px;left:0px;width:0px;border:none;z-index:1099;padding:0;margin:-1px -1px 0 0} html > body .suggestions{margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:Window;font-size:0.8em;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;background-color:Window;font-size:0.8em;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;color:WindowText;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left}.suggestions-result-current{background-color:#4C59A6;background-color:Highlight;color:white;color:HighlightText}.suggestions-special .special-label{font-size:0.8em;color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white;color:HighlightText}.autoellipsis-matched,.highlight{font-weight:bold}
+
+/* cache key: eswiki:resourceloader:filter:minify-css:4:1421bbe1922a44daa3fbb100d858b3d8 */</style><style type="text/css" media="all">#mw-panel.collapsible-nav div.portal{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAAABCAMAAAA7MLYKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEtQTFRF29vb2tra4ODg6urq5OTk4uLi6+vr7e3t7Ozs8PDw5+fn4+Pj4eHh3d3d39/f6Ojo5eXl6enp8fHx8/Pz8vLy7+/v3Nzc2dnZ2NjYnErj7QAAAD1JREFUeNq0wQUBACAMALDj7hf6JyUFGxzEnYhC9GaNPG1xVffGDErk/iCigLl1XV2xM49lfAxEaSM+AQYA9HMKuv4liFQAAAAASUVORK5CYII=);background-image:url(//bits.wikimedia.org/w/extensions-1.18/Vector/modules/images/portal-break.png?2011-09-19T16:38:20Z)!ie;background-position:left top;background-repeat:no-repeat;padding:0.25em 0 !important;margin:-11px 9px 10px 11px}#mw-panel.collapsible-nav div.portal h5{color:#4D4D4D;font-weight:normal;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA9QTFRFeXl53d3dmpqasbGx////GU0iEgAAAAV0Uk5T/////wD7tg5TAAAAK0lEQVQI12NwgQIG0hhCDAwMTCJAhqMCA4MiWEoIJABiOCooQhULi5BqMgB2bh4svs8t+QAAAABJRU5ErkJggg==) left center no-repeat;background:url(//bits.wikimedia.org/w/extensions-1.18/Vector/modules/images/open.png?2011-09-19T16:38:20Z) left center no-repeat!ie;padding:4px 0 3px 1.5em;margin-bottom:0px}#mw-panel.collapsible-nav div.collapsed h5{color:#0645AD;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAxQTFRF3d3deXl5////nZ2dQA6SoAAAAAN0Uk5T//8A18oNQQAAADNJREFUeNpiYEIDDMQKMKALMDOgCTDCRWACcBG4AEwEIcDITEAFuhnotmC4g4EEzwEEGAADqgHmQSPJKgAAAABJRU5ErkJggg==) left center no-repeat;background:url(//bits.wikimedia.org/w/extensions-1.18/Vector/modules/images/closed-ltr.png?2011-09-19T16:38:20Z) left center no-repeat!ie;margin-bottom:0px}#mw-panel.collapsible-nav div h5:hover{cursor:pointer;text-decoration:none}#mw-panel.collapsible-nav div.collapsed h5:hover{text-decoration:underline}#mw-panel.collapsible-nav div.portal div.body{background:none !important;padding-top:0px;display:none}#mw-panel.collapsible-nav div.persistent div.body{display:block}#mw-panel.collapsible-nav div.first h5{display:none}#mw-panel.collapsible-nav div.persistent h5{background:none !important;padding-left:0.7em;cursor:default}#mw-panel.collapsible-nav div.portal div.body ul li{padding:0.25em 0}#mw-panel.collapsible-nav div.first{background-image:none;margin-top:0px}#mw-panel.collapsible-nav div.persistent div.body{margin-left:0.5em}
+
+/* cache key: eswiki:resourceloader:filter:minify-css:4:c8be98782f5923ebff49ad2985ebc275 */</style><meta
+ name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="M%C3%A9todo_de_Box-Muller_files/load.css" 
+type="text/css" media="all">
+<style type="text/css" media="all">a.new,#quickbar a.new{color:#ba0000}
+
+/* cache key: eswiki:resourceloader:filter:minify-css:4:f2a9127573a22335c2a9102b208c73e7 */</style>
+<script src="M%C3%A9todo_de_Box-Muller_files/load_003.php" type="text/javascript"></script><script src="M%C3%A9todo_de_Box-Muller_files/load_002.php" type="text/javascript"></script>
+<script type="text/javascript">if ( window.mediaWiki ) {
+	mw.config.set({"wgCanonicalNamespace": "", "wgCanonicalSpecialPageName": false, "wgNamespaceNumber": 0, "wgPageName": "Método_de_Box-Muller", "wgTitle": "Método de Box-Muller", "wgCurRevisionId": 49879524, "wgArticleId": 1184496, "wgIsArticle": true, "wgAction": "view", "wgUserName": null, "wgUserGroups": ["*"], "wgCategories": ["Transformadas", "Generación de números aleatorios", "Método de Montecarlo"], "wgBreakFrames": false, "wgRestrictionEdit": [], "wgRestrictionMove": [], "wgSearchNamespaces": [0, 100, 104], "wgVectorEnabledModules": {"collapsiblenav": true, "collapsibletabs": true, "editwarning": true, "expandablesearch": false, "footercleanup": false, "sectioneditlinks": false, "simplesearch": true, "experiments": true}, "wgWikiEditorEnabledModules": {"toolbar": true, "dialogs": true, "hidesig": true, "templateEditor": false, "templates": false, "preview": false, "previewDialog": false, "publish": false, "toc": false}, "Geo": {"city": "", "country": ""}, "wgNoticeProject": "wikipedia"});
+}
+</script><script type="text/javascript">if ( window.mediaWiki ) {
+	mw.loader.load(["mediawiki.page.startup"]);
+}
+</script><script type="text/javascript" src="M%C3%A9todo_de_Box-Muller_files/load_006.php"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/skins-1.18/vector/csshover.min.htc")}</style><![endif]--><script type="text/javascript" src="M%C3%A9todo_de_Box-Muller_files/index_006.php"></script><script type="text/javascript" src="M%C3%A9todo_de_Box-Muller_files/index_003.php"></script><script type="text/javascript" src="M%C3%A9todo_de_Box-Muller_files/index_002.php"></script><style type="text/css">#interProject {display: none; speak: none;} #p-tb .pBody {padding-right: 0;}</style><script type="text/javascript" src="M%C3%A9todo_de_Box-Muller_files/index_005.php"></script><script type="text/javascript" src="M%C3%A9todo_de_Box-Muller_files/index.php"></script></head><body
+ class="mediawiki ltr sitedir-ltr ns-0 ns-subject 
+page-Método_de_Box-Muller action-view skin-vector">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content">
+			<a id="top"></a>
+			<div class="js-messagebox" id="mw-js-message" style="display: none;"></div>
+						<!-- sitenotice -->
+			<div id="siteNotice"><!-- centralNotice loads here --></div>
+			<!-- /sitenotice -->
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">Método de Box-Muller</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+								<!-- tagline -->
+				<div id="siteSub">De Wikipedia, la enciclopedia libre</div>
+				<!-- /tagline -->
+								<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav">
+					Saltar a: <a href="#mw-head">navegación</a>,
+					<a href="#p-search">búsqueda</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodycontent -->
+				<div dir="ltr" class="mw-content-ltr" lang="es"><div class="thumb 
+tright">
+<div class="thumbinner" style="width: 162px;"><a 
+href="http://es.wikipedia.org/wiki/Archivo:Box_Muller.svg" class="image"><img
+ alt="" src="M%C3%A9todo_de_Box-Muller_files/160px-Box_Muller.png" 
+class="thumbimage" width="160" height="376"></a>
+<div class="thumbcaption">
+<div class="magnify"><a 
+href="http://es.wikipedia.org/wiki/Archivo:Box_Muller.svg" 
+class="internal" title="Aumentar"><img 
+src="M%C3%A9todo_de_Box-Muller_files/magnify-clip.png" alt="" width="15"
+ height="11"></a></div>
+Diagrama de la transformada de Box Müller. Los círculos iniciales, se 
+encuentran uniformemente espaciados respecto al origen, están graficados
+ junto con otro conjunto de círculos centrados en el origen donde la 
+separación entre ellos aumenta a medida que se alejan del origen. Los 
+círculos más grandes del dominio se corresponden con los círculos más 
+pequeños en el rango (o codominio) y vice versa.</div>
+</div>
+</div>
+<p>El <b>método de Box-Muller</b> (nombrado así por sus inventores <a 
+href="http://es.wikipedia.org/w/index.php?title=George_E._P._Box&amp;action=edit&amp;redlink=1"
+ class="new" title="George E. P. Box (aún no redactado)">George Edward 
+Pelham Box</a> y Mervin Edgar Müller 1958)<sup id="cite_ref-0" 
+class="reference"><a href="#cite_note-0"><span class="corchete-llamada">[</span>1<span
+ class="corchete-llamada">]</span></a></sup> es un método de <a 
+href="http://es.wikipedia.org/wiki/Generador_de_n%C3%BAmeros_aleatorios"
+ title="Generador de números aleatorios">generación</a> de pares de 
+números aleatorios <a 
+href="http://es.wikipedia.org/wiki/Independencia_estad%C3%ADstica" 
+title="Independencia estadística" class="mw-redirect">independientes</a>
+ con <a href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_normal" 
+title="Distribución normal">distribución normal</a> "estándar" (<a 
+href="http://es.wikipedia.org/wiki/Esperanza_matem%C3%A1tica" 
+title="Esperanza matemática">esperanza</a> cero y <a 
+href="http://es.wikipedia.org/wiki/Varianza" title="Varianza">varianza</a>
+ unitaria), a partir de una fuente de números aleatorios <a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_uniforme_continua" 
+title="Distribución uniforme continua">uniformemente distribuidos</a>.</p>
+<p>Se lo encuentra expresado de dos formas. La forma básica es la que 
+desarrollaron Box y Müller, y toma dos muestras de la distribución 
+uniforme en el intervalo (0,&nbsp;1] y las transforma en dos muestras 
+con distribución normal. El <b>método polar</b> toma dos muestras de un 
+intervalo distinto, [−1,&nbsp;+1], y las transforma a dos muestras 
+normalmente distribuidas sin utilizar las funciones seno o coseno.</p>
+<p>También es posible utilizar el <a 
+href="http://es.wikipedia.org/wiki/M%C3%A9todo_de_la_transformada_inversa"
+ title="Método de la transformada inversa">método de la transformada 
+inversa</a> para generar números aleatorios distribuidos normalmente; en
+ comparación el método de Box-Müller posee la ventaja de ser más 
+eficiente desde un punto de vista computacional.<sup id="cite_ref-1" 
+class="reference"><a href="#cite_note-1"><span class="corchete-llamada">[</span>2<span
+ class="corchete-llamada">]</span></a></sup> También es posible utilizar
+ el <a 
+href="http://es.wikipedia.org/w/index.php?title=Algoritmo_Ziggurat&amp;action=edit&amp;redlink=1"
+ class="new" title="Algoritmo Ziggurat (aún no redactado)">algoritmo 
+Ziggurat</a> que es más eficiente.</p>
+<table id="toc" class="toc">
+<tbody><tr>
+<td>
+<div id="toctitle">
+<h2>Contenido</h2>
+<span class="toctoggle">&nbsp;[<a href="#" class="internal" 
+id="togglelink">ocultar</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Forma_b.C3.A1sica"><span 
+class="tocnumber">1</span> <span class="toctext">Forma básica</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#M.C3.A9todo_polar"><span 
+class="tocnumber">2</span> <span class="toctext">Método polar</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Referencias"><span 
+class="tocnumber">3</span> <span class="toctext">Referencias</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Enlaces_externos"><span 
+class="tocnumber">4</span> <span class="toctext">Enlaces externos</span></a></li>
+</ul>
+</td>
+</tr>
+</tbody></table>
+<h2><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=M%C3%A9todo_de_Box-Muller&amp;action=edit&amp;section=1"
+ title="Editar sección: Forma básica">editar</a>]</span> <span 
+class="mw-headline" id="Forma_b.C3.A1sica">Forma básica</span></h2>
+<p>Se supone que <i>U</i><sub>1</sub> y <i>U</i><sub>2</sub> son <a 
+href="http://es.wikipedia.org/wiki/Variable_aleatoria" title="Variable 
+aleatoria">variables aleatoria</a> independientes que están <a 
+href="http://es.wikipedia.org/wiki/Distribuci%C3%B3n_uniforme_continua" 
+title="Distribución uniforme continua">uniformemente distribuidas</a> en
+ el intervalo (0,&nbsp;1]. Sea</p>
+<dl>
+<dd><img class="tex" alt="Z_0 = R \cos(\Theta) =\sqrt{-2 \ln U_1} \cos(2
+ \pi U_2)\," 
+src="M%C3%A9todo_de_Box-Muller_files/cf22372445ea2225bfc5a87f61def3bf.png"></dd>
+</dl>
+<p>y</p>
+<dl>
+<dd><img class="tex" alt="Z_1 = R \sin(\Theta) = \sqrt{-2 \ln U_1} 
+\sin(2 \pi U_2).\," 
+src="M%C3%A9todo_de_Box-Muller_files/176e23bd2ac2b6bd4b9351b50209e248.png"></dd>
+</dl>
+<p>Entonces <i>Z</i><sub>0</sub> y <i>Z</i><sub>1</sub> son variables 
+aleatorias <a 
+href="http://es.wikipedia.org/wiki/Independencia_estad%C3%ADstica" 
+title="Independencia estadística" class="mw-redirect">independentes</a> 
+con una distribución normal con desviación típica 1.</p>
+<p>La demostración<sup id="cite_ref-2" class="reference"><a 
+href="#cite_note-2"><span class="corchete-llamada">[</span>3<span 
+class="corchete-llamada">]</span></a></sup> se basa en el hecho que, en 
+un sistema cartesiano bidimensional donde las coordenadas X e Y son 
+dadas por dos variables aleatorias independientes y distribuidas 
+normalmente, las variables aleatorias para <b>R</b><sup>2</sup> y Θ 
+(indicadas previamente) en las coordenadas polares correspondientes 
+también son independientes y poseen las expresiones:</p>
+<dl>
+<dd><img class="tex" alt="R^2 = -2\cdot\ln U_1\," 
+src="M%C3%A9todo_de_Box-Muller_files/f5aab43091bbb07a35440b51754d8e46.png"></dd>
+</dl>
+<p>y</p>
+<dl>
+<dd><img class="tex" alt="\Theta = 2\pi U_2.\," 
+src="M%C3%A9todo_de_Box-Muller_files/5b843eda9062279f959b7322e3dd3fa9.png"></dd>
+</dl>
+<h2><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=M%C3%A9todo_de_Box-Muller&amp;action=edit&amp;section=2"
+ title="Editar sección: Método polar">editar</a>]</span> <span 
+class="mw-headline" id="M.C3.A9todo_polar">Método polar</span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width: 402px;"><a 
+href="http://es.wikipedia.org/wiki/Archivo:BoxMullerTransformUsingPolarCoordinates.png"
+ class="image"><img alt="" 
+src="M%C3%A9todo_de_Box-Muller_files/400px-BoxMullerTransformUsingPolarCoordinates.png"
+ class="thumbimage" width="400" height="251"></a>
+<div class="thumbcaption">
+<div class="magnify"><a 
+href="http://es.wikipedia.org/wiki/Archivo:BoxMullerTransformUsingPolarCoordinates.png"
+ class="internal" title="Aumentar"><img 
+src="M%C3%A9todo_de_Box-Muller_files/magnify-clip.png" alt="" width="15"
+ height="11"></a></div>
+Dos valores uniformemente distribuidos, <span class="texhtml" dir="ltr"><i>u</i></span>
+ y <span class="texhtml" dir="ltr"><i>v</i></span> son usados para 
+producir el valor <span class="texhtml" dir="ltr"><i>s</i> = <i>R</i><sup>2</sup></span>,
+ el cual también se encuentra distribuida en forma uniforme. Las 
+definiciones del seno y del coseno se aplican luego sobre la forma 
+básica de la transformada de Box-Müller Transform de manera de evitar el
+ uso de funciones trigonométricas.</div>
+</div>
+</div>
+<p>La forma polar Devroye<sup id="cite_ref-3" class="reference"><a 
+href="#cite_note-3"><span class="corchete-llamada">[</span>4<span 
+class="corchete-llamada">]</span></a></sup> se la atribuye a Marsaglia. 
+También es mencionada en Carter, aunque sin atribuirla a nadie en 
+particular.<sup id="cite_ref-Carter_4-0" class="reference"><a 
+href="#cite_note-Carter-4"><span class="corchete-llamada">[</span>5<span
+ class="corchete-llamada">]</span></a></sup></p>
+<p>Dados <i>u</i> y <i>v</i>, independentes y uniformemente distribuidos
+ en un intervalo cerrado [−1,&nbsp;+1], sea <i>s</i> = <i>R</i><sup>2</sup>
+ = <i>u</i><sup>2</sup> + <i>v</i><sup>2</sup>. (Donde obviamente <img 
+class="tex" alt="\scriptstyle R = \sqrt{s}" 
+src="M%C3%A9todo_de_Box-Muller_files/71edf608ce3bf0815d5412227fbdf423.png">.)
+ Si <i>s</i> = 0 o <i>s</i> &gt; 1, se eliminan <i>u</i> y <i>v</i> y se
+ prueba con otro par (<i>u</i>,&nbsp;<i>v</i>). Se continúa con el 
+proceso hasta que se encuentra un par con <i>s</i> en el intervalo 
+abierto (0,&nbsp;1). Dado que <i>u</i> y <i>v</i> están uniformemente 
+distribuidos y como sólo se admiten puntos contenidos en el círculo 
+unitario, los valores de <i>s</i> también se encontraran uniformemente 
+distribuidos en el intervalo abierto (0,&nbsp;1). Esto último se puede 
+verificar si se calcula la función de densidad de probabilidad para <i>s</i>
+ en el intervalo (0,&nbsp;1). Lo que no es otra cosa que el área del 
+círculo de radio <img class="tex" alt="\scriptstyle \sqrt{s}" 
+src="M%C3%A9todo_de_Box-Muller_files/6736bb69f13c6f14c2b712a2db9b3545.png">
+ dividido por <img class="tex" alt="\scriptstyle\pi" 
+src="M%C3%A9todo_de_Box-Muller_files/a78ca8f4af68162fccd535b71526cf52.png">.
+ A partir de esto se puede encontrar la función de densidad de 
+probabilidad que tenga un valor constante de 1 en el intervalo 
+(0,&nbsp;1). En forma similar, el ángulo θ dividido por <img class="tex"
+ alt="\scriptstyle 2 \pi" 
+src="M%C3%A9todo_de_Box-Muller_files/ba1dd880898ce5a08bfface77ef4ef01.png">
+ está distribuido uniformemente en el intervalo abierto (0,&nbsp;1) e 
+independiente de <i>s</i>.</p>
+<h2><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=M%C3%A9todo_de_Box-Muller&amp;action=edit&amp;section=3"
+ title="Editar sección: Referencias">editar</a>]</span> <span 
+class="mw-headline" id="Referencias">Referencias</span></h2>
+<ol class="references">
+<li id="cite_note-0"><a href="#cite_ref-0">↑</a> G. E. P. Box and Mervin
+ E. Müller, <i>A Note on the Generation of Random Normal Deviates</i>, 
+The Annals of Mathematical Statistics (1958), Vol. 29, No. 2 pp. 610-611</li>
+<li id="cite_note-1"><a href="#cite_ref-1">↑</a> Kloeden and Platen, <i>Numerical
+ Solutions of Stochastic Differential Equations</i>, p. 11-12</li>
+<li id="cite_note-2"><a href="#cite_ref-2">↑</a> Sheldon Ross, <i>A 
+First Course in Probability</i>, (2002), p.279-81</li>
+<li id="cite_note-3"><a href="#cite_ref-3">↑</a> <a rel="nofollow" 
+class="external text" 
+href="http://cg.scs.carleton.ca/%7Eluc/rnbookindex.html">L. Devroye: 
+'Non-Uniform Random Variate Generation', Springer-Verlag, New York, 
+1986.</a></li>
+<li id="cite_note-Carter-4"><a href="#cite_ref-Carter_4-0">↑</a> <a 
+rel="nofollow" class="external text" 
+href="ftp://ftp.taygeta.com/pub/publications/randnum.tar.Z">Everett F. 
+Carter, Jr., <i>The Generation and Application of Random Numbers</i>, 
+Forth Dimensions (1994), Vol. 16, No. 1 &amp; 2.</a></li>
+</ol>
+<h2><span class="editsection">[<a 
+href="http://es.wikipedia.org/w/index.php?title=M%C3%A9todo_de_Box-Muller&amp;action=edit&amp;section=4"
+ title="Editar sección: Enlaces externos">editar</a>]</span> <span 
+class="mw-headline" id="Enlaces_externos">Enlaces externos</span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" 
+href="http://www.kdcalc.com/demos/NormalDistribution/NormalDistribution.html">Box-Müller
+ que se ejecuta sobre un Applet Java</a></li>
+<li><a rel="nofollow" class="external text" 
+href="http://www.taygeta.com/random/gaussian.html">Generación de números
+ aleatorios gaussianos</a></li>
+<li><a rel="nofollow" class="external text" 
+href="http://mathworld.wolfram.com/Box-MullerTransformation.html">La 
+transformada de Box-Müller -MathWorld</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 243/1000000
+Post-expand include size: 0/2048000 bytes
+Template argument size: 0/2048000 bytes
+Expensive parser function count: 0/500
+-->
+
+<!-- Saved in parser cache with key eswiki:pcache:idhash:1184496-0!1!0!!es!4!* and timestamp 20111006105109 -->
+</div>				<!-- /bodycontent -->
+								<!-- printfooter -->
+				<div class="printfooter">
+				Obtenido de «<a 
+href="http://es.wikipedia.org/w/index.php?title=M%C3%A9todo_de_Box-Muller&amp;oldid=49879524">http://es.wikipedia.org/w/index.php?title=M%C3%A9todo_de_Box-Muller&amp;oldid=49879524</a>»
+				</div>
+				<!-- /printfooter -->
+												<!-- catlinks -->
+				<div id="catlinks" class="catlinks"><div id="mw-normal-catlinks"><a 
+href="http://es.wikipedia.org/wiki/Especial:Categor%C3%ADas" 
+title="Especial:Categorías">Categorías</a>: <ul><li><a 
+href="http://es.wikipedia.org/wiki/Categor%C3%ADa:Transformadas" 
+title="Categoría:Transformadas">Transformadas</a></li><li><a 
+href="http://es.wikipedia.org/wiki/Categor%C3%ADa:Generaci%C3%B3n_de_n%C3%BAmeros_aleatorios"
+ title="Categoría:Generación de números aleatorios">Generación de 
+números aleatorios</a></li><li><a 
+href="http://es.wikipedia.org/wiki/Categor%C3%ADa:M%C3%A9todo_de_Montecarlo"
+ title="Categoría:Método de Montecarlo">Método de Montecarlo</a></li></ul></div></div>
+				<!-- /catlinks -->
+												<div class="visualClear"></div>
+				<!-- debughtml -->
+								<!-- /debughtml -->
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>Herramientas personales</h5>
+	<ul>
+		<li id="pt-login"><a 
+href="http://es.wikipedia.org/w/index.php?title=Especial:Entrar&amp;returnto=M%C3%A9todo_de_Box-Muller"
+ title="Te recomendamos iniciar sesión, sin embargo no es obligatorio 
+[alt-shift-o]" accesskey="o">Iniciar sesión / crear cuenta</a></li>
+	</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Espacios de nombres</h5>
+	<ul>
+					<li id="ca-nstab-main" class="selected"><span><a 
+href="http://es.wikipedia.org/wiki/M%C3%A9todo_de_Box-Muller" title="Ver
+ el artículo [alt-shift-c]" accesskey="c">Artículo</a></span></li>
+					<li id="ca-talk" class="new"><span><a 
+href="http://es.wikipedia.org/w/index.php?title=Discusi%C3%B3n:M%C3%A9todo_de_Box-Muller&amp;action=edit&amp;redlink=1"
+ title="Discusión acerca del artículo [alt-shift-t]" accesskey="t">Discusión</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variantes</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Vistas</h5>
+	<ul>
+					<li id="ca-view" class="selected"><span><a 
+href="http://es.wikipedia.org/wiki/M%C3%A9todo_de_Box-Muller">Leer</a></span></li>
+					<li id="ca-edit"><span><a 
+href="http://es.wikipedia.org/w/index.php?title=M%C3%A9todo_de_Box-Muller&amp;action=edit"
+ title="Puedes editar esta página. Utiliza el botón de previsualización 
+antes de guardar [alt-shift-e]" accesskey="e">Editar</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a 
+href="http://es.wikipedia.org/w/index.php?title=M%C3%A9todo_de_Box-Muller&amp;action=history"
+ title="Versiones anteriores de esta página y sus autores [alt-shift-h]"
+ accesskey="h">Ver historial</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Acciones</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Buscar</label></h5>
+	<form action="/w/index.php" id="searchform">
+		<input name="title" value="Especial:Buscar" type="hidden">
+				<div id="simpleSearch">
+						<input autocomplete="off" class="placeholder" placeholder="Buscar"
+ tabindex="1" name="search" value="Buscar" title="Buscar en este wiki 
+[alt-shift-f]" accesskey="f" id="searchInput" type="text">						<button 
+type="submit" name="button" title="Busca páginas con este texto." 
+id="searchButton"><img 
+src="M%C3%A9todo_de_Box-Muller_files/search-ltr.png" alt="Buscar"></button>
+					</div>
+			</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint collapsible-nav">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: 
+url(&quot;//upload.wikimedia.org/wikipedia/commons/8/8c/Wikipedia-logo-v2-es.png&quot;);"
+ href="http://es.wikipedia.org/wiki/Wikipedia:Portada" title="Visitar la
+ página principal"></a></div>
+				<!-- /logo -->
+				
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- navigation -->
+<div class="portal first persistent" id="p-navigation">
+	<h5>Navegación</h5>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a 
+href="http://es.wikipedia.org/wiki/Wikipedia:Portada" title="Visitar la 
+página principal [alt-shift-z]" accesskey="z">Portada</a></li>
+			<li id="n-portal"><a 
+href="http://es.wikipedia.org/wiki/Portal:Comunidad" title="Acerca del 
+proyecto, lo que puedes hacer, dónde encontrar información">Portal de la
+ comunidad</a></li>
+			<li id="n-currentevents"><a 
+href="http://es.wikipedia.org/wiki/Portal:Actualidad" title="Información
+ de contexto sobre acontecimientos actuales">Actualidad</a></li>
+			<li id="n-recentchanges"><a 
+href="http://es.wikipedia.org/wiki/Especial:CambiosRecientes" 
+title="Lista de cambios recientes en el wiki [alt-shift-r]" 
+accesskey="r">Cambios recientes</a></li>
+			<li id="n-newpages"><a 
+href="http://es.wikipedia.org/wiki/Especial:P%C3%A1ginasNuevas">Páginas 
+nuevas</a></li>
+			<li id="n-randompage"><a 
+href="http://es.wikipedia.org/wiki/Especial:Aleatoria" title="Cargar una
+ página al azar [alt-shift-x]" accesskey="x">Página aleatoria</a></li>
+			<li id="n-help"><a 
+href="http://es.wikipedia.org/wiki/Ayuda:Contenidos" title="El lugar 
+para aprender">Ayuda</a></li>
+			<li id="n-sitesupport"><a 
+href="http://wikimediafoundation.org/wiki/Special:Landingcheck?landing_page=WMFJA085&amp;language=es&amp;utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=20101204SB002"
+ rel="nofollow" title="Apóyanos">Donaciones</a></li>
+			<li id="n-bug_in_article"><a 
+href="http://es.wikipedia.org/wiki/Wikipedia:Informes_de_error">Notificar
+ un error</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- coll-print_export -->
+<div class="portal expanded" id="p-coll-print_export">
+	<h5 tabindex="2">Imprimir/exportar</h5>
+	<div style="display: block;" class="body">
+		<ul id="collectionPortletList"><li id="coll-create_a_book"><a 
+href="http://es.wikipedia.org/w/index.php?title=Especial:Libro&amp;bookcmd=book_creator&amp;referer=M%C3%A9todo+de+Box-Muller"
+ title="Crear un libro o colección de página" rel="nofollow">Crear un 
+libro</a></li><li id="coll-download-as-rl"><a 
+href="http://es.wikipedia.org/w/index.php?title=Especial:Libro&amp;bookcmd=render_article&amp;arttitle=M%C3%A9todo+de+Box-Muller&amp;oldid=49879524&amp;writer=rl"
+ title="Descargar una versión PDF de esta página wiki" rel="nofollow">Descargar
+ como PDF</a></li><li id="t-print"><a 
+href="http://es.wikipedia.org/w/index.php?title=M%C3%A9todo_de_Box-Muller&amp;printable=yes"
+ title="Versión imprimible de esta página [alt-shift-p]" accesskey="p">Versión
+ para imprimir</a></li></ul>	</div>
+</div>
+
+<!-- /coll-print_export -->
+
+<!-- TOOLBOX -->
+<div class="portal collapsed" id="p-tb">
+	<h5 tabindex="3">Herramientas</h5>
+	<div class="body">
+		<ul>
+			<li id="t-whatlinkshere"><a 
+href="http://es.wikipedia.org/wiki/Especial:LoQueEnlazaAqu%C3%AD/M%C3%A9todo_de_Box-Muller"
+ title="Lista de todas las páginas del wiki que enlazan aquí 
+[alt-shift-j]" accesskey="j">Lo que enlaza aquí</a></li>
+			<li id="t-recentchangeslinked"><a 
+href="http://es.wikipedia.org/wiki/Especial:CambiosEnEnlazadas/M%C3%A9todo_de_Box-Muller"
+ title="Cambios recientes en las páginas que enlazan con ésta 
+[alt-shift-k]" accesskey="k">Cambios en enlazadas</a></li>
+			<li id="t-upload"><a 
+href="http://commons.wikimedia.org/wiki/Commons:Upload/es" title="Subir 
+imágenes o archivos multimedia [alt-shift-u]" accesskey="u">Subir 
+archivo</a></li>
+			<li id="t-specialpages"><a 
+href="http://es.wikipedia.org/wiki/Especial:P%C3%A1ginasEspeciales" 
+title="Lista de todas las páginas especiales [alt-shift-q]" 
+accesskey="q">Páginas especiales</a></li>
+			<li id="t-permalink"><a 
+href="http://es.wikipedia.org/w/index.php?title=M%C3%A9todo_de_Box-Muller&amp;oldid=49879524"
+ title="Enlace permanente a esta versión de la página">Enlace permanente</a></li>
+<li id="t-cite"><a 
+href="http://es.wikipedia.org/w/index.php?title=Especial:Citar&amp;page=M%C3%A9todo_de_Box-Muller&amp;id=49879524"
+ title="Información de como citar esta página">Citar este artículo</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- LANGUAGES -->
+<div class="portal expanded" id="p-lang">
+	<h5 tabindex="4">En otros idiomas</h5>
+	<div style="display: block;" class="body">
+		<ul>
+			<li class="interwiki-de"><a 
+href="http://de.wikipedia.org/wiki/Box-Muller-Methode">Deutsch</a></li>
+			<li class="interwiki-en"><a 
+href="http://en.wikipedia.org/wiki/Box%E2%80%93Muller_transform">English</a></li>
+			<li class="interwiki-fr"><a 
+href="http://fr.wikipedia.org/wiki/M%C3%A9thode_de_Box-Muller">Français</a></li>
+			<li class="interwiki-he"><a 
+href="http://he.wikipedia.org/wiki/%D7%98%D7%A8%D7%A0%D7%A1%D7%A4%D7%95%D7%A8%D7%9E%D7%A6%D7%99%D7%AA_%D7%91%D7%95%D7%A7%D7%A1-%D7%9E%D7%95%D7%9C%D7%A8">עברית</a></li>
+			<li class="interwiki-it"><a 
+href="http://it.wikipedia.org/wiki/Trasformazione_di_Box-Muller">Italiano</a></li>
+			<li class="interwiki-pl"><a 
+href="http://pl.wikipedia.org/wiki/Transformacja_Boxa-Mullera">Polski</a></li>
+			<li class="interwiki-pt"><a 
+href="http://pt.wikipedia.org/wiki/Transforma%C3%A7%C3%A3o_de_Box-Muller">Português</a></li>
+			<li class="interwiki-ru"><a 
+href="http://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%B5%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%91%D0%BE%D0%BA%D1%81%D0%B0_%E2%80%94_%D0%9C%D1%8E%D0%BB%D0%BB%D0%B5%D1%80%D0%B0">Русский</a></li>
+			<li class="interwiki-su"><a 
+href="http://su.wikipedia.org/wiki/Transformasi_Box-Muller">Basa Sunda</a></li>
+			<li class="interwiki-uk"><a 
+href="http://uk.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D0%B5%D1%82%D0%B2%D0%BE%D1%80%D0%B5%D0%BD%D0%BD%D1%8F_%D0%91%D0%BE%D0%BA%D1%81%D0%B0-%D0%9C%D1%8E%D0%BB%D0%BB%D0%B5%D1%80%D0%B0">Українська</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> Esta página fue modificada por 
+última vez el 19 sep 2011, a las 13:14.</li>
+											<li id="footer-info-copyright">El texto está disponible bajo 
+la <a rel="license" 
+href="http://es.wikipedia.org/wiki/Wikipedia:Texto_de_la_Licencia_Creative_Commons_Atribuci%C3%B3n/Compartir-Igual_3.0">Licencia
+ Creative Commons Atribución Compartir Igual 3.0</a><a rel="license" 
+href="http://creativecommons.org/licenses/by-sa/3.0/" style="display: 
+none;"></a>;
+podrían ser aplicables cláusulas adicionales.
+Lee los <a 
+href="http://wikimediafoundation.org/wiki/T%C3%A9rminos_de_Uso">términos
+ de uso</a> para más información.<br>
+Wikipedia® es una marca registrada de la <a 
+href="http://www.wikimediafoundation.org/">Fundación Wikimedia, Inc.</a>,
+ una organización sin ánimo de lucro.<br></li><li class="noprint"><a 
+class="internal" href="http://es.wikipedia.org/wiki/Wikipedia:Contacto">Contacto</a></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a 
+href="http://wikimediafoundation.org/wiki/Pol%C3%ADtica_de_privacidad" 
+title="wikimedia:Política de privacidad">Política de privacidad</a></li>
+											<li id="footer-places-about"><a 
+href="http://es.wikipedia.org/wiki/Wikipedia:Acerca_de" 
+title="Wikipedia:Acerca de">Acerca de Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a 
+href="http://es.wikipedia.org/wiki/Wikipedia:Limitaci%C3%B3n_general_de_responsabilidad"
+ title="Wikipedia:Limitación general de responsabilidad">Limitación de 
+responsabilidad</a></li>
+											<li id="footer-places-mobileview"><a 
+href="http://es.wikipedia.org/w/index.php?title=M%C3%A9todo_de_Box-Muller&amp;useformat=mobile">Versión
+ para móviles</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-copyrightico">
+						<a href="http://wikimediafoundation.org/"><img 
+src="M%C3%A9todo_de_Box-Muller_files/wikimedia-button.png" 
+alt="Wikimedia Foundation" width="88" height="31"></a>
+					</li>
+					<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img 
+src="M%C3%A9todo_de_Box-Muller_files/poweredby_mediawiki_88x31.png" 
+alt="Powered by MediaWiki" width="88" height="31"></a>
+					</li>
+				</ul>
+						<div style="clear: both;"></div>
+		</div>
+		<!-- /footer -->
+		<!-- fixalpha -->
+		<script type="text/javascript"> if ( window.isMSIE55 ) fixalpha(); </script>
+		<!-- /fixalpha -->
+		<script src="M%C3%A9todo_de_Box-Muller_files/load_004.php" type="text/javascript"></script>
+<script type="text/javascript">if ( window.mediaWiki ) {
+	mw.loader.load(["mediawiki.user", "mediawiki.util", "mediawiki.page.ready", "mediawiki.legacy.wikibits", "mediawiki.legacy.ajax", "mediawiki.legacy.mwsuggest", "ext.vector.collapsibleNav", "ext.vector.collapsibleTabs", "ext.vector.editWarning", "ext.vector.simpleSearch"]);
+}
+</script><script type="text/javascript" src="M%C3%A9todo_de_Box-Muller_files/load.php"></script><script type="text/javascript" src="M%C3%A9todo_de_Box-Muller_files/load_005.php"></script>
+<script src="M%C3%A9todo_de_Box-Muller_files/index_007.php" type="text/javascript"></script>
+<script src="M%C3%A9todo_de_Box-Muller_files/load_007.php" type="text/javascript"></script><script type="text/javascript" src="M%C3%A9todo_de_Box-Muller_files/index_004.php"></script>
+<script type="text/javascript">if ( window.mediaWiki ) {
+	mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"highlightbroken":1,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":false,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":4,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,
+	"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"vector-simplesearch":1,"useeditwarning":1,"vector-collapsiblenav":1,"usebetatoolbar":1,"usebetatoolbar-cgd":1,"variant":"es","language":"es","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":true,"searchNs101":false,"searchNs102":false,"searchNs103":false,"searchNs104":true,"searchNs105":false});;mw.user.tokens.set({"editToken":"+\\","watchToken":false});;mw.loader.state({"user.options":"ready","user.tokens":"ready"});
+	
+	/* cache key: eswiki:resourceloader:filter:minify-js:4:916d7c6c4a8fddf9452bb840e8e01f5d */
+}
+</script><script type="text/javascript" src="M%C3%A9todo_de_Box-Muller_files/a"></script><!-- Served by mw8 in 0.161 secs. -->
+	<div class="suggestions" style="top: 72px; width: 204px; display: none;
+ left: auto; right: 29px;"><div class="suggestions-results"></div><div 
+class="suggestions-special"></div></div></body></html>

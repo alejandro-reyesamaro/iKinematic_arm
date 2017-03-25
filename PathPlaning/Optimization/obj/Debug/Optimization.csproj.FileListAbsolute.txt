@@ -1,0 +1,37 @@
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\Optimization\bin\Debug\WindowsApplication1.pdb
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\Optimization\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\Optimization\obj\Debug\WindowsApplication1.Properties.Resources.resources
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\Optimization\obj\Debug\Optimization.csproj.GenerateResource.Cache
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\Optimization\obj\Debug\WindowsApplication1.pdb
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\Optimization\bin\Debug\WindowsApplication1.dll
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\Optimization\obj\Debug\WindowsApplication1.dll
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\Optimization\bin\Debug\TajectoryMap.dll
+C:\Documents and Settings\Administrador\Escritorio\My Work\PathPlaning\Optimization\bin\Debug\TajectoryMap.pdb
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\Optimization\bin\Debug\WindowsApplication1.dll
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\Optimization\bin\Debug\WindowsApplication1.pdb
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\Optimization\bin\Debug\TajectoryMap.dll
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\Optimization\bin\Debug\TajectoryMap.pdb
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\Optimization\obj\Debug\ResolveAssemblyReference.cache
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\Optimization\obj\Debug\WindowsApplication1.Properties.Resources.resources
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\Optimization\obj\Debug\ResGen.read.1.tlog
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\Optimization\obj\Debug\ResGen.write.1.tlog
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\Optimization\obj\Debug\WindowsApplication1.dll
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\Optimization\obj\Debug\WindowsApplication1.pdb
+D:\Proyecto de Tesis [ultimo]\PathPlaning\Optimization\bin\Debug\WindowsApplication1.dll
+D:\Proyecto de Tesis [ultimo]\PathPlaning\Optimization\bin\Debug\WindowsApplication1.pdb
+D:\Proyecto de Tesis [ultimo]\PathPlaning\Optimization\bin\Debug\TajectoryMap.dll
+D:\Proyecto de Tesis [ultimo]\PathPlaning\Optimization\bin\Debug\TajectoryMap.pdb
+D:\Proyecto de Tesis [ultimo]\PathPlaning\Optimization\obj\Debug\ResolveAssemblyReference.cache
+D:\Proyecto de Tesis [ultimo]\PathPlaning\Optimization\obj\Debug\WindowsApplication1.Properties.Resources.resources
+D:\Proyecto de Tesis [ultimo]\PathPlaning\Optimization\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\Proyecto de Tesis [ultimo]\PathPlaning\Optimization\obj\Debug\ResGen.read.1.tlog
+D:\Proyecto de Tesis [ultimo]\PathPlaning\Optimization\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\Proyecto de Tesis [ultimo]\PathPlaning\Optimization\obj\Debug\ResGen.write.1.tlog
+D:\Proyecto de Tesis [ultimo]\PathPlaning\Optimization\obj\Debug\WindowsApplication1.dll
+D:\Proyecto de Tesis [ultimo]\PathPlaning\Optimization\obj\Debug\WindowsApplication1.pdb
+D:\Proyecto de Tesis [ultimo]\PathPlaning\Optimization\obj\Debug\GenerateResource.read.1.tlog
+D:\Proyecto de Tesis [ultimo]\PathPlaning\Optimization\obj\Debug\GenerateResource.write.1.tlog
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\Optimization\obj\Debug\GenerateResource-ResGen.read.1.tlog
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\Optimization\obj\Debug\GenerateResource.read.1.tlog
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\Optimization\obj\Debug\GenerateResource-ResGen.write.1.tlog
+I:\Investigacion\Tesis de Maestria\Proyecto de Tesis [ultimo]\PathPlaning\Optimization\obj\Debug\GenerateResource.write.1.tlog

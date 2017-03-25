@@ -1,0 +1,11 @@
+Function xNORMAL(mu, sigma)
+Dim NORMAL01
+Const Pi As Double = 3.14159265358979
+Randomize
+NORMAL01 = Sqr((-2 * LN(Rnd))) * Sin(2 * Pi * Rnd)
+xNORMAL = mu + sigma * NORMAL01
+End Function
+
+Function LN(x)
+LN = Log(x) / Log(Exp(1))
+End Function
